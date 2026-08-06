@@ -31,10 +31,10 @@
     diesel: { title: 'VG TUNE DIESEL', image: 'images/vg-tune-diesel.webp', desc: 'Paket tune untuk kendaraan bermesin diesel.' }
   };
 
-  // ========== PERBAIKAN 1: FUNGSI IMAGE PAKAI ONERROR ==========
+  // ========== PERBAIKAN: onerror ke placeholder ==========
   const image = (src, alt = '') =>
     `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="this.src='images/placeholder.webp'">`;
-  // ===============================================================
+  // ========================================================
 
   const head = (title, eyebrow = '') =>
     `<div class="vg-popup-head"><span class="vg-popup-eyebrow">${esc(eyebrow)}</span><h2 id="vg-modal-title">${esc(title)}</h2></div>`;
@@ -225,7 +225,7 @@
   }
 
   // ===========================
-  // renderService — PESAN WA BARU
+  // renderService — PESAN WA BARU + TOMBOL GAMBAR
   // ===========================
   function renderService(id, backAction = 'package-root') {
     const s = find(id);
@@ -273,6 +273,7 @@ Terima kasih. 🙏`;
         <h4>GALERI HASIL PEKERJAAN</h4>
         <div class="vg-gallery-grid">${gallery}</div>
       </div>
+      <!-- Tombol booking dengan class .vg-wa-button (gambar) -->
       <a class="vg-wa-button" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}">
         <span class="wa-icon"></span> BOOKING WHATSAPP
       </a>`;
