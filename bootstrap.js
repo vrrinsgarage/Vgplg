@@ -97,13 +97,26 @@
         console.warn('openZonePopup belum tersedia');
       }
     });
-    // Dukungan keyboard (Enter / Space)
     el.addEventListener('keydown', function(e) {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         this.click();
       }
     });
+  });
+
+  // ===== SMOOTH SCROLL UNTUK "SERVIS DI LOKASI ANDA" =====
+  document.addEventListener('DOMContentLoaded', function() {
+    const floating = document.querySelector('.hero-floating');
+    if (floating) {
+      floating.addEventListener('click', function() {
+        const target = document.getElementById('wilayah-operasional');
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+      floating.style.cursor = 'pointer';
+    }
   });
 
 })();
