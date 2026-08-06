@@ -31,10 +31,8 @@
     diesel: { title: 'VG TUNE DIESEL', image: 'images/vg-tune-diesel.webp', desc: 'Paket tune untuk kendaraan bermesin diesel.' }
   };
 
-  // ========== PERBAIKAN: onerror ke placeholder ==========
   const image = (src, alt = '') =>
     `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="this.src='images/placeholder.webp'">`;
-  // ========================================================
 
   const head = (title, eyebrow = '') =>
     `<div class="vg-popup-head"><span class="vg-popup-eyebrow">${esc(eyebrow)}</span><h2 id="vg-modal-title">${esc(title)}</h2></div>`;
@@ -224,9 +222,6 @@
       </div>`;
   }
 
-  // ===========================
-  // renderService — PESAN WA BARU + TOMBOL GAMBAR
-  // ===========================
   function renderService(id, backAction = 'package-root') {
     const s = find(id);
     if (!s) return `${head('LAYANAN TIDAK DITEMUKAN')}${back(backAction)}`;
@@ -235,7 +230,6 @@
     const note = s.catatan || 'Estimasi biaya dapat berubah sesuai kondisi kendaraan. Pekerjaan tambahan akan dikonfirmasi terlebih dahulu.';
     const gallery = [1, 2, 3].map(n => image(`images/gallery/${s.id}-${n}.webp`, `${s.nama} ${n}`)).join('');
 
-    // ===== PESAN BOOKING BARU =====
     const msg = `Halo, kak. 👋
 
 Biso bantu jadwalkan booking?
@@ -243,7 +237,6 @@ Biso bantu jadwalkan booking?
 Aku nak booking layanan ${s.nama}.
 
 Terima kasih. 🙏`;
-    // ===============================
 
     return `${head(s.nama, s.kategori)}
       ${back(backAction)}
@@ -273,12 +266,10 @@ Terima kasih. 🙏`;
         <h4>GALERI HASIL PEKERJAAN</h4>
         <div class="vg-gallery-grid">${gallery}</div>
       </div>
-      <!-- Tombol booking dengan class .vg-wa-button (gambar) -->
       <a class="vg-wa-button" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}">
         <span class="wa-icon"></span> BOOKING WHATSAPP
       </a>`;
   }
-  // ==============================================================
 
   function routeService(id, backAction = 'package-root') {
     open(renderService(id, backAction));
@@ -346,4 +337,49 @@ Terima kasih. 🙏`;
     },
     close
   };
+
+  // ================================
+  // FUNGSI ZONA POPUP (TANPA ARAH)
+  // ================================
+  function renderZonePopup(zoneNumber) {
+    if (!window.zonaData) {
+      return `<div class="empty-state">Data zona belum dimuat.</div>`;
+    }
+    const filtered = window.zonaData.filter(item => item.zone === zoneNumber);
+    if (filtered.length === 0) {
+      return `<div class="empty-state">Belum ada data perumahan untuk zona ini.</div>`;
+    }
+
+    // Urutkan alfabetis A–Z
+    const sorted = [...filtered].sort((a, b) => a.name.localeCompare(b.name));
+
+    let html = `<div class="vg-popup-head">
+      <span class="vg-popup-eyebrow">WILAYAH OPERASIONAL</span>
+      <h2 id="vg-modal-title">Zona ${zoneNumber} <span style="font-size:16px;background:#e10606;padding:2px 12px;border-radius:30px;color:#fff;margin-left:8px;">${filtered.length} perumahan</span></h2>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">`;
+
+    sorted.forEach(item => {
+      html += `<span style="background:#111316;padding:6px 16px;border-radius:20px;border:1px solid #2a2d31;font-size:13px;display:inline-block;">
+        ${esc(item.name)}
+      </span>`;
+    });
+
+    html += `</div>`;
+    return html;
+  }
+
+  window.openZonePopup = function(zoneNumber) {
+    const html = renderZonePopup(zoneNumber);
+    content.innerHTML = html;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('popup-open');
+    content.scrollTop = 0;
+    if (!popupHistoryActive) {
+      history.pushState({ vgPopup: true }, '', location.href);
+      popupHistoryActive = true;
+    }
+  };
+
 })();
