@@ -348,7 +348,17 @@ body.popup-open .floating-whatsapp{display:none!important}
 .floating-whatsapp{
   position:fixed !important;
   right:0 !important;
-  bottom:auto !important;
-  top:var(--book-now-top, 0px) !important;
+  top:auto !important;
+  bottom:var(--book-now-bottom, 0px) !important;
   z-index:9999 !important;
+}
+
+/* BOOK NOW FINAL POSITION OVERRIDE */
+.floating-whatsapp {
+  position: fixed !important;
+  right: 0 !important;
+  left: auto !important;
+  top: auto !important;
+  bottom: var(--book-now-bottom, 0px) !important;
+  z-index: 9999 !important;
 }
