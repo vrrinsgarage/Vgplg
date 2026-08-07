@@ -1,13 +1,23 @@
 /* VRRINS GARAGE — FINAL POPUP FLOW
    Paket Perawatan VG → Tune → Bensin/Diesel → Paket → Detail
    Kondisi Mobil → Kategori → Subkategori → Detail
+   Navigasi bertingkat (stack) untuk tombol kembali
 */
 (() => {
   'use strict';
-  const WA_NUMBER = '62895622499262',
-    WA_BASE = `https://wa.me/${WA_NUMBER}`;
-  const modal = document.getElementById('vg-modal'),
-    content = document.getElementById('vg-modal-content');
+
+  // ===== PASTIKAN ELEMEN ADA =====
+  const modal = document.getElementById('vg-modal');
+  const content = document.getElementById('vg-modal-content');
+
+  if (!modal || !content) {
+    console.error('Popup elements not found! Check IDs: vg-modal, vg-modal-content');
+    return;
+  }
+
+  const WA_NUMBER = '62895622499262';
+  const WA_BASE = `https://wa.me/${WA_NUMBER}`;
+
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' } [c]));
   const arr = v => Array.isArray(v) ? v : (v ? [v] : []);
   const all = () => Array.isArray(window.services) ? window.services : [];
@@ -31,16 +41,14 @@
     diesel: { title: 'VG TUNE DIESEL', image: 'images/vg-tune-diesel.webp', desc: 'Paket tune untuk kendaraan bermesin diesel.' }
   };
 
-  // ========== PERBAIKAN 1: FUNGSI IMAGE PAKAI ONERROR ==========
   const image = (src, alt = '') =>
     `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="this.src='images/placeholder.webp'">`;
-  // ===============================================================
 
   const head = (title, eyebrow = '') =>
     `<div class="vg-popup-head"><span class="vg-popup-eyebrow">${esc(eyebrow)}</span><h2 id="vg-modal-title">${esc(title)}</h2></div>`;
 
-  const back = action =>
-    `<button class="vg-back" type="button" data-action="${esc(action)}">← Kembali</button>`;
+  const backButton = () =>
+    `<button class="vg-back" type="button" data-popup-back>← Kembali</button>`;
 
   const card = ({ imageSrc, title, desc = '', badge = '', meta = '', action, button = 'DETAIL' }) =>
     `<article class="vg-popup-card">
@@ -56,26 +64,59 @@
       </div>
     </article>`;
 
+  // ===== STACK NAVIGASI =====
+  let popupStack = [];
   let popupHistoryActive = false;
+  let isNavigating = false; // cegah push berlebihan
 
-  const open = html => {
+  const open = (html, pushState = true) => {
+    if (isNavigating) return;
+    isNavigating = true;
+
+    // Simpan konten lama ke stack jika ada dan berbeda
+    if (content.innerHTML && content.innerHTML !== html) {
+      popupStack.push(content.innerHTML);
+    }
+
     content.innerHTML = html;
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('popup-open');
     content.scrollTop = 0;
-    if (!popupHistoryActive) {
+
+    if (pushState && !popupHistoryActive) {
       history.pushState({ vgPopup: true }, '', location.href);
       popupHistoryActive = true;
     }
+    isNavigating = false;
+  };
+
+  const goBack = () => {
+    if (isNavigating) return;
+    isNavigating = true;
+
+    if (popupStack.length > 0) {
+      const previousHtml = popupStack.pop();
+      content.innerHTML = previousHtml;
+      content.scrollTop = 0;
+    } else {
+      close();
+    }
+    isNavigating = false;
   };
 
   const close = () => {
     modal.classList.remove('is-open');
     modal.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('popup-open');
+    popupStack = [];
     popupHistoryActive = false;
+    if (window.history.state && window.history.state.vgPopup) {
+      history.back();
+    }
   };
+
+  // ===== RENDER FUNCTIONS =====
 
   function renderPackageRoot() {
     const p = id => find(id);
@@ -121,7 +162,7 @@
 
   function renderTuneRoot() {
     return `${head('VG TUNE', 'PAKET PERAWATAN VG')}
-      ${back('package-root')}
+      ${backButton()}
       <div class="vg-popup-cover">
         ${image('images/vg-tune.webp', 'VG TUNE')}
         <div>
@@ -160,7 +201,7 @@
     const m = TUNE_META[type],
       items = tuneItems(type);
     return `${head(m.title, 'VG TUNE')}
-      ${back('tune-root')}
+      ${backButton()}
       <div class="vg-popup-cover">
         ${image(m.image, m.title)}
         <div>
@@ -203,7 +244,7 @@
       items = byCategory(cat);
     if (!m) return renderSystemRoot();
     return `${head(m.title, 'LAYANAN BERDASARKAN KONDISI MOBIL ANDA')}
-      ${back('system-root')}
+      ${backButton()}
       <div class="vg-popup-cover">
         ${image(m.image, m.title)}
         <div>
@@ -218,24 +259,20 @@
           title: s.nama,
           desc: s.deskripsi || '',
           meta: `${esc(s.harga || '-')} • ${esc(s.durasi || '-')}`,
-          action: `service:${s.id}:category:${cat}`,
+          action: `service:${s.id}`,
           button: 'DETAIL'
         })).join('')}
       </div>`;
   }
 
-  // ===========================
-  // renderService — PESAN WA BARU
-  // ===========================
-  function renderService(id, backAction = 'package-root') {
+  function renderService(id) {
     const s = find(id);
-    if (!s) return `${head('LAYANAN TIDAK DITEMUKAN')}${back(backAction)}`;
+    if (!s) return `${head('LAYANAN TIDAK DITEMUKAN')}${backButton()}`;
     const work = arr(s.pekerjaan).map(x => `<li>${esc(x)}</li>`).join('');
     const excluded = arr(s.tidakTermasuk).map(x => `<li>${esc(x)}</li>`).join('');
     const note = s.catatan || 'Estimasi biaya dapat berubah sesuai kondisi kendaraan. Pekerjaan tambahan akan dikonfirmasi terlebih dahulu.';
     const gallery = [1, 2, 3].map(n => image(`images/gallery/${s.id}-${n}.webp`, `${s.nama} ${n}`)).join('');
 
-    // ===== PESAN BOOKING BARU =====
     const msg = `Halo, kak. 👋
 
 Biso bantu jadwalkan booking?
@@ -243,10 +280,9 @@ Biso bantu jadwalkan booking?
 Aku nak booking layanan ${s.nama}.
 
 Terima kasih. 🙏`;
-    // ===============================
 
     return `${head(s.nama, s.kategori)}
-      ${back(backAction)}
+      ${backButton()}
       <div class="vg-detail-media">${image(`images/services/${s.id}.webp`, s.nama)}</div>
       <div class="vg-detail-head">
         <span class="vg-popup-label">${esc(s.kategori)}</span>
@@ -277,45 +313,74 @@ Terima kasih. 🙏`;
         <span class="wa-icon"></span> BOOKING WHATSAPP
       </a>`;
   }
-  // ==============================================================
 
-  function routeService(id, backAction = 'package-root') {
-    open(renderService(id, backAction));
-  }
+  // ===== EVENT LISTENER =====
 
   document.addEventListener('click', e => {
     if (e.target.closest('[data-popup-close]')) return close();
+
+    if (e.target.closest('[data-popup-back]')) {
+      goBack();
+      return;
+    }
+
     const packageEl = e.target.closest('[data-open-package]');
     if (packageEl) {
       const id = packageEl.dataset.openPackage;
-      if (id === 'vg-tune') return open(renderTuneRoot());
-      return routeService(id);
+      if (id === 'vg-tune') {
+        open(renderTuneRoot());
+      } else {
+        open(renderService(id));
+      }
+      return;
     }
+
     const systemEl = e.target.closest('[data-open-system]');
-    if (systemEl) return open(renderCategory(systemEl.dataset.openSystem));
+    if (systemEl) {
+      open(renderCategory(systemEl.dataset.openSystem));
+      return;
+    }
+
     const actionEl = e.target.closest('[data-action]');
     if (!actionEl) return;
     const a = actionEl.dataset.action;
-    if (a === 'package-root') return open(renderPackageRoot());
-    if (a === 'tune-root') return open(renderTuneRoot());
-    if (a === 'system-root') return open(renderSystemRoot());
-    if (a.startsWith('tune:')) return open(renderTuneList(a.split(':')[1]));
-    if (a.startsWith('category:')) return open(renderCategory(a.substring(9)));
-    if (a.startsWith('service:')) {
+
+    if (a === 'package-root') {
+      open(renderPackageRoot());
+    } else if (a === 'tune-root') {
+      open(renderTuneRoot());
+    } else if (a === 'system-root') {
+      open(renderSystemRoot());
+    } else if (a.startsWith('tune:')) {
+      open(renderTuneList(a.split(':')[1]));
+    } else if (a.startsWith('category:')) {
+      open(renderCategory(a.substring(9)));
+    } else if (a.startsWith('service:')) {
       const parts = a.split(':');
       const id = parts[1];
-      let backAction = 'package-root';
-      if (parts[2] === 'category') backAction = `category:${parts.slice(3).join(':')}`;
-      else if (id.includes('tune-') || id.includes('addon-'))
-        backAction = id.includes('diesel') || id.includes('purging') ? 'tune:diesel' : 'tune:bensin';
-      return routeService(id, backAction);
+      open(renderService(id));
     }
   });
 
+  // ===== TOMBOL KEMBALI FISIK HP & ESC =====
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && modal.classList.contains('is-open')) close();
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) {
+      e.preventDefault();
+      goBack();
+    }
   });
 
+  // ===== TOMBOL KEMBALI BROWSER (POPSTATE) =====
+  window.addEventListener('popstate', () => {
+    if (popupHistoryActive && modal.classList.contains('is-open')) {
+      goBack();
+      if (popupStack.length === 0) {
+        close();
+      }
+    }
+  });
+
+  // ===== WHATSAPP LINKS =====
   document.querySelectorAll('.js-whatsapp').forEach(a => {
     const m = a.dataset.waMessage;
     if (!m) return;
@@ -326,23 +391,56 @@ Terima kasih. 🙏`;
     });
   });
 
-  window.addEventListener('popstate', () => {
-    if (popupHistoryActive && modal.classList.contains('is-open')) close();
-  });
-
+  // ===== EXPOSE GLOBAL =====
   window.VGPopup = {
     openPackage: () => open(renderPackageRoot()),
     openSystem: () => open(renderSystemRoot()),
     openService: (id) => {
       const s = find(id);
       if (!s) return;
-      const backAction = (s.kategori === 'VG TUNE' || s.kategori === 'VG ADD-ON') ?
-        (String(id).includes('diesel') || String(id).includes('purging') ? 'tune:diesel' : 'tune:bensin') :
-        (s.kategori === 'VG CHECK' || s.kategori === 'VG BRAKE SERVICE' || s.kategori === 'VG OIL SERVICE' ?
-          'package-root' :
-          `category:${s.kategori}`);
-      routeService(id, backAction);
+      open(renderService(id));
     },
     close
   };
+
+  // ===== ZONA POPUP =====
+  function renderZonePopup(zoneNumber) {
+    if (!window.zonaData) {
+      return `<div class="empty-state">Data zona belum dimuat.</div>`;
+    }
+    const filtered = window.zonaData.filter(item => item.zone === zoneNumber);
+    if (filtered.length === 0) {
+      return `<div class="empty-state">Belum ada data perumahan untuk zona ini.</div>`;
+    }
+    const sorted = [...filtered].sort((a, b) => a.name.localeCompare(b.name));
+    let html = `<div class="vg-popup-head">
+      <span class="vg-popup-eyebrow">WILAYAH OPERASIONAL</span>
+      <h2 id="vg-modal-title">Zona ${zoneNumber} <span style="font-size:16px;background:#e10606;padding:2px 12px;border-radius:30px;color:#fff;margin-left:8px;">${filtered.length} perumahan</span></h2>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">`;
+    sorted.forEach(item => {
+      html += `<span style="background:#111316;padding:6px 16px;border-radius:20px;border:1px solid #2a2d31;font-size:13px;display:inline-block;">
+        ${esc(item.name)}
+      </span>`;
+    });
+    html += `</div>`;
+    return html;
+  }
+
+  window.openZonePopup = function(zoneNumber) {
+    const html = renderZonePopup(zoneNumber);
+    if (content.innerHTML) {
+      popupStack.push(content.innerHTML);
+    }
+    content.innerHTML = html;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('popup-open');
+    content.scrollTop = 0;
+    if (!popupHistoryActive) {
+      history.pushState({ vgPopup: true }, '', location.href);
+      popupHistoryActive = true;
+    }
+  };
+
 })();
