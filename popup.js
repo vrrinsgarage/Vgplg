@@ -245,15 +245,15 @@ function renderCategory(cat) {
       })).join('')}
     </div>`;
 }
-      function renderService(id) {
-    const s = find(id);
-    if (!s) return `${head('LAYANAN TIDAK DITEMUKAN')}${backButton()}`;
-    const work = arr(s.pekerjaan).map(x => `<li>${esc(x)}</li>`).join('');
-    const excluded = arr(s.tidakTermasuk).map(x => `<li>${esc(x)}</li>`).join('');
-    const note = s.catatan || 'Estimasi biaya dapat berubah sesuai kondisi kendaraan. Pekerjaan tambahan akan dikonfirmasi terlebih dahulu.';
-    const gallery = [1, 2, 3].map(n => image(`images/gallery/${s.id}-${n}.webp`, `${s.nama} ${n}`)).join('');
+  function renderService(id) {
+  const s = find(id);
+  if (!s) return `${head('LAYANAN TIDAK DITEMUKAN')}${backButton()}`;
+  const work = arr(s.pekerjaan).map(x => `<li>${esc(x)}</li>`).join('');
+  const excluded = arr(s.tidakTermasuk).map(x => `<li>${esc(x)}</li>`).join('');
+  const note = s.catatan || 'Estimasi biaya dapat berubah sesuai kondisi kendaraan. Pekerjaan tambahan akan dikonfirmasi terlebih dahulu.';
+  const gallery = [1, 2, 3].map(n => image(`images/gallery/${s.id}-${n}.webp`, `${s.nama} ${n}`)).join('');
 
-    const msg = `Halo, kak. 👋
+  const msg = `Halo, kak. 👋
 
 Biso bantu jadwalkan booking?
 
@@ -261,132 +261,134 @@ Aku nak booking layanan ${s.nama}.
 
 Terima kasih. 🙏`;
 
-    return `${head(s.nama, s.kategori)}
-      ${backButton()}
-      <div class="vg-detail-media">${image(`images/services/${s.id}.webp`, s.nama)}</div>
-      <div class="vg-detail-head">
-        <span class="vg-popup-label">${esc(s.kategori)}</span>
-        <h3>${esc(s.nama)}</h3>
-        <p>${esc(s.deskripsi || '')}</p>
-      </div>
-      <div class="vg-detail-stats">
-        <div><small>Estimasi Biaya</small><strong>${esc(s.harga || '-')}</strong></div>
-        <div><small>Estimasi Waktu</small><strong>${esc(s.durasi || '-')}</strong></div>
-      </div>
-      <div class="vg-detail-section">
-        <h4>PEKERJAAN YANG DILAKUKAN</h4>
-        <ul>${work || '<li>Disesuaikan berdasarkan hasil pemeriksaan.</li>'}</ul>
-      </div>
-      <div class="vg-detail-section">
-        <h4>YANG TIDAK TERMASUK</h4>
-        <ul class="is-excluded">${excluded || '<li>Sparepart/material pengganti.</li>'}</ul>
-      </div>
-      <div class="vg-detail-section">
-        <h4>CATATAN</h4>
-        <p>${esc(note)}</p>
-      </div>
-      <div class="vg-gallery">
-        <h4>GALERI HASIL PEKERJAAN</h4>
-        <div class="vg-gallery-grid">${gallery}</div>
-      </div>
-      <a class="vg-wa-button" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}">
-        <span class="wa-icon"></span> BOOKING WHATSAPP
-      </a>`;
-  }
+  return `${head(s.nama, s.kategori)}
+    ${backButton()}
+    <div class="vg-detail-media">${image(`images/services/${s.id}.webp`, s.nama)}</div>
+    <div class="vg-detail-head">
+      <span class="vg-popup-label">${esc(s.kategori)}</span>
+      <h3>${esc(s.nama)}</h3>
+      <p>${esc(s.deskripsi || '')}</p>
+    </div>
+    <div class="vg-detail-stats">
+      <div><small>Estimasi Biaya</small><strong>${esc(s.harga || '-')}</strong></div>
+      <div><small>Estimasi Waktu</small><strong>${esc(s.durasi || '-')}</strong></div>
+    </div>
+    <div class="vg-detail-section">
+      <h4>PEKERJAAN YANG DILAKUKAN</h4>
+      <ul>${work || '<li>Disesuaikan berdasarkan hasil pemeriksaan.</li>'}</ul>
+    </div>
+    <div class="vg-detail-section">
+      <h4>YANG TIDAK TERMASUK</h4>
+      <ul class="is-excluded">${excluded || '<li>Sparepart/material pengganti.</li>'}</ul>
+    </div>
+    <div class="vg-detail-section">
+      <h4>CATATAN</h4>
+      <p>${esc(note)}</p>
+    </div>
+    <div class="vg-gallery">
+      <h4>GALERI HASIL PEKERJAAN</h4>
+      <div class="vg-gallery-grid">${gallery}</div>
+    </div>
+    <a class="vg-wa-button" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}">
+      <span class="wa-icon"></span> BOOKING WHATSAPP
+    </a>`;
+}
+
   // ===== EVENT LISTENER =====
 
-document.addEventListener('click', e => {
-  // Tutup popup jika klik backdrop atau tombol close
-  if (e.target.closest('[data-popup-close]')) return close();
+  document.addEventListener('click', e => {
+    // Tutup popup jika klik backdrop atau tombol close
+    if (e.target.closest('[data-popup-close]')) return close();
 
-  // Tombol kembali (data-popup-back)
-  if (e.target.closest('[data-popup-back]')) {
-    goBack();
-    return;
-  }
+    // Tombol kembali (data-popup-back)
+    if (e.target.closest('[data-popup-back]')) {
+      goBack();
+      return;
+    }
 
-  // Buka paket dari card
-  const packageEl = e.target.closest('[data-open-package]');
-  if (packageEl) {
-    const id = packageEl.dataset.openPackage;
-    if (id === 'vg-tune') {
+    // Buka paket dari card
+    const packageEl = e.target.closest('[data-open-package]');
+    if (packageEl) {
+      const id = packageEl.dataset.openPackage;
+      if (id === 'vg-tune') {
+        open(renderTuneRoot());
+      } else {
+        open(renderService(id));
+      }
+      return;
+    }
+
+    // Buka sistem dari card
+    const systemEl = e.target.closest('[data-open-system]');
+    if (systemEl) {
+      open(renderCategory(systemEl.dataset.openSystem));
+      return;
+    }
+
+    // Navigasi dari tombol aksi (detail, lihat paket, dll)
+    const actionEl = e.target.closest('[data-action]');
+    if (!actionEl) return;
+    const a = actionEl.dataset.action;
+
+    if (a === 'package-root') {
+      open(renderPackageRoot());
+    } else if (a === 'tune-root') {
       open(renderTuneRoot());
-    } else {
+    } else if (a === 'system-root') {
+      open(renderSystemRoot());
+    } else if (a.startsWith('tune:')) {
+      open(renderTuneList(a.split(':')[1]));
+    } else if (a.startsWith('category:')) {
+      open(renderCategory(a.substring(9)));
+    } else if (a.startsWith('service:')) {
+      const parts = a.split(':');
+      const id = parts[1];
       open(renderService(id));
     }
-    return;
-  }
-
-  // Buka sistem dari card
-  const systemEl = e.target.closest('[data-open-system]');
-  if (systemEl) {
-    open(renderCategory(systemEl.dataset.openSystem));
-    return;
-  }
-
-  // Navigasi dari tombol aksi (detail, lihat paket, dll)
-  const actionEl = e.target.closest('[data-action]');
-  if (!actionEl) return;
-  const a = actionEl.dataset.action;
-
-  if (a === 'package-root') {
-    open(renderPackageRoot());
-  } else if (a === 'tune-root') {
-    open(renderTuneRoot());
-  } else if (a === 'system-root') {
-    open(renderSystemRoot());
-  } else if (a.startsWith('tune:')) {
-    open(renderTuneList(a.split(':')[1]));
-  } else if (a.startsWith('category:')) {
-    open(renderCategory(a.substring(9)));
-  } else if (a.startsWith('service:')) {
-    const parts = a.split(':');
-    const id = parts[1];
-    open(renderService(id));
-  }
-});
-  // ===== TOMBOL KEMBALI FISIK HP =====
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && modal.classList.contains('is-open')) {
-    e.preventDefault();
-    goBack();
-  }
-});
-
-// ===== TOMBOL KEMBALI BROWSER (POPSTATE) =====
-window.addEventListener('popstate', () => {
-  if (popupHistoryActive && modal.classList.contains('is-open')) {
-    goBack();
-    // Jika setelah goBack popup masih terbuka dan stack kosong, tutup
-    if (popupStack.length === 0) {
-      close();
-    }
-  }
-});
-
-// ===== WHATSAPP LINKS =====
-document.querySelectorAll('.js-whatsapp').forEach(a => {
-  const m = a.dataset.waMessage;
-  if (!m) return;
-  const url = `${WA_BASE}?text=${encodeURIComponent(m)}`;
-  a.href = url;
-  a.addEventListener('click', e => {
-    a.href = url;
   });
-});
 
-// ===== EXPOSE GLOBAL =====
-window.VGPopup = {
-  openPackage: () => open(renderPackageRoot()),
-  openSystem: () => open(renderSystemRoot()),
-  openService: (id) => {
-    const s = find(id);
-    if (!s) return;
-    open(renderService(id));
-  },
-  close
-};
-      // ===== ZONA POPUP =====
+  // ===== TOMBOL KEMBALI FISIK HP =====
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) {
+      e.preventDefault();
+      goBack();
+    }
+  });
+
+  // ===== TOMBOL KEMBALI BROWSER (POPSTATE) =====
+  window.addEventListener('popstate', () => {
+    if (popupHistoryActive && modal.classList.contains('is-open')) {
+      goBack();
+      // Jika setelah goBack popup masih terbuka dan stack kosong, tutup
+      if (popupStack.length === 0) {
+        close();
+      }
+    }
+  });
+
+  // ===== WHATSAPP LINKS =====
+  document.querySelectorAll('.js-whatsapp').forEach(a => {
+    const m = a.dataset.waMessage;
+    if (!m) return;
+    const url = `${WA_BASE}?text=${encodeURIComponent(m)}`;
+    a.href = url;
+    a.addEventListener('click', e => {
+      a.href = url;
+    });
+  });
+
+  // ===== EXPOSE GLOBAL =====
+  window.VGPopup = {
+    openPackage: () => open(renderPackageRoot()),
+    openSystem: () => open(renderSystemRoot()),
+    openService: (id) => {
+      const s = find(id);
+      if (!s) return;
+      open(renderService(id));
+    },
+    close
+  };
+    // ===== ZONA POPUP =====
   function renderZonePopup(zoneNumber) {
     if (!window.zonaData) {
       return `<div class="empty-state">Data zona belum dimuat.</div>`;
