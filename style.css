@@ -288,16 +288,6 @@ body{background:#050505}
 .nav-booking .wa-icon,.hero-actions .button--whatsapp .wa-icon,.floating-whatsapp__button .wa-icon,.vg-wa-button .wa-icon,.nav-booking span,.hero-actions .button--whatsapp span,.floating-whatsapp__button span,.vg-wa-button span{display:none!important}
 @media (min-width:801px){.hero-actions .button--whatsapp{width:230px;height:50px;min-height:50px}.floating-whatsapp__button{width:160px;height:40px;min-height:40px}}
 @media (max-width:800px){.nav-booking{width:145px;height:38px;min-height:38px}.hero-actions .button--whatsapp{width:220px;height:48px;min-height:48px}.vg-wa-button{width:220px;height:48px;min-height:48px}}
-.floating-whatsapp{display:block!important;right:16px;bottom:90px;z-index:450}
-.floating-whatsapp__button{display:block!important;width:90px!important;height:135px!important;min-width:90px!important;min-height:135px!important;padding:0!important;margin:0!important;border:0!important;border-radius:0!important;background:transparent!important;background-image:none!important;box-shadow:none!important;line-height:0;overflow:visible}
-.floating-whatsapp__button img{display:block;width:90px;height:135px;object-fit:contain}
-@media (min-width:801px){.floating-whatsapp{right:28px;bottom:28px}.floating-whatsapp__button{width:110px!important;height:165px!important;min-width:110px!important;min-height:165px!important}.floating-whatsapp__button img{width:110px;height:165px}}
-.floating-booking{position:fixed;right:20px;top:60%;width:80px;height:80px;border-radius:50%;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:9999;overflow:hidden}.floating-booking img{width:100%;height:100%;object-fit:contain}@media(max-width:768px){.floating-booking{width:72px;height:72px;right:20px;top:auto;bottom:80px}}
-.floating-whatsapp{position:fixed!important;right:20px!important;bottom:80px!important;top:auto!important;z-index:9999!important}
-.floating-whatsapp__button{width:72px!important;height:72px!important;padding:0!important;border-radius:50%!important;display:flex!important;align-items:center!important;justify-content:center!important;box-shadow:0 8px 24px rgba(0,0,0,.25)!important;overflow:hidden!important}
-.floating-whatsapp__button img{width:100%!important;height:100%!important;object-fit:contain!important}@media(min-width:801px){.floating-whatsapp{right:20px!important;bottom:80px!important}}
-body.popup-open .floating-whatsapp{display:none!important}
-
 /* ============================================================
    TOMBOL BOOKING DI POPUP DETAIL (GAMBAR KHUSUS)
    Menggunakan file booking-layanan-ini.webp
@@ -341,19 +331,20 @@ body.popup-open .floating-whatsapp{display:none!important}
 }
 
 /* ===== BOOK NOW — FINAL CANONICAL FLOATING STYLE ===== */
+/* Floating tetap aktif. Posisi mengikuti patokan visual mobile: di sisi kanan VG BOOKING HERO. */
 .floating-whatsapp{
   position:fixed!important;
   right:20px!important;
-  bottom:80px!important;
-  top:auto!important;
+  top:53%!important;
+  bottom:auto!important;
   z-index:9999!important;
   display:block!important;
 }
 .floating-whatsapp__button{
-  width:72px!important;
-  height:72px!important;
-  min-width:72px!important;
-  min-height:72px!important;
+  width:80px!important;
+  height:80px!important;
+  min-width:80px!important;
+  min-height:80px!important;
   margin:0!important;
   padding:0!important;
   border:0!important;
@@ -372,5 +363,18 @@ body.popup-open .floating-whatsapp{display:none!important}
   width:100%!important;
   height:100%!important;
   object-fit:contain!important;
+}
+@media (max-width:800px){
+  .floating-whatsapp{
+    right:20px!important;
+    top:53%!important;
+    bottom:auto!important;
+  }
+  .floating-whatsapp__button{
+    width:72px!important;
+    height:72px!important;
+    min-width:72px!important;
+    min-height:72px!important;
+  }
 }
 body.popup-open .floating-whatsapp{display:none!important}
