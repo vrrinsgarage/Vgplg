@@ -67,13 +67,13 @@
   // ===== STACK NAVIGASI =====
   let popupStack = [];
   let popupHistoryActive = false;
-  let isNavigating = false; // cegah push berlebihan
+  let isNavigating = false;
 
-  const open = (html, pushState = true) => {
+  // pushState: true hanya untuk buka popup pertama kali
+  const open = (html, pushState = false) => {
     if (isNavigating) return;
     isNavigating = true;
 
-    // Simpan konten lama ke stack jika ada dan berbeda
     if (content.innerHTML && content.innerHTML !== html) {
       popupStack.push(content.innerHTML);
     }
@@ -111,8 +111,9 @@
     document.body.classList.remove('popup-open');
     popupStack = [];
     popupHistoryActive = false;
+    // Hapus state history agar tidak mempengaruhi tombol back
     if (window.history.state && window.history.state.vgPopup) {
-      history.back();
+      history.replaceState(null, '', location.href);
     }
   };
 
@@ -317,48 +318,59 @@ Terima kasih. 🙏`;
   // ===== EVENT LISTENER =====
 
   document.addEventListener('click', e => {
-    if (e.target.closest('[data-popup-close]')) return close();
+    // Tutup popup (X atau backdrop)
+    if (e.target.closest('[data-popup-close]')) {
+      close();
+      return;
+    }
 
+    // Tombol kembali internal
     if (e.target.closest('[data-popup-back]')) {
       goBack();
       return;
     }
 
+    // Buka paket dari card (halaman utama)
     const packageEl = e.target.closest('[data-open-package]');
     if (packageEl) {
       const id = packageEl.dataset.openPackage;
+      const isFirstOpen = !modal.classList.contains('is-open');
       if (id === 'vg-tune') {
-        open(renderTuneRoot());
+        open(renderTuneRoot(), isFirstOpen);
       } else {
-        open(renderService(id));
+        open(renderService(id), isFirstOpen);
       }
       return;
     }
 
+    // Buka sistem dari card (halaman utama)
     const systemEl = e.target.closest('[data-open-system]');
     if (systemEl) {
-      open(renderCategory(systemEl.dataset.openSystem));
+      const isFirstOpen = !modal.classList.contains('is-open');
+      open(renderCategory(systemEl.dataset.openSystem), isFirstOpen);
       return;
     }
 
+    // Navigasi dari tombol aksi (dalam popup)
     const actionEl = e.target.closest('[data-action]');
     if (!actionEl) return;
     const a = actionEl.dataset.action;
 
+    // Semua navigasi internal TIDAK pakai pushState (false)
     if (a === 'package-root') {
-      open(renderPackageRoot());
+      open(renderPackageRoot(), false);
     } else if (a === 'tune-root') {
-      open(renderTuneRoot());
+      open(renderTuneRoot(), false);
     } else if (a === 'system-root') {
-      open(renderSystemRoot());
+      open(renderSystemRoot(), false);
     } else if (a.startsWith('tune:')) {
-      open(renderTuneList(a.split(':')[1]));
+      open(renderTuneList(a.split(':')[1]), false);
     } else if (a.startsWith('category:')) {
-      open(renderCategory(a.substring(9)));
+      open(renderCategory(a.substring(9)), false);
     } else if (a.startsWith('service:')) {
       const parts = a.split(':');
       const id = parts[1];
-      open(renderService(id));
+      open(renderService(id), false);
     }
   });
 
@@ -374,7 +386,8 @@ Terima kasih. 🙏`;
   window.addEventListener('popstate', () => {
     if (popupHistoryActive && modal.classList.contains('is-open')) {
       goBack();
-      if (popupStack.length === 0) {
+      // Jika setelah goBack stack kosong dan popup masih terbuka, tutup
+      if (popupStack.length === 0 && modal.classList.contains('is-open')) {
         close();
       }
     }
@@ -393,12 +406,12 @@ Terima kasih. 🙏`;
 
   // ===== EXPOSE GLOBAL =====
   window.VGPopup = {
-    openPackage: () => open(renderPackageRoot()),
-    openSystem: () => open(renderSystemRoot()),
+    openPackage: () => open(renderPackageRoot(), true),
+    openSystem: () => open(renderSystemRoot(), true),
     openService: (id) => {
       const s = find(id);
       if (!s) return;
-      open(renderService(id));
+      open(renderService(id), true);
     },
     close
   };
@@ -429,6 +442,7 @@ Terima kasih. 🙏`;
 
   window.openZonePopup = function(zoneNumber) {
     const html = renderZonePopup(zoneNumber);
+    const isFirstOpen = !modal.classList.contains('is-open');
     if (content.innerHTML) {
       popupStack.push(content.innerHTML);
     }
@@ -437,7 +451,7 @@ Terima kasih. 🙏`;
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('popup-open');
     content.scrollTop = 0;
-    if (!popupHistoryActive) {
+    if (isFirstOpen && !popupHistoryActive) {
       history.pushState({ vgPopup: true }, '', location.href);
       popupHistoryActive = true;
     }
