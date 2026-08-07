@@ -339,3 +339,32 @@ body.popup-open .floating-whatsapp{display:none!important}
 .area-zone:active {
   transform: scale(0.98);
 }
+
+
+/* ============================================================
+   FLOATING BOOK NOW — POSISI SESUAI REFERENSI DESKTOP & MOBILE
+   Tidak mengubah gambar tombol.
+   ============================================================ */
+.floating-whatsapp{
+  position:fixed !important;
+  right:20px !important;
+  top:35vh !important;
+  bottom:auto !important;
+  z-index:9999 !important;
+}
+
+@media (max-width:800px){
+  .floating-whatsapp{
+    right:20px !important;
+    top:52vh !important;
+    bottom:auto !important;
+  }
+}
+
+@media (max-width:520px){
+  .floating-whatsapp{
+    right:20px !important;
+    top:52vh !important;
+    bottom:auto !important;
+  }
+}
