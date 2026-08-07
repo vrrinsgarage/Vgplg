@@ -330,50 +330,57 @@ body{background:#050505}
   transform: scale(0.98);
 }
 
-/* ===== BOOK NOW — FINAL CANONICAL FLOATING STYLE ===== */
-/* Floating tetap aktif. Posisi mengikuti patokan visual mobile: di sisi kanan VG BOOKING HERO. */
-.floating-whatsapp{
-  position:fixed!important;
-  right:20px!important;
-  top:53%!important;
-  bottom:auto!important;
-  z-index:9999!important;
-  display:block!important;
+/* ============================================================
+   FLOATING WHATSAPP — POSISI KANAN BAWAH (seperti gambar 3 & 4)
+   ============================================================ */
+.floating-whatsapp {
+  position: fixed;
+  right: 24px;          /* mepet ke kanan */
+  bottom: 32px;         /* agak naik dari bawah */
+  z-index: 9999;
+  display: block;
 }
-.floating-whatsapp__button{
-  width:80px!important;
-  height:80px!important;
-  min-width:80px!important;
-  min-height:80px!important;
-  margin:0!important;
-  padding:0!important;
-  border:0!important;
-  border-radius:50%!important;
-  background:transparent!important;
-  background-image:none!important;
-  box-shadow:0 8px 24px rgba(0,0,0,.25)!important;
-  display:flex!important;
-  align-items:center!important;
-  justify-content:center!important;
-  overflow:hidden!important;
-  line-height:0;
+
+.floating-whatsapp__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;          /* ukuran sesuai gambar 3&4 (lebih kecil) */
+  height: 64px;
+  min-width: 64px;
+  min-height: 64px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+  overflow: hidden;
+  line-height: 0;
+  transition: transform 0.2s ease;
 }
-.floating-whatsapp__button img{
-  display:block!important;
-  width:100%!important;
-  height:100%!important;
-  object-fit:contain!important;
+
+.floating-whatsapp__button:hover {
+  transform: scale(1.05); /* efek hover halus */
 }
-@media (max-width:800px){
-  .floating-whatsapp{
-    right:20px!important;
-    top:53%!important;
-    bottom:auto!important;
+
+.floating-whatsapp__button img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ----- Responsif Mobile ----- */
+@media (max-width: 800px) {
+  .floating-whatsapp {
+    right: 16px;
+    bottom: 24px;
   }
-  .floating-whatsapp__button{
-    width:72px!important;
-    height:72px!important;
-    min-width:72px!important;
-    min-height:72px!important;
+  .floating-whatsapp__button {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
   }
 }
