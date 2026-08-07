@@ -68,6 +68,7 @@
   let popupStack = [];
   let popupHistoryActive = false;
   let isNavigating = false;
+  let isClosing = false;
 
   // pushState: true hanya untuk buka popup pertama kali
   const open = (html, pushState = false) => {
@@ -92,29 +93,33 @@
   };
 
   const goBack = () => {
-    if (isNavigating) return;
+    if (isNavigating || isClosing) return;
     isNavigating = true;
 
     if (popupStack.length > 0) {
       const previousHtml = popupStack.pop();
       content.innerHTML = previousHtml;
       content.scrollTop = 0;
+      isNavigating = false;
     } else {
+      isNavigating = false;
       close();
     }
-    isNavigating = false;
   };
 
   const close = () => {
+    if (isClosing) return;
+    isClosing = true;
     modal.classList.remove('is-open');
     modal.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('popup-open');
     popupStack = [];
     popupHistoryActive = false;
-    // Hapus state history agar tidak mempengaruhi tombol back
+    // Hapus state history agar tombol back tidak keluar dari web
     if (window.history.state && window.history.state.vgPopup) {
       history.replaceState(null, '', location.href);
     }
+    isClosing = false;
   };
 
   // ===== RENDER FUNCTIONS =====
@@ -343,7 +348,7 @@ Terima kasih. 🙏`;
       return;
     }
 
-    // Buka sistem dari card (halaman utama)
+    // Buka sistem dari card (halaman utama) — ini untuk bagian "Pilih Layanan Sesuai Sistem Mobil Anda"
     const systemEl = e.target.closest('[data-open-system]');
     if (systemEl) {
       const isFirstOpen = !modal.classList.contains('is-open');
