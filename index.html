@@ -33,10 +33,9 @@
     </nav>
   </div>
 </header>
-
 <main id="main-content">
 <section class="hero-section" id="beranda">
-  <div class="container hero-grid">  <!-- ✅ Sudah diperbaiki -->
+  <div class="container hero-grid">
     <div class="hero-content">
       <p class="eyebrow">SERVIS MOBIL RUMAHAN &amp; MEKANIK PANGGILAN</p>
       <h1>Dak galak ke bengkel? Pacak.<br>Mekanik <span class="text-accent">VRRINS GARAGE</span> yang datang ke rumah!</h1>
@@ -47,9 +46,14 @@
       </div>
       <div class="hero-trust"><span>Area Palembang</span><span>Harga transparan</span><span>Servis di lokasi</span></div>
     </div>
-    <div class="hero-floating" onclick="document.getElementById('wilayah-operasional').scrollIntoView({behavior:'smooth'});" style="cursor:pointer;">
-      <img class="floating-icon" src="images/vrrins-location.webp" alt="" width="34" height="34">
-      <div><strong>Servis di lokasi Anda</strong><span>Praktis tanpa perlu ke bengkel</span></div>
+    <div class="hero-media">
+      <img src="images/hero.webp" alt="Layanan mekanik VRRINS GARAGE" width="1536" height="864" fetchpriority="high">
+      <div class="hero-overlay"></div>
+      <!-- HERO-FLOATING di dalam HERO-MEDIA -->
+      <div class="hero-floating" onclick="document.getElementById('wilayah-operasional').scrollIntoView({behavior:'smooth'});" style="cursor:pointer;">
+        <img class="floating-icon" src="images/vrrins-location.webp" alt="" width="34" height="34">
+        <div><strong>Servis di lokasi Anda</strong><span>Praktis tanpa perlu ke bengkel</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -88,7 +92,6 @@
     </div>
   </div>
 </section>
-
 <section class="section packages-section" id="paket-layanan" aria-labelledby="packages-title">
   <div class="container">
     <div class="section-heading section-heading--split">
@@ -180,7 +183,6 @@
     </div>
   </div>
 </section>
-
 <section class="section process-area-section" id="alur-kerja">
   <div class="container split-layout">
     <div class="process-panel">
@@ -261,7 +263,6 @@
   </div>
 </section>
 </main>
-
 <footer class="site-footer" id="kontak">
   <div class="container footer-grid">
     <div class="footer-brand">
