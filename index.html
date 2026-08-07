@@ -305,13 +305,19 @@
     const heroBooking = document.querySelector('.hero-actions .button--whatsapp');
     const floating = document.querySelector('.floating-whatsapp');
     if (!heroBooking || !floating) return;
-    const rect = heroBooking.getBoundingClientRect();
+
+    const heroRect = heroBooking.getBoundingClientRect();
     const floatingHeight = floating.getBoundingClientRect().height;
-    const top = Math.max(0, rect.bottom - floatingHeight);
+    const top = Math.max(0, heroRect.bottom - floatingHeight);
+
     floating.style.setProperty('--book-now-top', top + 'px');
   }
+
   window.addEventListener('load', alignFloatingBookNow, { once: true });
   window.addEventListener('resize', alignFloatingBookNow);
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', alignFloatingBookNow);
+  }
 })();
 </script>
 

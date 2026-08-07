@@ -342,8 +342,8 @@ body.popup-open .floating-whatsapp{display:none!important}
 
 
 /* ============================================================
-   FLOATING BOOK NOW — SEJAJAR DENGAN VG BOOKING HERO
-   Hanya mengatur posisi; fitur floating dan gambar tetap.
+   FLOATING BOOK NOW — POSISI MENGIKUTI TOMBOL VG BOOKING HERO
+   Hanya posisi yang diubah. Fitur floating dan gambar tetap.
    ============================================================ */
 .floating-whatsapp{
   position:fixed !important;
