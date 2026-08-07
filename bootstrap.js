@@ -19,8 +19,17 @@
   const results = document.getElementById('search-results');
   const clear = document.getElementById('search-clear');
 
+  /**
+   * Normalisasi string ke huruf kecil
+   * @param {string} v
+   * @returns {string}
+   */
   const normalize = (v) => String(v || '').toLowerCase();
 
+  /**
+   * Render hasil pencarian
+   * @param {string} q - query pencarian
+   */
   function render(q) {
     if (!results || !input) return;
     const query = normalize(q).trim();
@@ -30,6 +39,7 @@
       return;
     }
 
+    /** @type {Array<{name:string, cat:string, id:string, deskripsi:string}>} */
     const data = (window.services || []).map((s) => ({
       name: s.nama,
       cat: s.kategori,
@@ -86,37 +96,4 @@
       if (results) results.hidden = true;
     }
   });
-
-  // ===== ZONA CLICK (Tanpa Arah) =====
-  document.querySelectorAll('.area-zone[data-zone]').forEach(el => {
-    el.addEventListener('click', function(e) {
-      const zone = parseInt(this.dataset.zone, 10);
-      if (window.openZonePopup) {
-        window.openZonePopup(zone);
-      } else {
-        console.warn('openZonePopup belum tersedia');
-      }
-    });
-    el.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        this.click();
-      }
-    });
-  });
-
-  // ===== SMOOTH SCROLL UNTUK "SERVIS DI LOKASI ANDA" =====
-  document.addEventListener('DOMContentLoaded', function() {
-    const floating = document.querySelector('.hero-floating');
-    if (floating) {
-      floating.addEventListener('click', function() {
-        const target = document.getElementById('wilayah-operasional');
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-      floating.style.cursor = 'pointer';
-    }
-  });
-
 })();

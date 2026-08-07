@@ -93,14 +93,10 @@ h3{margin-bottom:8px}
 .service-card:hover .service-card__button{background:var(--red);border-color:var(--red)}
 .systems-section{background:#08090a}
 .system-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
-.system-card{background:var(--surface-2);border:1px solid var(--border);border-radius:16px;overflow:hidden;cursor:pointer;transition:transform var(--ease),border-color var(--ease);display:flex;flex-direction:column}
+.system-card{background:var(--surface-2);border:1px solid var(--border);border-radius:16px;overflow:hidden;cursor:pointer;transition:transform var(--ease),border-color var(--ease)}
 .system-card:hover{transform:translateY(-2px);border-color:#3b3d42}
 .system-card__media{aspect-ratio:16/9;background:#0a0b0c;overflow:hidden}.system-card__media img{width:100%;height:100%;object-fit:cover}
-.system-card>div:last-child{padding:16px;display:flex;flex-direction:column;flex:1}
-.system-card h3{font-size:14px;text-transform:uppercase;margin-bottom:5px}
-.system-card p{font-size:11px;color:var(--muted);margin-bottom:14px;min-height:35px}
-.system-card button{border:0;background:transparent;color:#fff;font-size:10px;font-weight:900;padding:0;align-self:center;margin-top:auto;min-width:106px;height:34px;padding:0 20px;font-size:10px;font-weight:900;letter-spacing:.07em;transition:background .25s ease,border-color .25s ease,transform .25s ease;background:var(--red);border:1px solid var(--red);border-radius:7px}
-.system-card button:hover{filter:brightness(1.12)}
+.system-card>div:last-child{padding:16px}.system-card h3{font-size:14px;text-transform:uppercase;margin-bottom:5px}.system-card p{font-size:11px;color:var(--muted);margin-bottom:14px;min-height:35px}.system-card button{border:0;background:transparent;color:#fff;font-size:10px;font-weight:900;padding:0}.system-card button:after{content:" →";color:var(--red)}
 .split-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(320px,.9fr);gap:24px;align-items:start}
 .process-panel,.area-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:30px}
 .process-panel .section-heading,.area-panel .section-heading{margin-bottom:24px}
@@ -120,6 +116,7 @@ h3{margin-bottom:8px}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.about-media{aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:#0b0c0e;border:1px solid var(--border)}.about-media img{width:100%;height:100%;object-fit:cover}.about-copy p:not(.eyebrow){color:var(--muted);max-width:580px}.text-link{font-size:12px;font-weight:900;color:#fff}.text-link:hover{color:var(--red)}
 .site-footer{padding:70px 0 90px;border-top:1px solid var(--border);background:#030303}.footer-grid{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:40px}.footer-brand>p{max-width:320px;color:var(--muted);font-size:12px}.footer-column{display:grid;align-content:start;gap:9px}.footer-column h3{font-size:10px;letter-spacing:.14em;color:#fff;margin-bottom:7px}.footer-column a,.footer-column span{font-size:11px;color:#96999e}.footer-column a:hover{color:#fff}.footer-wa{color:var(--green)!important;font-weight:900}.footer-bottom{border-top:1px solid #1c1e21;margin-top:50px;padding-top:20px;display:flex;justify-content:space-between;gap:20px;color:#666a70;font-size:10px}
 .bottom-nav{display:none}.floating-whatsapp{position:fixed;right:20px;bottom:20px;z-index:450}.floating-whatsapp__button{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:999px;background:var(--green);color:#001b0b;font-size:11px;font-weight:900;box-shadow:0 12px 35px rgba(0,0,0,.35)}
+
 .vg-modal{position:fixed;inset:0;z-index:1000;display:none;padding:28px;background:rgba(0,0,0,.72);backdrop-filter:blur(8px)}
 .vg-modal.is-open{display:flex;align-items:center;justify-content:center}
 .vg-modal__backdrop{position:absolute;inset:0}.vg-modal__dialog{position:relative;z-index:1;width:min(1120px,100%);max-height:min(92vh,900px);overflow:hidden;background:#08090a;border:1px solid #303237;border-radius:20px;box-shadow:0 30px 100px rgba(0,0,0,.55)}
@@ -129,40 +126,15 @@ h3{margin-bottom:8px}
 .vg-popup-cover{display:grid;grid-template-columns:42% 1fr;gap:0;margin-bottom:20px;background:#101113;border:1px solid #292b2f;border-radius:16px;overflow:hidden}.vg-popup-cover>div:last-child{padding:26px;display:flex;flex-direction:column;justify-content:center}.vg-popup-cover img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/9}.vg-popup-cover h3{font-size:24px;margin-bottom:8px}.vg-popup-cover p{color:var(--muted);font-size:12px}.vg-popup-cover strong{color:var(--red);font-size:11px}
 .vg-detail-media{border-radius:16px;overflow:hidden;border:1px solid #292b2f;aspect-ratio:16/9;background:#0b0c0d;margin-bottom:20px}.vg-detail-media img{width:100%;height:100%;object-fit:cover}.vg-detail-head h3{font-size:28px;margin:4px 0 8px}.vg-detail-head p{color:var(--muted);max-width:800px}.vg-popup-label{font-size:10px;color:var(--red);font-weight:900;letter-spacing:.12em}
 .vg-detail-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:22px 0}.vg-detail-stats>div{background:#101113;border:1px solid #292b2f;border-radius:14px;padding:16px}.vg-detail-stats small{display:block;color:#85888e;font-size:10px;margin-bottom:5px}.vg-detail-stats strong{font-size:16px;color:#fff}
-.vg-detail-section{border-top:1px solid #292b2f;padding:20px 0}.vg-detail-section h4,.vg-gallery h4{font-size:10px;letter-spacing:.13em;margin:0 0 12px}.vg-detail-section p,.vg-detail-section li{color:var(--muted);font-size:12px}.vg-detail-section ul{margin:0;padding-left:18px}.vg-detail-section li{margin:5px 0}.is-excluded li{color:#8f9196}.vg-gallery{border-top:1px solid #292b2f;padding-top:20px}.vg-gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.vg-gallery-grid img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;background:#0b0c0d}
-/* ============================================================
-   TOMBOL BOOKING DI POPUP DETAIL (GAMBAR vg-booking.webp)
-   ============================================================ */
-.vg-wa-button {
-  background-image: url("images/vg-booking.webp") !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: cover !important;
-  background-color: transparent !important;
-  color: transparent !important;
-  overflow: hidden !important;
-  text-indent: -9999px !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  display: block !important;
-  width: 220px !important;
-  height: 50px !important;
-  min-height: 50px !important;
-  margin: 24px auto 0 !important;
-  border-radius: 14px !important;
-}
-.vg-wa-button .wa-icon,
-.vg-wa-button span {
-  display: none !important;
-}
+.vg-detail-section{border-top:1px solid #292b2f;padding:20px 0}.vg-detail-section h4,.vg-gallery h4{font-size:10px;letter-spacing:.13em;margin:0 0 12px}.vg-detail-section p,.vg-detail-section li{color:var(--muted);font-size:12px}.vg-detail-section ul{margin:0;padding-left:18px}.vg-detail-section li{margin:5px 0}.is-excluded li{color:#8f9196}.vg-gallery{border-top:1px solid #292b2f;padding-top:20px}.vg-gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.vg-gallery-grid img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;background:#0b0c0d}.vg-wa-button{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:50px;margin-top:24px;border-radius:12px;background:var(--green);color:#001b0b;font-size:12px;font-weight:900}
+
 @media(max-width:1100px){
   .main-nav{gap:14px}.nav-link{font-size:11px}.package-grid{grid-template-columns:repeat(2,1fr)}.system-grid{grid-template-columns:repeat(3,1fr)}.process-grid{grid-template-columns:repeat(3,1fr)}.process-card:nth-child(3):after{display:none}.process-card:nth-child(4):after,.process-card:nth-child(5):after{display:none}
 }
 @media(max-width:800px){
   html{scroll-padding-top:72px}.container{width:min(calc(100% - 28px),var(--container))}
   .site-header{position:sticky}.header-inner{min-height:68px}.brand__logo{width:40px;height:40px}.brand{gap:8px;min-width:0;max-width:calc(100% - 44px)}.brand__wordmark{width:190px;max-width:calc(100vw - 110px);height:auto}.nav-toggle{display:block}.main-nav{display:none;position:absolute;left:0;right:0;top:68px;background:#090a0b;border-bottom:1px solid #282a2e;padding:10px 14px 16px;flex-direction:column;align-items:stretch;gap:0}.main-nav.is-open{display:flex}.nav-link{padding:12px 8px}.nav-link.active:after{display:none}.nav-booking{justify-content:center;margin-top:8px}.hero-grid{display:block;min-height:0}.hero-content{padding:48px 0 30px}.hero-content h1{font-size:clamp(34px,9vw,50px)}.hero-subtitle{font-size:14px}.hero-media{min-height:300px}.hero-floating{right:14px;bottom:14px}.section{padding:64px 0}.section-heading--split{display:block}.section-label{display:inline-block;margin-top:12px}.package-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.service-card__body{padding:17px 15px 18px;min-height:220px}.service-card h3{font-size:14px}.service-card p{font-size:10px;min-height:52px}.service-price{font-size:12px}.service-duration{font-size:10px}.service-card__button{height:34px;min-width:88px;padding:0 16px;margin-top:18px}.system-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.system-card>div:last-child{padding:12px}.system-card h3{font-size:11px}.system-card p{font-size:9px;min-height:44px}.split-layout{grid-template-columns:1fr}.process-panel,.area-panel{padding:20px}.process-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.process-card{min-height:235px;padding:14px 12px}.process-card:after{display:none!important}.process-icon{width:38px;height:38px;margin:18px 0 14px}.process-card h3{font-size:11px}.process-card p{font-size:9px}.process-card:nth-child(4){grid-column:1 / 2}.process-card:nth-child(5){grid-column:2 / 3}.faq-consult,.about-grid{grid-template-columns:1fr}.consult-card{position:static}.footer-grid{grid-template-columns:1fr 1fr;gap:28px}.footer-brand{grid-column:1 / -1}.footer-bottom{display:grid}.floating-whatsapp{display:none}.bottom-nav{display:none!important}.bottom-nav a,.bottom-nav button{border:0;background:none;color:#888;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:8px;font-weight:800}.bottom-nav a:hover,.bottom-nav button:hover{color:#fff}.bottom-icon{font-size:18px;line-height:18px}.bottom-icon--green{color:var(--green)}.bottom-icon--red{color:var(--red)}.site-footer{padding-bottom:70px}
-  .vg-modal{padding:0}.vg-modal.is-open{align-items:stretch}.vg-modal__dialog{width:100%;height:100%;max-height:none;border-radius:0;border:0}.vg-modal__content{max-height:100%;padding:24px 14px 34px}.vg-modal__close{right:12px;top:12px}.vg-popup-grid,.vg-popup-grid--package,.vg-popup-grid--system{grid-template-columns:1fr 1fr;gap:12px}.vg-popup-card__body{padding:14px}.vg-popup-card__body h3{font-size:13px}.vg-popup-card__body p{font-size:10px;min-height:45px}.vg-popup-meta{font-size:10px}.vg-popup-button{height:34px;min-width:88px}.vg-popup-cover{grid-template-columns:1fr}.vg-popup-cover>div:last-child{padding:18px}.vg-detail-stats{grid-template-columns:1fr 1fr}.vg-gallery-grid{grid-template-columns:repeat(2,1fr)}.vg-wa-button{width:180px!important;height:44px!important;min-height:44px!important}
+  .vg-modal{padding:0}.vg-modal__is-open{}.vg-modal.is-open{align-items:stretch}.vg-modal__dialog{width:100%;height:100%;max-height:none;border-radius:0;border:0}.vg-modal__content{max-height:100%;padding:24px 14px 34px}.vg-modal__close{right:12px;top:12px}.vg-popup-grid,.vg-popup-grid--package,.vg-popup-grid--system{grid-template-columns:1fr 1fr;gap:12px}.vg-popup-card__body{padding:14px}.vg-popup-card__body h3{font-size:13px}.vg-popup-card__body p{font-size:10px;min-height:45px}.vg-popup-meta{font-size:10px}.vg-popup-button{height:34px;min-width:88px}.vg-popup-cover{grid-template-columns:1fr}.vg-popup-cover>div:last-child{padding:18px}.vg-detail-stats{grid-template-columns:1fr 1fr}.vg-gallery-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:520px){
   .quick-links{justify-content:flex-start;overflow:auto;flex-wrap:nowrap;padding-bottom:3px}.quick-links button{white-space:nowrap}
@@ -172,9 +144,10 @@ h3{margin-bottom:8px}
   .process-card p{font-size:8.5px}.process-card h3{font-size:10px}
   .package-grid{gap:9px}.service-card__body{padding:14px 12px 16px;min-height:215px}.service-card h3{font-size:12px}.service-card p{font-size:9px;line-height:1.55}.service-card__button{height:33px;min-width:80px}
   .footer-grid{grid-template-columns:1fr}.footer-brand{grid-column:auto}
-  .vg-popup-grid,.vg-popup-grid--package,.vg-popup-grid--system{grid-template-columns:1fr}.vg-detail-stats{grid-template-columns:1fr}.vg-gallery-grid{grid-template-columns:1fr 1fr}.vg-wa-button{width:160px!important;height:40px!important;min-height:40px!important}
+  .vg-popup-grid,.vg-popup-grid--package,.vg-popup-grid--system{grid-template-columns:1fr}.vg-detail-stats{grid-template-columns:1fr}.vg-gallery-grid{grid-template-columns:1fr 1fr}
 }
 @media(min-width:801px) and (max-width:1100px){.process-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.process-card{min-height:260px}.process-card:after{display:none}}
+
 /* ===== VG FINAL POLISH OVERRIDES ===== */
 :root{
   --surface-card:#101113;
@@ -190,6 +163,8 @@ body{background:#050505}
 .hero-content h1{font-weight:900;letter-spacing:-.045em}
 .hero-content h1 .text-accent{color:var(--red)}
 .hero-subtitle{font-weight:500}
+
+/* Six advantages: desktop 6x1, mobile 3x2 */
 .advantages-section{padding-top:58px;padding-bottom:72px;background:#08090a;border-top:1px solid #16181b;border-bottom:1px solid #1c1e21}
 .advantage-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
 .advantage-card{min-width:0;background:var(--surface-card);border:1px solid #292c30;border-radius:16px;padding:20px 16px 18px;min-height:170px;display:flex;flex-direction:column;align-items:flex-start;transition:border-color .2s ease,transform .2s ease,background .2s ease}
@@ -204,12 +179,14 @@ body{background:#050505}
 .icon-home:after{width:15px;height:15px;border-left:3px solid currentColor;border-top:3px solid currentColor;transform:rotate(45deg);left:12px;top:10px}
 .icon-tag:before{width:22px;height:17px;border:3px solid currentColor;border-radius:5px;left:9px;top:12px;transform:rotate(-12deg)}
 .icon-tag:after{width:4px;height:4px;border-radius:50%;background:currentColor;left:13px;top:17px}
-.icon-whatsapp:before{width:21px;height:21px;border:3px solid currentColor;border-radius:50%;left:9px;top:8px}
-.icon-whatsapp:after{content:"";width:7px;height:7px;border-left:3px solid currentColor;border-bottom:3px solid currentColor;left:7px;top:25px;transform:skew(-18deg)}
+.icon-whatsapp:before,.bottom-icon--whatsapp:before{width:21px;height:21px;border:3px solid currentColor;border-radius:50%;left:9px;top:8px}
+.icon-whatsapp:after,.bottom-icon--whatsapp:after{content:"";width:7px;height:7px;border-left:3px solid currentColor;border-bottom:3px solid currentColor;left:7px;top:25px;transform:skew(-18deg)}
 .icon-pin:before{width:19px;height:23px;border:3px solid currentColor;border-radius:50% 50% 50% 0;left:10px;top:7px;transform:rotate(-45deg)}
 .icon-pin:after{width:5px;height:5px;background:currentColor;border-radius:50%;left:17px;top:14px}
 .advantage-card h3{font-size:11px;line-height:1.35;margin:0 0 8px;font-weight:900}
 .advantage-card p{font-size:10px;line-height:1.55;color:var(--muted);margin:0}
+
+/* Service cards — locked VG formula */
 .service-card{background:var(--surface-card);border-radius:16px}
 .service-card__media{background:#0a0b0c}
 .service-badge{right:12px;top:12px;padding:4px 7px;border-radius:6px;font-size:8px;line-height:1.1}
@@ -220,12 +197,16 @@ body{background:#050505}
 .service-duration{font-size:10px;color:#c7c9cc;margin-top:4px}
 .service-card__button{align-self:center;height:34px;min-width:106px;padding:0 20px;margin-top:18px;border-radius:7px;background:var(--red);border:1px solid var(--red);color:#fff;font-size:10px;font-weight:900;letter-spacing:.07em}
 .service-card__button:hover{filter:brightness(1.12);transform:none}
+
+/* System cards */
 .system-card{background:var(--surface-card);border-color:#292c30;border-radius:16px;overflow:hidden}
 .system-card__media{aspect-ratio:16/9}
 .system-card>div:last-child{padding:16px 16px 18px}
 .system-card h3{text-transform:uppercase;font-size:13px;font-weight:900}
 .system-card p{font-size:10px;line-height:1.55;color:var(--muted)}
 .system-card button{height:34px;border-radius:7px;background:var(--red);border:1px solid var(--red);font-size:9px;font-weight:900}
+
+/* Cara Kerja final */
 .process-panel,.area-panel{background:#08090a;border:1px solid #24272b;border-radius:16px}
 .process-panel{padding:28px}
 .area-panel{padding:28px}
@@ -247,10 +228,14 @@ body{background:#050505}
 .process-icon--final:after{width:13px;height:7px;border-left:3px solid var(--red);border-bottom:3px solid var(--red);transform:rotate(-45deg);left:14px;top:15px}
 .process-card h3{font-size:12px;font-weight:900;margin-bottom:10px}
 .process-card p{font-size:10px;line-height:1.65;color:var(--muted)}
+
+/* Modern WhatsApp mark */
 .wa-icon{width:18px;height:18px;border:0;border-radius:0;background:currentColor;position:relative;display:inline-block;clip-path:polygon(0 0,100% 0,100% 100%,42% 100%,15% 100%,20% 78%,0 78%)}
 .wa-icon:before{content:"";position:absolute;inset:2px;border:2px solid #001b0b;border-radius:50%}
 .wa-icon:after{content:"";position:absolute;width:6px;height:3px;border-left:2px solid #001b0b;border-bottom:2px solid #001b0b;left:4px;top:9px;transform:rotate(-30deg)}
 .vg-wa-button .wa-icon{color:#001b0b}.vg-wa-button .wa-icon:before{border-color:var(--green)}.vg-wa-button .wa-icon:after{border-color:var(--green)}
+
+/* Popup premium refinement, structure unchanged */
 .vg-modal{padding:24px;background:rgba(0,0,0,.78)}
 .vg-modal__dialog{width:min(1180px,100%);border-radius:18px;background:#070809;border-color:#2c2f34}
 .vg-modal__content{padding:30px}
@@ -270,72 +255,331 @@ body{background:#050505}
 .vg-detail-media{border-color:#2a2d31}
 .vg-detail-stats>div{background:#101113;border-color:#2a2d31}
 .vg-wa-button{border-radius:10px;background:var(--green);color:#001b0b}
-@media (max-width:1100px){.advantage-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.vg-popup-grid--package{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:800px){.container{width:min(calc(100% - 28px),var(--container))}.hero-section{background:#050505}.hero-content{padding:46px 0 26px}.hero-content h1{font-size:clamp(32px,9vw,48px)}.hero-media{min-height:310px}.advantages-section{padding:56px 0 64px}.advantage-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.advantage-card{min-height:170px;padding:15px 12px}.advantage-icon{width:34px;height:34px;transform:scale(.88);transform-origin:top left;margin-bottom:12px}.advantage-card h3{font-size:9px}.advantage-card p{font-size:8px;line-height:1.5}.package-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.service-card__body{padding:15px 13px 17px;min-height:214px}.service-card h3{font-size:11px}.service-card p{font-size:9px;min-height:50px}.service-price{font-size:11px}.service-duration{font-size:9px}.service-card__button{height:33px;min-width:80px;font-size:9px;margin-top:15px}.system-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.system-card>div:last-child{padding:11px 10px 12px}.system-card h3{font-size:9px}.system-card p{font-size:8px;min-height:36px}.system-card button{height:31px;font-size:8px}.process-panel,.area-panel{padding:18px;border-radius:15px}.process-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.process-card{min-height:225px;padding:13px 11px}.process-card:after{display:none!important}.process-icon{width:36px;height:36px;margin:18px 0 13px;transform:scale(.88);transform-origin:left top}.process-card h3{font-size:10px}.process-card p{font-size:8px;line-height:1.55}.process-number{font-size:9px}.vg-modal__content{padding:22px 14px 32px}.vg-popup-grid--package,.vg-popup-grid--system{grid-template-columns:repeat(2,minmax(0,1fr))}.vg-popup-card__body{padding:13px}.vg-popup-card__body h3{font-size:11px}.vg-popup-card__body p{font-size:9px;min-height:42px}.vg-popup-meta{font-size:9px}.vg-popup-button{height:33px;min-width:78px;font-size:8px}}
-@media (max-width:520px){.advantage-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.advantage-card{min-height:160px;padding:13px 10px}.package-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.system-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.system-card p{display:none}.process-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.process-card{min-height:215px;padding:12px 9px}.process-card p{font-size:7.7px}.process-card h3{font-size:9px}.vg-popup-grid--package,.vg-popup-grid--system{grid-template-columns:1fr}}
-.quick-links{display:none}@media(max-width:800px){.quick-links{display:flex}}
-.system-card{display:flex;flex-direction:column}
-.system-card > div:last-child{display:flex;flex-direction:column;flex:1}
-.system-card button{align-self:center;margin-top:auto;min-width:106px;height:34px;padding:0 20px;font-size:10px;font-weight:900;letter-spacing:.07em;transition:background .25s ease,border-color .25s ease,transform .25s ease}
-.system-card button:hover{filter:brightness(1.12)}
-@media (max-width:768px){.floating-whatsapp img{width:68px;height:68px}
-  .system-card .detail-btn,.system-card button{width:77px;min-width:77px;height:30px;font-size:10px;font-weight:700;border-radius:10px;padding:0;margin-top:auto;align-self:center}}
-.nav-booking,.hero-actions .button--whatsapp,.floating-whatsapp__button,.vg-wa-button{background-image:url("images/vg-booking.webp");background-repeat:no-repeat;background-position:center;background-size:cover;background-color:transparent;color:transparent;overflow:hidden;text-indent:-9999px;box-sizing:border-box;border:0;box-shadow:none;padding:0;display:inline-block;vertical-align:middle}
-.nav-booking{width:150px;height:38px;min-height:38px;border-radius:12px}
-.hero-actions .button--whatsapp{width:220px;height:48px;min-height:48px;border-radius:14px}
-.floating-whatsapp__button{width:220px;height:48px;min-height:48px;border-radius:14px}
-.vg-wa-button{width:220px;height:50px;min-height:50px;margin:24px auto 0;border-radius:14px;display:block}
-.nav-booking .wa-icon,.hero-actions .button--whatsapp .wa-icon,.floating-whatsapp__button .wa-icon,.vg-wa-button .wa-icon,.nav-booking span,.hero-actions .button--whatsapp span,.floating-whatsapp__button span,.vg-wa-button span{display:none!important}
-@media (min-width:801px){.hero-actions .button--whatsapp{width:230px;height:50px;min-height:50px}.floating-whatsapp__button{width:160px;height:40px;min-height:40px}}
-@media (max-width:800px){.nav-booking{width:145px;height:38px;min-height:38px}.hero-actions .button--whatsapp{width:220px;height:48px;min-height:48px}.vg-wa-button{width:220px;height:48px;min-height:48px}}
-.floating-whatsapp{display:block!important;right:16px;bottom:90px;z-index:450}
-.floating-whatsapp__button{display:block!important;width:90px!important;height:135px!important;min-width:90px!important;min-height:135px!important;padding:0!important;margin:0!important;border:0!important;border-radius:0!important;background:transparent!important;background-image:none!important;box-shadow:none!important;line-height:0;overflow:visible}
-.floating-whatsapp__button img{display:block;width:90px;height:135px;object-fit:contain}
-@media (min-width:801px){.floating-whatsapp{right:28px;bottom:28px}.floating-whatsapp__button{width:110px!important;height:165px!important;min-width:110px!important;min-height:165px!important}.floating-whatsapp__button img{width:110px;height:165px}}
-.floating-booking{position:fixed;right:20px;top:60%;width:80px;height:80px;border-radius:50%;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:9999;overflow:hidden}.floating-booking img{width:100%;height:100%;object-fit:contain}@media(max-width:768px){.floating-booking{width:72px;height:72px;right:20px;top:auto;bottom:80px}}
-.floating-whatsapp{position:fixed!important;right:20px!important;bottom:80px!important;top:auto!important;z-index:9999!important}
-.floating-whatsapp__button{width:72px!important;height:72px!important;padding:0!important;border-radius:50%!important;display:flex!important;align-items:center!important;justify-content:center!important;box-shadow:0 8px 24px rgba(0,0,0,.25)!important;overflow:hidden!important}
-.floating-whatsapp__button img{width:100%!important;height:100%!important;object-fit:contain!important}@media(min-width:801px){.floating-whatsapp{right:20px!important;bottom:80px!important}}
-body.popup-open .floating-whatsapp{display:none!important}
 
-/* ============================================================
-   TOMBOL BOOKING DI POPUP DETAIL (GAMBAR KHUSUS)
-   Menggunakan file booking-layanan-ini.webp
-   ============================================================ */
-.vg-wa-button {
-  background-image: url("images/booking-layanan-ini.webp") !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: cover !important;
-  background-color: transparent !important;
-  color: transparent !important;
-  overflow: hidden !important;
-  text-indent: -9999px !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  display: block !important;
-  width: 220px !important;
-  height: 48px !important;
-  min-height: 48px !important;
-  margin: 24px auto 0 !important;
-  border-radius: 14px !important;
+/* Bottom nav icons */
+.bottom-icon{width:20px;height:20px;display:block;position:relative;color:#9b9da1}
+.bottom-icon:before,.bottom-icon:after{content:"";position:absolute;box-sizing:border-box}
+.bottom-icon--home:before{width:15px;height:13px;border:2px solid currentColor;border-top:0;left:3px;top:7px}
+.bottom-icon--home:after{width:12px;height:12px;border-left:2px solid currentColor;border-top:2px solid currentColor;transform:rotate(45deg);left:4px;top:3px}
+.bottom-icon--service:before{width:16px;height:8px;border:2px solid currentColor;border-radius:6px;left:2px;top:8px;transform:rotate(-45deg)}
+.bottom-icon--service:after{width:7px;height:7px;border:2px solid currentColor;border-radius:50%;left:1px;top:3px}
+.bottom-icon--booking:before{width:16px;height:20px;border:2px solid currentColor;border-radius:4px;left:2px;top:0}
+.bottom-icon--booking:after{width:6px;height:2px;background:currentColor;left:7px;top:15px}
+.bottom-icon--contact:before{width:16px;height:16px;border:2px solid currentColor;border-radius:50%;left:2px;top:2px}
+.bottom-icon--contact:after{width:6px;height:2px;background:currentColor;left:7px;top:9px;transform:rotate(-45deg)}
+.bottom-icon--whatsapp{color:var(--green)}
+.bottom-nav button:hover .bottom-icon,.bottom-nav a:hover .bottom-icon{color:#fff}
+.bottom-nav .bottom-icon--whatsapp:hover{color:var(--green)}
+
+@media (max-width:1100px){
+  .advantage-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .vg-popup-grid--package{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:800px){
+  .container{width:min(calc(100% - 28px),var(--container))}
+  .hero-section{background:#050505}
+  .hero-content{padding:46px 0 26px}
+  .hero-content h1{font-size:clamp(32px,9vw,48px)}
+  .hero-media{min-height:310px}
+  .advantages-section{padding:56px 0 64px}
+  .advantage-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .advantage-card{min-height:170px;padding:15px 12px}
+  .advantage-icon{width:34px;height:34px;transform:scale(.88);transform-origin:top left;margin-bottom:12px}
+  .advantage-card h3{font-size:9px}
+  .advantage-card p{font-size:8px;line-height:1.5}
+  .package-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .service-card__body{padding:15px 13px 17px;min-height:214px}
+  .service-card h3{font-size:11px}
+  .service-card p{font-size:9px;min-height:50px}
+  .service-price{font-size:11px}
+  .service-duration{font-size:9px}
+  .service-card__button{height:33px;min-width:80px;font-size:9px;margin-top:15px}
+  .system-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .system-card>div:last-child{padding:11px 10px 12px}
+  .system-card h3{font-size:9px}
+  .system-card p{font-size:8px;min-height:36px}
+  .system-card button{height:31px;font-size:8px}
+  .process-panel,.area-panel{padding:18px;border-radius:15px}
+  .process-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .process-card{min-height:225px;padding:13px 11px}
+  .process-card:after{display:none!important}
+  .process-icon{width:36px;height:36px;margin:18px 0 13px;transform:scale(.88);transform-origin:left top}
+  .process-card h3{font-size:10px}
+  .process-card p{font-size:8px;line-height:1.55}
+  .process-number{font-size:9px}
+  .vg-modal__content{padding:22px 14px 32px}
+  .vg-popup-grid--package,.vg-popup-grid--system{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vg-popup-card__body{padding:13px}
+  .vg-popup-card__body h3{font-size:11px}
+  .vg-popup-card__body p{font-size:9px;min-height:42px}
+  .vg-popup-meta{font-size:9px}
+  .vg-popup-button{height:33px;min-width:78px;font-size:8px}
+}
+@media (max-width:520px){
+  .advantage-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .advantage-card{min-height:160px;padding:13px 10px}
+  .package-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .system-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .system-card p{display:none}
+  .process-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .process-card{min-height:215px;padding:12px 9px}
+  .process-card p{font-size:7.7px}
+  .process-card h3{font-size:9px}
+  .vg-popup-grid--package,.vg-popup-grid--system{grid-template-columns:1fr}
+}
+/* Quick menu is intentionally mobile-only, matching the final reference layout. */
+.quick-links{display:none}
+@media(max-width:800px){.quick-links{display:flex}}
+
+
+/* === PATCH: System Card DETAIL alignment === */
+.system-card{
+    display:flex;
+    flex-direction:column;
+}
+.system-card > div:last-child{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+.system-card button{
+    align-self:center;
+    margin-top:auto;
+    min-width:106px;
+    height:34px;
+    padding:0 20px;
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:.07em;
+    transition:background .25s ease,border-color .25s ease,transform .25s ease;
+}
+.system-card button:hover{
+    filter:brightness(1.12);
 }
 
-/* Sembunyikan teks dan ikon di dalam tombol */
+
+
+@media (max-width:768px){
+.floating-whatsapp img{width:68px;height:68px;}
+
+  .system-card .detail-btn,
+  .system-card button{
+    width:77px;
+    min-width:77px;
+    height:30px;
+    font-size:10px;
+    font-weight:700;
+    border-radius:10px;
+    padding:0;
+    margin-top:auto;
+    align-self:center;
+  }
+}
+
+
+/* =========================================================
+   VG BOOKING — single visual asset
+   Only Booking controls are restyled; existing WhatsApp links
+   and all other UI remain unchanged.
+   ========================================================= */
+.nav-booking,
+.hero-actions .button--whatsapp,
+.floating-whatsapp__button,
+.vg-wa-button {
+  background-image: url("images/vg-booking.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  color: transparent;
+  overflow: hidden;
+  text-indent: -9999px;
+  box-sizing: border-box;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-booking {
+  width: 150px;
+  height: 38px;
+  min-height: 38px;
+  border-radius: 12px;
+}
+
+.hero-actions .button--whatsapp {
+  width: 220px;
+  height: 48px;
+  min-height: 48px;
+  border-radius: 14px;
+}
+
+.floating-whatsapp__button {
+  width: 220px;
+  height: 48px;
+  min-height: 48px;
+  border-radius: 14px;
+}
+
+.vg-wa-button {
+  width: 220px;
+  height: 50px;
+  min-height: 50px;
+  margin: 24px auto 0;
+  border-radius: 14px;
+  display: block;
+}
+
+.nav-booking .wa-icon,
+.hero-actions .button--whatsapp .wa-icon,
+.floating-whatsapp__button .wa-icon,
 .vg-wa-button .wa-icon,
+.nav-booking span,
+.hero-actions .button--whatsapp span,
+.floating-whatsapp__button span,
 .vg-wa-button span {
   display: none !important;
 }
-/* ===== TAMBAHAN: ZONA INTERAKTIF (Tanpa Arah) ===== */
-.area-zone {
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.15s ease;
+
+@media (min-width: 801px) {
+  .hero-actions .button--whatsapp {
+    width: 230px;
+    height: 50px;
+    min-height: 50px;
+  }
+
+  /* Floating Booking — compact only; all other Booking controls unchanged */
+  .floating-whatsapp__button {
+    width: 160px;
+    height: 40px;
+    min-height: 40px;
+  }
 }
-.area-zone:hover {
-  background: #181b1f;
-  transform: scale(1.01);
+
+@media (max-width: 800px) {
+  .nav-booking {
+    width: 145px;
+    height: 38px;
+    min-height: 38px;
+  }
+
+  .hero-actions .button--whatsapp {
+    width: 220px;
+    height: 48px;
+    min-height: 48px;
+  }
+
+  .vg-wa-button {
+    width: 220px;
+    height: 48px;
+    min-height: 48px;
+  }
 }
-.area-zone:active {
-  transform: scale(0.98);
+
+
+/* =========================================================
+   FLOATING BOOKING VG — emblem icon only
+   Header / hero / card Booking controls remain unchanged.
+   ========================================================= */
+.floating-whatsapp {
+  display: block !important;
+  right: 16px;
+  bottom: 90px;
+  z-index: 450;
 }
+
+.floating-whatsapp__button {
+  display: block !important;
+  width: 90px !important;
+  height: 135px !important;
+  min-width: 90px !important;
+  min-height: 135px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  line-height: 0;
+  overflow: visible;
+}
+
+.floating-whatsapp__button img {
+  display: block;
+  width: 90px;
+  height: 135px;
+  object-fit: contain;
+}
+
+@media (min-width: 801px) {
+  .floating-whatsapp {
+    right: 28px;
+    bottom: 28px;
+  }
+
+  .floating-whatsapp__button {
+    width: 110px !important;
+    height: 165px !important;
+    min-width: 110px !important;
+    min-height: 165px !important;
+  }
+
+  .floating-whatsapp__button img {
+    width: 110px;
+    height: 165px;
+  }
+}
+
+
+/* Floating Booking */
+.floating-booking{
+position:fixed;
+right:20px;
+top:60%;
+width:80px;
+height:80px;
+border-radius:50%;
+box-shadow:0 8px 24px rgba(0,0,0,.25);
+z-index:9999;
+overflow:hidden;
+}
+.floating-booking img{width:100%;height:100%;object-fit:contain;}
+@media(max-width:768px){
+.floating-booking{
+width:72px;
+height:72px;
+right:20px;
+top:auto;
+bottom:80px;
+}
+}
+
+
+/* Floating Booking Override */
+.floating-whatsapp{
+position:fixed!important;
+right:20px!important;
+bottom:80px!important;
+top:auto!important;
+z-index:9999!important;
+}
+.floating-whatsapp__button{
+width:72px!important;
+height:72px!important;
+padding:0!important;
+border-radius:50%!important;
+display:flex!important;
+align-items:center!important;
+justify-content:center!important;
+box-shadow:0 8px 24px rgba(0,0,0,.25)!important;
+overflow:hidden!important;
+}
+.floating-whatsapp__button img{width:100%!important;height:100%!important;object-fit:contain!important;}
+@media(min-width:801px){
+.floating-whatsapp{right:20px!important;bottom:80px!important;}
+}
+
+body.popup-open .floating-whatsapp{display:none!important;}
