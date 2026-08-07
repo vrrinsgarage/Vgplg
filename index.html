@@ -299,5 +299,21 @@
 <script src="popup.js" defer></script>
 <script src="bootstrap.js" defer></script>
 
+<script>
+(function () {
+  function alignFloatingBookNow() {
+    const heroBooking = document.querySelector('.hero-actions .button--whatsapp');
+    const floating = document.querySelector('.floating-whatsapp');
+    if (!heroBooking || !floating) return;
+    const rect = heroBooking.getBoundingClientRect();
+    const floatingHeight = floating.getBoundingClientRect().height;
+    const top = Math.max(0, rect.bottom - floatingHeight);
+    floating.style.setProperty('--book-now-top', top + 'px');
+  }
+  window.addEventListener('load', alignFloatingBookNow, { once: true });
+  window.addEventListener('resize', alignFloatingBookNow);
+})();
+</script>
+
 </body>
 </html>
