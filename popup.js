@@ -64,66 +64,74 @@
       </div>
     </article>`;
 
-  // ===== STACK NAVIGASI =====
-  let popupStack = [];
+  // ===== HISTORY POPUP (BROWSER + INTERNAL) =====
+  // Setiap halaman popup memiliki 1 history entry. Tombol Back HP,
+  // tombol Kembali, ESC, dan tombol X sekarang memakai history yang sama.
   let popupHistoryActive = false;
   let isNavigating = false;
   let isClosing = false;
+  let restoringFromHistory = false;
 
-  // pushState: true hanya untuk buka popup pertama kali
-  const open = (html, pushState = false) => {
-    if (isNavigating) return;
-    isNavigating = true;
-
-    if (content.innerHTML && content.innerHTML !== html) {
-      popupStack.push(content.innerHTML);
-    }
-
+  const renderPopup = (html) => {
     content.innerHTML = html;
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('popup-open');
     content.scrollTop = 0;
+  };
 
-    if (pushState && !popupHistoryActive) {
-      history.pushState({ vgPopup: true }, '', location.href);
+  const closeVisual = () => {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('popup-open');
+    content.innerHTML = '';
+    popupHistoryActive = false;
+  };
+
+  const open = (html, pushState = false) => {
+    if (isNavigating || isClosing) return;
+    isNavigating = true;
+
+    const popupAlreadyOpen = modal.classList.contains('is-open');
+    // Buka pertama kali atau pindah halaman di dalam popup = history baru.
+    // State menyimpan HTML agar popstate bisa mengembalikan halaman tepat.
+    if (!restoringFromHistory && (pushState || popupAlreadyOpen)) {
+      history.pushState({ vgPopup: true, vgHtml: html }, '', location.href);
       popupHistoryActive = true;
     }
+
+    renderPopup(html);
     isNavigating = false;
   };
 
   const goBack = () => {
     if (isNavigating || isClosing) return;
-    isNavigating = true;
 
-    if (popupStack.length > 0) {
-      const previousHtml = popupStack.pop();
-      content.innerHTML = previousHtml;
-      content.scrollTop = 0;
-      isNavigating = false;
+    if (popupHistoryActive && window.history.state?.vgPopup) {
+      history.back();
     } else {
-      isNavigating = false;
-      close();
+      closeVisual();
     }
   };
 
   const close = () => {
     if (isClosing) return;
     isClosing = true;
-    modal.classList.remove('is-open');
-    modal.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('popup-open');
-    popupStack = [];
-    popupHistoryActive = false;
-    // Hapus state history agar tombol back tidak keluar dari web
-    if (window.history.state && window.history.state.vgPopup) {
-      history.replaceState(null, '', location.href);
+
+    // Jangan replaceState: browser harus benar-benar kembali ke entry
+    // sebelum popup dibuka. popstate yang akan menutup visual popup.
+    if (popupHistoryActive && window.history.state?.vgPopup) {
+      history.back();
+    } else {
+      closeVisual();
     }
-    isClosing = false;
+
+    setTimeout(() => {
+      isClosing = false;
+    }, 0);
   };
 
   // ===== RENDER FUNCTIONS =====
-
   function renderPackageRoot() {
     const p = id => find(id);
     const tune = card({
@@ -348,7 +356,7 @@ Terima kasih. 🙏`;
       return;
     }
 
-    // Buka sistem dari card (halaman utama) — ini untuk bagian "Pilih Layanan Sesuai Sistem Mobil Anda"
+    // Buka sistem dari card (halaman utama)
     const systemEl = e.target.closest('[data-open-system]');
     if (systemEl) {
       const isFirstOpen = !modal.classList.contains('is-open');
@@ -356,12 +364,12 @@ Terima kasih. 🙏`;
       return;
     }
 
-    // Navigasi dari tombol aksi (dalam popup)
+    // Navigasi dari tombol aksi (dalam popup).
+    // open() otomatis membuat history entry untuk setiap halaman popup.
     const actionEl = e.target.closest('[data-action]');
     if (!actionEl) return;
     const a = actionEl.dataset.action;
 
-    // Semua navigasi internal TIDAK pakai pushState (false)
     if (a === 'package-root') {
       open(renderPackageRoot(), false);
     } else if (a === 'tune-root') {
@@ -388,14 +396,19 @@ Terima kasih. 🙏`;
   });
 
   // ===== TOMBOL KEMBALI BROWSER (POPSTATE) =====
-  window.addEventListener('popstate', () => {
-    if (popupHistoryActive && modal.classList.contains('is-open')) {
-      goBack();
-      // Jika setelah goBack stack kosong dan popup masih terbuka, tutup
-      if (popupStack.length === 0 && modal.classList.contains('is-open')) {
-        close();
-      }
+  window.addEventListener('popstate', (event) => {
+    const state = event.state;
+
+    if (state?.vgPopup && typeof state.vgHtml === 'string') {
+      restoringFromHistory = true;
+      popupHistoryActive = true;
+      renderPopup(state.vgHtml);
+      restoringFromHistory = false;
+      return;
     }
+
+    // Kembali ke history halaman normal = popup selesai.
+    closeVisual();
   });
 
   // ===== WHATSAPP LINKS =====
@@ -448,18 +461,7 @@ Terima kasih. 🙏`;
   window.openZonePopup = function(zoneNumber) {
     const html = renderZonePopup(zoneNumber);
     const isFirstOpen = !modal.classList.contains('is-open');
-    if (content.innerHTML) {
-      popupStack.push(content.innerHTML);
-    }
-    content.innerHTML = html;
-    modal.classList.add('is-open');
-    modal.setAttribute('aria-hidden', 'false');
-    document.body.classList.add('popup-open');
-    content.scrollTop = 0;
-    if (isFirstOpen && !popupHistoryActive) {
-      history.pushState({ vgPopup: true }, '', location.href);
-      popupHistoryActive = true;
-    }
+    open(html, isFirstOpen);
   };
 
 })();

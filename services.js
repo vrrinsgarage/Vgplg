@@ -1,12 +1,12 @@
 // =========================
 // DATABASE LAYANAN
-// VRRINS GARAGE — TOTAL 145 LAYANAN
+// VRRINS GARAGE — TOTAL 129 LAYANAN
 // =========================
 
 globalThis.services = [
 
   // =========================
-  // VG TUNE PACKAGE (7)
+  // VG TUNE PACKAGE (6) + VG ADD-ON (2)
   // =========================
 
   {
@@ -158,7 +158,7 @@ globalThis.services = [
   },
 
   // =========================
-  // KATEGORI MESIN (LAMA: 5)
+  // KATEGORI MESIN (14)
   // =========================
 
   {
@@ -211,7 +211,7 @@ globalThis.services = [
   }
   ,
   // =========================
-  // KATEGORI PELUMASAN (LAMA: 5)
+  // KATEGORI PELUMASAN (5)
   // =========================
 
   {
@@ -276,7 +276,7 @@ globalThis.services = [
   },
 
   // =========================
-  // KATEGORI BAHAN BAKAR (LAMA: 4)
+  // KATEGORI BAHAN BAKAR (11)
   // =========================
 
   {
@@ -329,7 +329,7 @@ globalThis.services = [
   },
 
   // =========================
-  // KATEGORI SUSPENSI (LAMA: 5)
+  // KATEGORI SUSPENSI (10)
   // =========================
 
   {
@@ -394,7 +394,7 @@ globalThis.services = [
   }
   ,
   // =========================
-  // KATEGORI KEMUDI (LAMA: 5)
+  // KATEGORI KEMUDI (18)
   // =========================
 
   {
@@ -459,7 +459,7 @@ globalThis.services = [
   },
 
   // =========================
-  // KATEGORI REM (LAMA: 5)
+  // KATEGORI REM (19)
   // =========================
 
   {
@@ -524,7 +524,7 @@ globalThis.services = [
   },
 
   // =========================
-  // KATEGORI PENDINGIN (LAMA: 5)
+  // KATEGORI PENDINGIN (13)
   // =========================
 
   {
@@ -589,7 +589,7 @@ globalThis.services = [
   }
   ,
   // =========================
-  // KATEGORI TRANSMISI (LAMA: 5)
+  // KATEGORI TRANSMISI (18)
   // =========================
 
   {
@@ -654,7 +654,7 @@ globalThis.services = [
   },
 
   // =========================
-  // KATEGORI KELISTRIKAN MESIN (LAMA: 5)
+  // KATEGORI KELISTRIKAN MESIN (10)
   // =========================
 
   {
