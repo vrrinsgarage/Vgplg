@@ -97,157 +97,155 @@
     popupStack = [];
     popupHistoryActive = false;
   };
-
   // ===== RENDER FUNCTIONS (semua tombol kembali pakai backButton()) =====
 
-  function renderPackageRoot() {
-    const p = id => find(id);
-    const tune = card({
-      imageSrc: 'images/vg-tune.webp',
-      title: 'VG TUNE',
-      desc: 'Tune up mesin bensin & diesel.',
-      badge: 'POPULER',
-      meta: '2 Jenis Mesin • 8 pilihan paket',
-      action: 'tune-root',
-      button: 'LIHAT PAKET'
-    });
-    return `${head('PAKET PERAWATAN VG', 'LAYANAN VG')}
-      <p class="vg-popup-intro">Pilih paket perawatan sesuai kebutuhan mobilnyo.</p>
-      <div class="vg-popup-grid vg-popup-grid--package">
-        ${card({
-          imageSrc: 'images/vg-check.webp',
-          title: 'VG CHECK',
-          desc: p('vg-check')?.deskripsi || 'Pemeriksaan kondisi kendaraan.',
-          badge: 'REKOMENDASI',
-          meta: 'Rp100.000–Rp150.000 • 30–90 menit',
-          action: 'service:vg-check'
-        })}
-        ${tune}
-        ${card({
-          imageSrc: 'images/vg-brake-service.webp',
-          title: 'VG BRAKE SERVICE',
-          desc: 'Perawatan sistem rem agar pengereman tetap optimal dan aman.',
-          badge: 'POPULER',
-          meta: 'Rp270.000 • 60–120 menit',
-          action: 'service:vg-brake-service'
-        })}
-        ${card({
-          imageSrc: 'images/vg-oil-service.webp',
-          title: 'VG OIL SERVICE',
-          desc: p('vg-oil-service')?.deskripsi || 'Penggantian oli kendaraan.',
-          badge: 'REKOMENDASI',
-          meta: 'Rp50.000–Rp75.000 • 15–30 menit',
-          action: 'service:vg-oil-service'
-        })}
-      </div>`;
-  }
+function renderPackageRoot() {
+  const p = id => find(id);
+  const tune = card({
+    imageSrc: 'images/vg-tune.webp',
+    title: 'VG TUNE',
+    desc: 'Tune up mesin bensin & diesel.',
+    badge: 'POPULER',
+    meta: '2 Jenis Mesin • 8 pilihan paket',
+    action: 'tune-root',
+    button: 'LIHAT PAKET'
+  });
+  return `${head('PAKET PERAWATAN VG', 'LAYANAN VG')}
+    <p class="vg-popup-intro">Pilih paket perawatan sesuai kebutuhan mobilnyo.</p>
+    <div class="vg-popup-grid vg-popup-grid--package">
+      ${card({
+        imageSrc: 'images/vg-check.webp',
+        title: 'VG CHECK',
+        desc: p('vg-check')?.deskripsi || 'Pemeriksaan kondisi kendaraan.',
+        badge: 'REKOMENDASI',
+        meta: 'Rp100.000–Rp150.000 • 30–90 menit',
+        action: 'service:vg-check'
+      })}
+      ${tune}
+      ${card({
+        imageSrc: 'images/vg-brake-service.webp',
+        title: 'VG BRAKE SERVICE',
+        desc: 'Perawatan sistem rem agar pengereman tetap optimal dan aman.',
+        badge: 'POPULER',
+        meta: 'Rp270.000 • 60–120 menit',
+        action: 'service:vg-brake-service'
+      })}
+      ${card({
+        imageSrc: 'images/vg-oil-service.webp',
+        title: 'VG OIL SERVICE',
+        desc: p('vg-oil-service')?.deskripsi || 'Penggantian oli kendaraan.',
+        badge: 'REKOMENDASI',
+        meta: 'Rp50.000–Rp75.000 • 15–30 menit',
+        action: 'service:vg-oil-service'
+      })}
+    </div>`;
+}
 
-  function renderTuneRoot() {
-    return `${head('VG TUNE', 'PAKET PERAWATAN VG')}
-      ${backButton()}
-      <div class="vg-popup-cover">
-        ${image('images/vg-tune.webp', 'VG TUNE')}
-        <div>
-          <h3>VG TUNE</h3>
-          <p>Servis tune untuk kendaraan bensin maupun diesel.</p>
-          <strong>2 Jenis Mesin</strong>
-        </div>
+function renderTuneRoot() {
+  return `${head('VG TUNE', 'PAKET PERAWATAN VG')}
+    ${backButton()}
+    <div class="vg-popup-cover">
+      ${image('images/vg-tune.webp', 'VG TUNE')}
+      <div>
+        <h3>VG TUNE</h3>
+        <p>Servis tune untuk kendaraan bensin maupun diesel.</p>
+        <strong>2 Jenis Mesin</strong>
       </div>
-      <div class="vg-popup-grid">
-        ${card({
-          imageSrc: TUNE_META.bensin.image,
-          title: 'VG TUNE BENSIN',
-          desc: TUNE_META.bensin.desc,
-          meta: '4 Paket',
-          action: 'tune:bensin',
-          button: 'LIHAT PAKET'
-        })}
-        ${card({
-          imageSrc: TUNE_META.diesel.image,
-          title: 'VG TUNE DIESEL',
-          desc: TUNE_META.diesel.desc,
-          meta: '4 Paket',
-          action: 'tune:diesel',
-          button: 'LIHAT PAKET'
-        })}
-      </div>`;
-  }
+    </div>
+    <div class="vg-popup-grid">
+      ${card({
+        imageSrc: TUNE_META.bensin.image,
+        title: 'VG TUNE BENSIN',
+        desc: TUNE_META.bensin.desc,
+        meta: '4 Paket',
+        action: 'tune:bensin',
+        button: 'LIHAT PAKET'
+      })}
+      ${card({
+        imageSrc: TUNE_META.diesel.image,
+        title: 'VG TUNE DIESEL',
+        desc: TUNE_META.diesel.desc,
+        meta: '4 Paket',
+        action: 'tune:diesel',
+        button: 'LIHAT PAKET'
+      })}
+    </div>`;
+}
 
-  function tuneItems(type) {
-    const base = all().filter(s => s.kategori === 'VG TUNE' && (s.id.endsWith(`-${type}`) || s.id === `vg-tune-${type}`));
-    const addon = find(type === 'bensin' ? 'vg-addon-gurah-karbon' : 'vg-addon-diesel-purging');
-    return [...base, ...(addon ? [addon] : [])].slice(0, 4);
-  }
+function tuneItems(type) {
+  const base = all().filter(s => s.kategori === 'VG TUNE' && (s.id.endsWith(`-${type}`) || s.id === `vg-tune-${type}`));
+  const addon = find(type === 'bensin' ? 'vg-addon-gurah-karbon' : 'vg-addon-diesel-purging');
+  return [...base, ...(addon ? [addon] : [])].slice(0, 4);
+}
 
-  function renderTuneList(type) {
-    const m = TUNE_META[type],
-      items = tuneItems(type);
-    return `${head(m.title, 'VG TUNE')}
-      ${backButton()}
-      <div class="vg-popup-cover">
-        ${image(m.image, m.title)}
-        <div>
-          <h3>${esc(m.title)}</h3>
-          <p>${esc(m.desc)}</p>
-          <strong>${items.length} Paket</strong>
-        </div>
+function renderTuneList(type) {
+  const m = TUNE_META[type],
+    items = tuneItems(type);
+  return `${head(m.title, 'VG TUNE')}
+    ${backButton()}
+    <div class="vg-popup-cover">
+      ${image(m.image, m.title)}
+      <div>
+        <h3>${esc(m.title)}</h3>
+        <p>${esc(m.desc)}</p>
+        <strong>${items.length} Paket</strong>
       </div>
-      <div class="vg-popup-grid">
-        ${items.map(s => card({
-          imageSrc: `images/services/${s.id}.webp`,
-          title: s.nama,
-          desc: s.deskripsi || '',
-          badge: s.id.includes('addon') ? 'ADD-ON' : s.id.includes('pro') ? 'PREMIUM' : s.id.includes('plus') ? 'REKOMENDASI' : 'HEMAT',
-          meta: `${esc(s.harga || '-')} • ${esc(s.durasi || '-')}`,
-          action: `service:${s.id}`,
-          button: 'DETAIL'
-        })).join('')}
-      </div>`;
-  }
+    </div>
+    <div class="vg-popup-grid">
+      ${items.map(s => card({
+        imageSrc: `images/services/${s.id}.webp`,
+        title: s.nama,
+        desc: s.deskripsi || '',
+        badge: s.id.includes('addon') ? 'ADD-ON' : s.id.includes('pro') ? 'PREMIUM' : s.id.includes('plus') ? 'REKOMENDASI' : 'HEMAT',
+        meta: `${esc(s.harga || '-')} • ${esc(s.durasi || '-')}`,
+        action: `service:${s.id}`,
+        button: 'DETAIL'
+      })).join('')}
+    </div>`;
+}
 
-  function renderSystemRoot() {
-    const cats = Object.entries(CATEGORY_META);
-    return `${head('LAYANAN BERDASARKAN KONDISI MOBIL ANDA', 'PILIH SISTEM KENDARAAN')}
-      <p class="vg-popup-intro">Pilih bagian mobil yang mengalami keluhan. Kito bantu arahkan ke layanan yang sesuai.</p>
-      <div class="vg-popup-grid vg-popup-grid--system">
-        ${cats.map(([k, m]) => card({
-          imageSrc: m.image,
-          title: m.title,
-          desc: m.desc,
-          meta: `${byCategory(k).length} Layanan`,
-          action: `category:${k}`,
-          button: 'DETAIL'
-        })).join('')}
-      </div>`;
-  }
+function renderSystemRoot() {
+  const cats = Object.entries(CATEGORY_META);
+  return `${head('LAYANAN BERDASARKAN KONDISI MOBIL ANDA', 'PILIH SISTEM KENDARAAN')}
+    <p class="vg-popup-intro">Pilih bagian mobil yang mengalami keluhan. Kito bantu arahkan ke layanan yang sesuai.</p>
+    <div class="vg-popup-grid vg-popup-grid--system">
+      ${cats.map(([k, m]) => card({
+        imageSrc: m.image,
+        title: m.title,
+        desc: m.desc,
+        meta: `${byCategory(k).length} Layanan`,
+        action: `category:${k}`,
+        button: 'DETAIL'
+      })).join('')}
+    </div>`;
+}
 
-  function renderCategory(cat) {
-    const m = CATEGORY_META[cat],
-      items = byCategory(cat);
-    if (!m) return renderSystemRoot();
-    return `${head(m.title, 'LAYANAN BERDASARKAN KONDISI MOBIL ANDA')}
-      ${backButton()}
-      <div class="vg-popup-cover">
-        ${image(m.image, m.title)}
-        <div>
-          <h3>${esc(m.title)}</h3>
-          <p>${esc(m.desc)}</p>
-          <strong>${items.length} Layanan</strong>
-        </div>
+function renderCategory(cat) {
+  const m = CATEGORY_META[cat],
+    items = byCategory(cat);
+  if (!m) return renderSystemRoot();
+  return `${head(m.title, 'LAYANAN BERDASARKAN KONDISI MOBIL ANDA')}
+    ${backButton()}
+    <div class="vg-popup-cover">
+      ${image(m.image, m.title)}
+      <div>
+        <h3>${esc(m.title)}</h3>
+        <p>${esc(m.desc)}</p>
+        <strong>${items.length} Layanan</strong>
       </div>
-      <div class="vg-popup-grid">
-        ${items.map(s => card({
-          imageSrc: `images/services/${s.id}.webp`,
-          title: s.nama,
-          desc: s.deskripsi || '',
-          meta: `${esc(s.harga || '-')} • ${esc(s.durasi || '-')}`,
-          action: `service:${s.id}`,
-          button: 'DETAIL'
-        })).join('')}
-      </div>`;
-  }
-
-  function renderService(id) {
+    </div>
+    <div class="vg-popup-grid">
+      ${items.map(s => card({
+        imageSrc: `images/services/${s.id}.webp`,
+        title: s.nama,
+        desc: s.deskripsi || '',
+        meta: `${esc(s.harga || '-')} • ${esc(s.durasi || '-')}`,
+        action: `service:${s.id}`,
+        button: 'DETAIL'
+      })).join('')}
+    </div>`;
+}
+    function renderService(id) {
     const s = find(id);
     if (!s) return `${head('LAYANAN TIDAK DITEMUKAN')}${backButton()}`;
     const work = arr(s.pekerjaan).map(x => `<li>${esc(x)}</li>`).join('');
@@ -390,8 +388,7 @@ Terima kasih. 🙏`;
     },
     close
   };
-
-  // ===== ZONA POPUP (tetap sama) =====
+    // ===== ZONA POPUP =====
   function renderZonePopup(zoneNumber) {
     if (!window.zonaData) {
       return `<div class="empty-state">Data zona belum dimuat.</div>`;
