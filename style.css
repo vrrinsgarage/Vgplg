@@ -282,12 +282,12 @@ body{background:#050505}
   .system-card .detail-btn,.system-card button{width:77px;min-width:77px;height:30px;font-size:10px;font-weight:700;border-radius:10px;padding:0;margin-top:auto;align-self:center}}
 .nav-booking,.hero-actions .button--whatsapp,.floating-whatsapp__button,.vg-wa-button{background-image:url("images/vg-booking.webp");background-repeat:no-repeat;background-position:center;background-size:cover;background-color:transparent;color:transparent;overflow:hidden;text-indent:-9999px;box-sizing:border-box;border:0;box-shadow:none;padding:0;display:inline-block;vertical-align:middle}
 .nav-booking{width:150px;height:38px;min-height:38px;border-radius:12px}
-.hero-actions .button--whatsapp{width:220px;height:48px;min-height:48px;border-radius:14px}
+.hero-actions .button--whatsapp{width:220px;height:48px;min-height:48px;border-radius:14px;flex:0 0 220px}
 .floating-whatsapp__button{width:220px;height:48px;min-height:48px;border-radius:14px}
 .vg-wa-button{width:220px;height:50px;min-height:50px;margin:24px auto 0;border-radius:14px;display:block}
 .nav-booking .wa-icon,.hero-actions .button--whatsapp .wa-icon,.floating-whatsapp__button .wa-icon,.vg-wa-button .wa-icon,.nav-booking span,.hero-actions .button--whatsapp span,.floating-whatsapp__button span,.vg-wa-button span{display:none!important}
 @media (min-width:801px){.hero-actions .button--whatsapp{width:230px;height:50px;min-height:50px}.floating-whatsapp__button{width:160px;height:40px;min-height:40px}}
-@media (max-width:800px){.nav-booking{width:145px;height:38px;min-height:38px}.hero-actions .button--whatsapp{width:220px;height:48px;min-height:48px}.vg-wa-button{width:220px;height:48px;min-height:48px}}
+@media (max-width:800px){.nav-booking{width:145px;height:38px;min-height:38px}.hero-actions .button--whatsapp{width:220px;height:48px;min-height:48px;flex:0 0 220px}.vg-wa-button{width:220px;height:48px;min-height:48px}}
 .floating-whatsapp{display:block!important;right:16px;bottom:90px;z-index:450}
 .floating-whatsapp__button{display:block!important;width:90px!important;height:135px!important;min-width:90px!important;min-height:135px!important;padding:0!important;margin:0!important;border:0!important;border-radius:0!important;background:transparent!important;background-image:none!important;box-shadow:none!important;line-height:0;overflow:visible}
 .floating-whatsapp__button img{display:block;width:90px;height:135px;object-fit:contain}
@@ -357,7 +357,7 @@ body.popup-open .floating-whatsapp{display:none!important}
   .hero-actions .button--outline{width:100%;flex:0 0 100%;order:3}
 }
 @media (max-width:430px){
-  .hero-actions .button--whatsapp{width:calc(100% - 92px);flex-basis:calc(100% - 92px)}
+  .hero-actions .button--whatsapp{width:100%;min-width:0;max-width:100%;flex:0 0 100%}
   .hero-actions .hero-floating-booking{width:72px;height:72px;min-width:72px;min-height:72px;flex-basis:72px}
   .hero-actions .hero-floating-booking img{width:72px;height:72px}
 }
