@@ -339,3 +339,51 @@ body.popup-open .floating-whatsapp{display:none!important}
 .area-zone:active {
   transform: scale(0.98);
 }
+
+/* ============================================================
+   VRRINS GARAGE — MOBILE BOOK NOW FLOATING
+   Hanya mengatur tombol BOOK NOW floating.
+   VG BOOKING dan bagian lain tidak disentuh.
+   ============================================================ */
+@media (max-width:800px){
+  .floating-whatsapp{
+    position:fixed!important;
+    right:0!important;
+    top:56%!important;
+    bottom:auto!important;
+    left:auto!important;
+    width:80px!important;
+    height:80px!important;
+    min-width:80px!important;
+    min-height:80px!important;
+    z-index:9999!important;
+    display:block!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  .floating-whatsapp__button{
+    display:block!important;
+    width:80px!important;
+    height:80px!important;
+    min-width:80px!important;
+    min-height:80px!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    border-radius:50%!important;
+    background:transparent!important;
+    background-image:none!important;
+    box-shadow:none!important;
+    overflow:hidden!important;
+    line-height:0!important;
+  }
+  .floating-whatsapp__button img{
+    display:block!important;
+    width:80px!important;
+    height:80px!important;
+    min-width:80px!important;
+    min-height:80px!important;
+    object-fit:contain!important;
+    margin:0!important;
+  }
+}
