@@ -339,3 +339,55 @@ body.popup-open .floating-whatsapp{display:none!important}
 .area-zone:active {
   transform: scale(0.98);
 }
+
+
+/* ============================================================
+   TEST: FLOATING BOOK NOW — POSITION ONLY
+   Patokan: sejajar vertikal dengan tombol VG BOOKING di Hero
+   Floating behavior TETAP AKTIF.
+   ============================================================ */
+
+.floating-whatsapp{
+  position:fixed!important;
+  top:57%!important;
+  right:20px!important;
+  bottom:auto!important;
+  z-index:9999!important;
+}
+
+.floating-whatsapp__button{
+  width:72px!important;
+  height:72px!important;
+  min-width:72px!important;
+  min-height:72px!important;
+  padding:0!important;
+  margin:0!important;
+  border-radius:50%!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  overflow:hidden!important;
+  box-shadow:0 8px 24px rgba(0,0,0,.25)!important;
+}
+
+.floating-whatsapp__button img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+}
+
+@media (min-width:801px){
+  .floating-whatsapp{
+    top:57%!important;
+    right:20px!important;
+    bottom:auto!important;
+  }
+}
+
+@media (max-width:800px){
+  .floating-whatsapp{
+    top:57%!important;
+    right:20px!important;
+    bottom:auto!important;
+  }
+}
