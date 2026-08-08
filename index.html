@@ -318,6 +318,7 @@
     var maxTop = Math.max(0, window.innerHeight - h);
 
     floating.style.top = Math.round(Math.max(0, Math.min(top, maxTop))) + 'px';
+    floating.style.visibility = 'visible';
     floating.style.bottom = 'auto';
     floating.style.right = '0px';
     floating.style.left = 'auto';

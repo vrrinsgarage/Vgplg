@@ -295,6 +295,7 @@ body{background:#050505}
    ========================================================= */
 .floating-whatsapp{
   position:fixed!important;
+  visibility:hidden!important;
   top:0;
   right:0;
   bottom:auto!important;
