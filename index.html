@@ -300,19 +300,129 @@
 <script src="bootstrap.js" defer></script>
 
 
+<style id="floating-booking-alignment-test">
+/* V7 — Option 2
+   Initial position is resolved before BOOK NOW is revealed.
+   No fallback position is ever visible. */
+.floating-whatsapp{
+  position:fixed!important;
+  top:var(--vg-booking-floating-top, 0px)!important;
+  bottom:auto!important;
+  z-index:99999!important;
+  display:block!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  margin:0!important;
+  pointer-events:none!important;
+}
+
+@media(max-width:800px){
+  .floating-whatsapp{right:0!important;}
+}
+
+@media(min-width:801px){
+  .floating-whatsapp{right:20px!important;}
+}
+</style>
+
 <script>
 (function(){
-  function revealFloating(){
-    var el = document.querySelector('.floating-whatsapp');
-    if (el) el.style.visibility = 'visible';
-  }
-  window.addEventListener('load', function(){
-    requestAnimationFrame(function(){
-      requestAnimationFrame(revealFloating);
+  'use strict';
+
+  const booking=document.querySelector('.hero-actions .button--whatsapp');
+  const floating=document.querySelector('.floating-whatsapp');
+  if(!booking || !floating) return;
+
+  let lastWidth=window.innerWidth;
+  let raf=0;
+  let revealed=false;
+
+  function calculateAndReveal(){
+    cancelAnimationFrame(raf);
+
+    raf=requestAnimationFrame(function(){
+      requestAnimationFrame(function(){
+
+        const bookingRect=booking.getBoundingClientRect();
+        const floatingHeight=floating.getBoundingClientRect().height || 135;
+
+        const centerY=bookingRect.top + (bookingRect.height / 2);
+        const top=Math.max(0, centerY - (floatingHeight / 2));
+
+        /* Write the final position before making the element visible. */
+        document.documentElement.style.setProperty(
+          '--vg-booking-floating-top',
+          Math.round(top) + 'px'
+        );
+
+        /*
+          Force the browser to acknowledge the final position before reveal.
+          This prevents the fallback top from being painted to the user.
+        */
+        void floating.offsetHeight;
+
+        floating.style.setProperty('visibility','visible','important');
+        floating.style.setProperty('opacity','1','important');
+        floating.style.setProperty('pointer-events','auto','important');
+        revealed=true;
+      });
     });
-  }, {once:true});
+  }
+
+  function initialAlign(){
+    if(document.fonts && document.fonts.ready){
+      document.fonts.ready.then(calculateAndReveal).catch(calculateAndReveal);
+    }else{
+      calculateAndReveal();
+    }
+
+    const img=floating.querySelector('img');
+    if(img && !img.complete){
+      img.addEventListener('load',calculateAndReveal,{once:true});
+    }
+  }
+
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',initialAlign,{once:true});
+  }else{
+    initialAlign();
+  }
+
+  window.addEventListener('load',initialAlign,{once:true,passive:true});
+
+  /*
+    Scroll does NOT recalculate the position.
+    Only an actual width/layout change does.
+  */
+  window.addEventListener('resize',function(){
+    const w=window.innerWidth;
+
+    if(Math.abs(w-lastWidth)>=2){
+      lastWidth=w;
+
+      /*
+        Hide only during a genuine responsive layout change,
+        then calculate the new position and reveal.
+      */
+      if(revealed){
+        floating.style.setProperty('visibility','hidden','important');
+        floating.style.setProperty('opacity','0','important');
+      }
+
+      calculateAndReveal();
+    }
+  },{passive:true});
+
+  window.addEventListener('orientationchange',function(){
+    lastWidth=window.innerWidth;
+
+    floating.style.setProperty('visibility','hidden','important');
+    floating.style.setProperty('opacity','0','important');
+
+    setTimeout(calculateAndReveal,250);
+  },{passive:true});
+
 })();
 </script>
-
 </body>
 </html>
