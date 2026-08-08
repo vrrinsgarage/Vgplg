@@ -330,31 +330,42 @@ Terima kasih. 🙏`;
   }
 
   // ===== STYLE BANNER BOOKING LAYANAN =====
-  // Hanya berlaku untuk tombol booking di Detail Layanan.
+  // Khusus tombol booking pada Detail Layanan. Tidak memengaruhi
+  // VG BOOKING Header/Hero maupun BOOK NOW Floating.
   if (!document.getElementById('vg-service-booking-style')) {
     const style = document.createElement('style');
     style.id = 'vg-service-booking-style';
     style.textContent = `
       .vg-service-booking {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        margin: 20px auto 4px;
-        padding: 0;
-        overflow: hidden;
-        line-height: 0;
-        text-decoration: none;
-        background: transparent;
-        border: 0;
+        display: block !important;
+        position: relative !important;
+        box-sizing: border-box !important;
+        width: 88% !important;
+        max-width: 520px !important;
+        height: auto !important;
+        aspect-ratio: 6.15 / 1 !important;
+        margin: 24px auto 6px !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        border: 0 !important;
+        border-radius: 12px !important;
+        background: transparent !important;
+        line-height: 0 !important;
+        text-decoration: none !important;
+        box-shadow: none !important;
       }
 
       .vg-service-booking__img {
-        display: block;
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        margin: 0 auto;
-        object-fit: contain;
+        display: block !important;
+        position: absolute !important;
+        left: 0 !important;
+        top: 50% !important;
+        width: 100% !important;
+        height: auto !important;
+        max-width: none !important;
+        margin: 0 !important;
+        transform: translateY(-50%) !important;
+        object-fit: contain !important;
       }
 
       .vg-service-booking__fallback {
@@ -362,33 +373,36 @@ Terima kasih. 🙏`;
         align-items: center;
         justify-content: center;
         gap: 8px;
-        min-height: 44px;
+        width: 100%;
+        height: 100%;
         line-height: 1.2;
       }
 
       .vg-service-booking.is-fallback .vg-service-booking__img {
-        display: none;
+        display: none !important;
       }
 
       .vg-service-booking.is-fallback .vg-service-booking__fallback {
-        display: flex;
+        display: flex !important;
       }
 
-      /* Desktop: banner dibuat lebih proporsional dan terpusat. */
+      /* Desktop: cukup besar untuk menjadi CTA, tetapi tidak memenuhi popup. */
       @media (min-width: 769px) {
         .vg-service-booking {
-          width: 76%;
-          max-width: 620px;
-          margin-top: 24px;
+          width: 62% !important;
+          max-width: 560px !important;
+          aspect-ratio: 6.15 / 1 !important;
+          margin-top: 26px !important;
         }
       }
 
-      /* Mobile: pertahankan lebar penuh seperti versi uji coba. */
+      /* Mobile: dibuat dominan tetapi tetap menyisakan ruang kiri-kanan. */
       @media (max-width: 768px) {
         .vg-service-booking {
-          width: 100%;
-          max-width: 100%;
-          margin-top: 20px;
+          width: 88% !important;
+          max-width: 520px !important;
+          aspect-ratio: 6.15 / 1 !important;
+          margin-top: 24px !important;
         }
       }
     `;
