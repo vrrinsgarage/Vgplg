@@ -399,7 +399,7 @@ Terima kasih. 🙏`;
       /* Mobile: dibuat dominan tetapi tetap menyisakan ruang kiri-kanan. */
       @media (max-width: 768px) {
         .vg-service-booking {
-          width: 88% !important;
+          width: 80% !important;
           max-width: 520px !important;
           aspect-ratio: 6.15 / 1 !important;
           margin-top: 24px !important;
