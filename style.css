@@ -339,26 +339,3 @@ body.popup-open .floating-whatsapp{display:none!important}
 .area-zone:active {
   transform: scale(0.98);
 }
-
-
-/* ============================================================
-   FLOATING BOOK NOW — POSISI MENGIKUTI TOMBOL VG BOOKING HERO
-   Hanya posisi yang diubah. Fitur floating dan gambar tetap.
-   ============================================================ */
-.floating-whatsapp{
-  position:fixed !important;
-  right:0 !important;
-  top:auto !important;
-  bottom:var(--book-now-bottom, 0px) !important;
-  z-index:9999 !important;
-}
-
-/* BOOK NOW FINAL POSITION OVERRIDE */
-.floating-whatsapp {
-  position: fixed !important;
-  right: 0 !important;
-  left: auto !important;
-  top: auto !important;
-  bottom: var(--book-now-bottom, 0px) !important;
-  z-index: 9999 !important;
-}
