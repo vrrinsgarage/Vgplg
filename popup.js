@@ -323,9 +323,74 @@ Terima kasih. 🙏`;
         <h4>GALERI HASIL PEKERJAAN</h4>
         <div class="vg-gallery-grid">${gallery}</div>
       </div>
-      <a class="vg-wa-button" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}">
-        <span class="wa-icon"></span> BOOKING WHATSAPP
+      <a class="vg-wa-button vg-service-booking-banner" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}" aria-label="Booking layanan ${esc(s.nama)}">
+        <img class="vg-service-booking-banner__img" src="images/vg-booking.webp" alt="Booking layanan ini" loading="lazy" onerror="this.closest('.vg-service-booking-banner')?.classList.add('is-fallback')">
+        <span class="vg-service-booking-banner__fallback"><span class="wa-icon"></span> BOOKING WHATSAPP</span>
       </a>`;
+  }
+
+  // ===== STYLE KHUSUS BANNER BOOKING DETAIL LAYANAN =====
+  // Hanya memengaruhi CTA booking di renderService(); tombol booking lain tidak disentuh.
+  if (!document.getElementById('vg-service-booking-banner-style')) {
+    const style = document.createElement('style');
+    style.id = 'vg-service-booking-banner-style';
+    style.textContent = `
+      .vg-service-booking-banner {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto 4px;
+        padding: 0;
+        overflow: hidden;
+        line-height: 0;
+        text-decoration: none;
+        background: transparent;
+        border: 0;
+      }
+
+      .vg-service-booking-banner__img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin: 0 auto;
+        object-fit: contain;
+      }
+
+      .vg-service-booking-banner__fallback {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 44px;
+        line-height: 1.2;
+      }
+
+      .vg-service-booking-banner.is-fallback .vg-service-booking-banner__img {
+        display: none;
+      }
+
+      .vg-service-booking-banner.is-fallback .vg-service-booking-banner__fallback {
+        display: flex;
+      }
+
+      @media (min-width: 769px) {
+        .vg-service-booking-banner {
+          width: 76%;
+          max-width: 620px;
+          margin-top: 24px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .vg-service-booking-banner {
+          width: 100%;
+          max-width: 100%;
+          margin-top: 20px;
+        }
+      }
+    `;
+    document.head.appendChild(style);
   }
 
   // ===== EVENT LISTENER =====
