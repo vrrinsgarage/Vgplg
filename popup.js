@@ -323,19 +323,19 @@ Terima kasih. 🙏`;
         <h4>GALERI HASIL PEKERJAAN</h4>
         <div class="vg-gallery-grid">${gallery}</div>
       </div>
-      <a class="vg-wa-button vg-service-booking-banner" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}" aria-label="Booking layanan ${esc(s.nama)}">
-        <img class="vg-service-booking-banner__img" src="images/vg-booking.webp" alt="Booking layanan ini" loading="lazy" onerror="this.closest('.vg-service-booking-banner')?.classList.add('is-fallback')">
-        <span class="vg-service-booking-banner__fallback"><span class="wa-icon"></span> BOOKING WHATSAPP</span>
+      <a class="vg-wa-button vg-service-booking" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}" aria-label="Booking layanan ${esc(s.nama)}">
+        <img class="vg-service-booking__img" src="images/vg-booking-layanan.webp" alt="Booking layanan ini" loading="lazy" onerror="this.closest('.vg-service-booking')?.classList.add('is-fallback')">
+        <span class="vg-service-booking__fallback"><span class="wa-icon"></span> BOOKING WHATSAPP</span>
       </a>`;
   }
 
-  // ===== STYLE KHUSUS BANNER BOOKING DETAIL LAYANAN =====
-  // Hanya memengaruhi CTA booking di renderService(); tombol booking lain tidak disentuh.
-  if (!document.getElementById('vg-service-booking-banner-style')) {
+  // ===== STYLE BANNER BOOKING LAYANAN =====
+  // Hanya berlaku untuk tombol booking di Detail Layanan.
+  if (!document.getElementById('vg-service-booking-style')) {
     const style = document.createElement('style');
-    style.id = 'vg-service-booking-banner-style';
+    style.id = 'vg-service-booking-style';
     style.textContent = `
-      .vg-service-booking-banner {
+      .vg-service-booking {
         display: block;
         width: 100%;
         max-width: 100%;
@@ -348,7 +348,7 @@ Terima kasih. 🙏`;
         border: 0;
       }
 
-      .vg-service-booking-banner__img {
+      .vg-service-booking__img {
         display: block;
         width: 100%;
         height: auto;
@@ -357,7 +357,7 @@ Terima kasih. 🙏`;
         object-fit: contain;
       }
 
-      .vg-service-booking-banner__fallback {
+      .vg-service-booking__fallback {
         display: none;
         align-items: center;
         justify-content: center;
@@ -366,24 +366,26 @@ Terima kasih. 🙏`;
         line-height: 1.2;
       }
 
-      .vg-service-booking-banner.is-fallback .vg-service-booking-banner__img {
+      .vg-service-booking.is-fallback .vg-service-booking__img {
         display: none;
       }
 
-      .vg-service-booking-banner.is-fallback .vg-service-booking-banner__fallback {
+      .vg-service-booking.is-fallback .vg-service-booking__fallback {
         display: flex;
       }
 
+      /* Desktop: banner dibuat lebih proporsional dan terpusat. */
       @media (min-width: 769px) {
-        .vg-service-booking-banner {
+        .vg-service-booking {
           width: 76%;
           max-width: 620px;
           margin-top: 24px;
         }
       }
 
+      /* Mobile: pertahankan lebar penuh seperti versi uji coba. */
       @media (max-width: 768px) {
-        .vg-service-booking-banner {
+        .vg-service-booking {
           width: 100%;
           max-width: 100%;
           margin-top: 20px;
