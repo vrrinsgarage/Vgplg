@@ -298,25 +298,7 @@
 <script src="services.js" defer></script>
 <script src="popup.js" defer></script>
 <script src="bootstrap.js" defer></script>
-<script>
-(function(){
-  function align(){
-    var anchor=document.querySelector(".hero-actions .button--whatsapp");
-    var float=document.querySelector(".floating-whatsapp");
-    if(!anchor||!float) return;
-    var r=anchor.getBoundingClientRect();
-    var b=float.getBoundingClientRect();
-    var top=r.top + (r.height/2) - (b.height/2);
-    var max=Math.max(0, window.innerHeight-b.height);
-    float.style.top=Math.max(0,Math.min(top,max))+"px";
-    float.style.bottom="auto";
-  }
-  function boot(){requestAnimationFrame(function(){requestAnimationFrame(align);});}
-  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",boot); else boot();
-  window.addEventListener("resize", function(){ if(window.innerWidth!==window._vgLastW){window._vgLastW=window.innerWidth; align();}}, {passive:true});
-  window.addEventListener("orientationchange", function(){setTimeout(align,150);},{passive:true});
-})();
-</script>
+
 <script>
 (function () {
   'use strict';
