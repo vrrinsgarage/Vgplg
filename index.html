@@ -7,6 +7,7 @@
   <meta name="description" content="VRRINS GARAGE — servis mobil rumahan dan mekanik panggilan khusus wilayah Palembang.">
   <title>VRRINS GARAGE | Servis Mobil di Rumah Palembang</title>
   <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="area-v2-hybrid.css">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
@@ -208,7 +209,17 @@
         <h2>Area Layanan <span class="text-accent">VRRINS GARAGE</span></h2>
         <p>Zona layanan disesuaikan dengan jarak dari titik operasional.</p>
       </div>
-      <div class="area-map"><img src="images/area-map.webp" alt="Peta wilayah operasional" loading="lazy"></div>
+      <div class="area-v2-map" aria-label="Peta interaktif area layanan VRRINS GARAGE">
+        <img src="images/area-map.webp" alt="Peta wilayah operasional VRRINS GARAGE" loading="lazy">
+        <div class="area-v2-map__hint">🗺️ KETUK AREA PADA PETA — KONSEP BARU</div>
+        <div class="area-v2-map__overlay">
+          <button class="area-v2-map__zone area-v2-map__zone--3" type="button" data-map-zone="3" aria-label="Buka Area Layanan V2 zona lebih dari 15 kilometer"><span>&gt;15 KM</span></button>
+          <button class="area-v2-map__zone area-v2-map__zone--2" type="button" data-map-zone="2" aria-label="Buka Area Layanan V2 zona 8 sampai 15 kilometer"><span>8–15 KM</span></button>
+          <button class="area-v2-map__zone area-v2-map__zone--1" type="button" data-map-zone="1" aria-label="Buka Area Layanan V2 zona 0 sampai 8 kilometer"><span>0–8 KM</span></button>
+          <div class="area-v2-map__garage" aria-hidden="true">🏠<small>VRRINS GARAGE</small></div>
+        </div>
+      </div>
+      <div class="area-v2-hint-row">👆 <span><strong>Peta = sistem baru.</strong> Tekan lingkaran hijau, kuning, atau merah untuk melihat detail area, cek lokasi, dan membuka Google Maps.</span></div>
       <div class="area-zones">
         <div class="area-zone" data-zone="1" role="button" tabindex="0" aria-label="Lihat daftar perumahan zona 0-8 km">
           <span class="zone-dot zone-dot--green"></span>
@@ -286,6 +297,13 @@
   </a>
 </div>
 
+<div class="area-v2-modal" id="area-v2-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="area-v2-modal-title">
+  <div class="area-v2-modal__dialog">
+    <button class="area-v2-modal__close" type="button" data-area-v2-close aria-label="Tutup">×</button>
+    <div id="area-v2-modal-content"></div>
+  </div>
+</div>
+
 <div class="vg-modal" id="vg-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="vg-modal-title">
   <div class="vg-modal__backdrop" data-popup-close></div>
   <div class="vg-modal__dialog">
@@ -298,6 +316,7 @@
 <script src="services.js" defer></script>
 <script src="popup.js" defer></script>
 <script src="bootstrap.js" defer></script>
+<script src="area-layanan-v2-hybrid.js" defer></script>
 
 
 <!-- =========================================================
