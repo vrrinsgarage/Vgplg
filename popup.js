@@ -389,7 +389,7 @@ Terima kasih. 🙏`;
       /* Desktop: cukup besar untuk menjadi CTA, tetapi tidak memenuhi popup. */
       @media (min-width: 769px) {
         .vg-service-booking {
-          width: 62% !important;
+          width: 58% !important;
           max-width: 560px !important;
           aspect-ratio: 6.15 / 1 !important;
           margin-top: 26px !important;
@@ -399,7 +399,7 @@ Terima kasih. 🙏`;
       /* Mobile: dibuat dominan tetapi tetap menyisakan ruang kiri-kanan. */
       @media (max-width: 768px) {
         .vg-service-booking {
-          width: 80% !important;
+          width: 65% !important;
           max-width: 520px !important;
           aspect-ratio: 6.15 / 1 !important;
           margin-top: 24px !important;
