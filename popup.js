@@ -287,12 +287,14 @@
     const note = s.catatan || 'Estimasi biaya dapat berubah sesuai kondisi kendaraan. Pekerjaan tambahan akan dikonfirmasi terlebih dahulu.';
     const gallery = [1, 2, 3].map(n => image(`images/gallery/${s.id}-${n}.webp`, `${s.nama} ${n}`)).join('');
 
-    const locationBlock = `
-      <div class="vg-location-container" id="vg-location-container">
-        <button class="vg-location-check" type="button" data-service-id="${esc(s.id)}" data-service-name="${esc(s.nama)}">
-          📍 CEK LOKASI SAYA
+    // --- GANTI BAGIAN BOOKING LAMA DENGAN SISTEM LOKASI ---
+    const locationContainer = `
+      <div id="vg-location-container" class="vg-location-container">
+        <button class="vg-location-check" type="button" data-service-id="${s.id}" data-service-name="${esc(s.nama)}" aria-label="Cek lokasi saya">
+          <img src="images/cek-lokasi-saya.webp" alt="Cek Lokasi Saya" loading="lazy">
         </button>
-      </div>`;
+      </div>
+    `;
 
     return `${head(s.nama, s.kategori)}
       ${backButton()}
@@ -322,24 +324,16 @@
         <h4>GALERI HASIL PEKERJAAN</h4>
         <div class="vg-gallery-grid">${gallery}</div>
       </div>
-      ${locationBlock}`;
+      ${locationContainer}
+    `;
   }
 
-  document.addEventListener('click', e => {
-    const locationButton = e.target.closest('.vg-location-check');
-    if (locationButton) {
-      e.preventDefault();
-      const serviceName = locationButton.dataset.serviceName || '';
-      const serviceId = locationButton.dataset.serviceId || '';
-      if (window.VGLocation && typeof window.VGLocation.checkLocation === 'function') {
-        window.VGLocation.checkLocation(serviceName, serviceId);
-      } else {
-        const container = document.getElementById('vg-location-container');
-        if (container) container.innerHTML = '<div class="vg-location-error">⚠️ Layanan lokasi belum siap. Silakan coba lagi.</div>';
-      }
-      return;
-    }
+  // ===== STYLE BANNER BOOKING LAYANAN (sudah ada di CSS) =====
+  // (tidak perlu ditambahkan lagi)
 
+  // ===== EVENT LISTENER =====
+
+  document.addEventListener('click', e => {
     // Tutup popup (X atau backdrop)
     if (e.target.closest('[data-popup-close]')) {
       close();
@@ -376,23 +370,37 @@
     // Navigasi dari tombol aksi (dalam popup).
     // open() otomatis membuat history entry untuk setiap halaman popup.
     const actionEl = e.target.closest('[data-action]');
-    if (!actionEl) return;
-    const a = actionEl.dataset.action;
+    if (actionEl) {
+      const a = actionEl.dataset.action;
 
-    if (a === 'package-root') {
-      open(renderPackageRoot(), false);
-    } else if (a === 'tune-root') {
-      open(renderTuneRoot(), false);
-    } else if (a === 'system-root') {
-      open(renderSystemRoot(), false);
-    } else if (a.startsWith('tune:')) {
-      open(renderTuneList(a.split(':')[1]), false);
-    } else if (a.startsWith('category:')) {
-      open(renderCategory(a.substring(9)), false);
-    } else if (a.startsWith('service:')) {
-      const parts = a.split(':');
-      const id = parts[1];
-      open(renderService(id), false);
+      if (a === 'package-root') {
+        open(renderPackageRoot(), false);
+      } else if (a === 'tune-root') {
+        open(renderTuneRoot(), false);
+      } else if (a === 'system-root') {
+        open(renderSystemRoot(), false);
+      } else if (a.startsWith('tune:')) {
+        open(renderTuneList(a.split(':')[1]), false);
+      } else if (a.startsWith('category:')) {
+        open(renderCategory(a.substring(9)), false);
+      } else if (a.startsWith('service:')) {
+        const parts = a.split(':');
+        const id = parts[1];
+        open(renderService(id), false);
+      }
+      return;
+    }
+
+    // --- TAMBAHAN: CEK LOKASI SAYA ---
+    const checkBtn = e.target.closest('.vg-location-check');
+    if (checkBtn) {
+      e.preventDefault();
+      const serviceId = checkBtn.dataset.serviceId;
+      const serviceName = checkBtn.dataset.serviceName;
+      if (window.VGLocation) {
+        window.VGLocation.checkLocation(serviceName, serviceId);
+      }
+      return;
     }
   });
 
