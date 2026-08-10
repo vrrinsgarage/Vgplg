@@ -3162,21 +3162,25 @@ body.popup-open .floating-whatsapp {
 }
 
 .vg-location-booking {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 320px;
-  min-height: 48px;
-  margin: 12px auto 0;
-  padding: 12px 20px;
-  border-radius: 10px;
-  background: var(--green);
-  color: #001b0b;
-  font-size: 13px;
-  font-weight: 900;
-  text-decoration: none;
-  transition: transform var(--ease), filter var(--ease);
+  display: block !important;
+  width: 242px !important;
+  margin: 12px auto 0 !important;
+}
+
+@media (max-width: 800px) {
+  .vg-location-check,
+  .vg-location-booking {
+    width: 190px !important;
+    max-width: 190px !important;
+  }
+}
+
+@media (min-width: 801px) {
+  .vg-location-check,
+  .vg-location-booking {
+    width: 242px !important;
+    max-width: 242px !important;
+  }
 }
 
 .vg-location-booking:hover {
@@ -3221,22 +3225,4 @@ body.popup-open .floating-whatsapp {
   object-fit: fill;
   object-position: center;
   pointer-events: none;
-}
-
-
-/* ===== VG LOCATION BUTTON RESPONSIVE SIZE ===== */
-/* Desktop: +10% from the existing 220px width */
-@media (min-width: 801px) {
-  .vg-location-check,
-  .vg-location-booking {
-    width: 242px !important;
-  }
-}
-
-/* Mobile: -10% from the existing 220px width */
-@media (max-width: 800px) {
-  .vg-location-check,
-  .vg-location-booking {
-    width: 198px !important;
-  }
 }
