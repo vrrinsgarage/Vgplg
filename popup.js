@@ -323,6 +323,15 @@ Terima kasih. 🙏`;
         <h4>GALERI HASIL PEKERJAAN</h4>
         <div class="vg-gallery-grid">${gallery}</div>
       </div>
+      <div class="vg-location-check" data-location-service-id="${esc(s.id)}" data-location-service-name="${esc(s.nama)}">
+        <div class="vg-location-check__head">
+          <span class="vg-popup-label">ZONA &amp; BIAYA TRANSPORTASI</span>
+          <h4>Cek Lokasi Sebelum Booking</h4>
+          <p>Gunakan lokasi Anda saat ini untuk menghitung zona layanan dan estimasi biaya transportasi.</p>
+        </div>
+        <button type="button" class="vg-location-check__button" data-location-check>📍 CEK LOKASI SAYA</button>
+        <div class="vg-location-check__result" data-location-result hidden></div>
+      </div>
       <a class="vg-wa-button vg-service-booking" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}" aria-label="Booking layanan ${esc(s.nama)}">
         <img class="vg-service-booking__img" src="images/vg-booking-layanan.webp" alt="Booking layanan ini" loading="lazy" onerror="this.closest('.vg-service-booking')?.classList.add('is-fallback')">
         <span class="vg-service-booking__fallback"><span class="wa-icon"></span> BOOKING WHATSAPP</span>
