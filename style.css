@@ -757,7 +757,6 @@ h3 {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 30px;
-  min-height: 620px;
 }
 
 .process-panel .section-heading,
@@ -2597,9 +2596,6 @@ body {
     padding: 18px;
     border-radius: 15px;
   }
-  .area-panel {
-    min-height: 690px;
-  }
   .process-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
@@ -3094,11 +3090,14 @@ body.popup-open .floating-whatsapp {
 .vg-location-area {
   margin-top: 14px;
   text-align: center;
-  padding-bottom: 0;
+  /* Reserve the full open-state space from the start.
+     This keeps the AREA LAYANAN panel and FAQ in one fixed position. */
+  height: 320px;
+  box-sizing: border-box;
 }
 
 .vg-location-area.is-open {
-  padding-bottom: 0;
+  /* Intentionally no height change when opened. */
 }
 
 .vg-location-container {
@@ -3227,8 +3226,8 @@ body.popup-open .floating-whatsapp {
 
 /* VG LOCATION CTA SIZE — approved final sizes only */
 @media (max-width: 800px) {
-  .vg-location-area.is-open {
-    padding-bottom: 0;
+  .vg-location-area {
+    height: 290px;
   }
 
   .vg-location-check,
