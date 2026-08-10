@@ -34,7 +34,7 @@ Terima kasih. 🙏`;
     btn.target = '_blank';
     btn.rel = 'noopener';
     btn.setAttribute('aria-label', 'Booking layanan ini');
-    btn.innerHTML = '<img src="images/booking-layanan-ini.webp" alt="Booking Layanan Ini" loading="lazy">';
+    btn.innerHTML = '<img src="images/vg-booking-v1.webp" alt="Booking Layanan Ini" loading="lazy">';
     return btn;
   };
 
