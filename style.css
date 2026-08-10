@@ -3222,3 +3222,21 @@ body.popup-open .floating-whatsapp {
   object-position: center;
   pointer-events: none;
 }
+
+
+/* ===== VG LOCATION BUTTON RESPONSIVE SIZE ===== */
+/* Desktop: +10% from the existing 220px width */
+@media (min-width: 801px) {
+  .vg-location-check,
+  .vg-location-booking {
+    width: 242px !important;
+  }
+}
+
+/* Mobile: -10% from the existing 220px width */
+@media (max-width: 800px) {
+  .vg-location-check,
+  .vg-location-booking {
+    width: 198px !important;
+  }
+}
