@@ -3091,11 +3091,6 @@ body.popup-open .floating-whatsapp {
   margin-top: 14px;
   text-align: center;
   padding-bottom: 0;
-  transition: padding-bottom var(--ease);
-}
-
-.vg-location-area.is-open {
-  padding-bottom: 28px;
 }
 
 .vg-location-container {
@@ -3224,12 +3219,19 @@ body.popup-open .floating-whatsapp {
 
 /* VG LOCATION CTA SIZE — approved final sizes only */
 @media (max-width: 800px) {
-  .vg-location-area.is-open {
-    padding-bottom: 24px;
-  }
-
   .vg-location-check,
   .vg-location-booking {
     max-width: 190px;
   }
+}
+
+
+/* ===== FINAL AREA → FAQ SPACING ===== */
+/* Keep the FAQ close to the area panel; location results stay inside the panel. */
+.process-area-section {
+  padding-bottom: 0 !important;
+}
+
+.faq-section {
+  padding-top: 24px !important;
 }
