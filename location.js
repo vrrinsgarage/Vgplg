@@ -175,4 +175,37 @@ Terima kasih. 🙏`;
       }
     }
   };
+
+  const initLocationToggle = () => {
+    const button = document.getElementById('vg-location-check');
+    const container = document.getElementById(CONTAINER_ID);
+    const area = button?.closest('.vg-location-area');
+
+    if (!button || !container || !area) return;
+
+    container.hidden = true;
+
+    button.addEventListener('click', async () => {
+      const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+      if (isOpen) {
+        button.setAttribute('aria-expanded', 'false');
+        area.classList.remove('is-open');
+        container.hidden = true;
+        return;
+      }
+
+      button.setAttribute('aria-expanded', 'true');
+      area.classList.add('is-open');
+      container.hidden = false;
+
+      await window.VGLocation.checkLocation('servis mobil');
+    });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLocationToggle, { once: true });
+  } else {
+    initLocationToggle();
+  }
 })();
