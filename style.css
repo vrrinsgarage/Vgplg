@@ -887,7 +887,13 @@ h3 {
 }
 
 /* ===== FAQ ===== */
+/* Keep only a small gap after AREA LAYANAN. */
+#alur-kerja {
+  padding-bottom: 0;
+}
+
 .faq-section {
+  padding-top: 24px;
   background: #08090a;
 }
 
@@ -3090,15 +3096,10 @@ body.popup-open .floating-whatsapp {
 .vg-location-area {
   margin-top: 14px;
   text-align: center;
-  /* Reserve the full open-state space from the start.
-     This keeps the AREA LAYANAN panel and FAQ in one fixed position. */
-  height: 320px;
-  box-sizing: border-box;
+  padding-bottom: 0;
+  transition: padding-bottom var(--ease);
 }
 
-.vg-location-area.is-open {
-  /* Intentionally no height change when opened. */
-}
 
 .vg-location-container {
   width: 100%;
@@ -3226,10 +3227,6 @@ body.popup-open .floating-whatsapp {
 
 /* VG LOCATION CTA SIZE — approved final sizes only */
 @media (max-width: 800px) {
-  .vg-location-area {
-    height: 290px;
-  }
-
   .vg-location-check,
   .vg-location-booking {
     max-width: 190px;
