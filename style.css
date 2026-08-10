@@ -3188,3 +3188,37 @@ body.popup-open .floating-whatsapp {
   outline: 2px solid #fff;
   outline-offset: 3px;
 }
+
+
+/* ===== VG LOCATION CTA IMAGES ===== */
+.vg-location-check {
+  position: relative;
+  overflow: hidden;
+}
+
+.vg-location-check img {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+}
+
+.vg-location-booking {
+  position: relative;
+  overflow: hidden;
+}
+
+.vg-location-booking img {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+}

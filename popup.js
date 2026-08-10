@@ -290,8 +290,8 @@
     // --- GANTI BAGIAN BOOKING LAMA DENGAN SISTEM LOKASI ---
     const locationContainer = `
       <div id="vg-location-container" class="vg-location-container">
-        <button class="vg-location-check" type="button" data-service-id="${s.id}" data-service-name="${esc(s.nama)}">
-          📍 CEK LOKASI SAYA
+        <button class="vg-location-check" type="button" data-service-id="${s.id}" data-service-name="${esc(s.nama)}" aria-label="Cek lokasi saya">
+          <img src="images/cek-lokasi-saya.webp" alt="Cek Lokasi Saya" loading="lazy">
         </button>
       </div>
     `;

@@ -33,7 +33,8 @@ Terima kasih. 🙏`;
     )}`;
     btn.target = '_blank';
     btn.rel = 'noopener';
-    btn.textContent = '📱 BOOKING LAYANAN INI';
+    btn.setAttribute('aria-label', 'Booking layanan ini');
+    btn.innerHTML = '<img src="images/booking-layanan-ini.webp" alt="Booking Layanan Ini" loading="lazy">';
     return btn;
   };
 
