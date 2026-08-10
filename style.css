@@ -3086,17 +3086,10 @@ body.popup-open .floating-whatsapp {
   display: none !important;
 }
 
-/* ===== SISTEM LOKASI ===== */
-.vg-location-area {
-  margin-top: 14px;
-  text-align: center;
-  padding-bottom: 0;
-}
-
+/* ===== SISTEM LOKASI DI POPUP ===== */
 .vg-location-container {
-  width: 100%;
-  margin-top: 20px;
-  padding: 20px 0 0;
+  margin-top: 0;
+  padding-top: 0;
   border-top: 1px solid var(--border);
   text-align: center;
 }
@@ -3107,36 +3100,27 @@ body.popup-open .floating-whatsapp {
   justify-content: center;
   width: 100%;
   max-width: 242px;
-  aspect-ratio: 1536 / 377;
-  min-height: 0;
-  padding: 0;
+  min-height: 48px;
+  padding: 12px 24px;
   border: 0;
   border-radius: 10px;
-  background: transparent;
+  background: var(--red);
   color: #fff;
   font: inherit;
+  font-size: 15px;
+  font-weight: 700;
   cursor: pointer;
-  transition: transform var(--ease), filter var(--ease);
-  overflow: hidden;
+  transition: background 0.2s, transform 0.2s;
 }
 
 .vg-location-check:hover {
+  background: #f01515;
   transform: translateY(-1px);
-  filter: brightness(1.05);
 }
 
 .vg-location-check:focus-visible {
   outline: 2px solid #fff;
   outline-offset: 3px;
-}
-
-.vg-location-check img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  object-position: center;
-  pointer-events: none;
 }
 
 .vg-location-loading {
@@ -3148,7 +3132,7 @@ body.popup-open .floating-whatsapp {
 .vg-location-result {
   margin-top: 0;
   padding: 16px;
-  background: var(--surface-2);
+  background: var(--surface-card);
   border: 1px solid var(--border);
   border-radius: 12px;
   text-align: left;
@@ -3183,19 +3167,16 @@ body.popup-open .floating-whatsapp {
   justify-content: center;
   width: 100%;
   max-width: 242px;
-  aspect-ratio: 1536 / 377;
-  min-height: 0;
-  margin: 14px auto 0;
-  padding: 0;
+  min-height: 48px;
+  margin: 12px auto 0;
+  padding: 12px 20px;
   border-radius: 10px;
-  background: transparent;
+  background: var(--green);
   color: #001b0b;
   font-size: 13px;
   font-weight: 900;
   text-decoration: none;
   transition: transform var(--ease), filter var(--ease);
-  overflow: hidden;
-  position: relative;
 }
 
 .vg-location-booking:hover {
@@ -3208,14 +3189,40 @@ body.popup-open .floating-whatsapp {
   outline-offset: 3px;
 }
 
-.vg-location-booking img {
+
+/* ===== VG LOCATION CTA IMAGES ===== */
+.vg-location-check {
+  position: relative;
+  overflow: hidden;
+}
+
+.vg-location-check img {
   display: block;
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: fill;
   object-position: center;
   pointer-events: none;
 }
+
+.vg-location-booking {
+  position: relative;
+  overflow: hidden;
+}
+
+.vg-location-booking img {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+  pointer-events: none;
+}
+
 
 /* VG LOCATION CTA SIZE — approved final sizes only */
 @media (max-width: 800px) {
@@ -3226,12 +3233,13 @@ body.popup-open .floating-whatsapp {
 }
 
 
-/* ===== FINAL AREA → FAQ SPACING ===== */
-/* Keep the FAQ close to the area panel; location results stay inside the panel. */
-.process-area-section {
-  padding-bottom: 0 !important;
+/* ===== AREA LAYANAN -> FAQ: small, consistent gap ===== */
+.area-panel + .faq-section {
+  margin-top: 24px;
 }
 
-.faq-section {
-  padding-top: 24px !important;
+@media (max-width: 800px) {
+  .area-panel + .faq-section {
+    margin-top: 24px;
+  }
 }
