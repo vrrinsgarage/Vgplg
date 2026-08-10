@@ -1,131 +1,177 @@
-(function() {
+(() => {
   'use strict';
 
-  // GANTI dengan URL Cloudflare Worker Anda
-  const WORKER_URL = 'https://location-checker.your-subdomain.workers.dev';
+  const WORKER_URL = 'https://layanan-location-api.vgplg003.workers.dev/';
+  const WA_NUMBER = '62895622499262';
+  const CONTAINER_ID = 'vg-location-container';
+
+  const bookingMessage = (serviceName, locationData = null) => {
+    let msg = `Halo, kak. 👋
+
+Biso bantu jadwalkan booking?
+
+Aku nak booking layanan ${serviceName}.`;
+
+    if (locationData) {
+      msg += `
+
+Jarak lokasi saya: ${locationData.jarakKm} km.
+Zona layanan: Zona ${locationData.zona}.`;
+    }
+
+    msg += `
+
+Terima kasih. 🙏`;
+    return msg;
+  };
+
+  const createBooking = (serviceName, locationData = null) => {
+    const btn = document.createElement('a');
+    btn.className = 'vg-location-booking';
+    btn.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
+      bookingMessage(serviceName, locationData)
+    )}`;
+    btn.target = '_blank';
+    btn.rel = 'noopener';
+    btn.textContent = '📱 BOOKING LAYANAN INI';
+    return btn;
+  };
+
+  const setError = (container, message, serviceName, serviceId) => {
+    container.innerHTML = '';
+
+    const error = document.createElement('div');
+    error.className = 'vg-location-error';
+    error.textContent = message;
+    container.appendChild(error);
+
+    container.appendChild(createBooking(serviceName));
+  };
+
+  const validNumber = value => typeof value === 'number' && Number.isFinite(value);
 
   window.VGLocation = {
-    containerId: 'vg-location-container',
+    containerId: CONTAINER_ID,
 
-    // Fungsi utama: dipanggil dari popup
     checkLocation: async function(serviceName, serviceId) {
       const container = document.getElementById(this.containerId);
+
       if (!container) {
         console.error('Container #vg-location-container tidak ditemukan');
         return;
       }
 
-      // Reset tampilan
       container.innerHTML = '<div class="vg-location-loading">⏳ Mengakses lokasi...</div>';
 
-      // Cek dukungan geolokasi
       if (!navigator.geolocation) {
-        this.showError(container, 'Browser tidak mendukung geolokasi.');
-        this.enableBooking(container, serviceName, serviceId);
+        setError(
+          container,
+          '⚠️ Posisi Anda tidak tersedia. Anda tetap bisa melakukan booking.',
+          serviceName,
+          serviceId
+        );
         return;
       }
 
       try {
-        // Minta posisi
         const position = await new Promise((resolve, reject) => {
           navigator.geolocation.getCurrentPosition(resolve, reject, {
             enableHighAccuracy: true,
             timeout: 10000,
-            maximumAge: 60000,
+            maximumAge: 60000
           });
         });
 
-        const { latitude, longitude } = position.coords;
+        const latitude = position?.coords?.latitude;
+        const longitude = position?.coords?.longitude;
 
-        // Kirim ke Worker
+        if (!validNumber(latitude) || !validNumber(longitude) ||
+            latitude < -90 || latitude > 90 ||
+            longitude < -180 || longitude > 180) {
+          throw new Error('Invalid GPS coordinates');
+        }
+
         const response = await fetch(WORKER_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ lat: latitude, lng: longitude }),
+          body: JSON.stringify({ lat: latitude, lng: longitude })
         });
 
-        if (!response.ok) throw new Error('Server error');
-        const data = await response.json();
-        if (data.status !== 'success') throw new Error(data.message || 'Gagal');
-
-        // Tampilkan hasil
-        this.showResult(container, data, serviceName, serviceId);
-      } catch (error) {
-        console.error(error);
-        // Tangani berbagai error
-        if (error.code === 1) {
-          this.showError(container, '⚠️ Anda menolak izin lokasi.');
-        } else if (error.code === 2 || error.code === 3) {
-          this.showError(container, '⚠️ Posisi tidak tersedia.');
-        } else {
-          this.showError(container, '⚠️ Gagal menghubungi layanan lokasi.');
+        if (!response.ok) {
+          throw new Error(`Location service HTTP ${response.status}`);
         }
-        // Tetap sediakan tombol booking (tanpa jarak)
-        this.enableBooking(container, serviceName, serviceId);
+
+        const data = await response.json();
+
+        if (
+          !data ||
+          data.status !== 'success' ||
+          ![1, 2, 3].includes(data.zona) ||
+          !validNumber(data.jarakKm) ||
+          data.jarakKm < 0 ||
+          typeof data.estimasiBiaya !== 'string'
+        ) {
+          throw new Error('Invalid location response');
+        }
+
+        const result = document.createElement('div');
+        result.className = 'vg-location-result';
+
+        const distance = document.createElement('p');
+        distance.className = 'vg-location-distance';
+        distance.innerHTML = '<strong>Jarak:</strong> ';
+        distance.append(document.createTextNode(`${data.jarakKm} km`));
+
+        const zone = document.createElement('p');
+        zone.className = 'vg-location-zone';
+        zone.innerHTML = '<strong>Zona layanan:</strong> ';
+        zone.append(document.createTextNode(`Zona ${data.zona}`));
+
+        const cost = document.createElement('p');
+        cost.className = 'vg-location-cost';
+        cost.textContent = data.estimasiBiaya;
+
+        result.append(distance, zone, cost);
+
+        container.innerHTML = '';
+        container.appendChild(result);
+        container.appendChild(createBooking(serviceName, {
+          jarakKm: data.jarakKm,
+          zona: data.zona
+        }));
+      } catch (error) {
+        console.error('VGLocation:', error);
+
+        if (error && error.code === 1) {
+          setError(
+            container,
+            '⚠️ Izin lokasi ditolak. Anda tetap bisa melakukan booking.',
+            serviceName,
+            serviceId
+          );
+        } else if (error && error.code === 3) {
+          setError(
+            container,
+            '⚠️ Pengambilan lokasi melewati batas waktu. Anda tetap bisa melakukan booking.',
+            serviceName,
+            serviceId
+          );
+        } else if (error && error.code === 2) {
+          setError(
+            container,
+            '⚠️ Posisi Anda tidak tersedia. Anda tetap bisa melakukan booking.',
+            serviceName,
+            serviceId
+          );
+        } else {
+          setError(
+            container,
+            '⚠️ Layanan lokasi sedang tidak tersedia. Anda tetap bisa melakukan booking.',
+            serviceName,
+            serviceId
+          );
+        }
       }
-    },
-
-    // Tampilkan hasil sukses
-    showResult: function(container, data, serviceName, serviceId) {
-      const { zona, jarakKm, estimasiBiaya } = data;
-      const biayaInfo = zona === 1
-        ? 'Tidak ada tambahan biaya transportasi.'
-        : `Estimasi biaya transportasi: ${estimasiBiaya}`;
-
-      container.innerHTML = `
-        <div class="vg-location-result">
-          <p><strong>📍 Jarak:</strong> ${jarakKm} km</p>
-          <p><strong>Zona ${zona}</strong></p>
-          <p class="vg-location-cost">${biayaInfo}</p>
-        </div>
-      `;
-
-      // Tambahkan tombol booking setelah hasil
-      this.enableBooking(container, serviceName, serviceId, jarakKm);
-    },
-
-    // Tampilkan pesan error
-    showError: function(container, message) {
-      container.innerHTML = `<div class="vg-location-error">${message}</div>`;
-    },
-
-    // Tambahkan tombol booking WhatsApp
-    enableBooking: function(container, serviceName, serviceId, jarakKm = null) {
-      // Hapus tombol lama jika ada
-      const oldBtn = container.querySelector('.vg-location-booking');
-      if (oldBtn) oldBtn.remove();
-
-      const btn = document.createElement('a');
-      btn.className = 'vg-location-booking button button--whatsapp';
-      btn.target = '_blank';
-      btn.rel = 'noopener';
-
-      // Bangun pesan WhatsApp
-      let msg = '';
-      if (jarakKm !== null) {
-        msg = `Jarak lokasi saya: ${jarakKm} km\n\n`;
-      }
-      msg += `Halo, kak. 👋\n\nBiso bantu jadwalkan booking?\n\nAku nak booking layanan ${serviceName}.\n\nTerima kasih. 🙏`;
-
-      btn.href = `https://wa.me/62895622499262?text=${encodeURIComponent(msg)}`;
-
-      // Gunakan gambar booking (sesuai dengan yang sudah ada)
-      btn.innerHTML = `<img src="images/booking-layanan-ini.webp" alt="Booking layanan ini" loading="lazy" style="display:block;width:100%;height:auto;">`;
-      btn.style.cssText = `
-        display:block !important;
-        width:220px !important;
-        height:48px !important;
-        margin:12px auto 0 !important;
-        border-radius:14px !important;
-        overflow:hidden !important;
-        background-image:url("images/booking-layanan-ini.webp") !important;
-        background-size:cover !important;
-        background-position:center !important;
-        color:transparent !important;
-        text-indent:-9999px !important;
-      `;
-
-      container.appendChild(btn);
-    },
+    }
   };
 })();

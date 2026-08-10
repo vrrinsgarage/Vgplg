@@ -1,42 +1,137 @@
-/* Cloudflare Worker — simpan GARAGE_LAT & GARAGE_LNG sebagai Secret */
-const ALLOWED_ORIGIN='https://vrrinsgarage.github.io';
+const ALLOWED_ORIGIN = 'https://vrrinsgarage.github.io';
+const JSON_HEADERS = { 'Content-Type': 'application/json' };
 
-export default{
- async fetch(request,env){
-  const origin=request.headers.get('Origin');
-  const cors=origin===ALLOWED_ORIGIN?{
-   'Access-Control-Allow-Origin':origin,
-   'Access-Control-Allow-Methods':'POST, OPTIONS',
-   'Access-Control-Allow-Headers':'Content-Type',
-   'Vary':'Origin'
-  }:{};
+function corsHeaders(origin) {
+  const headers = { ...JSON_HEADERS };
 
-  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:cors});
-  if(request.method==='GET')return json({status:'success',message:'Location API aktif'},200,cors);
-  if(request.method!=='POST')return json({status:'error',message:'Method not allowed'},405,cors);
+  if (origin === ALLOWED_ORIGIN) {
+    headers['Access-Control-Allow-Origin'] = ALLOWED_ORIGIN;
+    headers['Vary'] = 'Origin';
+  }
 
-  let body;
-  try{body=await request.json()}catch{return json({status:'error',message:'Invalid JSON'},400,cors);}
+  return headers;
+}
 
-  const lat=Number(body.lat),lng=Number(body.lng);
-  if(!Number.isFinite(lat)||!Number.isFinite(lng))return json({status:'error',message:'Invalid coordinates'},400,cors);
-  if(lat<-90||lat>90||lng<-180||lng>180)return json({status:'error',message:'Coordinates out of range'},400,cors);
+function jsonResponse(body, status, origin) {
+  return new Response(JSON.stringify(body), {
+    status,
+    headers: corsHeaders(origin)
+  });
+}
 
-  const garageLat=Number(env.GARAGE_LAT),garageLng=Number(env.GARAGE_LNG);
-  if(!Number.isFinite(garageLat)||!Number.isFinite(garageLng))return json({status:'error',message:'Location service unavailable'},503,cors);
+export default {
+  async fetch(request, env) {
+    const origin = request.headers.get('Origin');
 
-  const rad=v=>v*Math.PI/180, R=6371;
-  const dLat=rad(garageLat-lat),dLng=rad(garageLng-lng);
-  const a=Math.sin(dLat/2)**2+Math.cos(rad(lat))*Math.cos(rad(garageLat))*Math.sin(dLng/2)**2;
-  const distance=R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
-  const jarakKm=Math.round(distance*10)/10;
+    if (request.method === 'OPTIONS') {
+      const headers = corsHeaders(origin);
+      headers['Access-Control-Allow-Methods'] = 'POST, OPTIONS';
+      headers['Access-Control-Allow-Headers'] = 'Content-Type';
 
-  let zona,estimasiBiaya;
-  if(distance<=8){zona=1;estimasiBiaya='Tidak ada tambahan biaya';}
-  else if(distance<=15){zona=2;estimasiBiaya='Rp70.000-Rp120.000';}
-  else{zona=3;estimasiBiaya='Rp120.000-Rp250.000';}
+      return new Response(null, {
+        status: 204,
+        headers
+      });
+    }
 
-  return json({status:'success',zona,jarakKm,estimasiBiaya},200,cors);
- }
+    if (request.method !== 'POST') {
+      return jsonResponse(
+        { status: 'error', message: 'Method not allowed' },
+        405,
+        origin
+      );
+    }
+
+    let body;
+
+    try {
+      body = await request.json();
+    } catch (error) {
+      console.error('Invalid JSON request:', error);
+      return jsonResponse(
+        { status: 'error', message: 'Invalid request' },
+        400,
+        origin
+      );
+    }
+
+    const lat = body?.lat;
+    const lng = body?.lng;
+
+    if (
+      typeof lat !== 'number' ||
+      typeof lng !== 'number' ||
+      !Number.isFinite(lat) ||
+      !Number.isFinite(lng) ||
+      lat < -90 ||
+      lat > 90 ||
+      lng < -180 ||
+      lng > 180
+    ) {
+      return jsonResponse(
+        { status: 'error', message: 'Invalid coordinates' },
+        400,
+        origin
+      );
+    }
+
+    const garageLat = Number(env.GARAGE_LAT);
+    const garageLng = Number(env.GARAGE_LNG);
+
+    if (
+      !Number.isFinite(garageLat) ||
+      !Number.isFinite(garageLng) ||
+      garageLat < -90 ||
+      garageLat > 90 ||
+      garageLng < -180 ||
+      garageLng > 180
+    ) {
+      console.error('Invalid GARAGE_LAT/GARAGE_LNG Worker configuration.');
+      return jsonResponse(
+        { status: 'error', message: 'Location service unavailable' },
+        503,
+        origin
+      );
+    }
+
+    const toRad = degrees => degrees * Math.PI / 180;
+    const earthRadiusKm = 6371;
+
+    const dLat = toRad(garageLat - lat);
+    const dLng = toRad(garageLng - lng);
+
+    const a =
+      Math.sin(dLat / 2) ** 2 +
+      Math.cos(toRad(lat)) *
+        Math.cos(toRad(garageLat)) *
+        Math.sin(dLng / 2) ** 2;
+
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    const jarakKm = earthRadiusKm * c;
+
+    let zona;
+    let estimasiBiaya;
+
+    if (jarakKm <= 8) {
+      zona = 1;
+      estimasiBiaya = 'Tidak ada tambahan biaya transportasi.';
+    } else if (jarakKm <= 15) {
+      zona = 2;
+      estimasiBiaya = 'Rp70.000–Rp120.000';
+    } else {
+      zona = 3;
+      estimasiBiaya = 'Rp120.000–Rp250.000';
+    }
+
+    return jsonResponse(
+      {
+        status: 'success',
+        zona,
+        jarakKm: Math.round(jarakKm * 10) / 10,
+        estimasiBiaya
+      },
+      200,
+      origin
+    );
+  }
 };
-function json(data,status,headers){return new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json',...headers}});}

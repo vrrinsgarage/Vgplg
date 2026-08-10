@@ -3095,60 +3095,96 @@ body.popup-open .floating-whatsapp {
 }
 
 .vg-location-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  min-height: 48px;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 10px;
   background: var(--red);
   color: #fff;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 10px;
+  font: inherit;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
-  width: 100%;
-  max-width: 320px;
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.2s;
 }
 
 .vg-location-check:hover {
   background: #f01515;
+  transform: translateY(-1px);
+}
+
+.vg-location-check:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
 }
 
 .vg-location-loading {
+  padding: 12px 0;
   color: var(--muted);
   font-size: 14px;
-  padding: 10px 0;
 }
 
 .vg-location-result {
   margin-top: 12px;
+  padding: 16px;
   background: var(--surface-card);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 16px;
   text-align: left;
 }
 
-.vg-location-result p {
-  margin: 4px 0;
+.vg-location-distance,
+.vg-location-zone,
+.vg-location-cost {
+  margin: 6px 0;
   font-size: 14px;
-  color: var(--text);
 }
 
-.vg-location-result strong {
+.vg-location-distance strong,
+.vg-location-zone strong {
   color: var(--red);
 }
 
 .vg-location-cost {
-  font-weight: 600;
   color: var(--green) !important;
+  font-weight: 700;
 }
 
 .vg-location-error {
-  color: #ff6b6b;
   margin: 10px 0;
+  color: #ff6b6b;
   font-size: 14px;
 }
 
 .vg-location-booking {
-  display: block !important;
-  margin: 12px auto 0 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  min-height: 48px;
+  margin: 12px auto 0;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: var(--green);
+  color: #001b0b;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: transform var(--ease), filter var(--ease);
+}
+
+.vg-location-booking:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.vg-location-booking:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
 }
