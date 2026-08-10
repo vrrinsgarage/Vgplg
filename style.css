@@ -340,100 +340,46 @@ body.popup-open .floating-whatsapp{display:none!important}
   transform: scale(0.98);
 }
 
-/* ============================================================
-   VRRINS GARAGE — FINAL FLOATING BOOK NOW
-   Hanya mengatur tombol floating. Tidak menyentuh tombol menu,
-   tombol hero, tombol detail, atau tombol popup.
-   ============================================================ */
 
+/* TEST ONLY — Floating Book Now 80x80 on desktop & mobile */
 .floating-whatsapp{
-  position:fixed !important;
-  top:var(--vg-booking-floating-top, 0px) !important;
-  right:20px !important;
-  bottom:auto !important;
-  left:auto !important;
-  width:80px !important;
-  height:80px !important;
-  z-index:99999 !important;
-  margin:0 !important;
-  padding:0 !important;
-  display:block !important;
-  visibility:hidden !important;
-  opacity:0 !important;
-  pointer-events:none !important;
-  transform:none !important;
+  position:fixed!important;
+  top:57%!important;
+  right:20px!important;
+  bottom:auto!important;
+  z-index:9999!important;
 }
 
 .floating-whatsapp__button{
-  display:flex !important;
-  width:80px !important;
-  height:80px !important;
-  min-width:80px !important;
-  min-height:80px !important;
-  margin:0 !important;
-  padding:0 !important;
-  border:0 !important;
-  border-radius:50% !important;
-  background:transparent !important;
-  background-image:none !important;
-  box-shadow:none !important;
-  overflow:hidden !important;
-  align-items:center !important;
-  justify-content:center !important;
+  width:80px!important;
+  height:80px!important;
+  min-width:80px!important;
+  min-height:80px!important;
+  padding:0!important;
+  margin:0!important;
+  border-radius:50%!important;
+  overflow:hidden!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
 }
 
 .floating-whatsapp__button img{
-  display:block !important;
-  width:100% !important;
-  height:100% !important;
-  object-fit:contain !important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
 }
 
 @media (max-width:800px){
   .floating-whatsapp{
-    right:0 !important;
+    top:57%!important;
+    right:20px!important;
+    bottom:auto!important;
   }
-}
-
-@media (min-width:801px){
-  .floating-whatsapp{
-    right:20px !important;
+  .floating-whatsapp__button{
+    width:80px!important;
+    height:80px!important;
+    min-width:80px!important;
+    min-height:80px!important;
   }
-}
-
-body.popup-open .floating-whatsapp{
-  display:none !important;
-}
-
-/* ============================================================
-   RESTORE VG BOOKING ARTWORK
-   Memastikan tombol header + hero tetap VG BOOKING,
-   bukan berubah menjadi tombol WhatsApp hijau.
-   ============================================================ */
-
-.nav-booking{
-  background-image:url("images/vg-booking.webp") !important;
-  background-repeat:no-repeat !important;
-  background-position:center !important;
-  background-size:cover !important;
-  background-color:transparent !important;
-  color:transparent !important;
-  text-indent:-9999px !important;
-  overflow:hidden !important;
-}
-
-.hero-actions .button--whatsapp{
-  background-image:url("images/vg-booking.webp") !important;
-  background-repeat:no-repeat !important;
-  background-position:center !important;
-  background-size:cover !important;
-  background-color:transparent !important;
-  color:transparent !important;
-  text-indent:-9999px !important;
-  overflow:hidden !important;
-}
-
-.nav-booking .wa-icon,
-.hero-actions .button--whatsapp .wa-icon{
-  display:none !important;
 }
