@@ -37,16 +37,15 @@
       deskripsi: s.deskripsi || '',
     }));
 
-    // VG TUNE adalah paket induk dan memang tidak punya 1 record layanan
-    // khusus di services.js. Layanan lain sudah ada di database, jadi jangan
-    // didaftarkan ulang di sini agar hasil pencarian tidak dobel.
     const extra = [
-      { name: 'VG TUNE', cat: 'Paket VG', id: 'vg-tune', deskripsi: 'Tune up mesin bensin dan diesel' },
+      { name: 'VG CHECK', cat: 'Paket VG', id: 'vg-check', deskripsi: '' },
+      { name: 'VG TUNE', cat: 'Paket VG', id: 'vg-tune', deskripsi: '' },
+      { name: 'VG BRAKE SERVICE', cat: 'Paket VG', id: 'vg-brake-service', deskripsi: '' },
+      { name: 'VG OIL SERVICE', cat: 'Paket VG', id: 'vg-oil-service', deskripsi: '' },
     ];
 
     const matches = [...extra, ...data]
       .filter((x) => normalize(`${x.name} ${x.cat} ${x.deskripsi}`).includes(query))
-      .filter((x, i, arr) => arr.findIndex(y => y.id === x.id) === i)
       .slice(0, 8);
 
     results.innerHTML = matches.length
