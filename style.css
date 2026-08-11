@@ -3127,6 +3127,34 @@ body.popup-open .floating-whatsapp {
   overflow: hidden;
 }
 
+.vg-location-notice {
+  max-width: 270px;
+  margin: 8px auto 0;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-2);
+  color: var(--muted);
+  text-align: left;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.vg-location-notice strong {
+  display: block;
+  margin-bottom: 2px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.vg-location-notice span {
+  display: block;
+}
+
+.vg-location-area.is-open .vg-location-notice {
+  display: none;
+}
+
 .vg-location-check:hover {
   transform: translateY(-1px);
   filter: brightness(1.05);
