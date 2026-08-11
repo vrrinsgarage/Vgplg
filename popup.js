@@ -287,14 +287,13 @@
     const note = s.catatan || 'Estimasi biaya dapat berubah sesuai kondisi kendaraan. Pekerjaan tambahan akan dikonfirmasi terlebih dahulu.';
     const gallery = [1, 2, 3].map(n => image(`images/gallery/${s.id}-${n}.webp`, `${s.nama} ${n}`)).join('');
 
-    // --- GANTI BAGIAN BOOKING LAMA DENGAN SISTEM LOKASI ---
-    const locationContainer = `
-      <div id="vg-location-container" class="vg-location-container">
-        <button class="vg-location-check" type="button" data-service-id="${s.id}" data-service-name="${esc(s.nama)}" aria-label="Cek lokasi saya">
-          <img src="images/cek-lokasi-saya.webp" alt="Cek Lokasi Saya" loading="lazy">
-        </button>
-      </div>
-    `;
+    const msg = `Halo, kak. 👋
+
+Biso bantu jadwalkan booking?
+
+Aku nak booking layanan ${s.nama}.
+
+Terima kasih. 🙏`;
 
     return `${head(s.nama, s.kategori)}
       ${backButton()}
@@ -324,12 +323,91 @@
         <h4>GALERI HASIL PEKERJAAN</h4>
         <div class="vg-gallery-grid">${gallery}</div>
       </div>
-      ${locationContainer}
-    `;
+      <a class="vg-wa-button vg-service-booking" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}" aria-label="Booking layanan ${esc(s.nama)}">
+        <img class="vg-service-booking__img" src="images/booking-layanan-ini.webp" alt="Booking layanan ini" loading="lazy" onerror="this.closest('.vg-service-booking')?.classList.add('is-fallback')">
+        <span class="vg-service-booking__fallback"><span class="wa-icon"></span> BOOKING WHATSAPP</span>
+      </a>`;
   }
 
-  // ===== STYLE BANNER BOOKING LAYANAN (sudah ada di CSS) =====
-  // (tidak perlu ditambahkan lagi)
+  // ===== STYLE BANNER BOOKING LAYANAN =====
+  // Khusus tombol booking pada Detail Layanan. Tidak memengaruhi
+  // VG BOOKING Header/Hero maupun BOOK NOW Floating.
+  if (!document.getElementById('vg-service-booking-style')) {
+    const style = document.createElement('style');
+    style.id = 'vg-service-booking-style';
+    style.textContent = `
+      .vg-service-booking {
+        display: block !important;
+        position: relative !important;
+        box-sizing: border-box !important;
+        width: 88% !important;
+        max-width: 520px !important;
+        height: auto !important;
+        aspect-ratio: 6.15 / 1 !important;
+        margin: 24px auto 6px !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        border: 0 !important;
+        border-radius: 12px !important;
+        background: transparent !important;
+        line-height: 0 !important;
+        text-decoration: none !important;
+        box-shadow: none !important;
+      }
+
+      .vg-service-booking__img {
+        display: block !important;
+        position: absolute !important;
+        left: 0 !important;
+        top: 50% !important;
+        width: 100% !important;
+        height: auto !important;
+        max-width: none !important;
+        margin: 0 !important;
+        transform: translateY(-50%) !important;
+        object-fit: contain !important;
+      }
+
+      .vg-service-booking__fallback {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        height: 100%;
+        line-height: 1.2;
+      }
+
+      .vg-service-booking.is-fallback .vg-service-booking__img {
+        display: none !important;
+      }
+
+      .vg-service-booking.is-fallback .vg-service-booking__fallback {
+        display: flex !important;
+      }
+
+      /* Desktop: cukup besar untuk menjadi CTA, tetapi tidak memenuhi popup. */
+      @media (min-width: 769px) {
+        .vg-service-booking {
+          width: 58% !important;
+          max-width: 560px !important;
+          aspect-ratio: 6.15 / 1 !important;
+          margin-top: 26px !important;
+        }
+      }
+
+      /* Mobile: dibuat dominan tetapi tetap menyisakan ruang kiri-kanan. */
+      @media (max-width: 768px) {
+        .vg-service-booking {
+          width: 65% !important;
+          max-width: 520px !important;
+          aspect-ratio: 6.15 / 1 !important;
+          margin-top: 24px !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
 
   // ===== EVENT LISTENER =====
 
