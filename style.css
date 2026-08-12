@@ -1067,25 +1067,6 @@ h3 {
   display: none;
 }
 
-.floating-whatsapp {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 450;
-}
-
-.floating-whatsapp__button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 16px;
-  border-radius: 999px;
-  background: var(--green);
-  color: #001b0b;
-  font-size: 11px;
-  font-weight: 900;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
-}
 /* ===== VG MODAL ===== */
 .vg-modal {
   position: fixed;
@@ -1663,9 +1644,6 @@ h3 {
 }
 .footer-bottom {
   display: grid;
-}
-.floating-whatsapp {
-  display: none;
 }
 .bottom-nav {
   display: none !important;
@@ -2729,10 +2707,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .floating-whatsapp img {
-    width: 68px;
-    height: 68px;
-  }
   .system-card .detail-btn,
   .system-card button {
     width: 77px;
@@ -2749,7 +2723,6 @@ body {
 
 .nav-booking,
 .hero-actions .button--whatsapp,
-.floating-whatsapp__button,
 .vg-wa-button {
   background-image: url("images/vg-booking.webp");
   background-repeat: no-repeat;
@@ -2781,12 +2754,6 @@ body {
   border-radius: 14px;
 }
 
-.floating-whatsapp__button {
-  width: 220px;
-  height: 48px;
-  min-height: 48px;
-  border-radius: 14px;
-}
 
 .vg-wa-button {
   width: 220px;
@@ -2799,7 +2766,6 @@ body {
 
 .nav-booking .wa-icon,
 .hero-actions .button--whatsapp .wa-icon,
-.floating-whatsapp__button .wa-icon,
 .vg-wa-button .wa-icon,
 .nav-booking span,
 .hero-actions .button--whatsapp span,
@@ -2813,11 +2779,6 @@ body {
     width: 230px;
     height: 50px;
     min-height: 50px;
-  }
-  .floating-whatsapp__button {
-    width: 160px;
-    height: 40px;
-    min-height: 40px;
   }
 }
 
@@ -2836,54 +2797,6 @@ body {
     width: 220px;
     height: 48px;
     min-height: 48px;
-  }
-}
-
-.floating-whatsapp {
-  display: block !important;
-  right: 16px;
-  bottom: 90px;
-  z-index: 450;
-}
-
-.floating-whatsapp__button {
-  display: block !important;
-  width: 90px !important;
-  height: 135px !important;
-  min-width: 90px !important;
-  min-height: 135px !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  background-image: none !important;
-  box-shadow: none !important;
-  line-height: 0;
-  overflow: visible;
-}
-
-.floating-whatsapp__button img {
-  display: block;
-  width: 90px;
-  height: 135px;
-  object-fit: contain;
-}
-
-@media (min-width: 801px) {
-  .floating-whatsapp {
-    right: 28px;
-    bottom: 28px;
-  }
-  .floating-whatsapp__button {
-    width: 110px !important;
-    height: 165px !important;
-    min-width: 110px !important;
-    min-height: 165px !important;
-  }
-  .floating-whatsapp__button img {
-    width: 110px;
-    height: 165px;
   }
 }
 
@@ -2913,43 +2826,6 @@ body {
     top: auto;
     bottom: 80px;
   }
-}
-
-.floating-whatsapp {
-  position: fixed !important;
-  right: 20px !important;
-  bottom: 80px !important;
-  top: auto !important;
-  z-index: 9999 !important;
-}
-
-.floating-whatsapp__button {
-  width: 72px !important;
-  height: 72px !important;
-  padding: 0 !important;
-  border-radius: 50% !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
-  overflow: hidden !important;
-}
-
-.floating-whatsapp__button img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important;
-}
-
-@media (min-width: 801px) {
-  .floating-whatsapp {
-    right: 20px !important;
-    bottom: 80px !important;
-  }
-}
-
-body.popup-open .floating-whatsapp {
-  display: none !important;
 }
 
 /* ============================================================
@@ -2996,67 +2872,10 @@ body.popup-open .floating-whatsapp {
 }
 
 /* ============================================================
-   VRRINS GARAGE — FINAL FLOATING BOOK NOW
+   VRRINS GARAGE — FLOATING BOOK NOW
+   Posição controlada exclusivamente pelo bloco final em index.html.
+   Não adicionar regras de posicionamento aqui.
    ============================================================ */
-
-.floating-whatsapp {
-  position: fixed !important;
-  top: var(--vg-booking-floating-top, 0px) !important;
-  right: 20px !important;
-  bottom: auto !important;
-  left: auto !important;
-  width: 80px !important;
-  height: 80px !important;
-  z-index: 99999 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  display: block !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-  transform: none !important;
-}
-
-.floating-whatsapp__button {
-  display: flex !important;
-  width: 80px !important;
-  height: 80px !important;
-  min-width: 80px !important;
-  min-height: 80px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
-  border-radius: 50% !important;
-  background: transparent !important;
-  background-image: none !important;
-  box-shadow: none !important;
-  overflow: hidden !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-.floating-whatsapp__button img {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important;
-}
-
-@media (max-width: 800px) {
-  .floating-whatsapp {
-    right: 0 !important;
-  }
-}
-
-@media (min-width: 801px) {
-  .floating-whatsapp {
-    right: 20px !important;
-  }
-}
-
-body.popup-open .floating-whatsapp {
-  display: none !important;
-}
 
 /* ===== RESTORE VG BOOKING ARTWORK ===== */
 .nav-booking {

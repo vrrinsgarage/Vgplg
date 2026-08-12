@@ -309,7 +309,7 @@
 <script src="location.js" defer></script>
 <script src="bootstrap.js" defer></script>
 
-<!-- Floating positioning script (tetap) -->
+<!-- Floating BOOK NOW: posisi dikunci. Tidak lagi dihitung ulang oleh JavaScript. -->
 <style id="vg-floating-booking-final">
   .floating-whatsapp {
     position: fixed !important;
@@ -319,11 +319,9 @@
     left: auto !important;
     width: 80px !important;
     height: 80px !important;
-    min-width: 80px !important;
-    min-height: 80px !important;
+    z-index: 99999 !important;
     margin: 0 !important;
     padding: 0 !important;
-    z-index: 99999 !important;
     display: block !important;
     visibility: hidden !important;
     opacity: 0 !important;
@@ -342,7 +340,6 @@
     border: 0 !important;
     border-radius: 50% !important;
     background: transparent !important;
-    background-image: none !important;
     box-shadow: none !important;
     overflow: hidden !important;
     align-items: center !important;
@@ -351,160 +348,23 @@
 
   .floating-whatsapp__button img {
     display: block !important;
-    width: 80px !important;
-    height: 80px !important;
-    min-width: 80px !important;
-    min-height: 80px !important;
+    width: 100% !important;
+    height: 100% !important;
     object-fit: contain !important;
-    margin: 0 !important;
-    padding: 0 !important;
   }
 
   @media (max-width: 800px) {
-    .floating-whatsapp {
-      right: 0 !important;
-    }
+    .floating-whatsapp { right: 0 !important; }
   }
 
   @media (min-width: 801px) {
-    .floating-whatsapp {
-      right: 20px !important;
-    }
+    .floating-whatsapp { right: 20px !important; }
+  }
+
+  body.popup-open .floating-whatsapp {
+    display: none !important;
   }
 </style>
-
-<script>
-(function () {
-  'use strict';
-
-  function initFloatingBooking() {
-    var floating = document.querySelector('.floating-whatsapp');
-    var heroBooking = document.querySelector('.hero-actions .button--whatsapp');
-    var navBooking = document.querySelector('.nav-booking');
-    var nav = document.querySelector('.main-nav');
-    var toggle = document.querySelector('.nav-toggle');
-    var heroImage = document.querySelector('.hero-media img');
-
-    if (!floating || !heroBooking) return;
-
-    var lastWidth = window.innerWidth;
-    var raf = 0;
-    var positioned = false;
-
-    function isMobileMenuOpen() {
-      return window.innerWidth <= 800 && (
-        (nav && nav.classList.contains('is-open')) ||
-        (toggle && toggle.getAttribute('aria-expanded') === 'true')
-      );
-    }
-
-    function getActiveBooking() {
-      if (isMobileMenuOpen() && navBooking) return navBooking;
-      return heroBooking;
-    }
-
-    function setSidePosition() {
-      floating.style.setProperty('right', window.innerWidth <= 800 ? '0px' : '20px', 'important');
-    }
-
-    function targetIsReady(target) {
-      if (!target) return false;
-      var rect = target.getBoundingClientRect();
-      return rect.width > 0 && rect.height > 0;
-    }
-
-    function alignNow() {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(function () {
-        var target = getActiveBooking();
-        if (!target || !targetIsReady(target)) {
-          schedule();
-          return;
-        }
-
-        var rect = target.getBoundingClientRect();
-        var height = floating.offsetHeight || 80;
-        var top = rect.top + (rect.height / 2) - (height / 2);
-        top = Math.max(0, Math.min(top, window.innerHeight - height));
-
-        setSidePosition();
-        floating.style.setProperty('top', Math.round(top) + 'px', 'important');
-        floating.style.setProperty('bottom', 'auto', 'important');
-        floating.style.setProperty('transform', 'none', 'important');
-
-        // Tampilkan hanya setelah posisi final sudah terpasang.
-        floating.style.setProperty('visibility', 'visible', 'important');
-        floating.style.setProperty('opacity', '1', 'important');
-        floating.style.setProperty('pointer-events', 'auto', 'important');
-        positioned = true;
-      });
-    }
-
-    function schedule() {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(function () {
-        requestAnimationFrame(alignNow);
-      });
-    }
-
-    function scheduleAfterHeroReady() {
-      if (heroImage && !heroImage.complete) {
-        heroImage.addEventListener('load', schedule, { once: true });
-      }
-      schedule();
-    }
-
-    function watchMenu() {
-      if (toggle) {
-        toggle.addEventListener('click', function () {
-          setTimeout(schedule, 0);
-          setTimeout(schedule, 80);
-          setTimeout(schedule, 180);
-        });
-      }
-      if (nav && window.MutationObserver) {
-        var observer = new MutationObserver(function () {
-          schedule();
-        });
-        observer.observe(nav, { attributes: true, attributeFilter: ['class', 'aria-hidden', 'style'] });
-      }
-    }
-
-    window.addEventListener('load', scheduleAfterHeroReady, { passive: true });
-    window.addEventListener('resize', function () {
-      if (window.innerWidth !== lastWidth || !positioned) {
-        lastWidth = window.innerWidth;
-        schedule();
-      }
-    }, { passive: true });
-    window.addEventListener('orientationchange', function () {
-      lastWidth = window.innerWidth;
-      schedule();
-    }, { passive: true });
-
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(schedule).catch(function () {});
-    }
-
-    if (window.ResizeObserver) {
-      var ro = new ResizeObserver(function () {
-        if (!positioned || isMobileMenuOpen()) schedule();
-      });
-      ro.observe(heroBooking);
-      if (navBooking) ro.observe(navBooking);
-    }
-
-    watchMenu();
-    scheduleAfterHeroReady();
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initFloatingBooking, { once: true });
-  } else {
-    initFloatingBooking();
-  }
-})();
-</script>
 
 </body>
 </html>
