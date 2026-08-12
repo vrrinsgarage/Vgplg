@@ -34,7 +34,7 @@ Terima kasih. 🙏`;
     btn.target = '_blank';
     btn.rel = 'noopener';
     btn.setAttribute('aria-label', 'Booking layanan ini');
-    btn.innerHTML = '<img src="images/booking-layanan-ini.webp" alt="Booking Layanan Ini" loading="lazy">';
+    btn.innerHTML = '<img src="images/vg-booking-v1.webp" alt="Booking Layanan Ini" loading="lazy">';
     return btn;
   };
 
@@ -98,11 +98,36 @@ Terima kasih. 🙏`;
           body: JSON.stringify({ lat: latitude, lng: longitude })
         });
 
+        // DEBUG SEMENTARA: baca response mentah agar error Worker terlihat jelas.
+        const responseText = await response.text();
+
         if (!response.ok) {
-          throw new Error(`Location service HTTP ${response.status}`);
+          let detail = responseText;
+
+          try {
+            const errorData = JSON.parse(responseText);
+            if (errorData && typeof errorData.message === 'string') {
+              detail = errorData.message;
+            }
+          } catch (_) {
+            // Response bukan JSON; gunakan teks response apa adanya.
+          }
+
+          throw new Error(
+            `Location service HTTP ${response.status}` +
+            (detail ? `: ${detail}` : '')
+          );
         }
 
-        const data = await response.json();
+        let data;
+        try {
+          data = JSON.parse(responseText);
+        } catch (_) {
+          throw new Error(
+            `Invalid JSON response from location service` +
+            (responseText ? `: ${responseText.slice(0, 200)}` : '')
+          );
+        }
 
         if (
           !data ||
@@ -165,9 +190,15 @@ Terima kasih. 🙏`;
             serviceId
           );
         } else {
+          // DEBUG SEMENTARA: tampilkan penyebab teknis sebenarnya.
+          const technicalMessage =
+            error instanceof Error && error.message
+              ? error.message
+              : String(error);
+
           setError(
             container,
-            '⚠️ Layanan lokasi sedang tidak tersedia. Anda tetap bisa melakukan booking.',
+            `⚠️ Pemeriksaan lokasi gagal.\nDEBUG: ${technicalMessage}`,
             serviceName,
             serviceId
           );
@@ -175,4 +206,37 @@ Terima kasih. 🙏`;
       }
     }
   };
+
+  const initLocationToggle = () => {
+    const button = document.getElementById('vg-location-check');
+    const container = document.getElementById(CONTAINER_ID);
+    const area = button?.closest('.vg-location-area');
+
+    if (!button || !container || !area) return;
+
+    container.hidden = true;
+
+    button.addEventListener('click', async () => {
+      const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+      if (isOpen) {
+        button.setAttribute('aria-expanded', 'false');
+        area.classList.remove('is-open');
+        container.hidden = true;
+        return;
+      }
+
+      button.setAttribute('aria-expanded', 'true');
+      area.classList.add('is-open');
+      container.hidden = false;
+
+      await window.VGLocation.checkLocation('servis mobil');
+    });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLocationToggle, { once: true });
+  } else {
+    initLocationToggle();
+  }
 })();
