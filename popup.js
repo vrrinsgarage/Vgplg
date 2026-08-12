@@ -1,6 +1,6 @@
 /* VRRINS GARAGE — FINAL POPUP FLOW
    Paket Perawatan VG → Tune → Bensin/Diesel → Paket → Detail
-   Kondisi Mobil → Kategori → Subkategori → Detail
+   Kondisi Mobil → Kategori → Layanan → Detail
    Navigasi bertingkat (stack) untuk tombol kembali
 */
 (() => {
@@ -469,17 +469,6 @@ Terima kasih. 🙏`;
       return;
     }
 
-    // --- TAMBAHAN: CEK LOKASI SAYA ---
-    const checkBtn = e.target.closest('.vg-location-check');
-    if (checkBtn) {
-      e.preventDefault();
-      const serviceId = checkBtn.dataset.serviceId;
-      const serviceName = checkBtn.dataset.serviceName;
-      if (window.VGLocation) {
-        window.VGLocation.checkLocation(serviceName, serviceId);
-      }
-      return;
-    }
   });
 
   // ===== TOMBOL KEMBALI FISIK HP & ESC =====

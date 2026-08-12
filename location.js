@@ -46,6 +46,8 @@
 
   const validNumber = value => typeof value === 'number' && Number.isFinite(value);
 
+  let locationCheckInProgress = false;
+
   async function requestLocation() {
     if (!navigator.geolocation) {
       throw new Error('GEOLOCATION_UNSUPPORTED');
@@ -64,10 +66,14 @@
     containerId: CONTAINER_ID,
 
     checkLocation: async function(serviceName = 'servis mobil') {
+      if (locationCheckInProgress) return;
+      locationCheckInProgress = true;
+
       const container = document.getElementById(this.containerId);
 
       if (!container) {
         console.error('Container #vg-location-container tidak ditemukan');
+        locationCheckInProgress = false;
         return;
       }
 
@@ -153,6 +159,8 @@
         } else {
           setError(container, `⚠️ Pemeriksaan lokasi gagal. ${error?.message || 'Layanan lokasi sedang tidak tersedia.'}`, serviceName);
         }
+      } finally {
+        locationCheckInProgress = false;
       }
     }
   };
