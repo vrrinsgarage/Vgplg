@@ -98,11 +98,36 @@ Terima kasih. 🙏`;
           body: JSON.stringify({ lat: latitude, lng: longitude })
         });
 
+        // DEBUG SEMENTARA: baca response mentah agar error Worker terlihat jelas.
+        const responseText = await response.text();
+
         if (!response.ok) {
-          throw new Error(`Location service HTTP ${response.status}`);
+          let detail = responseText;
+
+          try {
+            const errorData = JSON.parse(responseText);
+            if (errorData && typeof errorData.message === 'string') {
+              detail = errorData.message;
+            }
+          } catch (_) {
+            // Response bukan JSON; gunakan teks response apa adanya.
+          }
+
+          throw new Error(
+            `Location service HTTP ${response.status}` +
+            (detail ? `: ${detail}` : '')
+          );
         }
 
-        const data = await response.json();
+        let data;
+        try {
+          data = JSON.parse(responseText);
+        } catch (_) {
+          throw new Error(
+            `Invalid JSON response from location service` +
+            (responseText ? `: ${responseText.slice(0, 200)}` : '')
+          );
+        }
 
         if (
           !data ||
@@ -165,9 +190,15 @@ Terima kasih. 🙏`;
             serviceId
           );
         } else {
+          // DEBUG SEMENTARA: tampilkan penyebab teknis sebenarnya.
+          const technicalMessage =
+            error instanceof Error && error.message
+              ? error.message
+              : String(error);
+
           setError(
             container,
-            '⚠️ Layanan lokasi sedang tidak tersedia. Anda tetap bisa melakukan booking.',
+            `⚠️ Pemeriksaan lokasi gagal.\nDEBUG: ${technicalMessage}`,
             serviceName,
             serviceId
           );
