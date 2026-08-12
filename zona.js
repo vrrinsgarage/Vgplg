@@ -1,27 +1,22 @@
 // zona.js
-// Data perumahan berdasarkan zona (tanpa arah mata angin)
+// Data perumahan berdasarkan zona layanan VRRINS GARAGE
+// Titik acuan geografis: VRRINS GARAGE (-2.9621648, 104.6803790)
+// Zona 1: 0–5 km
+// Zona 2: >5–10 km
+// Zona 3: >10–15 km
+// zone: 0 = di luar radius layanan / tidak ditampilkan pada tombol zona
+
 window.zonaData = [
-  // ===== ZONA 1 (0–8 km) =====
-  { name: "Perumahan Sukajadi Indah", zone: 1 },
-  { name: "Perumahan Griya Sukajadi", zone: 1 },
-  { name: "Perumahan Premier Kedaton Kirana", zone: 1 },
+
+  // ===== ZONA 1 (0–5 km) =====
   { name: "Perumahan Terrace Woods Estate", zone: 1 },
-  { name: "Perumahan Megah Asri 2 Sukajadi", zone: 1 },
-  { name: "Perumahan Sukajadi Residence", zone: 1 },
   { name: "Perumahan Palm Green", zone: 1 },
-  { name: "Perumahan Sukajadi Makmur", zone: 1 },
   { name: "Griya Palem Kencana", zone: 1 },
   { name: "Perumnas Talang Kelapa", zone: 1 },
   { name: "Taman Indah Talang Kelapa", zone: 1 },
   { name: "Perumahan Kehutanan Talang Kelapa", zone: 1 },
   { name: "Springhill Palembang", zone: 1 },
   { name: "Green Resort Talang Kelapa / Alang-Alang Lebar", zone: 1 },
-  { name: "Perumahan Swadaya Indah 2", zone: 1 },
-  { name: "Perumahan Alang Lebar Permai", zone: 1 },
-  { name: "Perumahan Surya Alam 9", zone: 1 },
-  { name: "Perumahan Surya Alam 10", zone: 1 },
-  { name: "Perumahan Villa Kencana", zone: 1 },
-  { name: "Perumahan Griya Bahagia", zone: 1 },
   { name: "Citra Indah Residence", zone: 1 },
   { name: "Perumahan Bukit Sentosa Residence 5", zone: 1 },
   { name: "Perumahan Griya Anggrek Permai", zone: 1 },
@@ -29,46 +24,60 @@ window.zonaData = [
   { name: "Perumahan Bukit Intan Residence", zone: 1 },
   { name: "Perumahan Bukit Emas Residence", zone: 1 },
   { name: "Center Park", zone: 1 },
-  { name: "Perumahan Green Resort KM 12", zone: 1 },
   { name: "Tamansari Swarna Residence", zone: 1 },
-  { name: "Griya Bukit Baru", zone: 1 },
   { name: "Perumahan Bukit Baru 3", zone: 1 },
-  { name: "Royyan Mulia Residence", zone: 1 },
   { name: "Mutiara Homes", zone: 1 },
   { name: "Mutiara Land", zone: 1 },
   { name: "Perumahan Tanjung Barangan Asri", zone: 1 },
+  { name: "Green Resort KM 12", zone: 1 },
+  { name: "Kompleks Pemukiman Penduduk Talang Kelapa Lanjutan", zone: 1 },
+  { name: "Kompleks Perumahan Bukit Lama Indah", zone: 1 },
+  { name: "Grand City Palembang", zone: 1 },
 
-  // ===== ZONA 2 (8–15 km) =====
+  // ===== ZONA 2 (>5–10 km) =====
+  { name: "Perumahan Sukajadi Indah", zone: 2 },
+  { name: "Perumahan Griya Sukajadi", zone: 2 },
+  { name: "Perumahan Premier Kedaton Kirana", zone: 2 },
+  { name: "Perumahan Megah Asri 2 Sukajadi", zone: 2 },
+  { name: "Perumahan Sukajadi Residence", zone: 2 },
+  { name: "Perumahan Sukajadi Makmur", zone: 2 },
+  { name: "Perumahan Alang Lebar Permai", zone: 2 },
+  { name: "Perumahan Surya Alam 9", zone: 2 },
+  { name: "Perumahan Surya Alam 10", zone: 2 },
+  { name: "Perumahan Villa Kencana", zone: 2 },
+  { name: "Perumahan Griya Bahagia", zone: 2 },
+  { name: "Griya Bukit Baru", zone: 2 },
+  { name: "Dosen Unsri Sukarami", zone: 2 },
+  { name: "Kompleks Perumahan Bandara Residence", zone: 2 },
+  { name: "Perumahan Sukajaya Permai Gandus", zone: 2 },
+  { name: "Perumahan Puri Sejahtera Sukarami", zone: 2 },
+  { name: "Royyan Mulia Residence", zone: 2 },
   { name: "Perumahan Griya Asri Sukomoro", zone: 2 },
   { name: "Perumahan Megah Asri 1", zone: 2 },
   { name: "Perumahan Pangkalan Benteng Permai", zone: 2 },
-  { name: "Kompleks Pemukiman Penduduk Talang Kelapa Lanjutan", zone: 2 },
-  { name: "Perumahan Puri Sejahtera Sukarami", zone: 2 },
   { name: "Griya Harapan Sukarami", zone: 2 },
   { name: "Perumahan Dosen Unsri Sukarami", zone: 2 },
-  { name: "Kompleks Perumahan Bandara Residence", zone: 2 },
   { name: "Perumahan Sukarami Indah", zone: 2 },
-  { name: "Kompleks Perumahan Bukit Lama Indah", zone: 2 },
   { name: "Perumahan Demang Permai", zone: 2 },
   { name: "Kompleks Dosen Unsri Demang", zone: 2 },
   { name: "Perumahan Polygon (Perumahan Bukit Lebong / Bukit Sangkal)", zone: 2 },
-  { name: "Kompleks Kenten Permai", zone: 2 },
-  { name: "Grand City Palembang", zone: 2 },
   { name: "Perumahan Gandus Asri", zone: 2 },
   { name: "Kompleks Griya Gandus Indah", zone: 2 },
   { name: "Perumahan Amira Townhouse Gandus", zone: 2 },
-  { name: "Perumahan Sukajaya Permai Gandus", zone: 2 },
+  { name: "Perumahan Kertapati Indah", zone: 2 },
+  { name: "Kompleks Pemukiman Pemulutan / Ogan Ilir border housing estates", zone: 2 },
 
-  // ===== ZONA 3 (>15 km) =====
-  { name: "Permukiman dan perumahan skala besar di sepanjang jalan lintas timur arah Pangkalan Balai", zone: 3 },
-  { name: "OPI (Ogan Permata Indah) Mall & Housing Complex", zone: 3 },
+  // ===== ZONA 3 (>10–15 km) =====
+  { name: "Perumahan Swadaya Indah 2", zone: 3 },
+  { name: "Kompleks Kenten Permai", zone: 3 },
   { name: "Jakabaring Permai", zone: 3 },
-  { name: "Perumahan RSS Candi Indah Plaju", zone: 3 },
-  { name: "Kompleks Pertamina Plaju", zone: 3 },
   { name: "Perumahan Sako Garden", zone: 3 },
   { name: "Kompleks Perumahan Pusri Sako", zone: 3 },
-  { name: "Perumahan Kenten Hill", zone: 3 },
   { name: "Grand Kenanga Sako", zone: 3 },
-  { name: "Perumahan Kertapati Indah", zone: 3 },
-  { name: "Kompleks Pemukiman Pemulutan / Ogan Ilir border housing estates", zone: 3 }
+  { name: "Perumahan RSS Candi Indah Plaju", zone: 3 },
+
+  // ===== DI LUAR RADIUS / TIDAK DITAMPILKAN PADA ZONA 1–3 =====
+  { name: "OPI (Ogan Permata Indah) Mall & Housing Complex", zone: 0 },
+  { name: "Kompleks Pertamina Plaju", zone: 0 },
+  { name: "Permukiman dan perumahan skala besar di sepanjang jalan lintas timur arah Pangkalan Balai", zone: 0 }
 ];
