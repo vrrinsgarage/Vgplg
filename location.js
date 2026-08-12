@@ -98,47 +98,28 @@ Terima kasih. 🙏`;
           body: JSON.stringify({ lat: latitude, lng: longitude })
         });
 
-        // DEBUG SEMENTARA: baca response mentah agar error Worker terlihat jelas.
-        const responseText = await response.text();
-
         if (!response.ok) {
-          let detail = responseText;
-
-          try {
-            const errorData = JSON.parse(responseText);
-            if (errorData && typeof errorData.message === 'string') {
-              detail = errorData.message;
-            }
-          } catch (_) {
-            // Response bukan JSON; gunakan teks response apa adanya.
-          }
-
-          throw new Error(
-            `Location service HTTP ${response.status}` +
-            (detail ? `: ${detail}` : '')
-          );
+          throw new Error(`Location service HTTP ${response.status}`);
         }
 
-        let data;
-        try {
-          data = JSON.parse(responseText);
-        } catch (_) {
-          throw new Error(
-            `Invalid JSON response from location service` +
-            (responseText ? `: ${responseText.slice(0, 200)}` : '')
-          );
-        }
+        const data = await response.json();
 
         if (
           !data ||
           data.status !== 'success' ||
-          ![1, 2, 3].includes(data.zona) ||
+          !validNumber(data.zona) ||
           !validNumber(data.jarakKm) ||
-          data.jarakKm < 0 ||
-          typeof data.estimasiBiaya !== 'string'
+          data.jarakKm < 0
         ) {
           throw new Error('Invalid location response');
         }
+
+        const estimasiBiaya =
+          typeof data.estimasiBiaya === 'string'
+            ? data.estimasiBiaya
+            : typeof data.biayaTransportasi === 'string'
+              ? data.biayaTransportasi
+              : null;
 
         const result = document.createElement('div');
         result.className = 'vg-location-result';
@@ -151,11 +132,20 @@ Terima kasih. 🙏`;
         const zone = document.createElement('p');
         zone.className = 'vg-location-zone';
         zone.innerHTML = '<strong>Zona layanan:</strong> ';
-        zone.append(document.createTextNode(`Zona ${data.zona}`));
+        zone.append(
+          document.createTextNode(
+            data.zona === 0
+              ? 'Di luar area layanan'
+              : `Zona ${data.zona}`
+          )
+        );
 
         const cost = document.createElement('p');
         cost.className = 'vg-location-cost';
-        cost.textContent = data.estimasiBiaya;
+        cost.textContent =
+          estimasiBiaya ||
+          data.message ||
+          'Tidak ada informasi biaya transportasi.';
 
         result.append(distance, zone, cost);
 
@@ -190,15 +180,9 @@ Terima kasih. 🙏`;
             serviceId
           );
         } else {
-          // DEBUG SEMENTARA: tampilkan penyebab teknis sebenarnya.
-          const technicalMessage =
-            error instanceof Error && error.message
-              ? error.message
-              : String(error);
-
           setError(
             container,
-            `⚠️ Pemeriksaan lokasi gagal.\nDEBUG: ${technicalMessage}`,
+            '⚠️ Layanan lokasi sedang tidak tersedia. Anda tetap bisa melakukan booking.',
             serviceName,
             serviceId
           );
