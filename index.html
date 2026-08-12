@@ -311,5 +311,27 @@
 
 
 
+
+<script>
+(function () {
+  'use strict';
+
+  function showFloatingBookNow() {
+    var floating = document.querySelector('.floating-whatsapp');
+    if (!floating) return;
+
+    floating.style.setProperty('visibility', 'visible', 'important');
+    floating.style.setProperty('opacity', '1', 'important');
+    floating.style.setProperty('pointer-events', 'auto', 'important');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', showFloatingBookNow, { once: true });
+  } else {
+    showFloatingBookNow();
+  }
+})();
+</script>
+
 </body>
 </html>
