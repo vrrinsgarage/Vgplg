@@ -122,7 +122,7 @@
 
         const distance = document.createElement('p');
         distance.className = 'vg-location-distance';
-        distance.innerHTML = '<strong>Jarak:</strong> ';
+        distance.innerHTML = '<strong>Perkiraan jarak Anda:</strong> ';
         distance.append(document.createTextNode(`${data.jarakKm} km`));
 
         const zone = document.createElement('p');
@@ -132,7 +132,7 @@
 
         const cost = document.createElement('p');
         cost.className = 'vg-location-cost';
-        cost.textContent = data.estimasiBiaya || 'Hubungi WhatsApp untuk konfirmasi';
+        cost.textContent = data.estimasiBiaya || data.biayaTransportasi || 'Hubungi WhatsApp untuk konfirmasi';
 
         result.append(distance, zone, cost);
         container.innerHTML = '';
