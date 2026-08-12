@@ -316,19 +316,44 @@
 (function () {
   'use strict';
 
-  function showFloatingBookNow() {
+  function initFloatingBookNow() {
     var floating = document.querySelector('.floating-whatsapp');
+    var heroBooking = document.querySelector('.hero-actions .button--whatsapp');
+
     if (!floating) return;
 
-    floating.style.setProperty('visibility', 'visible', 'important');
-    floating.style.setProperty('opacity', '1', 'important');
-    floating.style.setProperty('pointer-events', 'auto', 'important');
+    function finish() {
+      var height = floating.offsetHeight || 80;
+      var top = 0;
+
+      /* Satu kali saja: pertahankan posisi yang selama ini dipakai.
+         Setelah ini Floating BOOK NOW tidak lagi mengikuti Hero/Header. */
+      if (heroBooking) {
+        var rect = heroBooking.getBoundingClientRect();
+        if (rect.width > 0 && rect.height > 0) {
+          top = rect.top + (rect.height / 2) - (height / 2);
+          top = Math.max(0, Math.min(top, window.innerHeight - height));
+        }
+      }
+
+      floating.style.setProperty('top', Math.round(top) + 'px', 'important');
+      floating.style.setProperty('bottom', 'auto', 'important');
+      floating.style.setProperty('transform', 'none', 'important');
+      floating.style.setProperty('visibility', 'visible', 'important');
+      floating.style.setProperty('opacity', '1', 'important');
+      floating.style.setProperty('pointer-events', 'auto', 'important');
+    }
+
+    /* Tunggu satu frame agar layout awal selesai, lalu kunci posisi. */
+    requestAnimationFrame(function () {
+      requestAnimationFrame(finish);
+    });
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', showFloatingBookNow, { once: true });
+    document.addEventListener('DOMContentLoaded', initFloatingBookNow, { once: true });
   } else {
-    showFloatingBookNow();
+    initFloatingBookNow();
   }
 })();
 </script>
