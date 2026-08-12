@@ -107,7 +107,6 @@
 
         if (
           !data ||
-          data.status !== 'success' ||
           !validNumber(data.jarakKm) ||
           data.jarakKm < 0 ||
           !Number.isInteger(data.zona) ||
@@ -132,7 +131,8 @@
 
         const cost = document.createElement('p');
         cost.className = 'vg-location-cost';
-        cost.textContent = data.estimasiBiaya || data.biayaTransportasi || 'Hubungi WhatsApp untuk konfirmasi';
+        const estimatedCost = data.estimasiBiaya ?? data.biayaTransportasi;
+        cost.textContent = estimatedCost || 'Hubungi WhatsApp untuk konfirmasi';
 
         result.append(distance, zone, cost);
         container.innerHTML = '';
