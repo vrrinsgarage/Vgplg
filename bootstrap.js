@@ -124,23 +124,4 @@
     }
   });
 
-  // ===== GLOBAL IMAGE FALLBACK =====
-  // Jika aset gambar belum tersedia di deployment, gunakan placeholder tanpa
-  // mengganggu gambar yang berhasil dimuat.
-  function initImageFallback() {
-    document.querySelectorAll('img').forEach((img) => {
-      img.addEventListener('error', () => {
-        if (img.dataset.vgFallbackApplied === '1') return;
-        img.dataset.vgFallbackApplied = '1';
-        img.src = 'images/placeholder.webp';
-      }, { once: true });
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initImageFallback, { once: true });
-  } else {
-    initImageFallback();
-  }
-
 })();

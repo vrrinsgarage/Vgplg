@@ -26,10 +26,9 @@
     const key = String(cat || '').toUpperCase();
     return all().filter(s => {
       const category = String(s.kategori || '').toUpperCase();
-      // SUSPENSI DEPAN merupakan bagian dari sistem SUSPENSI,
-      // sehingga seluruh layanan suspensi tetap dapat ditemukan dari satu sistem.
-      if (key === 'SUSPENSI') return category === 'SUSPENSI' || category === 'SUSPENSI DEPAN';
-      return category === key;
+      return key === 'SUSPENSI'
+        ? (category === 'SUSPENSI' || category === 'SUSPENSI DEPAN')
+        : category === key;
     });
   };
 
@@ -52,7 +51,7 @@
   };
 
   const image = (src, alt = '') =>
-    `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.webp'">`;
+    `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="this.onerror=null;this.classList.add('vg-image-missing');this.setAttribute('aria-hidden','true');">`;
 
   const head = (title, eyebrow = '') =>
     `<div class="vg-popup-head"><span class="vg-popup-eyebrow">${esc(eyebrow)}</span><h2 id="vg-modal-title">${esc(title)}</h2></div>`;
@@ -149,7 +148,7 @@
       title: 'VG TUNE',
       desc: 'Tune up mesin bensin & diesel.',
       badge: 'POPULER',
-      meta: '2 Jenis Mesin • 8 pilihan paket',
+      meta: '2 Jenis Mesin • 6 paket + 2 add-on',
       action: 'tune-root',
       button: 'LIHAT PAKET'
     });
@@ -200,7 +199,7 @@
           imageSrc: TUNE_META.bensin.image,
           title: 'VG TUNE BENSIN',
           desc: TUNE_META.bensin.desc,
-          meta: '4 Paket',
+          meta: '3 Paket + 1 add-on',
           action: 'tune:bensin',
           button: 'LIHAT PAKET'
         })}
@@ -208,7 +207,7 @@
           imageSrc: TUNE_META.diesel.image,
           title: 'VG TUNE DIESEL',
           desc: TUNE_META.diesel.desc,
-          meta: '4 Paket',
+          meta: '3 Paket + 1 add-on',
           action: 'tune:diesel',
           button: 'LIHAT PAKET'
         })}
@@ -231,7 +230,7 @@
         <div>
           <h3>${esc(m.title)}</h3>
           <p>${esc(m.desc)}</p>
-          <strong>${items.length} Paket</strong>
+          <strong>3 Paket + 1 add-on</strong>
         </div>
       </div>
       <div class="vg-popup-grid">
@@ -342,6 +341,13 @@ Terima kasih. 🙏`;
   // ===== STYLE BANNER BOOKING LAYANAN =====
   // Khusus tombol booking pada Detail Layanan. Tidak memengaruhi
   // VG BOOKING Header/Hero maupun BOOK NOW Floating.
+  if (!document.getElementById('vg-image-missing-style')) {
+    const style = document.createElement('style');
+    style.id = 'vg-image-missing-style';
+    style.textContent = `.vg-image-missing{visibility:hidden!important}`;
+    document.head.appendChild(style);
+  }
+
   if (!document.getElementById('vg-service-booking-style')) {
     const style = document.createElement('style');
     style.id = 'vg-service-booking-style';

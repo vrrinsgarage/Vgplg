@@ -2862,7 +2862,7 @@ body.popup-open .floating-whatsapp {
 
 .floating-whatsapp {
   position: fixed !important;
-  top: auto !important; /* posisi final diplot oleh script */
+  top: var(--vg-booking-floating-top, 0px) !important;
   right: 20px !important;
   bottom: auto !important;
   left: auto !important;
@@ -3124,3 +3124,6 @@ body.popup-open .floating-whatsapp {
     max-width: 190px;
   }
 }
+
+/* Final asset-safe behavior: broken optional artwork is hidden without replacing the intended asset. */
+.vg-image-missing{visibility:hidden!important;}

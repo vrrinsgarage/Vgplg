@@ -179,7 +179,7 @@
       <article class="system-card" data-open-system="PENDINGIN"><div class="system-card__media"><img src="images/category-pendingin.webp" alt="Pendingin" loading="lazy"></div><div><h3>Pendingin</h3><p>Pemeriksaan sistem pendingin.</p><button type="button">DETAIL</button></div></article>
       <article class="system-card" data-open-system="TRANSMISI"><div class="system-card__media"><img src="images/category-transmisi.webp" alt="Transmisi" loading="lazy"></div><div><h3>Transmisi</h3><p>Pemeriksaan sistem transmisi.</p><button type="button">DETAIL</button></div></article>
       <article class="system-card" data-open-system="KELISTRIKAN MESIN"><div class="system-card__media"><img src="images/category-kelistrikan.webp" alt="Kelistrikan mesin" loading="lazy"></div><div><h3>Kelistrikan</h3><p>Kelistrikan mesin &amp; komponen elektronik.</p><button type="button">DETAIL</button></div></article>
-        <article class="system-card" data-open-system="DEREK"><div class="system-card__media"><img src="images/category-derek.webp" alt="Derek" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.webp'"></div><div><h3>Derek</h3><p>Layanan pemindahan kendaraan sesuai kondisi dan kebutuhan.</p><button type="button">DETAIL</button></div></article>
+      <article class="system-card" data-open-system="DEREK"><div class="system-card__media"><img src="images/category-derek.webp" alt="Derek" loading="lazy"></div><div><h3>Derek</h3><p>Layanan pemindahan kendaraan sesuai kondisi dan kebutuhan.</p><button type="button">DETAIL</button></div></article>
     </div>
   </div>
 </section>
@@ -320,14 +320,11 @@
   function initFloatingBookNow() {
     var floating = document.querySelector('.floating-whatsapp');
     var heroBooking = document.querySelector('.hero-actions .button--whatsapp');
-
     if (!floating) return;
 
     function plot() {
       var height = floating.offsetHeight || 80;
       var top = 0;
-
-      // Pertahankan posisi lama: floating diplot terhadap titik tengah tombol Booking di Hero.
       if (heroBooking) {
         var rect = heroBooking.getBoundingClientRect();
         if (rect.width > 0 && rect.height > 0) {
@@ -335,7 +332,6 @@
           top = Math.max(0, Math.min(top, window.innerHeight - height));
         }
       }
-
       floating.style.setProperty('top', Math.round(top) + 'px', 'important');
       floating.style.setProperty('bottom', 'auto', 'important');
       floating.style.setProperty('transform', 'none', 'important');
@@ -347,8 +343,6 @@
     requestAnimationFrame(function () {
       requestAnimationFrame(plot);
     });
-
-    // Plotting tetap aktif ketika ukuran/orientasi viewport berubah.
     window.addEventListener('resize', plot, { passive: true });
     window.addEventListener('orientationchange', plot, { passive: true });
   }
