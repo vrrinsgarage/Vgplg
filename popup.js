@@ -1,6 +1,6 @@
 /* VRRINS GARAGE — FINAL POPUP FLOW
    Paket Perawatan VG → Tune → Bensin/Diesel → Paket → Detail
-   Kondisi Mobil → Kategori → Subkategori → Detail
+   Kondisi Mobil → Kategori → Layanan → Detail
    Navigasi bertingkat (stack) untuk tombol kembali
 */
 (() => {
@@ -22,7 +22,16 @@
   const arr = v => Array.isArray(v) ? v : (v ? [v] : []);
   const all = () => Array.isArray(window.services) ? window.services : [];
   const find = id => all().find(s => String(s.id) === String(id));
-  const byCategory = cat => all().filter(s => String(s.kategori || '').toUpperCase() === String(cat).toUpperCase());
+  const byCategory = cat => {
+    const key = String(cat || '').toUpperCase();
+    return all().filter(s => {
+      const category = String(s.kategori || '').toUpperCase();
+      // SUSPENSI DEPAN merupakan bagian dari sistem SUSPENSI,
+      // sehingga seluruh layanan suspensi tetap dapat ditemukan dari satu sistem.
+      if (key === 'SUSPENSI') return category === 'SUSPENSI' || category === 'SUSPENSI DEPAN';
+      return category === key;
+    });
+  };
 
   const CATEGORY_META = {
     'MESIN': { title: 'MESIN', desc: 'Pemeriksaan & perawatan sistem mesin kendaraan.', image: 'images/category-mesin.webp' },
@@ -33,7 +42,8 @@
     'REM': { title: 'REM', desc: 'Pemeriksaan & perawatan sistem pengereman.', image: 'images/category-rem.webp' },
     'PENDINGIN': { title: 'PENDINGIN', desc: 'Pemeriksaan & perawatan sistem pendingin kendaraan.', image: 'images/category-pendingin.webp' },
     'TRANSMISI': { title: 'TRANSMISI', desc: 'Pemeriksaan & perawatan sistem transmisi.', image: 'images/category-transmisi.webp' },
-    'KELISTRIKAN MESIN': { title: 'KELISTRIKAN', desc: 'Pemeriksaan kelistrikan & komponen elektronik.', image: 'images/category-kelistrikan.webp' }
+    'KELISTRIKAN MESIN': { title: 'KELISTRIKAN', desc: 'Pemeriksaan kelistrikan & komponen elektronik.', image: 'images/category-kelistrikan.webp' },
+    'DEREK': { title: 'DEREK', desc: 'Layanan bantuan pemindahan kendaraan sesuai kebutuhan dan kondisi kendaraan.', image: 'images/category-derek.webp' }
   };
 
   const TUNE_META = {
@@ -42,7 +52,7 @@
   };
 
   const image = (src, alt = '') =>
-    `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="this.src='images/placeholder.webp'">`;
+    `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.webp'">`;
 
   const head = (title, eyebrow = '') =>
     `<div class="vg-popup-head"><span class="vg-popup-eyebrow">${esc(eyebrow)}</span><h2 id="vg-modal-title">${esc(title)}</h2></div>`;
@@ -64,66 +74,74 @@
       </div>
     </article>`;
 
-  // ===== STACK NAVIGASI =====
-  let popupStack = [];
+  // ===== HISTORY POPUP (BROWSER + INTERNAL) =====
+  // Setiap halaman popup memiliki 1 history entry. Tombol Back HP,
+  // tombol Kembali, ESC, dan tombol X sekarang memakai history yang sama.
   let popupHistoryActive = false;
   let isNavigating = false;
   let isClosing = false;
+  let restoringFromHistory = false;
 
-  // pushState: true hanya untuk buka popup pertama kali
-  const open = (html, pushState = false) => {
-    if (isNavigating) return;
-    isNavigating = true;
-
-    if (content.innerHTML && content.innerHTML !== html) {
-      popupStack.push(content.innerHTML);
-    }
-
+  const renderPopup = (html) => {
     content.innerHTML = html;
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('popup-open');
     content.scrollTop = 0;
+  };
 
-    if (pushState && !popupHistoryActive) {
-      history.pushState({ vgPopup: true }, '', location.href);
+  const closeVisual = () => {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('popup-open');
+    content.innerHTML = '';
+    popupHistoryActive = false;
+  };
+
+  const open = (html, pushState = false) => {
+    if (isNavigating || isClosing) return;
+    isNavigating = true;
+
+    const popupAlreadyOpen = modal.classList.contains('is-open');
+    // Buka pertama kali atau pindah halaman di dalam popup = history baru.
+    // State menyimpan HTML agar popstate bisa mengembalikan halaman tepat.
+    if (!restoringFromHistory && (pushState || popupAlreadyOpen)) {
+      history.pushState({ vgPopup: true, vgHtml: html }, '', location.href);
       popupHistoryActive = true;
     }
+
+    renderPopup(html);
     isNavigating = false;
   };
 
   const goBack = () => {
     if (isNavigating || isClosing) return;
-    isNavigating = true;
 
-    if (popupStack.length > 0) {
-      const previousHtml = popupStack.pop();
-      content.innerHTML = previousHtml;
-      content.scrollTop = 0;
-      isNavigating = false;
+    if (popupHistoryActive && window.history.state?.vgPopup) {
+      history.back();
     } else {
-      isNavigating = false;
-      close();
+      closeVisual();
     }
   };
 
   const close = () => {
     if (isClosing) return;
     isClosing = true;
-    modal.classList.remove('is-open');
-    modal.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('popup-open');
-    popupStack = [];
-    popupHistoryActive = false;
-    // Hapus state history agar tombol back tidak keluar dari web
-    if (window.history.state && window.history.state.vgPopup) {
-      history.replaceState(null, '', location.href);
+
+    // Jangan replaceState: browser harus benar-benar kembali ke entry
+    // sebelum popup dibuka. popstate yang akan menutup visual popup.
+    if (popupHistoryActive && window.history.state?.vgPopup) {
+      history.back();
+    } else {
+      closeVisual();
     }
-    isClosing = false;
+
+    setTimeout(() => {
+      isClosing = false;
+    }, 0);
   };
 
   // ===== RENDER FUNCTIONS =====
-
   function renderPackageRoot() {
     const p = id => find(id);
     const tune = card({
@@ -315,9 +333,90 @@ Terima kasih. 🙏`;
         <h4>GALERI HASIL PEKERJAAN</h4>
         <div class="vg-gallery-grid">${gallery}</div>
       </div>
-      <a class="vg-wa-button" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}">
-        <span class="wa-icon"></span> BOOKING WHATSAPP
+      <a class="vg-wa-button vg-service-booking" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}" aria-label="Booking layanan ${esc(s.nama)}">
+        <img class="vg-service-booking__img" src="images/booking-layanan-ini.webp" alt="Booking layanan ini" loading="lazy" onerror="this.closest('.vg-service-booking')?.classList.add('is-fallback')">
+        <span class="vg-service-booking__fallback"><span class="wa-icon"></span> BOOKING WHATSAPP</span>
       </a>`;
+  }
+
+  // ===== STYLE BANNER BOOKING LAYANAN =====
+  // Khusus tombol booking pada Detail Layanan. Tidak memengaruhi
+  // VG BOOKING Header/Hero maupun BOOK NOW Floating.
+  if (!document.getElementById('vg-service-booking-style')) {
+    const style = document.createElement('style');
+    style.id = 'vg-service-booking-style';
+    style.textContent = `
+      .vg-service-booking {
+        display: block !important;
+        position: relative !important;
+        box-sizing: border-box !important;
+        width: 88% !important;
+        max-width: 520px !important;
+        height: auto !important;
+        aspect-ratio: 6.15 / 1 !important;
+        margin: 24px auto 6px !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        border: 0 !important;
+        border-radius: 12px !important;
+        background: transparent !important;
+        line-height: 0 !important;
+        text-decoration: none !important;
+        box-shadow: none !important;
+      }
+
+      .vg-service-booking__img {
+        display: block !important;
+        position: absolute !important;
+        left: 0 !important;
+        top: 50% !important;
+        width: 100% !important;
+        height: auto !important;
+        max-width: none !important;
+        margin: 0 !important;
+        transform: translateY(-50%) !important;
+        object-fit: contain !important;
+      }
+
+      .vg-service-booking__fallback {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        height: 100%;
+        line-height: 1.2;
+      }
+
+      .vg-service-booking.is-fallback .vg-service-booking__img {
+        display: none !important;
+      }
+
+      .vg-service-booking.is-fallback .vg-service-booking__fallback {
+        display: flex !important;
+      }
+
+      /* Desktop: cukup besar untuk menjadi CTA, tetapi tidak memenuhi popup. */
+      @media (min-width: 769px) {
+        .vg-service-booking {
+          width: 58% !important;
+          max-width: 560px !important;
+          aspect-ratio: 6.15 / 1 !important;
+          margin-top: 26px !important;
+        }
+      }
+
+      /* Mobile: dibuat dominan tetapi tetap menyisakan ruang kiri-kanan. */
+      @media (max-width: 768px) {
+        .vg-service-booking {
+          width: 65% !important;
+          max-width: 520px !important;
+          aspect-ratio: 6.15 / 1 !important;
+          margin-top: 24px !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
   }
 
   // ===== EVENT LISTENER =====
@@ -348,7 +447,7 @@ Terima kasih. 🙏`;
       return;
     }
 
-    // Buka sistem dari card (halaman utama) — ini untuk bagian "Pilih Layanan Sesuai Sistem Mobil Anda"
+    // Buka sistem dari card (halaman utama)
     const systemEl = e.target.closest('[data-open-system]');
     if (systemEl) {
       const isFirstOpen = !modal.classList.contains('is-open');
@@ -356,27 +455,30 @@ Terima kasih. 🙏`;
       return;
     }
 
-    // Navigasi dari tombol aksi (dalam popup)
+    // Navigasi dari tombol aksi (dalam popup).
+    // open() otomatis membuat history entry untuk setiap halaman popup.
     const actionEl = e.target.closest('[data-action]');
-    if (!actionEl) return;
-    const a = actionEl.dataset.action;
+    if (actionEl) {
+      const a = actionEl.dataset.action;
 
-    // Semua navigasi internal TIDAK pakai pushState (false)
-    if (a === 'package-root') {
-      open(renderPackageRoot(), false);
-    } else if (a === 'tune-root') {
-      open(renderTuneRoot(), false);
-    } else if (a === 'system-root') {
-      open(renderSystemRoot(), false);
-    } else if (a.startsWith('tune:')) {
-      open(renderTuneList(a.split(':')[1]), false);
-    } else if (a.startsWith('category:')) {
-      open(renderCategory(a.substring(9)), false);
-    } else if (a.startsWith('service:')) {
-      const parts = a.split(':');
-      const id = parts[1];
-      open(renderService(id), false);
+      if (a === 'package-root') {
+        open(renderPackageRoot(), false);
+      } else if (a === 'tune-root') {
+        open(renderTuneRoot(), false);
+      } else if (a === 'system-root') {
+        open(renderSystemRoot(), false);
+      } else if (a.startsWith('tune:')) {
+        open(renderTuneList(a.split(':')[1]), false);
+      } else if (a.startsWith('category:')) {
+        open(renderCategory(a.substring(9)), false);
+      } else if (a.startsWith('service:')) {
+        const parts = a.split(':');
+        const id = parts[1];
+        open(renderService(id), false);
+      }
+      return;
     }
+
   });
 
   // ===== TOMBOL KEMBALI FISIK HP & ESC =====
@@ -388,14 +490,19 @@ Terima kasih. 🙏`;
   });
 
   // ===== TOMBOL KEMBALI BROWSER (POPSTATE) =====
-  window.addEventListener('popstate', () => {
-    if (popupHistoryActive && modal.classList.contains('is-open')) {
-      goBack();
-      // Jika setelah goBack stack kosong dan popup masih terbuka, tutup
-      if (popupStack.length === 0 && modal.classList.contains('is-open')) {
-        close();
-      }
+  window.addEventListener('popstate', (event) => {
+    const state = event.state;
+
+    if (state?.vgPopup && typeof state.vgHtml === 'string') {
+      restoringFromHistory = true;
+      popupHistoryActive = true;
+      renderPopup(state.vgHtml);
+      restoringFromHistory = false;
+      return;
     }
+
+    // Kembali ke history halaman normal = popup selesai.
+    closeVisual();
   });
 
   // ===== WHATSAPP LINKS =====
@@ -448,18 +555,7 @@ Terima kasih. 🙏`;
   window.openZonePopup = function(zoneNumber) {
     const html = renderZonePopup(zoneNumber);
     const isFirstOpen = !modal.classList.contains('is-open');
-    if (content.innerHTML) {
-      popupStack.push(content.innerHTML);
-    }
-    content.innerHTML = html;
-    modal.classList.add('is-open');
-    modal.setAttribute('aria-hidden', 'false');
-    document.body.classList.add('popup-open');
-    content.scrollTop = 0;
-    if (isFirstOpen && !popupHistoryActive) {
-      history.pushState({ vgPopup: true }, '', location.href);
-      popupHistoryActive = true;
-    }
+    open(html, isFirstOpen);
   };
 
 })();

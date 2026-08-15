@@ -2862,7 +2862,7 @@ body.popup-open .floating-whatsapp {
 
 .floating-whatsapp {
   position: fixed !important;
-  top: var(--vg-booking-floating-top, 0px) !important;
+  top: auto !important; /* posisi final diplot oleh script */
   right: 20px !important;
   bottom: auto !important;
   left: auto !important;

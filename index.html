@@ -179,6 +179,7 @@
       <article class="system-card" data-open-system="PENDINGIN"><div class="system-card__media"><img src="images/category-pendingin.webp" alt="Pendingin" loading="lazy"></div><div><h3>Pendingin</h3><p>Pemeriksaan sistem pendingin.</p><button type="button">DETAIL</button></div></article>
       <article class="system-card" data-open-system="TRANSMISI"><div class="system-card__media"><img src="images/category-transmisi.webp" alt="Transmisi" loading="lazy"></div><div><h3>Transmisi</h3><p>Pemeriksaan sistem transmisi.</p><button type="button">DETAIL</button></div></article>
       <article class="system-card" data-open-system="KELISTRIKAN MESIN"><div class="system-card__media"><img src="images/category-kelistrikan.webp" alt="Kelistrikan mesin" loading="lazy"></div><div><h3>Kelistrikan</h3><p>Kelistrikan mesin &amp; komponen elektronik.</p><button type="button">DETAIL</button></div></article>
+        <article class="system-card" data-open-system="DEREK"><div class="system-card__media"><img src="images/category-derek.webp" alt="Derek" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.webp'"></div><div><h3>Derek</h3><p>Layanan pemindahan kendaraan sesuai kondisi dan kebutuhan.</p><button type="button">DETAIL</button></div></article>
     </div>
   </div>
 </section>
@@ -322,12 +323,11 @@
 
     if (!floating) return;
 
-    function finish() {
+    function plot() {
       var height = floating.offsetHeight || 80;
       var top = 0;
 
-      /* Satu kali saja: pertahankan posisi yang selama ini dipakai.
-         Setelah ini Floating BOOK NOW tidak lagi mengikuti Hero/Header. */
+      // Pertahankan posisi lama: floating diplot terhadap titik tengah tombol Booking di Hero.
       if (heroBooking) {
         var rect = heroBooking.getBoundingClientRect();
         if (rect.width > 0 && rect.height > 0) {
@@ -344,10 +344,13 @@
       floating.style.setProperty('pointer-events', 'auto', 'important');
     }
 
-    /* Tunggu satu frame agar layout awal selesai, lalu kunci posisi. */
     requestAnimationFrame(function () {
-      requestAnimationFrame(finish);
+      requestAnimationFrame(plot);
     });
+
+    // Plotting tetap aktif ketika ukuran/orientasi viewport berubah.
+    window.addEventListener('resize', plot, { passive: true });
+    window.addEventListener('orientationchange', plot, { passive: true });
   }
 
   if (document.readyState === 'loading') {
