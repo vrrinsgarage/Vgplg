@@ -1,7 +1,3 @@
-// VRRINS GARAGE — DATABASE LAYANAN FINAL — 129 LAYANAN
-// Harga = jasa saja. Estimasi waktu menggunakan format ±.
-// Field: hargaKeterangan, penyesuaianHarga, yangTermasuk, cocokUntuk, yangTidakTermasuk, catatan.
-
 globalThis.services = [
   {
     "id": "vg-tune-basic-bensin",
@@ -23,15 +19,11 @@ globalThis.services = [
       "Mendeteksi gangguan awal",
       "Membantu efisiensi bahan bakar"
     ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Oli mesin",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Scanning ECU",
       "Pemeriksaan kondisi mesin",
       "Pemeriksaan aki dan sistem pengisian",
@@ -42,11 +34,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Spare part",
       "Oli mesin",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 1
   },
   {
     "id": "vg-tune-plus-bensin",
@@ -67,15 +60,11 @@ globalThis.services = [
       "Idle lebih stabil",
       "Sistem udara lebih bersih"
     ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Cairan pembersih tambahan",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Semua layanan VG TUNE BASIC",
       "Pembersihan throttle body",
       "Pembersihan injector",
@@ -85,11 +74,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Spare part",
       "Cairan pembersih tambahan",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 2
   },
   {
     "id": "vg-tune-pro-bensin",
@@ -111,15 +101,11 @@ globalThis.services = [
       "Membantu menemukan penyebab masalah",
       "Menjaga performa kendaraan"
     ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Perbaikan kerusakan besar",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Scanning ECU",
       "Pemeriksaan Live Data",
       "Pemeriksaan Fuel Trim",
@@ -130,11 +116,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Spare part",
       "Perbaikan kerusakan besar",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 3
   },
   {
     "id": "vg-tune-basic-diesel",
@@ -156,15 +143,11 @@ globalThis.services = [
       "Membantu respons akselerasi",
       "Mendeteksi gangguan lebih awal"
     ],
-    "tidakTermasuk": [
-      "Filter solar",
-      "Oli mesin",
-      "Spare part"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Scanning ECU",
       "Pemeriksaan Live Data dasar",
       "Pemeriksaan sistem udara",
@@ -177,10 +160,11 @@ globalThis.services = [
       "Oli mesin",
       "Spare part",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 4
   },
   {
     "id": "vg-tune-plus-diesel",
@@ -188,7 +172,7 @@ globalThis.services = [
     "icon": "🔧",
     "nama": "VG TUNE PLUS Diesel",
     "harga": "Rp300.000 – Rp450.000",
-    "durasi": "± 60–150 menit",
+    "durasi": "± 90–150 menit",
     "deskripsi": "Paket lanjutan servis diesel dengan pembersihan sistem udara lebih menyeluruh untuk membantu mengoptimalkan performa mesin.",
     "pekerjaan": [
       "Semua layanan VG TUNE BASIC Diesel",
@@ -202,16 +186,11 @@ globalThis.services = [
       "Membantu memperbaiki respons mesin",
       "Menjaga efisiensi pembakaran"
     ],
-    "tidakTermasuk": [
-      "Filter solar",
-      "Oli mesin",
-      "Spare part",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Semua layanan VG TUNE BASIC Diesel",
       "Pembersihan throttle body",
       "Pembersihan EGR Valve",
@@ -223,11 +202,12 @@ globalThis.services = [
       "Filter solar",
       "Oli mesin",
       "Spare part",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 5
   },
   {
     "id": "vg-tune-pro-diesel",
@@ -249,16 +229,11 @@ globalThis.services = [
       "Membantu menjaga performa mesin",
       "Membantu mendeteksi gangguan mesin"
     ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Servis injector diesel",
-      "Servis turbocharger",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Semua layanan VG TUNE PLUS Diesel",
       "Pembersihan Intercooler",
       "Pemeriksaan sistem intake",
@@ -270,11 +245,12 @@ globalThis.services = [
       "Spare part",
       "Servis injector diesel",
       "Servis turbocharger",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 6
   },
   {
     "id": "vg-addon-gurah-karbon",
@@ -295,15 +271,11 @@ globalThis.services = [
       "Membantu meningkatkan respons mesin",
       "Mendukung performa mesin"
     ],
-    "tidakTermasuk": [
-      "Kerusakan komponen mesin",
-      "Spare part",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pemeriksaan kondisi awal mesin",
       "Proses carbon cleaner",
       "Monitoring kondisi mesin",
@@ -313,11 +285,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Kerusakan komponen mesin",
       "Spare part",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 7
   },
   {
     "id": "vg-addon-diesel-purging",
@@ -338,15 +311,11 @@ globalThis.services = [
       "Membantu menjaga respons mesin",
       "Mendukung efisiensi pembakaran"
     ],
-    "tidakTermasuk": [
-      "Cairan Diesel Purge",
-      "Penggantian injector",
-      "Perbaikan pompa injeksi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pemeriksaan sistem bahan bakar",
       "Pemasangan alat purging",
       "Proses pembersihan sistem bahan bakar",
@@ -358,10 +327,11 @@ globalThis.services = [
       "Penggantian injector",
       "Perbaikan pompa injeksi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 8
   },
   {
     "id": "vg-check",
@@ -369,7 +339,7 @@ globalThis.services = [
     "icon": "🔍",
     "nama": "VG CHECK",
     "harga": "Rp100.000 – Rp150.000",
-    "durasi": "± 30–90 menit",
+    "durasi": "± 45–90 menit",
     "deskripsi": "Pemeriksaan menyeluruh kondisi kendaraan untuk mengetahui kondisi komponen, potensi kerusakan, dan prioritas perawatan.",
     "pekerjaan": [
       "Pemeriksaan kondisi mesin",
@@ -387,16 +357,11 @@ globalThis.services = [
       "Membantu menentukan prioritas perbaikan",
       "Mengurangi risiko kerusakan mendadak"
     ],
-    "tidakTermasuk": [
-      "Biaya perbaikan",
-      "Spare part",
-      "Jasa servis lanjutan",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pemeriksaan kondisi mesin",
       "Pemeriksaan kebocoran oli dan coolant",
       "Pemeriksaan sistem kelistrikan",
@@ -411,11 +376,12 @@ globalThis.services = [
       "Biaya perbaikan",
       "Spare part",
       "Jasa servis lanjutan",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 9
   },
   {
     "id": "vg-brake-service",
@@ -441,17 +407,11 @@ globalThis.services = [
       "Mendeteksi komponen rem yang mulai aus",
       "Meningkatkan keamanan berkendara"
     ],
-    "tidakTermasuk": [
-      "Penggantian kampas rem",
-      "Penggantian cakram atau tromol",
-      "Penggantian komponen rem",
-      "Minyak rem tambahan",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Bonus VG CHECK",
       "Pembongkaran sistem rem",
       "Pembersihan kaliper atau tromol",
@@ -467,11 +427,12 @@ globalThis.services = [
       "Penggantian cakram atau tromol",
       "Penggantian komponen rem",
       "Minyak rem tambahan",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 10
   },
   {
     "id": "vg-oil-service",
@@ -479,7 +440,7 @@ globalThis.services = [
     "icon": "🛢️",
     "nama": "VG OIL SERVICE",
     "harga": "Rp50.000 – Rp75.000",
-    "durasi": "± 15–30 menit",
+    "durasi": "± 20–40 menit",
     "deskripsi": "Layanan penggantian oli kendaraan dengan pemeriksaan dasar sistem pelumasan.",
     "pekerjaan": [
       "Penggantian oli mesin",
@@ -494,16 +455,11 @@ globalThis.services = [
       "Membantu menjaga performa mesin",
       "Membantu memperpanjang usia komponen mesin"
     ],
-    "tidakTermasuk": [
-      "Oli mesin",
-      "Filter oli",
-      "Spare part tambahan",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian oli mesin",
       "Pemeriksaan kondisi oli lama",
       "Pemeriksaan baut drain oli",
@@ -516,11 +472,12 @@ globalThis.services = [
       "Oli mesin",
       "Filter oli",
       "Spare part tambahan",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 11
   },
   {
     "id": "flushing-oli-mesin",
@@ -542,15 +499,11 @@ globalThis.services = [
       "Membantu sirkulasi oli lebih optimal",
       "Mendukung performa mesin"
     ],
-    "tidakTermasuk": [
-      "Oli mesin baru",
-      "Spare part",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Engine Flush",
       "Membersihkan endapan lumpur oli",
       "Membersihkan jalur pelumasan mesin",
@@ -561,11 +514,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Oli mesin baru",
       "Spare part",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 12
   },
   {
     "id": "ganti-busi",
@@ -587,15 +541,11 @@ globalThis.services = [
       "Menjaga respons mesin",
       "Membantu menjaga efisiensi bahan bakar"
     ],
-    "tidakTermasuk": [
-      "Busi",
-      "Kerusakan sistem pengapian lain",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian busi",
       "Pemeriksaan kondisi busi lama",
       "Pemeriksaan celah busi",
@@ -606,18 +556,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Busi",
       "Kerusakan sistem pengapian lain",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 13
   },
   {
     "id": "ganti-ignition-coil",
     "kategori": "MESIN",
     "icon": "⚡",
     "nama": "Ganti Ignition Coil",
-    "harga": "Rp110.000 – Rp380.000",
+    "harga": "Rp93.500 – Rp379.500",
     "durasi": "± 30–60 menit",
     "deskripsi": "Penggantian ignition coil untuk mengatasi gangguan sistem pengapian mesin.",
     "pekerjaan": [
@@ -632,15 +583,11 @@ globalThis.services = [
       "Membantu menjaga pembakaran mesin",
       "Meningkatkan respons mesin"
     ],
-    "tidakTermasuk": [
-      "Ignition coil",
-      "Kerusakan ECU",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian ignition coil",
       "Pemeriksaan konektor coil",
       "Pemeriksaan sistem pengapian",
@@ -651,18 +598,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Ignition coil",
       "Kerusakan ECU",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 14
   },
   {
     "id": "ganti-engine-mounting",
     "kategori": "MESIN",
     "icon": "🔧",
     "nama": "Ganti Engine Mounting",
-    "harga": "Rp110.000 – Rp145.000 / sisi",
+    "harga": "Rp110.000 – Rp143.750",
     "durasi": "± 30–90 menit",
     "deskripsi": "Penggantian dudukan mesin untuk membantu mengurangi getaran berlebih pada kendaraan.",
     "pekerjaan": [
@@ -677,15 +625,11 @@ globalThis.services = [
       "Meningkatkan kenyamanan berkendara",
       "Menjaga posisi mesin"
     ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Kerusakan dudukan lain",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian engine mounting",
       "Pemeriksaan mounting lainnya",
       "Pemeriksaan baut mounting",
@@ -696,11 +640,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Spare part",
       "Kerusakan dudukan lain",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 15
   },
   {
     "id": "ganti-oli-mesin",
@@ -723,15 +668,11 @@ globalThis.services = [
       "Membantu menjaga performa mesin",
       "Membantu mengurangi keausan komponen"
     ],
-    "tidakTermasuk": [
-      "Oli mesin",
-      "Filter oli",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian oli mesin",
       "Pemeriksaan kondisi oli lama",
       "Pemeriksaan baut drain oli",
@@ -743,11 +684,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Oli mesin",
       "Filter oli",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 16
   },
   {
     "id": "ganti-oli-transmisi-manual",
@@ -768,15 +710,11 @@ globalThis.services = [
       "Menjaga pelumasan gear transmisi",
       "Membantu memperpanjang usia transmisi"
     ],
-    "tidakTermasuk": [
-      "Oli transmisi",
-      "Perbaikan transmisi",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian oli transmisi manual",
       "Pemeriksaan baut drain dan fill",
       "Pemeriksaan kondisi oli lama",
@@ -786,18 +724,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Oli transmisi",
       "Perbaikan transmisi",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 17
   },
   {
     "id": "ganti-oli-transmisi-at",
     "kategori": "PELUMASAN",
     "icon": "⚙️",
     "nama": "Ganti Oli Transmisi Otomatis (AT)",
-    "harga": "Rp275.000 – Rp375.000",
+    "harga": "Rp275.000 – Rp373.750",
     "durasi": "± 45–90 menit",
     "deskripsi": "Penggantian oli transmisi otomatis dengan pemeriksaan kondisi dasar transmisi.",
     "pekerjaan": [
@@ -811,15 +750,11 @@ globalThis.services = [
       "Menjaga sistem hidrolik transmisi",
       "Membantu menjaga performa transmisi"
     ],
-    "tidakTermasuk": [
-      "Oli AT",
-      "Filter transmisi",
-      "Perbaikan transmisi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian oli transmisi otomatis",
       "Pemeriksaan baut drain dan fill",
       "Pemeriksaan kondisi oli AT",
@@ -831,10 +766,11 @@ globalThis.services = [
       "Filter transmisi",
       "Perbaikan transmisi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 18
   },
   {
     "id": "ganti-oli-gardan",
@@ -855,15 +791,11 @@ globalThis.services = [
       "Mengurangi gesekan komponen",
       "Membantu mencegah keausan"
     ],
-    "tidakTermasuk": [
-      "Oli gardan",
-      "Perbaikan gardan",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian oli gardan",
       "Pemeriksaan baut drain dan fill",
       "Pemeriksaan kondisi oli gardan",
@@ -873,11 +805,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Oli gardan",
       "Perbaikan gardan",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 19
   },
   {
     "id": "atasi-kebocoran-oli",
@@ -885,7 +818,7 @@ globalThis.services = [
     "icon": "💧",
     "nama": "Mengatasi Kebocoran Oli Mesin",
     "harga": "Rp150.000 – Rp500.000",
-    "durasi": "± 60–180 menit",
+    "durasi": "± 1–4 jam",
     "deskripsi": "Pemeriksaan dan penanganan awal kebocoran oli mesin berdasarkan sumber kebocoran.",
     "pekerjaan": [
       "Pemeriksaan titik kebocoran oli",
@@ -899,15 +832,11 @@ globalThis.services = [
       "Menjaga kebersihan area mesin",
       "Mendeteksi sumber kebocoran"
     ],
-    "tidakTermasuk": [
-      "Seal atau gasket",
-      "Kerusakan besar mesin",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pemeriksaan titik kebocoran oli",
       "Pemeriksaan seal dan gasket",
       "Penggantian seal/gasket bila diperlukan",
@@ -918,11 +847,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Seal atau gasket",
       "Kerusakan besar mesin",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 20
   },
   {
     "id": "pemeriksaan-sistem-bahan-bakar",
@@ -944,15 +874,11 @@ globalThis.services = [
       "Membantu menjaga performa mesin",
       "Membantu efisiensi pembakaran"
     ],
-    "tidakTermasuk": [
-      "Penggantian komponen",
-      "Spare part",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pemeriksaan fuel pump",
       "Pemeriksaan filter bahan bakar",
       "Pemeriksaan injector",
@@ -963,11 +889,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Penggantian komponen",
       "Spare part",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 21
   },
   {
     "id": "fuel-system-cleaner",
@@ -975,7 +902,7 @@ globalThis.services = [
     "icon": "⛽",
     "nama": "Fuel System Cleaner",
     "harga": "Rp250.000 – Rp500.000",
-    "durasi": "± 60–120 menit",
+    "durasi": "± 1–2 jam",
     "deskripsi": "Perawatan sistem bahan bakar untuk membantu membersihkan endapan pada jalur bahan bakar dan injector.",
     "pekerjaan": [
       "Pembersihan jalur bahan bakar",
@@ -988,15 +915,11 @@ globalThis.services = [
       "Membantu menjaga pola pembakaran",
       "Membantu efisiensi bahan bakar"
     ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Kerusakan injector",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pembersihan jalur bahan bakar",
       "Pembersihan injector",
       "Pembersihan ruang bakar",
@@ -1006,18 +929,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Spare part",
       "Kerusakan injector",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 22
   },
   {
     "id": "ganti-fuel-pump",
     "kategori": "BAHAN BAKAR",
     "icon": "⛽",
     "nama": "Ganti Fuel Pump",
-    "harga": "Rp190.000 – Rp260.000",
+    "harga": "Rp192.500 – Rp258.750",
     "durasi": "± 60–120 menit",
     "deskripsi": "Penggantian fuel pump dengan pemeriksaan sistem suplai bahan bakar kendaraan.",
     "pekerjaan": [
@@ -1032,15 +956,11 @@ globalThis.services = [
       "Membantu mengatasi mesin sulit hidup",
       "Menjaga performa mesin"
     ],
-    "tidakTermasuk": [
-      "Fuel pump",
-      "Perbaikan kelistrikan besar",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian fuel pump",
       "Pemeriksaan tekanan bahan bakar",
       "Pemeriksaan soket kelistrikan fuel pump",
@@ -1051,11 +971,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Fuel pump",
       "Perbaikan kelistrikan besar",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 23
   },
   {
     "id": "servis-injector",
@@ -1063,7 +984,7 @@ globalThis.services = [
     "icon": "⛽",
     "nama": "Servis Injector",
     "harga": "Rp300.000 – Rp600.000",
-    "durasi": "± 90–180 menit",
+    "durasi": "± 2–4 jam",
     "deskripsi": "Pembersihan injector untuk membantu menjaga pola semprotan bahan bakar.",
     "pekerjaan": [
       "Pemeriksaan injector",
@@ -1077,15 +998,11 @@ globalThis.services = [
       "Membantu respons mesin",
       "Membantu menjaga efisiensi bahan bakar"
     ],
-    "tidakTermasuk": [
-      "Injector baru",
-      "Kerusakan sistem bahan bakar",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pemeriksaan injector",
       "Pembersihan injector",
       "Pengujian pola semprotan",
@@ -1096,18 +1013,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Injector baru",
       "Kerusakan sistem bahan bakar",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 24
   },
   {
     "id": "ganti-shock-absorber-depan",
     "kategori": "SUSPENSI",
     "icon": "🚙",
-    "nama": "Ganti Shock Absorber Depan",
-    "harga": "Rp220.000 – Rp390.000",
+    "nama": "Ganti Shock Absorber Depan 1 Sisi",
+    "harga": "Rp130.000 – Rp385.000",
     "durasi": "± 60–120 menit",
     "deskripsi": "Penggantian shock absorber depan untuk membantu menjaga kenyamanan dan kestabilan kendaraan.",
     "pekerjaan": [
@@ -1121,15 +1039,11 @@ globalThis.services = [
       "Meningkatkan kenyamanan berkendara",
       "Menjaga kestabilan kendaraan"
     ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Kerusakan komponen lain",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian shock absorber depan",
       "Pemeriksaan dudukan shock",
       "Pemeriksaan baut pengikat",
@@ -1139,18 +1053,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Spare part",
       "Kerusakan komponen lain",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 25
   },
   {
     "id": "ganti-shock-belakang",
     "kategori": "SUSPENSI",
     "icon": "🚙",
-    "nama": "Ganti Shock Absorber Belakang",
-    "harga": "Rp165.000 – Rp400.000",
+    "nama": "Ganti Shock Absorber Belakang 1 Sisi",
+    "harga": "Rp137.500 – Rp402.500",
     "durasi": "± 45–90 menit",
     "deskripsi": "Penggantian shock absorber belakang untuk menjaga kestabilan dan kenyamanan kendaraan.",
     "pekerjaan": [
@@ -1164,15 +1079,11 @@ globalThis.services = [
       "Meningkatkan kenyamanan",
       "Membantu kestabilan saat berkendara"
     ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Perbaikan kaki-kaki lain",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian shock absorber belakang",
       "Pemeriksaan dudukan shock",
       "Pemeriksaan baut pengikat",
@@ -1182,233 +1093,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Spare part",
       "Perbaikan kaki-kaki lain",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
-  },
-  {
-    "id": "ganti-ball-joint",
-    "kategori": "SUSPENSI",
-    "icon": "🚙",
-    "nama": "Ganti Ball Joint",
-    "harga": "Rp165.000 – Rp175.000",
-    "durasi": "± 45–90 menit",
-    "deskripsi": "Penggantian ball joint yang berfungsi menjaga pergerakan roda dan sistem suspensi.",
-    "pekerjaan": [
-      "Penggantian ball joint",
-      "Pemeriksaan steering knuckle",
-      "Pemeriksaan lower arm",
-      "Pemeriksaan baut pengikat"
-    ],
-    "manfaat": [
-      "Mengurangi bunyi kaki-kaki",
-      "Menjaga kestabilan roda",
-      "Meningkatkan keamanan berkendara"
-    ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Kerusakan komponen lain",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
-    "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
-      "Penggantian ball joint",
-      "Pemeriksaan steering knuckle",
-      "Pemeriksaan lower arm",
-      "Pemeriksaan baut pengikat"
-    ],
-    "cocokUntuk": "Kendaraan dengan bunyi atau kelonggaran pada kaki-kaki yang mengarah pada ball joint aus.",
-    "yangTidakTermasuk": [
-      "Spare part",
-      "Kerusakan komponen lain",
-      "Biaya transportasi",
-      "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
-    ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
-  },
-  {
-    "id": "ganti-link-stabilizer",
-    "kategori": "SUSPENSI",
-    "icon": "🚙",
-    "nama": "Ganti Link Stabilizer",
-    "harga": "Rp110.000 – Rp145.000",
-    "durasi": "± 30–60 menit",
-    "deskripsi": "Penggantian link stabilizer untuk membantu mengurangi bunyi dan menjaga kestabilan kendaraan.",
-    "pekerjaan": [
-      "Penggantian link stabilizer",
-      "Pemeriksaan karet stabilizer",
-      "Pemeriksaan stabilizer bar",
-      "Uji kendaraan"
-    ],
-    "manfaat": [
-      "Mengurangi bunyi kaki-kaki",
-      "Meningkatkan kestabilan",
-      "Membantu kenyamanan berkendara"
-    ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Perbaikan suspensi lain",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
-    "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
-      "Penggantian link stabilizer",
-      "Pemeriksaan karet stabilizer",
-      "Pemeriksaan stabilizer bar",
-      "Uji kendaraan"
-    ],
-    "cocokUntuk": "Kendaraan dengan bunyi pada kaki-kaki atau stabilizer yang menunjukkan komponen stabilizer aus.",
-    "yangTidakTermasuk": [
-      "Spare part",
-      "Perbaikan suspensi lain",
-      "Biaya transportasi",
-      "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
-    ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
-  },
-  {
-    "id": "ganti-bearing-roda",
-    "kategori": "SUSPENSI",
-    "icon": "🚙",
-    "nama": "Ganti Bearing Roda",
-    "harga": "Rp165.000 – Rp320.000",
-    "durasi": "± 60–120 menit",
-    "deskripsi": "Penggantian bearing roda untuk mengatasi bunyi dan menjaga putaran roda tetap optimal.",
-    "pekerjaan": [
-      "Penggantian bearing roda",
-      "Pemeriksaan hub roda",
-      "Pemeriksaan as roda",
-      "Pemeriksaan baut roda"
-    ],
-    "manfaat": [
-      "Mengurangi suara dengung roda",
-      "Menjaga putaran roda",
-      "Meningkatkan keamanan kendaraan"
-    ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Kerusakan hub roda",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
-    "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
-      "Penggantian bearing roda",
-      "Pemeriksaan hub roda",
-      "Pemeriksaan as roda",
-      "Pemeriksaan baut roda"
-    ],
-    "cocokUntuk": "Kendaraan dengan bunyi dengung/gerung dari roda, kelonggaran roda, atau indikasi bearing roda aus.",
-    "yangTidakTermasuk": [
-      "Spare part",
-      "Kerusakan hub roda",
-      "Biaya transportasi",
-      "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
-    ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
-  },
-  {
-    "id": "ganti-tie-rod",
-    "kategori": "KEMUDI",
-    "icon": "🎯",
-    "nama": "Ganti Tie Rod",
-    "harga": "Rp140.000 – Rp145.000",
-    "durasi": "± 30–60 menit",
-    "deskripsi": "Penggantian tie rod untuk menjaga fungsi kemudi dan kestabilan arah kendaraan.",
-    "pekerjaan": [
-      "Penggantian tie rod",
-      "Pemeriksaan rack end",
-      "Pemeriksaan boot steering rack",
-      "Uji fungsi kemudi"
-    ],
-    "manfaat": [
-      "Mengurangi kelonggaran kemudi",
-      "Meningkatkan kestabilan arah kendaraan",
-      "Membantu kenyamanan berkendara"
-    ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Spooring",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
-    "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
-      "Penggantian tie rod",
-      "Pemeriksaan rack end",
-      "Pemeriksaan boot steering rack",
-      "Uji fungsi kemudi"
-    ],
-    "cocokUntuk": "Kendaraan dengan kemudi berat, oblak, bunyi, kebocoran, atau kelonggaran pada sistem kemudi/steering.",
-    "yangTidakTermasuk": [
-      "Spare part",
-      "Spooring",
-      "Biaya transportasi",
-      "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
-    ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
-  },
-  {
-    "id": "ganti-rack-end",
-    "kategori": "KEMUDI",
-    "icon": "🎯",
-    "nama": "Ganti Rack End",
-    "harga": "Rp165.000 – Rp230.000",
-    "durasi": "± 30–60 menit",
-    "deskripsi": "Penggantian rack end untuk memperbaiki sistem penghubung kemudi kendaraan.",
-    "pekerjaan": [
-      "Penggantian rack end",
-      "Pemeriksaan tie rod",
-      "Pemeriksaan steering rack",
-      "Uji fungsi kemudi"
-    ],
-    "manfaat": [
-      "Mengurangi bunyi pada kemudi",
-      "Menjaga respon kemudi",
-      "Meningkatkan kestabilan kendaraan"
-    ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Spooring",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
-    "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
-      "Penggantian rack end",
-      "Pemeriksaan tie rod",
-      "Pemeriksaan steering rack",
-      "Uji fungsi kemudi"
-    ],
-    "cocokUntuk": "Kendaraan dengan kemudi berat, oblak, bunyi, kebocoran, atau kelonggaran pada sistem kemudi/steering.",
-    "yangTidakTermasuk": [
-      "Spare part",
-      "Spooring",
-      "Biaya transportasi",
-      "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
-    ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 26
   },
   {
     "id": "servis-steering-rack",
     "kategori": "KEMUDI",
     "icon": "🎯",
     "nama": "Servis Steering Rack",
-    "harga": "Rp825.000 – Rp1.450.000",
+    "harga": "Rp825.000 – Rp1.437.500",
     "durasi": "± 1–2 hari",
     "deskripsi": "Servis steering rack untuk pemeriksaan dan perbaikan komponen sistem kemudi.",
     "pekerjaan": [
@@ -1424,15 +1121,11 @@ globalThis.services = [
       "Mengembalikan fungsi kemudi",
       "Meningkatkan kenyamanan berkendara"
     ],
-    "tidakTermasuk": [
-      "Spare part tambahan",
-      "Kerusakan berat steering rack",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pembongkaran steering rack",
       "Pembersihan komponen",
       "Pemeriksaan gear rack",
@@ -1444,18 +1137,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Spare part tambahan",
       "Kerusakan berat steering rack",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 27
   },
   {
     "id": "ganti-power-steering-pump",
     "kategori": "KEMUDI",
     "icon": "🎯",
     "nama": "Ganti Power Steering Pump",
-    "harga": "Rp220.000 – Rp450.000",
+    "harga": "Rp242.000 – Rp460.000",
     "durasi": "± 60–120 menit",
     "deskripsi": "Penggantian power steering pump untuk membantu sistem kemudi tetap ringan.",
     "pekerjaan": [
@@ -1470,15 +1164,11 @@ globalThis.services = [
       "Mengurangi suara abnormal",
       "Menjaga fungsi power steering"
     ],
-    "tidakTermasuk": [
-      "Spare part",
-      "Oli power steering",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian power steering pump",
       "Pemeriksaan belt power steering",
       "Pemeriksaan selang power steering",
@@ -1489,11 +1179,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Spare part",
       "Oli power steering",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 28
   },
   {
     "id": "ganti-oli-power-steering",
@@ -1514,15 +1205,11 @@ globalThis.services = [
       "Membantu kemudi lebih ringan",
       "Mengurangi risiko kerusakan sistem"
     ],
-    "tidakTermasuk": [
-      "Kerusakan power steering",
-      "Spare part",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pengurasan oli lama",
       "Pengisian oli baru",
       "Pemeriksaan kebocoran sistem",
@@ -1532,11 +1219,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Kerusakan power steering",
       "Spare part",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 29
   },
   {
     "id": "servis-rem",
@@ -1559,15 +1247,11 @@ globalThis.services = [
       "Meningkatkan respons pengereman",
       "Menjaga keamanan berkendara"
     ],
-    "tidakTermasuk": [
-      "Penggantian spare part",
-      "Minyak rem",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Bongkar sistem rem",
       "Pembersihan kampas rem",
       "Pembersihan kaliper/tromol",
@@ -1579,18 +1263,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Penggantian spare part",
       "Minyak rem",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 30
   },
   {
     "id": "ganti-kampas-rem-depan",
     "kategori": "REM",
     "icon": "🛑",
     "nama": "Ganti Kampas Rem Depan",
-    "harga": "Rp140.000 – Rp175.000",
+    "harga": "Rp137.500 – Rp172.500",
     "durasi": "± 30–60 menit",
     "deskripsi": "Penggantian kampas rem depan untuk menjaga daya pengereman kendaraan.",
     "pekerjaan": [
@@ -1605,15 +1290,11 @@ globalThis.services = [
       "Mengurangi bunyi rem",
       "Menjaga keamanan kendaraan"
     ],
-    "tidakTermasuk": [
-      "Kampas rem",
-      "Kerusakan cakram",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian kampas rem depan",
       "Pembersihan kaliper",
       "Pelumasan pin kaliper",
@@ -1624,18 +1305,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Kampas rem",
       "Kerusakan cakram",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 31
   },
   {
     "id": "ganti-kampas-rem-belakang",
     "kategori": "REM",
     "icon": "🛑",
     "nama": "Ganti Kampas Rem Belakang",
-    "harga": "Rp140.000 – Rp175.000",
+    "harga": "Rp137.500 – Rp172.500",
     "durasi": "± 30–60 menit",
     "deskripsi": "Penggantian kampas rem belakang untuk menjaga keseimbangan pengereman.",
     "pekerjaan": [
@@ -1650,15 +1332,11 @@ globalThis.services = [
       "Mengurangi risiko rem tidak merata",
       "Meningkatkan keamanan"
     ],
-    "tidakTermasuk": [
-      "Kampas rem",
-      "Kerusakan komponen lain",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian kampas rem belakang",
       "Pembersihan tromol/kaliper",
       "Pelumasan komponen rem",
@@ -1669,11 +1347,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Kampas rem",
       "Kerusakan komponen lain",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 32
   },
   {
     "id": "servis-kaliper-rem",
@@ -1696,15 +1375,11 @@ globalThis.services = [
       "Mengurangi keausan tidak merata",
       "Menjaga performa pengereman"
     ],
-    "tidakTermasuk": [
-      "Seal kit",
-      "Kaliper baru",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pembongkaran kaliper",
       "Pembersihan piston kaliper",
       "Pemeriksaan seal kaliper",
@@ -1716,11 +1391,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Seal kit",
       "Kaliper baru",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 33
   },
   {
     "id": "flush-minyak-rem",
@@ -1742,15 +1418,11 @@ globalThis.services = [
       "Membantu pedal rem lebih responsif",
       "Mengurangi risiko gangguan pengereman"
     ],
-    "tidakTermasuk": [
-      "Minyak rem",
-      "Perbaikan komponen rem rusak",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Menguras minyak rem lama",
       "Pengisian minyak rem baru",
       "Bleeding sistem rem",
@@ -1761,18 +1433,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Minyak rem",
       "Perbaikan komponen rem rusak",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 34
   },
   {
     "id": "kuras-radiator",
     "kategori": "PENDINGIN",
     "icon": "🌡️",
     "nama": "Kuras Radiator",
-    "harga": "Rp80.000 – Rp120.000",
+    "harga": "Rp82.500 – Rp115.000",
     "durasi": "± 30–60 menit",
     "deskripsi": "Perawatan sistem pendingin dengan mengganti coolant lama dan membersihkan jalur pendinginan.",
     "pekerjaan": [
@@ -1787,15 +1460,11 @@ globalThis.services = [
       "Mengurangi risiko overheat",
       "Menjaga sistem pendingin tetap optimal"
     ],
-    "tidakTermasuk": [
-      "Coolant",
-      "Penggantian komponen pendingin",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pengurasan coolant lama",
       "Flushing sistem pendingin",
       "Pengisian coolant baru",
@@ -1806,19 +1475,20 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Coolant",
       "Penggantian komponen pendingin",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 35
   },
   {
     "id": "ganti-radiator",
     "kategori": "PENDINGIN",
     "icon": "🌡️",
     "nama": "Ganti Radiator",
-    "harga": "Rp140.000 – Rp200.000",
-    "durasi": "± 60–120 menit",
+    "harga": "Rp137.500 – Rp201.250",
+    "durasi": "± 1–2 jam",
     "deskripsi": "Penggantian radiator untuk memperbaiki sistem pendinginan mesin.",
     "pekerjaan": [
       "Penggantian radiator",
@@ -1832,15 +1502,11 @@ globalThis.services = [
       "Menjaga suhu kerja mesin",
       "Mengoptimalkan sirkulasi coolant"
     ],
-    "tidakTermasuk": [
-      "Radiator",
-      "Coolant",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian radiator",
       "Pemeriksaan selang radiator",
       "Pemeriksaan tutup radiator",
@@ -1851,11 +1517,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Radiator",
       "Coolant",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 36
   },
   {
     "id": "ganti-water-pump",
@@ -1863,7 +1530,7 @@ globalThis.services = [
     "icon": "🌡️",
     "nama": "Ganti Water Pump",
     "harga": "Rp220.000 – Rp460.000",
-    "durasi": "± 90–180 menit",
+    "durasi": "± 2–4 jam",
     "deskripsi": "Penggantian water pump untuk menjaga sirkulasi coolant mesin.",
     "pekerjaan": [
       "Penggantian water pump",
@@ -1877,15 +1544,11 @@ globalThis.services = [
       "Membantu mencegah overheat",
       "Menjaga suhu mesin stabil"
     ],
-    "tidakTermasuk": [
-      "Water pump",
-      "Coolant",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian water pump",
       "Pemeriksaan gasket water pump",
       "Pemeriksaan drive belt/timing belt",
@@ -1896,18 +1559,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Water pump",
       "Coolant",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 37
   },
   {
     "id": "ganti-thermostat",
     "kategori": "PENDINGIN",
     "icon": "🌡️",
     "nama": "Ganti Thermostat",
-    "harga": "Rp165.000 – Rp230.000",
+    "harga": "Rp137.500 – Rp230.000",
     "durasi": "± 45–90 menit",
     "deskripsi": "Penggantian thermostat untuk menjaga pengaturan suhu kerja mesin.",
     "pekerjaan": [
@@ -1922,15 +1586,11 @@ globalThis.services = [
       "Membantu efisiensi kerja mesin",
       "Mengurangi risiko gangguan pendinginan"
     ],
-    "tidakTermasuk": [
-      "Thermostat",
-      "Coolant",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian thermostat",
       "Pemeriksaan housing thermostat",
       "Pengisian coolant bila diperlukan",
@@ -1941,18 +1601,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Thermostat",
       "Coolant",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 38
   },
   {
     "id": "ganti-selang-radiator",
     "kategori": "PENDINGIN",
     "icon": "🌡️",
     "nama": "Ganti Selang Radiator",
-    "harga": "Rp85.000 – Rp145.000",
+    "harga": "Rp82.500 – Rp86.250",
     "durasi": "± 30–60 menit",
     "deskripsi": "Penggantian selang radiator untuk mencegah kebocoran sistem pendingin.",
     "pekerjaan": [
@@ -1967,15 +1628,11 @@ globalThis.services = [
       "Menjaga tekanan sistem pendingin",
       "Meningkatkan keandalan kendaraan"
     ],
-    "tidakTermasuk": [
-      "Selang radiator",
-      "Coolant",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian selang radiator",
       "Pemeriksaan klem selang",
       "Pengisian coolant bila diperlukan",
@@ -1986,105 +1643,20 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Selang radiator",
       "Coolant",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
-  },
-  {
-    "id": "ganti-oli-transmisi-manual-transmisi",
-    "kategori": "TRANSMISI",
-    "icon": "⚙️",
-    "nama": "Ganti Oli Transmisi Manual",
-    "harga": "Rp100.000 – Rp175.000",
-    "durasi": "± 30–45 menit",
-    "deskripsi": "Penggantian oli transmisi manual untuk menjaga perpindahan gigi tetap halus.",
-    "pekerjaan": [
-      "Penggantian oli transmisi manual",
-      "Pemeriksaan baut drain & fill",
-      "Pemeriksaan kondisi oli lama",
-      "Pemeriksaan kebocoran oli transmisi"
-    ],
-    "manfaat": [
-      "Membantu perpindahan gigi lebih ringan",
-      "Mengurangi gesekan komponen transmisi",
-      "Menjaga umur transmisi"
-    ],
-    "tidakTermasuk": [
-      "Oli transmisi",
-      "Perbaikan transmisi",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
-    "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
-      "Penggantian oli transmisi manual",
-      "Pemeriksaan baut drain & fill",
-      "Pemeriksaan kondisi oli lama",
-      "Pemeriksaan kebocoran oli transmisi"
-    ],
-    "cocokUntuk": "Kendaraan transmisi manual yang sudah memasuki interval penggantian oli atau membutuhkan perawatan pelumasan transmisi.",
-    "yangTidakTermasuk": [
-      "Oli transmisi",
-      "Perbaikan transmisi",
-      "Biaya transportasi",
-      "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
-    ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
-  },
-  {
-    "id": "ganti-oli-transmisi-otomatis",
-    "kategori": "TRANSMISI",
-    "icon": "⚙️",
-    "nama": "Ganti Oli Transmisi Otomatis (AT)",
-    "harga": "Rp275.000 – Rp375.000",
-    "durasi": "± 45–90 menit",
-    "deskripsi": "Penggantian oli transmisi otomatis untuk menjaga performa perpindahan gigi.",
-    "pekerjaan": [
-      "Penggantian oli transmisi otomatis",
-      "Pemeriksaan baut drain & fill",
-      "Pemeriksaan kondisi oli AT",
-      "Pemeriksaan kebocoran transmisi"
-    ],
-    "manfaat": [
-      "Membantu perpindahan gigi lebih halus",
-      "Menjaga sistem hidrolik transmisi",
-      "Membantu menjaga performa transmisi"
-    ],
-    "tidakTermasuk": [
-      "Oli AT",
-      "Kerusakan internal transmisi",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
-    "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
-      "Penggantian oli transmisi otomatis",
-      "Pemeriksaan baut drain & fill",
-      "Pemeriksaan kondisi oli AT",
-      "Pemeriksaan kebocoran transmisi"
-    ],
-    "cocokUntuk": "Kendaraan transmisi otomatis yang membutuhkan penggantian atau perawatan oli AT sesuai kondisi dan kebutuhan kendaraan.",
-    "yangTidakTermasuk": [
-      "Oli AT",
-      "Kerusakan internal transmisi",
-      "Biaya transportasi",
-      "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
-    ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 39
   },
   {
     "id": "ganti-kopling",
     "kategori": "TRANSMISI",
     "icon": "⚙️",
     "nama": "Ganti Kopling",
-    "harga": "Rp300.000 – Rp900.000",
-    "durasi": "± 240–480 menit",
+    "harga": "Rp495.000 – Rp885.500",
+    "durasi": "± 5–8 jam",
     "deskripsi": "Penggantian komponen kopling untuk mengembalikan fungsi perpindahan tenaga mesin.",
     "pekerjaan": [
       "Penggantian kampas kopling",
@@ -2099,15 +1671,11 @@ globalThis.services = [
       "Membantu perpindahan gigi lebih nyaman",
       "Mengembalikan performa sistem kopling"
     ],
-    "tidakTermasuk": [
-      "Komponen kopling",
-      "Kerusakan flywheel",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian kampas kopling",
       "Pemeriksaan pressure plate",
       "Pemeriksaan release bearing",
@@ -2119,18 +1687,19 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Komponen kopling",
       "Kerusakan flywheel",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 40
   },
   {
     "id": "ganti-master-kopling",
     "kategori": "TRANSMISI",
     "icon": "⚙️",
     "nama": "Ganti Master Kopling",
-    "harga": "Rp175.000 – Rp250.000",
+    "harga": "Rp176.000 – Rp184.000",
     "durasi": "± 30–60 menit",
     "deskripsi": "Penggantian master kopling untuk memperbaiki sistem hidrolik kopling.",
     "pekerjaan": [
@@ -2144,15 +1713,11 @@ globalThis.services = [
       "Mengurangi gangguan perpindahan gigi",
       "Menjaga sistem hidrolik kopling"
     ],
-    "tidakTermasuk": [
-      "Master kopling",
-      "Oli hidrolik",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Penggantian master kopling",
       "Pemeriksaan selang kopling",
       "Bleeding sistem kopling",
@@ -2162,56 +1727,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Master kopling",
       "Oli hidrolik",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
-  },
-  {
-    "id": "ganti-boot-drive-shaft",
-    "kategori": "TRANSMISI",
-    "icon": "⚙️",
-    "nama": "Ganti Boot Drive Shaft",
-    "harga": "Rp165.000 – Rp250.000",
-    "durasi": "± 60–120 menit",
-    "deskripsi": "Penggantian boot drive shaft untuk melindungi CV Joint dari kotoran dan kehilangan grease.",
-    "pekerjaan": [
-      "Penggantian boot drive shaft",
-      "Penggantian grease CV Joint",
-      "Pemeriksaan CV Joint",
-      "Pembersihan area CV Joint",
-      "Uji jalan kendaraan"
-    ],
-    "manfaat": [
-      "Mencegah kerusakan CV Joint",
-      "Mengurangi bunyi saat berbelok",
-      "Menjaga sistem penggerak roda"
-    ],
-    "tidakTermasuk": [
-      "Boot drive shaft",
-      "Kerusakan CV Joint",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
-    "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
-      "Penggantian boot drive shaft",
-      "Penggantian grease CV Joint",
-      "Pemeriksaan CV Joint",
-      "Pembersihan area CV Joint",
-      "Uji jalan kendaraan"
-    ],
-    "cocokUntuk": "Kendaraan dengan perpindahan gigi, kopling, atau pemindah tenaga yang bermasalah dan membutuhkan pemeriksaan/perbaikan.",
-    "yangTidakTermasuk": [
-      "Boot drive shaft",
-      "Kerusakan CV Joint",
-      "Biaya transportasi",
-      "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
-    ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 41
   },
   {
     "id": "pemeriksaan-sistem-starter",
@@ -2233,15 +1754,11 @@ globalThis.services = [
       "Mendeteksi gangguan kelistrikan awal",
       "Menjaga sistem starter kendaraan"
     ],
-    "tidakTermasuk": [
-      "Penggantian komponen",
-      "Spare part",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pemeriksaan kondisi aki",
       "Pemeriksaan dinamo starter",
       "Pemeriksaan relay starter",
@@ -2252,11 +1769,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Penggantian komponen",
       "Spare part",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 42
   },
   {
     "id": "pemeriksaan-sistem-charging",
@@ -2278,15 +1796,11 @@ globalThis.services = [
       "Mengetahui kondisi alternator",
       "Menjaga sistem kelistrikan kendaraan"
     ],
-    "tidakTermasuk": [
-      "Penggantian alternator",
-      "Penggantian aki",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pemeriksaan alternator",
       "Pemeriksaan regulator",
       "Pemeriksaan tegangan pengisian",
@@ -2297,64 +1811,20 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Penggantian alternator",
       "Penggantian aki",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
-  },
-  {
-    "id": "ganti-aki",
-    "kategori": "KELISTRIKAN MESIN",
-    "icon": "🔋",
-    "nama": "Ganti Aki",
-    "harga": "Rp80.000 – Rp100.000",
-    "durasi": "± 15–30 menit",
-    "deskripsi": "Penggantian aki kendaraan dengan pemeriksaan sistem kelistrikan dasar.",
-    "pekerjaan": [
-      "Penggantian aki",
-      "Pemeriksaan terminal aki",
-      "Pembersihan terminal aki",
-      "Pemeriksaan tegangan pengisian",
-      "Reset sistem elektronik bila diperlukan"
-    ],
-    "manfaat": [
-      "Mengembalikan daya starter",
-      "Menjaga kestabilan kelistrikan",
-      "Membantu sistem elektronik kendaraan"
-    ],
-    "tidakTermasuk": [
-      "Aki baru",
-      "Kerusakan sistem charging",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
-    "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
-      "Penggantian aki",
-      "Pemeriksaan terminal aki",
-      "Pembersihan terminal aki",
-      "Pemeriksaan tegangan pengisian",
-      "Reset sistem elektronik bila diperlukan"
-    ],
-    "cocokUntuk": "Kendaraan dengan gangguan starter, pengisian aki, pengapian, atau kelistrikan mesin yang membutuhkan pemeriksaan atau perbaikan.",
-    "yangTidakTermasuk": [
-      "Aki baru",
-      "Kerusakan sistem charging",
-      "Biaya transportasi",
-      "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
-    ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 43
   },
   {
     "id": "servis-alternator",
     "kategori": "KELISTRIKAN MESIN",
     "icon": "🔋",
     "nama": "Servis Alternator",
-    "harga": "Rp385.000 – Rp520.000",
-    "durasi": "± 120–240 menit",
+    "harga": "Rp385.000 – Rp517.500",
+    "durasi": "± 2–4 jam",
     "deskripsi": "Perawatan alternator untuk menjaga sistem pengisian listrik kendaraan.",
     "pekerjaan": [
       "Pembongkaran alternator",
@@ -2369,15 +1839,11 @@ globalThis.services = [
       "Membantu memperpanjang umur alternator",
       "Mencegah aki cepat tekor"
     ],
-    "tidakTermasuk": [
-      "Komponen pengganti",
-      "Alternator baru",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pembongkaran alternator",
       "Pembersihan komponen",
       "Pemeriksaan rotor dan stator",
@@ -2389,19 +1855,20 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Komponen pengganti",
       "Alternator baru",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 44
   },
   {
     "id": "servis-dinamo-starter",
     "kategori": "KELISTRIKAN MESIN",
     "icon": "🔋",
     "nama": "Servis Dinamo Starter",
-    "harga": "Rp275.000 – Rp390.000",
-    "durasi": "± 120–240 menit",
+    "harga": "Rp275.000 – Rp385.000",
+    "durasi": "± 2–4 jam",
     "deskripsi": "Perawatan dinamo starter untuk memperbaiki kinerja sistem starter kendaraan.",
     "pekerjaan": [
       "Pembongkaran dinamo starter",
@@ -2416,15 +1883,11 @@ globalThis.services = [
       "Mengurangi risiko kendaraan sulit hidup",
       "Menjaga performa dinamo starter"
     ],
-    "tidakTermasuk": [
-      "Komponen pengganti",
-      "Dinamo starter baru",
-      "Biaya transportasi"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Pembongkaran dinamo starter",
       "Pembersihan komponen",
       "Pemeriksaan carbon brush",
@@ -2436,11 +1899,12 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Komponen pengganti",
       "Dinamo starter baru",
-      "Biaya transportasi",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 45
   },
   {
     "id": "ganti-seal-crank-shaft-front",
@@ -2460,14 +1924,11 @@ globalThis.services = [
       "Bocor oli berhenti",
       "Mesin lebih bersih"
     ],
-    "tidakTermasuk": [
-      "Seal",
-      "Oli mesin tambahan"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka pulley",
       "Lepas seal lama",
       "Bersihkan",
@@ -2478,10 +1939,11 @@ globalThis.services = [
       "Seal",
       "Oli mesin tambahan",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 46
   },
   {
     "id": "ganti-seal-crank-shaft-rear-mt",
@@ -2489,7 +1951,7 @@ globalThis.services = [
     "icon": "🔩",
     "nama": "Ganti Seal Crank Shaft Rear M/T",
     "harga": "Rp440.000 – Rp718.750",
-    "durasi": "± 4–6 jam",
+    "durasi": "± 5–8 jam",
     "deskripsi": "Ganti seal belakang poros engkol (M/T).",
     "pekerjaan": [
       "Turunkan transmisi",
@@ -2500,15 +1962,11 @@ globalThis.services = [
     "manfaat": [
       "Bocor oli ke kopling berhenti"
     ],
-    "tidakTermasuk": [
-      "Seal",
-      "Oli transmisi",
-      "Gasket"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Turunkan transmisi",
       "Lepas flywheel",
       "Ganti seal",
@@ -2520,10 +1978,11 @@ globalThis.services = [
       "Oli transmisi",
       "Gasket",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 47
   },
   {
     "id": "ganti-seal-crank-shaft-rear-at",
@@ -2531,7 +1990,7 @@ globalThis.services = [
     "icon": "🔩",
     "nama": "Ganti Seal Crank Shaft Rear A/T",
     "harga": "Rp495.000 – Rp759.000",
-    "durasi": "± 4–6 jam",
+    "durasi": "± 5–8 jam",
     "deskripsi": "Ganti seal belakang poros engkol (A/T).",
     "pekerjaan": [
       "Turunkan A/T",
@@ -2543,15 +2002,11 @@ globalThis.services = [
       "Mesin kering",
       "ATF tidak tercampur oli"
     ],
-    "tidakTermasuk": [
-      "Seal",
-      "ATF",
-      "Gasket"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Turunkan A/T",
       "Lepas flexplate",
       "Ganti seal",
@@ -2563,10 +2018,11 @@ globalThis.services = [
       "ATF",
       "Gasket",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 48
   },
   {
     "id": "ganti-timing-belt",
@@ -2574,7 +2030,7 @@ globalThis.services = [
     "icon": "⏱️",
     "nama": "Ganti Timing Belt",
     "harga": "Rp275.000 – Rp460.000",
-    "durasi": "± 3–5 jam",
+    "durasi": "± 3–6 jam",
     "deskripsi": "Ganti sabuk timing mesin.",
     "pekerjaan": [
       "Buka cover",
@@ -2587,15 +2043,11 @@ globalThis.services = [
       "Sabuk baru",
       "Mesin aman dari putus"
     ],
-    "tidakTermasuk": [
-      "Timing belt",
-      "Tensioner",
-      "Bearing"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka cover",
       "Set TDC",
       "Lepas belt lama",
@@ -2608,18 +2060,19 @@ globalThis.services = [
       "Tensioner",
       "Bearing",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 49
   },
   {
     "id": "ganti-timing-chain",
     "kategori": "MESIN",
     "icon": "⛓️",
     "nama": "Ganti Timing Chain",
-    "harga": "Rp40.000 – Rp772.750",
-    "durasi": "± 4–6 jam",
+    "harga": "Rp385.000 – Rp772.750",
+    "durasi": "± 6–10 jam",
     "deskripsi": "Ganti rantai timing (mesin rantai).",
     "pekerjaan": [
       "Buka cover chain",
@@ -2632,15 +2085,11 @@ globalThis.services = [
       "Suara berisik hilang",
       "Timing akurat"
     ],
-    "tidakTermasuk": [
-      "Rantai",
-      "Guide",
-      "Tensioner"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka cover chain",
       "Lepas guide",
       "Pasang chain baru",
@@ -2652,10 +2101,11 @@ globalThis.services = [
       "Guide",
       "Tensioner",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan. Harga Rp40.000 pada batas bawah perlu dikonfirmasi kembali sebelum dipublikasikan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 50
   },
   {
     "id": "ganti-gasket-cover-valve",
@@ -2674,14 +2124,11 @@ globalThis.services = [
     "manfaat": [
       "Bocor oli dari tutup kepala hilang"
     ],
-    "tidakTermasuk": [
-      "Gasket",
-      "Seal karet baut"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka cover valve",
       "Bersihkan",
       "Pasang gasket baru",
@@ -2692,14 +2139,15 @@ globalThis.services = [
       "Gasket",
       "Seal karet baut",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 51
   },
   {
     "id": "ganti-transmisi-mounting-1-pc",
-    "kategori": "MESIN",
+    "kategori": "TRANSMISI",
     "icon": "🔧",
     "nama": "Ganti Transmisi Mounting 1 pc",
     "harga": "Rp110.000 – Rp143.750",
@@ -2714,14 +2162,11 @@ globalThis.services = [
       "Transmisi mantap",
       "Tidak bergeser"
     ],
-    "tidakTermasuk": [
-      "Mounting baru",
-      "Baut"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Dongkrak transmisi",
       "Lepas support",
       "Pasang baru"
@@ -2731,10 +2176,11 @@ globalThis.services = [
       "Mounting baru",
       "Baut",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 52
   },
   {
     "id": "ganti-all-v-belt",
@@ -2752,13 +2198,11 @@ globalThis.services = [
     "manfaat": [
       "Aksesoris optimal"
     ],
-    "tidakTermasuk": [
-      "Set v-belt (3-5 pcs)"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas semua v-belt",
       "Pasang baru",
       "Set tegangan"
@@ -2767,10 +2211,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Set v-belt (3-5 pcs)",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 53
   },
   {
     "id": "ganti-oli-pan-carter",
@@ -2791,15 +2236,11 @@ globalThis.services = [
       "Bak baru",
       "Kebocoran hilang"
     ],
-    "tidakTermasuk": [
-      "Bak oli",
-      "Seal/gasket",
-      "Oli mesin"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Kuras oli",
       "Turunkan pan",
       "Bersihkan",
@@ -2812,10 +2253,11 @@ globalThis.services = [
       "Seal/gasket",
       "Oli mesin",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 54
   },
   {
     "id": "over-houl-engine-half",
@@ -2836,14 +2278,11 @@ globalThis.services = [
       "Bagian atas segar",
       "Asap & boros oli hilang"
     ],
-    "tidakTermasuk": [
-      "Part top kit",
-      "Gasket head"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka head",
       "Ganti valve seal",
       "Laher klep",
@@ -2855,10 +2294,11 @@ globalThis.services = [
       "Part top kit",
       "Gasket head",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 55
   },
   {
     "id": "ganti-motor-fan-radiator",
@@ -2866,7 +2306,7 @@ globalThis.services = [
     "icon": "🌡️",
     "nama": "Ganti Motor Fan Radiator",
     "harga": "Rp165.000 – Rp230.000",
-    "durasi": "± 90–120 menit",
+    "durasi": "± 1–2 jam",
     "deskripsi": "Ganti motor kipas pendingin radiator.",
     "pekerjaan": [
       "Lepas motor",
@@ -2878,13 +2318,11 @@ globalThis.services = [
       "Kipas kencang",
       "Radiator cepat dingin"
     ],
-    "tidakTermasuk": [
-      "Motor fan baru"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas motor",
       "Cabut konektor",
       "Pasang baru",
@@ -2894,10 +2332,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Motor fan baru",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 56
   },
   {
     "id": "ganti-motor-fan-condensor",
@@ -2905,7 +2344,7 @@ globalThis.services = [
     "icon": "🌡️",
     "nama": "Ganti Motor Fan Condensor A/C",
     "harga": "Rp165.000 – Rp230.000",
-    "durasi": "± 90–120 menit",
+    "durasi": "± 1–2 jam",
     "deskripsi": "Ganti motor kipas pendingin kondensor AC.",
     "pekerjaan": [
       "Lepas motor depan",
@@ -2915,13 +2354,11 @@ globalThis.services = [
     "manfaat": [
       "AC kembali dingin"
     ],
-    "tidakTermasuk": [
-      "Motor fan condensor"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas motor depan",
       "Pasang baru",
       "Tes nyala AC"
@@ -2930,10 +2367,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Motor fan condensor",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 57
   },
   {
     "id": "ganti-slang-radiator-atas",
@@ -2952,14 +2390,11 @@ globalThis.services = [
     "manfaat": [
       "Aliran coolant lancar"
     ],
-    "tidakTermasuk": [
-      "Selang atas",
-      "Klem"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas klem",
       "Tarik selang",
       "Pasang baru",
@@ -2970,10 +2405,11 @@ globalThis.services = [
       "Selang atas",
       "Klem",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 58
   },
   {
     "id": "ganti-slang-radiator-bawah",
@@ -2992,15 +2428,11 @@ globalThis.services = [
     "manfaat": [
       "Aliran balik coolant lancar"
     ],
-    "tidakTermasuk": [
-      "Selang bawah",
-      "Klem",
-      "Coolant"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas klem",
       "Tarik selang bawah",
       "Pasang baru",
@@ -3012,10 +2444,11 @@ globalThis.services = [
       "Klem",
       "Coolant",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 59
   },
   {
     "id": "ganti-slang-by-pass",
@@ -3033,14 +2466,11 @@ globalThis.services = [
     "manfaat": [
       "Sirkulasi ke throttle/heater normal"
     ],
-    "tidakTermasuk": [
-      "Selang by-pass",
-      "Klem"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas selang",
       "Bersihkan fitting",
       "Pasang baru"
@@ -3050,10 +2480,11 @@ globalThis.services = [
       "Selang by-pass",
       "Klem",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 60
   },
   {
     "id": "ganti-water-outlet-inlet",
@@ -3072,15 +2503,11 @@ globalThis.services = [
     "manfaat": [
       "Tidak ada kebocoran coolant"
     ],
-    "tidakTermasuk": [
-      "Water outlet/inlet",
-      "Gasket",
-      "Coolant"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka selang",
       "Lepas rumah",
       "Pasang baru",
@@ -3092,10 +2519,11 @@ globalThis.services = [
       "Gasket",
       "Coolant",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 61
   },
   {
     "id": "ganti-visco-fan",
@@ -3113,13 +2541,11 @@ globalThis.services = [
     "manfaat": [
       "Pendinginan optimal di putaran tinggi"
     ],
-    "tidakTermasuk": [
-      "Visco fan baru"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka visco",
       "Pasang baru",
       "Kencangkan"
@@ -3128,10 +2554,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Visco fan baru",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 62
   },
   {
     "id": "tambah-silicon-oil",
@@ -3149,13 +2576,11 @@ globalThis.services = [
     "manfaat": [
       "Kopling visco normal"
     ],
-    "tidakTermasuk": [
-      "Silicon oil"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka visco",
       "Tambahkan silicon oil",
       "Tutup rapat"
@@ -3164,10 +2589,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Silicon oil",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 63
   },
   {
     "id": "ganti-distributor-delco",
@@ -3187,13 +2613,11 @@ globalThis.services = [
       "Pengapian tepat",
       "Mesin halus"
     ],
-    "tidakTermasuk": [
-      "Distributor baru"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas kabel busi",
       "Buka distributor",
       "Pasang baru",
@@ -3203,10 +2627,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Distributor baru",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 64
   },
   {
     "id": "over-houl-distributor-delco",
@@ -3226,13 +2651,11 @@ globalThis.services = [
     "manfaat": [
       "Distributor awet"
     ],
-    "tidakTermasuk": [
-      "Part service kit"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka distributor",
       "Ganti bearing",
       "Seal",
@@ -3243,10 +2666,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Part service kit",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 65
   },
   {
     "id": "ganti-soal-distributor-dalam",
@@ -3265,14 +2689,11 @@ globalThis.services = [
     "manfaat": [
       "Pengapian stabil"
     ],
-    "tidakTermasuk": [
-      "Rotor",
-      "Cap distributor"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka cap",
       "Ganti rotor",
       "Cap",
@@ -3283,10 +2704,11 @@ globalThis.services = [
       "Rotor",
       "Cap distributor",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 66
   },
   {
     "id": "starter-system",
@@ -3306,15 +2728,11 @@ globalThis.services = [
     "manfaat": [
       "Sistem starter terjamin"
     ],
-    "tidakTermasuk": [
-      "Relay",
-      "Saklar",
-      "Kabel (jika ganti)"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Cek kabel massa",
       "Positif",
       "Relay",
@@ -3327,10 +2745,11 @@ globalThis.services = [
       "Saklar",
       "Kabel (jika ganti)",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 67
   },
   {
     "id": "charging-system",
@@ -3349,15 +2768,11 @@ globalThis.services = [
     "manfaat": [
       "Sistem charging optimal"
     ],
-    "tidakTermasuk": [
-      "Dioda",
-      "Regulator",
-      "Kabel"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Cek tegangan",
       "Dioda",
       "Kabel utama",
@@ -3369,10 +2784,11 @@ globalThis.services = [
       "Regulator",
       "Kabel",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 68
   },
   {
     "id": "stel-bersihan-rem-4-roda",
@@ -3392,14 +2808,11 @@ globalThis.services = [
       "Rem responsif",
       "Tidak berdecit"
     ],
-    "tidakTermasuk": [
-      "Grease",
-      "Minyak rem"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka roda",
       "Bersihkan",
       "Beri grease",
@@ -3410,10 +2823,11 @@ globalThis.services = [
       "Grease",
       "Minyak rem",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 69
   },
   {
     "id": "stel-bersihan-rem-2-roda",
@@ -3431,14 +2845,11 @@ globalThis.services = [
     "manfaat": [
       "Rem bekerja ringan"
     ],
-    "tidakTermasuk": [
-      "Grease",
-      "Minyak rem"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka 2 roda",
       "Bersihkan",
       "Setel"
@@ -3448,10 +2859,11 @@ globalThis.services = [
       "Grease",
       "Minyak rem",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 70
   },
   {
     "id": "ganti-brake-shoes",
@@ -3472,15 +2884,11 @@ globalThis.services = [
     "manfaat": [
       "Rem tangan kuat"
     ],
-    "tidakTermasuk": [
-      "Sepatu",
-      "Spring kit",
-      "Minyak rem"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka tromol",
       "Lepas sepatu",
       "Kait",
@@ -3494,10 +2902,11 @@ globalThis.services = [
       "Spring kit",
       "Minyak rem",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 71
   },
   {
     "id": "ganti-disc-brake-1-sisi",
@@ -3516,13 +2925,11 @@ globalThis.services = [
       "Pengereman halus",
       "Tidak getar"
     ],
-    "tidakTermasuk": [
-      "Disc rotor 1 pcs"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka kaliper",
       "Lepas disc",
       "Pasang baru"
@@ -3531,10 +2938,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Disc rotor 1 pcs",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 72
   },
   {
     "id": "over-houl-rem",
@@ -3555,15 +2963,11 @@ globalThis.services = [
       "Sistem rem seperti baru",
       "Pedal empuk"
     ],
-    "tidakTermasuk": [
-      "Seal kit",
-      "Minyak rem",
-      "Piston"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Bongkar kaliper/tromol",
       "Ganti seal",
       "Piston",
@@ -3576,10 +2980,11 @@ globalThis.services = [
       "Minyak rem",
       "Piston",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 73
   },
   {
     "id": "ganti-master-rem",
@@ -3599,14 +3004,11 @@ globalThis.services = [
     "manfaat": [
       "Pedal rem keras"
     ],
-    "tidakTermasuk": [
-      "Master rem",
-      "Minyak rem"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas reservoir",
       "Baut master",
       "Pasang baru",
@@ -3618,10 +3020,11 @@ globalThis.services = [
       "Master rem",
       "Minyak rem",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 74
   },
   {
     "id": "over-houl-master-rem",
@@ -3642,14 +3045,11 @@ globalThis.services = [
     "manfaat": [
       "Master berfungsi normal"
     ],
-    "tidakTermasuk": [
-      "Kit seal",
-      "Minyak rem"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka master",
       "Ganti seal",
       "Piston",
@@ -3662,10 +3062,11 @@ globalThis.services = [
       "Kit seal",
       "Minyak rem",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 75
   },
   {
     "id": "ganti-booster-rem",
@@ -3683,14 +3084,11 @@ globalThis.services = [
     "manfaat": [
       "Pedal ringan"
     ],
-    "tidakTermasuk": [
-      "Booster",
-      "Minyak rem"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas master",
       "Buka baut booster",
       "Pasang baru"
@@ -3700,10 +3098,11 @@ globalThis.services = [
       "Booster",
       "Minyak rem",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 76
   },
   {
     "id": "over-houl-rem-depan-1-sisi",
@@ -3723,14 +3122,11 @@ globalThis.services = [
     "manfaat": [
       "Pengereman seimbang"
     ],
-    "tidakTermasuk": [
-      "Seal kit piston",
-      "Minyak rem"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka kaliper",
       "Ganti seal piston",
       "Bersihkan",
@@ -3742,10 +3138,11 @@ globalThis.services = [
       "Seal kit piston",
       "Minyak rem",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 77
   },
   {
     "id": "over-houl-rem-belakang-1-sisi",
@@ -3764,15 +3161,11 @@ globalThis.services = [
     "manfaat": [
       "Rem belakang pakem"
     ],
-    "tidakTermasuk": [
-      "Seal kit",
-      "Piston",
-      "Minyak rem"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka komponen",
       "Ganti seal/piston",
       "Bersihkan",
@@ -3784,10 +3177,11 @@ globalThis.services = [
       "Piston",
       "Minyak rem",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 78
   },
   {
     "id": "ganti-kabel-parking-brake-1-sisi",
@@ -3806,13 +3200,11 @@ globalThis.services = [
     "manfaat": [
       "Rem tangan berfungsi"
     ],
-    "tidakTermasuk": [
-      "Kabel parking brake"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka konsol",
       "Lepas kabel",
       "Pasang baru",
@@ -3822,10 +3214,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Kabel parking brake",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 79
   },
   {
     "id": "ganti-motor-servo-brake",
@@ -3843,13 +3236,11 @@ globalThis.services = [
     "manfaat": [
       "Rem bekerja sesuai assist"
     ],
-    "tidakTermasuk": [
-      "Motor servo"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas motor servo",
       "Pasang baru",
       "Kalibrasi"
@@ -3858,10 +3249,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Motor servo",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 80
   },
   {
     "id": "ganti-master-pembagi-minyak-rem",
@@ -3879,14 +3271,11 @@ globalThis.services = [
     "manfaat": [
       "Rem stabil"
     ],
-    "tidakTermasuk": [
-      "Proporsioner",
-      "Minyak rem"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas sambungan",
       "Ganti proporsioner",
       "Bleed"
@@ -3896,10 +3285,11 @@ globalThis.services = [
       "Proporsioner",
       "Minyak rem",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 81
   },
   {
     "id": "ganti-sensor-abs-1-sisi",
@@ -3917,13 +3307,11 @@ globalThis.services = [
     "manfaat": [
       "ABS normal"
     ],
-    "tidakTermasuk": [
-      "Sensor ABS"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas sensor",
       "Pasang baru",
       "Tes scanner"
@@ -3932,10 +3320,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Sensor ABS",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 82
   },
   {
     "id": "over-houl-master-clutch-atas",
@@ -3955,14 +3344,11 @@ globalThis.services = [
     "manfaat": [
       "Master berfungsi normal"
     ],
-    "tidakTermasuk": [
-      "Kit seal",
-      "Minyak rem"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Bongkar master",
       "Ganti seal",
       "Bersihkan",
@@ -3974,10 +3360,11 @@ globalThis.services = [
       "Kit seal",
       "Minyak rem",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 83
   },
   {
     "id": "ganti-release-clutch-bawah",
@@ -3995,14 +3382,11 @@ globalThis.services = [
     "manfaat": [
       "Kopling enteng"
     ],
-    "tidakTermasuk": [
-      "Slave silinder",
-      "Minyak rem"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas slave",
       "Pasang baru",
       "Bleed"
@@ -4012,10 +3396,11 @@ globalThis.services = [
       "Slave silinder",
       "Minyak rem",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 84
   },
   {
     "id": "over-houl-transmisi-manual",
@@ -4037,14 +3422,11 @@ globalThis.services = [
       "Transmisi halus",
       "Gigi masuk presisi"
     ],
-    "tidakTermasuk": [
-      "Kit overhaul M/T",
-      "Oli"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Turunkan",
       "Bongkar total",
       "Ganti bearing",
@@ -4057,10 +3439,11 @@ globalThis.services = [
       "Kit overhaul M/T",
       "Oli",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 85
   },
   {
     "id": "over-houl-transmisi-automatic",
@@ -4081,15 +3464,11 @@ globalThis.services = [
       "A/T seperti baru",
       "Shifting halus"
     ],
-    "tidakTermasuk": [
-      "Kit overhaul A/T",
-      "ATF",
-      "Filter"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Bongkar valve body",
       "Ganti clutch pack",
       "Band brake",
@@ -4102,10 +3481,11 @@ globalThis.services = [
       "ATF",
       "Filter",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 86
   },
   {
     "id": "ganti-seal-drive-shaft-1-sisi",
@@ -4123,14 +3503,11 @@ globalThis.services = [
     "manfaat": [
       "Kebocoran berhenti"
     ],
-    "tidakTermasuk": [
-      "Seal",
-      "Oli/ATF"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas drive shaft",
       "Ganti seal di diff/transmisi",
       "Pasang"
@@ -4140,10 +3517,11 @@ globalThis.services = [
       "Seal",
       "Oli/ATF",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 87
   },
   {
     "id": "ganti-booth-drive-shaft-luar",
@@ -4162,14 +3540,11 @@ globalThis.services = [
     "manfaat": [
       "CV joint terlindungi"
     ],
-    "tidakTermasuk": [
-      "Boot kit",
-      "Grease"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas as",
       "Bongkar CV luar",
       "Ganti boot",
@@ -4180,10 +3555,11 @@ globalThis.services = [
       "Boot kit",
       "Grease",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 88
   },
   {
     "id": "ganti-booth-drive-shaft-dalam",
@@ -4202,14 +3578,11 @@ globalThis.services = [
     "manfaat": [
       "Joint dalam terlindung"
     ],
-    "tidakTermasuk": [
-      "Boot",
-      "Grease"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas as",
       "Bongkar joint dalam",
       "Ganti boot",
@@ -4220,10 +3593,11 @@ globalThis.services = [
       "Boot",
       "Grease",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 89
   },
   {
     "id": "ganti-drive-shaft-assy-1-sisi",
@@ -4241,14 +3615,11 @@ globalThis.services = [
     "manfaat": [
       "Tidak ada getaran saat belok"
     ],
-    "tidakTermasuk": [
-      "Drive shaft assy",
-      "Oli diff"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas as",
       "Pasang baru",
       "Isi oli diff"
@@ -4258,10 +3629,11 @@ globalThis.services = [
       "Drive shaft assy",
       "Oli diff",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 90
   },
   {
     "id": "ganti-bearing-roda-depan-1-sisi",
@@ -4280,14 +3652,11 @@ globalThis.services = [
       "Putaran halus",
       "Dengung hilang"
     ],
-    "tidakTermasuk": [
-      "Bearing",
-      "Grease"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka hub",
       "Pres bearing",
       "Pasang baru"
@@ -4297,18 +3666,19 @@ globalThis.services = [
       "Bearing",
       "Grease",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 91
   },
   {
     "id": "ganti-bearing-roda-depan-2-sisi",
     "kategori": "TRANSMISI",
     "icon": "⚙️",
     "nama": "Ganti Bearing Roda Depan 2 Sisi",
-    "harga": "Rp29.700 – Rp316.250",
-    "durasi": "± 2.5–4 jam",
+    "harga": "Rp264.000 – Rp316.250",
+    "durasi": "± 3–5 jam",
     "deskripsi": "Ganti bearing depan kiri+kanan.",
     "pekerjaan": [
       "Ganti kedua bearing depan"
@@ -4316,14 +3686,11 @@ globalThis.services = [
     "manfaat": [
       "Stabilitas sempurna"
     ],
-    "tidakTermasuk": [
-      "Bearing 2 pcs",
-      "Grease"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Ganti kedua bearing depan"
     ],
     "cocokUntuk": "Kendaraan dengan bunyi dengung/gerung dari roda, kelonggaran roda, atau indikasi bearing roda aus.",
@@ -4331,10 +3698,11 @@ globalThis.services = [
       "Bearing 2 pcs",
       "Grease",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan. Harga Rp29.700 pada batas bawah perlu dikonfirmasi kembali sebelum dipublikasikan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 92
   },
   {
     "id": "ganti-bearing-roda-belakang-1-sisi",
@@ -4352,14 +3720,11 @@ globalThis.services = [
     "manfaat": [
       "Bising hilang"
     ],
-    "tidakTermasuk": [
-      "Bearing",
-      "Grease"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka hub",
       "Pres bearing",
       "Pasang"
@@ -4369,10 +3734,11 @@ globalThis.services = [
       "Bearing",
       "Grease",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 93
   },
   {
     "id": "ganti-bearing-roda-belakang-2-sisi",
@@ -4380,7 +3746,7 @@ globalThis.services = [
     "icon": "⚙️",
     "nama": "Ganti Bearing Roda Belakang 2 Sisi",
     "harga": "Rp242.000 – Rp310.500",
-    "durasi": "± 2.5–4 jam",
+    "durasi": "± 3–5 jam",
     "deskripsi": "Ganti bearing belakang kiri+kanan.",
     "pekerjaan": [
       "Ganti kedua bearing belakang"
@@ -4388,59 +3754,22 @@ globalThis.services = [
     "manfaat": [
       "Kenyamanan meningkat"
     ],
-    "tidakTermasuk": [
-      "Bearing 2 pcs"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Ganti kedua bearing belakang"
     ],
     "cocokUntuk": "Kendaraan dengan bunyi dengung/gerung dari roda, kelonggaran roda, atau indikasi bearing roda aus.",
     "yangTidakTermasuk": [
       "Bearing 2 pcs",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
-  },
-  {
-    "id": "ganti-transmisi-mounting",
-    "kategori": "TRANSMISI",
-    "icon": "⚙️",
-    "nama": "Ganti Transmisi Mounting",
-    "harga": "Rp137.500 – Rp143.750",
-    "durasi": "± 90–120 menit",
-    "deskripsi": "Ganti support transmisi.",
-    "pekerjaan": [
-      "Dongkrak",
-      "Lepas",
-      "Pasang"
-    ],
-    "manfaat": [
-      "Shifting stabil"
-    ],
-    "tidakTermasuk": [
-      "Mounting"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
-    "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
-      "Dongkrak",
-      "Lepas",
-      "Pasang"
-    ],
-    "cocokUntuk": "Kendaraan dengan perpindahan gigi, kopling, atau pemindah tenaga yang bermasalah dan membutuhkan pemeriksaan/perbaikan.",
-    "yangTidakTermasuk": [
-      "Mounting",
-      "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
-    ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 94
   },
   {
     "id": "ganti-steering-rack-assy",
@@ -4448,7 +3777,7 @@ globalThis.services = [
     "icon": "🎯",
     "nama": "Ganti Steering Rack Assy",
     "harga": "Rp385.000 – Rp948.750",
-    "durasi": "± 3–5 jam",
+    "durasi": "± 4–7 jam",
     "deskripsi": "Ganti unit rack steering lengkap.",
     "pekerjaan": [
       "Buka sambungan",
@@ -4460,14 +3789,11 @@ globalThis.services = [
       "Setir presisi",
       "No play"
     ],
-    "tidakTermasuk": [
-      "Rack assy",
-      "Oli PS"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka sambungan",
       "Lepas rack",
       "Pasang baru",
@@ -4478,10 +3804,11 @@ globalThis.services = [
       "Rack assy",
       "Oli PS",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 95
   },
   {
     "id": "over-houl-steering-rack",
@@ -4489,7 +3816,7 @@ globalThis.services = [
     "icon": "🎯",
     "nama": "Overhaul Steering Rack",
     "harga": "Rp825.000 – Rp1.437.500",
-    "durasi": "± 4–6 jam",
+    "durasi": "± 1–2 hari",
     "deskripsi": "Servis rack steering (seal, bush, pinion).",
     "pekerjaan": [
       "Bongkar rack",
@@ -4502,14 +3829,11 @@ globalThis.services = [
       "Setir ringan",
       "Tidak bocor"
     ],
-    "tidakTermasuk": [
-      "Kit overhaul rack",
-      "Oli PS"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Bongkar rack",
       "Ganti seal",
       "Bush",
@@ -4521,10 +3845,11 @@ globalThis.services = [
       "Kit overhaul rack",
       "Oli PS",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 96
   },
   {
     "id": "ganti-vane-pump-pompa-power-steer",
@@ -4544,14 +3869,11 @@ globalThis.services = [
     "manfaat": [
       "Setir ringan"
     ],
-    "tidakTermasuk": [
-      "Pompa PS",
-      "Oli PS"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas selang",
       "Buka pompa",
       "Pasang baru",
@@ -4563,10 +3885,11 @@ globalThis.services = [
       "Pompa PS",
       "Oli PS",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 97
   },
   {
     "id": "over-houl-pompa-power-steer",
@@ -4587,14 +3910,11 @@ globalThis.services = [
       "Pompa normal",
       "Pressure stabil"
     ],
-    "tidakTermasuk": [
-      "Kit overhaul PS",
-      "Oli PS"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka pompa",
       "Ganti seal",
       "Bearing",
@@ -4606,10 +3926,11 @@ globalThis.services = [
       "Kit overhaul PS",
       "Oli PS",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 98
   },
   {
     "id": "ganti-electronic-power-steer-epc",
@@ -4627,13 +3948,11 @@ globalThis.services = [
     "manfaat": [
       "Setir ringan elektronik"
     ],
-    "tidakTermasuk": [
-      "Motor EPS / ECU"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas motor EPS",
       "Pasang baru",
       "Kalibrasi"
@@ -4642,10 +3961,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Motor EPS / ECU",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 99
   },
   {
     "id": "ganti-tie-rod-end-1-sisi",
@@ -4664,13 +3984,11 @@ globalThis.services = [
       "Setir presisi",
       "No play"
     ],
-    "tidakTermasuk": [
-      "Tie rod end"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas tie rod end",
       "Pasang baru",
       "Set toe-in"
@@ -4679,10 +3997,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Tie rod end",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 100
   },
   {
     "id": "ganti-booth-rack-1-sisi",
@@ -4700,13 +4019,11 @@ globalThis.services = [
     "manfaat": [
       "Rack terlindung dari debu"
     ],
-    "tidakTermasuk": [
-      "Boot rack"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas tie rod",
       "Ganti boot",
       "Pasang"
@@ -4715,10 +4032,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Boot rack",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 101
   },
   {
     "id": "ganti-tie-rod-set-1-sisi",
@@ -4735,13 +4053,11 @@ globalThis.services = [
     "manfaat": [
       "Setir mantap"
     ],
-    "tidakTermasuk": [
-      "Set tie rod"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas end & rack end",
       "Pasang set"
     ],
@@ -4749,10 +4065,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Set tie rod",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 102
   },
   {
     "id": "ganti-gromed-steering-rack",
@@ -4770,13 +4087,11 @@ globalThis.services = [
     "manfaat": [
       "Setir tidak oleng"
     ],
-    "tidakTermasuk": [
-      "Grommet"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas rack",
       "Ganti grommet",
       "Pasang"
@@ -4785,10 +4100,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Grommet",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 103
   },
   {
     "id": "ganti-steering-gear-box",
@@ -4807,14 +4123,11 @@ globalThis.services = [
     "manfaat": [
       "Setir presisi"
     ],
-    "tidakTermasuk": [
-      "Steering gear box",
-      "Oli gear"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas sambungan",
       "Buka gear box",
       "Pasang baru",
@@ -4825,10 +4138,11 @@ globalThis.services = [
       "Steering gear box",
       "Oli gear",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 104
   },
   {
     "id": "over-houl-steering-gear-box",
@@ -4848,14 +4162,11 @@ globalThis.services = [
     "manfaat": [
       "Setir ringan"
     ],
-    "tidakTermasuk": [
-      "Kit overhaul",
-      "Oli gear"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Bongkar",
       "Ganti bearing",
       "Seal",
@@ -4867,10 +4178,11 @@ globalThis.services = [
       "Kit overhaul",
       "Oli gear",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 105
   },
   {
     "id": "ganti-slang-high-pressure",
@@ -4890,14 +4202,11 @@ globalThis.services = [
       "Tekanan sempurna",
       "Setir ringan"
     ],
-    "tidakTermasuk": [
-      "Selang hi-pressure",
-      "Oli PS"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas selang hi-pressure",
       "Pasang baru",
       "Isi oli",
@@ -4908,10 +4217,11 @@ globalThis.services = [
       "Selang hi-pressure",
       "Oli PS",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 106
   },
   {
     "id": "ganti-yoke-joint-steer",
@@ -4929,13 +4239,11 @@ globalThis.services = [
     "manfaat": [
       "Setir tidak getar"
     ],
-    "tidakTermasuk": [
-      "Yoke / joint"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas joint",
       "Pasang baru",
       "Kencangkan"
@@ -4944,16 +4252,17 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Yoke / joint",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 107
   },
   {
     "id": "ganti-link-stabilizer-belakang-1-sisi",
     "kategori": "SUSPENSI",
     "icon": "🚙",
-    "nama": "Ganti Link Stabilizer 1 Sisi",
+    "nama": "Ganti Link Stabilizer Belakang 1 Sisi",
     "harga": "Rp90.750 – Rp126.500",
     "durasi": "± 30–45 menit",
     "deskripsi": "Ganti link stabilizer belakang 1 sisi.",
@@ -4964,13 +4273,11 @@ globalThis.services = [
     "manfaat": [
       "Suara grok hilang"
     ],
-    "tidakTermasuk": [
-      "Link stabilizer"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas link",
       "Pasang baru"
     ],
@@ -4978,10 +4285,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Link stabilizer",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 108
   },
   {
     "id": "ganti-bushing-lateral-rod",
@@ -4999,13 +4307,11 @@ globalThis.services = [
     "manfaat": [
       "As roda belakang stabil"
     ],
-    "tidakTermasuk": [
-      "Bushing lateral rod"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas lateral rod",
       "Pres bushing",
       "Pasang"
@@ -5014,10 +4320,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Bushing lateral rod",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 109
   },
   {
     "id": "ganti-karet-stabilizer-belakang",
@@ -5035,13 +4342,11 @@ globalThis.services = [
     "manfaat": [
       "Body roll tertahan"
     ],
-    "tidakTermasuk": [
-      "Karet stabilizer"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas bracket",
       "Ganti karet",
       "Pasang"
@@ -5050,10 +4355,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Karet stabilizer",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 110
   },
   {
     "id": "ganti-lower-arm-belakang",
@@ -5071,13 +4377,11 @@ globalThis.services = [
     "manfaat": [
       "Toe stabil"
     ],
-    "tidakTermasuk": [
-      "Lower arm"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas lower arm",
       "Pasang baru",
       "Set alignment"
@@ -5086,10 +4390,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Lower arm",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 111
   },
   {
     "id": "ganti-knuckle-as-roda-belakang",
@@ -5108,13 +4413,11 @@ globalThis.services = [
     "manfaat": [
       "Sistem roda kokoh"
     ],
-    "tidakTermasuk": [
-      "Knuckle"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Buka hub",
       "Lengan",
       "Knuckle",
@@ -5124,10 +4427,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Knuckle",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 112
   },
   {
     "id": "ganti-carburator",
@@ -5145,14 +4449,11 @@ globalThis.services = [
     "manfaat": [
       "Mesin hidup mudah"
     ],
-    "tidakTermasuk": [
-      "Karburator",
-      "Gasket"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas karburator",
       "Pasang baru",
       "Set campuran"
@@ -5162,10 +4463,11 @@ globalThis.services = [
       "Karburator",
       "Gasket",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 113
   },
   {
     "id": "over-houl-carburator",
@@ -5184,13 +4486,11 @@ globalThis.services = [
     "manfaat": [
       "Mesin halus"
     ],
-    "tidakTermasuk": [
-      "Kit overhaul"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Bongkar",
       "Bersihkan jet",
       "Ganti gasket",
@@ -5200,10 +4500,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Kit overhaul",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 114
   },
   {
     "id": "kuras-tangki-bahan-bakar",
@@ -5223,14 +4524,11 @@ globalThis.services = [
       "Tangki bersih",
       "Mesin tidak mati"
     ],
-    "tidakTermasuk": [
-      "Tangki",
-      "Bensin baru"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Turunkan tangki",
       "Buang sisa",
       "Bersihkan karat",
@@ -5241,10 +4539,11 @@ globalThis.services = [
       "Tangki",
       "Bensin baru",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 115
   },
   {
     "id": "ganti-fuel-filter-saringan-bensin",
@@ -5262,13 +4561,11 @@ globalThis.services = [
     "manfaat": [
       "Aliran bersih"
     ],
-    "tidakTermasuk": [
-      "Fuel filter"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas filter",
       "Pasang baru",
       "Bleed"
@@ -5277,10 +4574,11 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Fuel filter",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 116
   },
   {
     "id": "ganti-injection-diesel",
@@ -5299,14 +4597,11 @@ globalThis.services = [
       "Mesin diesel halus",
       "Asap berkurang"
     ],
-    "tidakTermasuk": [
-      "Injector",
-      "Seal copper"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas injector",
       "Pasang baru",
       "Cek pattern"
@@ -5316,10 +4611,11 @@ globalThis.services = [
       "Injector",
       "Seal copper",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 117
   },
   {
     "id": "bp-injection-pump-diesel",
@@ -5327,7 +4623,7 @@ globalThis.services = [
     "icon": "⛽",
     "nama": "B/P Injection Pump Diesel",
     "harga": "Rp544.500 – Rp660.000",
-    "durasi": "± 3–5 jam",
+    "durasi": "± 3–6 jam",
     "deskripsi": "Bench test & servis pompa injeksi diesel.",
     "pekerjaan": [
       "Lepas pompa",
@@ -5338,14 +4634,11 @@ globalThis.services = [
     "manfaat": [
       "Pompa normal"
     ],
-    "tidakTermasuk": [
-      "Part service",
-      "Oli diesel"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas pompa",
       "Tes bench",
       "Ganti part",
@@ -5356,10 +4649,11 @@ globalThis.services = [
       "Part service",
       "Oli diesel",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 118
   },
   {
     "id": "bp-injection-bensin",
@@ -5367,7 +4661,7 @@ globalThis.services = [
     "icon": "⛽",
     "nama": "B/P Injection Bensin",
     "harga": "Rp193.600 – Rp253.000",
-    "durasi": "± 2–3 jam",
+    "durasi": "± 2–4 jam",
     "deskripsi": "Bench test & servis injector bensin.",
     "pekerjaan": [
       "Lepas injector",
@@ -5379,14 +4673,11 @@ globalThis.services = [
       "Semprotan merata",
       "Irit BBM"
     ],
-    "tidakTermasuk": [
-      "Service kit",
-      "O-ring"
-    ],
-    "hargaKeterangan": "Harga jasa saja; belum termasuk spare part, bahan/material, dan pekerjaan tambahan di luar ruang lingkup layanan.",
-    "penyesuaianHarga": "Harga dapat menyesuaikan jenis, model, konstruksi, tingkat kesulitan, dan kondisi kendaraan.",
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
     "yangTermasuk": [
-      "Jasa pengerjaan sesuai layanan yang dipilih",
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
       "Lepas injector",
       "Test ultrasonic",
       "Ganti filter",
@@ -5397,9 +4688,1046 @@ globalThis.services = [
       "Service kit",
       "O-ring",
       "Spare part/komponen pengganti",
-      "Kerusakan atau pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya transportasi"
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu bersifat perkiraan dan dapat berubah sesuai kondisi kendaraan, akses komponen, tingkat kerusakan, dan kebutuhan pekerjaan di lapangan."
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 119
+  },
+  {
+    "id": "service-besar",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Service Besar",
+    "harga": "Rp100.000 – Rp175.000",
+    "durasi": "± 60–120 menit",
+    "deskripsi": "Jasa service besar dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Ganti oli mesin",
+      "Ganti filter oli",
+      "Periksa air aki",
+      "Periksa minyak rem",
+      "Periksa air radiator"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Ganti oli mesin",
+      "Ganti filter oli",
+      "Periksa air aki",
+      "Periksa minyak rem",
+      "Periksa air radiator"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 120
+  },
+  {
+    "id": "reset-engine-scanner",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Reset Engine / Scanner",
+    "harga": "Rp275.000 – Rp316.250",
+    "durasi": "± 30–60 menit",
+    "deskripsi": "Jasa reset engine / scanner dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Scan ECU",
+      "Baca dan hapus kode kerusakan bila sesuai",
+      "Reset service reminder bila tersedia",
+      "Verifikasi hasil scan"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Scan ECU",
+      "Baca dan hapus kode kerusakan bila sesuai",
+      "Reset service reminder bila tersedia",
+      "Verifikasi hasil scan"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 121
+  },
+  {
+    "id": "engine-tune-up",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Engine Tune Up",
+    "harga": "Rp245.000 – Rp385.000",
+    "durasi": "± 90–180 menit",
+    "deskripsi": "Jasa engine tune up dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Pemeriksaan mesin",
+      "Pemeriksaan pengapian",
+      "Pemeriksaan udara masuk",
+      "Pemeriksaan sistem bahan bakar",
+      "Pemeriksaan dan penyetelan sesuai tipe kendaraan"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Pemeriksaan mesin",
+      "Pemeriksaan pengapian",
+      "Pemeriksaan udara masuk",
+      "Pemeriksaan sistem bahan bakar",
+      "Pemeriksaan dan penyetelan sesuai tipe kendaraan"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 122
+  },
+  {
+    "id": "engine-analisa",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Engine Analisa",
+    "harga": "Rp165.000 – Rp201.250",
+    "durasi": "± 45–90 menit",
+    "deskripsi": "Jasa engine analisa dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Wawancara keluhan",
+      "Pemeriksaan visual",
+      "Scan/ukur parameter yang relevan",
+      "Analisis gejala dan temuan",
+      "Rekomendasi perbaikan"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Wawancara keluhan",
+      "Pemeriksaan visual",
+      "Scan/ukur parameter yang relevan",
+      "Analisis gejala dan temuan",
+      "Rekomendasi perbaikan"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 123
+  },
+  {
+    "id": "checking-10-000-km",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Checking 10.000 Km",
+    "harga": "Rp400.000 – Rp805.000",
+    "durasi": "± 60–120 menit",
+    "deskripsi": "Jasa checking 10.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Pemeriksaan berkala 10.000 km",
+      "Periksa oli dan fluida",
+      "Periksa rem, pendinginan, kelistrikan, dan komponen utama"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Pemeriksaan berkala 10.000 km",
+      "Periksa oli dan fluida",
+      "Periksa rem, pendinginan, kelistrikan, dan komponen utama"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 124
+  },
+  {
+    "id": "checking-20-000-km",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Checking 20.000 Km",
+    "harga": "Rp500.000 – Rp862.500",
+    "durasi": "± 90–150 menit",
+    "deskripsi": "Jasa checking 20.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Pemeriksaan berkala 20.000 km",
+      "Pemeriksaan fluida dan filter terkait",
+      "Pemeriksaan rem, suspensi, kemudi, pendinginan dan kelistrikan"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Pemeriksaan berkala 20.000 km",
+      "Pemeriksaan fluida dan filter terkait",
+      "Pemeriksaan rem, suspensi, kemudi, pendinginan dan kelistrikan"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 125
+  },
+  {
+    "id": "checking-30-000-50-000-km",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Checking 30.000 / 50.000 Km",
+    "harga": "Rp400.000 – Rp759.000",
+    "durasi": "± 90–180 menit",
+    "deskripsi": "Jasa checking 30.000 / 50.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Pemeriksaan berkala 30.000/50.000 km",
+      "Pemeriksaan fluida",
+      "Pemeriksaan komponen keselamatan dan sistem utama"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Pemeriksaan berkala 30.000/50.000 km",
+      "Pemeriksaan fluida",
+      "Pemeriksaan komponen keselamatan dan sistem utama"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 126
+  },
+  {
+    "id": "checking-40-000-km",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Checking 40.000 Km",
+    "harga": "Rp577.500 – Rp948.750",
+    "durasi": "± 120–180 menit",
+    "deskripsi": "Jasa checking 40.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Pemeriksaan berkala 40.000 km",
+      "Pemeriksaan filter dan fluida",
+      "Pemeriksaan rem, suspensi, kemudi, pendinginan, dan drivetrain"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Pemeriksaan berkala 40.000 km",
+      "Pemeriksaan filter dan fluida",
+      "Pemeriksaan rem, suspensi, kemudi, pendinginan, dan drivetrain"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 127
+  },
+  {
+    "id": "checking-60-000-140-000-km",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Checking 60.000 / 140.000 Km",
+    "harga": "Rp550.000 – Rp920.000",
+    "durasi": "± 120–240 menit",
+    "deskripsi": "Jasa checking 60.000 / 140.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Pemeriksaan berkala 60.000/140.000 km",
+      "Pemeriksaan sistem utama dan komponen interval servis"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Pemeriksaan berkala 60.000/140.000 km",
+      "Pemeriksaan sistem utama dan komponen interval servis"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 128
+  },
+  {
+    "id": "checking-70-000-90-000-km",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Checking 70.000 / 90.000 Km",
+    "harga": "Rp440.000 – Rp805.000",
+    "durasi": "± 120–240 menit",
+    "deskripsi": "Jasa checking 70.000 / 90.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Pemeriksaan berkala 70.000/90.000 km",
+      "Pemeriksaan fluida, rem, suspensi, kemudi, pendinginan dan drivetrain"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Pemeriksaan berkala 70.000/90.000 km",
+      "Pemeriksaan fluida, rem, suspensi, kemudi, pendinginan dan drivetrain"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 129
+  },
+  {
+    "id": "checking-80-000-240-000-km",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Checking 80.000 / 240.000 Km",
+    "harga": "Rp605.000 – Rp977.500",
+    "durasi": "± 150–270 menit",
+    "deskripsi": "Jasa checking 80.000 / 240.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Pemeriksaan berkala 80.000/240.000 km",
+      "Pemeriksaan komponen interval besar dan sistem utama"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Pemeriksaan berkala 80.000/240.000 km",
+      "Pemeriksaan komponen interval besar dan sistem utama"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 130
+  },
+  {
+    "id": "checking-100-000-300-000-km",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Checking 100.000 / 300.000 Km",
+    "harga": "Rp525.000 – Rp862.500",
+    "durasi": "± 180–300 menit",
+    "deskripsi": "Jasa checking 100.000 / 300.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Pemeriksaan berkala 100.000/300.000 km",
+      "Pemeriksaan menyeluruh komponen interval tinggi dan sistem utama"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Pemeriksaan berkala 100.000/300.000 km",
+      "Pemeriksaan menyeluruh komponen interval tinggi dan sistem utama"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 131
+  },
+  {
+    "id": "over-houl-engine",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Over Houl Engine",
+    "harga": "Rp3.850.000 – Rp5.750.000",
+    "durasi": "± 4–7 hari",
+    "deskripsi": "Jasa over houl engine dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Lepas mesin sesuai kebutuhan",
+      "Bongkar dan inspeksi internal",
+      "Ukur komponen utama",
+      "Pembersihan komponen",
+      "Perakitan dan penyetelan",
+      "Uji fungsi dan pemeriksaan kebocoran"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Lepas mesin sesuai kebutuhan",
+      "Bongkar dan inspeksi internal",
+      "Ukur komponen utama",
+      "Pembersihan komponen",
+      "Perakitan dan penyetelan",
+      "Uji fungsi dan pemeriksaan kebocoran"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 132
+  },
+  {
+    "id": "ganti-battery-accu",
+    "kategori": "KELISTRIKAN MESIN",
+    "icon": "🔧",
+    "nama": "Ganti Battery / Accu",
+    "harga": "Rp82.500 – Rp86.250",
+    "durasi": "± 15–30 menit",
+    "deskripsi": "Jasa ganti battery / accu dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Pemeriksaan tegangan awal",
+      "Lepas aki lama",
+      "Pasang aki baru",
+      "Pemeriksaan sistem pengisian"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Pemeriksaan tegangan awal",
+      "Lepas aki lama",
+      "Pasang aki baru",
+      "Pemeriksaan sistem pengisian"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 133
+  },
+  {
+    "id": "over-houl-alternator",
+    "kategori": "KELISTRIKAN MESIN",
+    "icon": "🔧",
+    "nama": "Over Houl Alternator",
+    "harga": "Rp385.000 – Rp517.500",
+    "durasi": "± 3–5 jam",
+    "deskripsi": "Jasa over houl alternator dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Lepas alternator",
+      "Bongkar dan inspeksi",
+      "Bersihkan komponen",
+      "Perbaikan/rekondisi sesuai temuan",
+      "Rakit dan uji output pengisian"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Lepas alternator",
+      "Bongkar dan inspeksi",
+      "Bersihkan komponen",
+      "Perbaikan/rekondisi sesuai temuan",
+      "Rakit dan uji output pengisian"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 134
+  },
+  {
+    "id": "over-houl-motor-starter",
+    "kategori": "KELISTRIKAN MESIN",
+    "icon": "🔧",
+    "nama": "Over Houl Motor Starter",
+    "harga": "Rp275.000 – Rp385.000",
+    "durasi": "± 3–5 jam",
+    "deskripsi": "Jasa over houl motor starter dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Lepas starter",
+      "Bongkar dan inspeksi",
+      "Bersihkan komponen",
+      "Perbaikan/rekondisi sesuai temuan",
+      "Rakit dan uji kerja starter"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Lepas starter",
+      "Bongkar dan inspeksi",
+      "Bersihkan komponen",
+      "Perbaikan/rekondisi sesuai temuan",
+      "Rakit dan uji kerja starter"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 135
+  },
+  {
+    "id": "ganti-kabel-busi",
+    "kategori": "KELISTRIKAN MESIN",
+    "icon": "🔧",
+    "nama": "Ganti Kabel Busi",
+    "harga": "Rp110.000 – Rp126.500",
+    "durasi": "± 30–60 menit",
+    "deskripsi": "Jasa ganti kabel busi dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Periksa sistem pengapian",
+      "Lepas kabel lama",
+      "Pasang kabel baru",
+      "Uji pengapian"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Periksa sistem pengapian",
+      "Lepas kabel lama",
+      "Pasang kabel baru",
+      "Uji pengapian"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 136
+  },
+  {
+    "id": "ganti-flexible-hose-minyak-rem",
+    "kategori": "REM",
+    "icon": "🔧",
+    "nama": "Ganti Flexible Hose Minyak Rem",
+    "harga": "Rp110.000 – Rp115.000",
+    "durasi": "± 45–90 menit",
+    "deskripsi": "Jasa ganti flexible hose minyak rem dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Lepas hose lama",
+      "Pasang hose baru",
+      "Isi/bleeding minyak rem",
+      "Periksa kebocoran",
+      "Uji pedal rem"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Lepas hose lama",
+      "Pasang hose baru",
+      "Isi/bleeding minyak rem",
+      "Periksa kebocoran",
+      "Uji pedal rem"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 137
+  },
+  {
+    "id": "ganti-rack-end-long-tie-rod",
+    "kategori": "KEMUDI",
+    "icon": "🔧",
+    "nama": "Ganti Rack End / Long Tie Rod",
+    "harga": "Rp165.000 – Rp230.000",
+    "durasi": "± 60–120 menit",
+    "deskripsi": "Jasa ganti rack end / long tie rod dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Lepas rack end",
+      "Pasang komponen baru",
+      "Setel posisi dasar",
+      "Periksa kelonggaran",
+      "Rekomendasi spooring bila diperlukan"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Lepas rack end",
+      "Pasang komponen baru",
+      "Setel posisi dasar",
+      "Periksa kelonggaran",
+      "Rekomendasi spooring bila diperlukan"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 138
+  },
+  {
+    "id": "ganti-ball-joint-atas-1-sisi",
+    "kategori": "SUSPENSI DEPAN",
+    "icon": "🔧",
+    "nama": "Ganti Ball Joint Atas 1 Sisi",
+    "harga": "Rp165.000 – Rp172.500",
+    "durasi": "± 60–120 menit",
+    "deskripsi": "Jasa ganti ball joint atas 1 sisi dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Lepas komponen pengikat",
+      "Lepas ball joint",
+      "Pasang ball joint baru",
+      "Kencangkan sesuai prosedur",
+      "Periksa kelonggaran"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Lepas komponen pengikat",
+      "Lepas ball joint",
+      "Pasang ball joint baru",
+      "Kencangkan sesuai prosedur",
+      "Periksa kelonggaran"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 139
+  },
+  {
+    "id": "ganti-ball-joint-bawah-1-sisi",
+    "kategori": "SUSPENSI DEPAN",
+    "icon": "🔧",
+    "nama": "Ganti Ball Joint Bawah 1 Sisi",
+    "harga": "Rp165.000 – Rp172.500",
+    "durasi": "± 60–120 menit",
+    "deskripsi": "Jasa ganti ball joint bawah 1 sisi dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Lepas komponen pengikat",
+      "Lepas ball joint",
+      "Pasang ball joint baru",
+      "Kencangkan sesuai prosedur",
+      "Periksa kelonggaran"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Lepas komponen pengikat",
+      "Lepas ball joint",
+      "Pasang ball joint baru",
+      "Kencangkan sesuai prosedur",
+      "Periksa kelonggaran"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 140
+  },
+  {
+    "id": "ganti-bushing-upper-arm-1-sisi",
+    "kategori": "SUSPENSI DEPAN",
+    "icon": "🔧",
+    "nama": "Ganti Bushing Upper Arm 1 Sisi",
+    "harga": "Rp192.500 – Rp201.250",
+    "durasi": "± 2–3 jam",
+    "deskripsi": "Jasa ganti bushing upper arm 1 sisi dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Lepas upper arm/bushing",
+      "Press bushing lama bila diperlukan",
+      "Pasang bushing baru",
+      "Pasang kembali arm",
+      "Periksa posisi dan kelonggaran"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Lepas upper arm/bushing",
+      "Press bushing lama bila diperlukan",
+      "Pasang bushing baru",
+      "Pasang kembali arm",
+      "Periksa posisi dan kelonggaran"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 141
+  },
+  {
+    "id": "ganti-bushing-lower-arm-1-sisi",
+    "kategori": "SUSPENSI DEPAN",
+    "icon": "🔧",
+    "nama": "Ganti Bushing Lower Arm 1 Sisi",
+    "harga": "Rp220.000 – Rp287.500",
+    "durasi": "± 2–4 jam",
+    "deskripsi": "Jasa ganti bushing lower arm 1 sisi dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Lepas lower arm/bushing",
+      "Press bushing lama bila diperlukan",
+      "Pasang bushing baru",
+      "Pasang kembali arm",
+      "Periksa posisi dan kelonggaran"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Lepas lower arm/bushing",
+      "Press bushing lama bila diperlukan",
+      "Pasang bushing baru",
+      "Pasang kembali arm",
+      "Periksa posisi dan kelonggaran"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 142
+  },
+  {
+    "id": "ganti-upper-arm-assy",
+    "kategori": "SUSPENSI DEPAN",
+    "icon": "🔧",
+    "nama": "Ganti Upper Arm Assy",
+    "harga": "Rp192.500 – Rp201.250",
+    "durasi": "± 90–150 menit",
+    "deskripsi": "Jasa ganti upper arm assy dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Lepas upper arm",
+      "Pasang upper arm baru",
+      "Kencangkan sesuai prosedur",
+      "Periksa kelonggaran dan posisi"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Lepas upper arm",
+      "Pasang upper arm baru",
+      "Kencangkan sesuai prosedur",
+      "Periksa kelonggaran dan posisi"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 143
+  },
+  {
+    "id": "ganti-lower-arm-assy",
+    "kategori": "SUSPENSI DEPAN",
+    "icon": "🔧",
+    "nama": "Ganti Lower Arm Assy",
+    "harga": "Rp220.000 – Rp287.500",
+    "durasi": "± 2–3 jam",
+    "deskripsi": "Jasa ganti lower arm assy dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Lepas lower arm",
+      "Pasang lower arm baru",
+      "Kencangkan sesuai prosedur",
+      "Periksa kelonggaran dan posisi"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Lepas lower arm",
+      "Pasang lower arm baru",
+      "Kencangkan sesuai prosedur",
+      "Periksa kelonggaran dan posisi"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 144
+  },
+  {
+    "id": "ganti-karet-strut-bas-1-sisi",
+    "kategori": "SUSPENSI DEPAN",
+    "icon": "🔧",
+    "nama": "Ganti Karet Strut Bawah 1 Sisi",
+    "harga": "Rp110.000",
+    "durasi": "± 1–2 jam",
+    "deskripsi": "Jasa ganti karet strut bas 1 sisi dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Lepas komponen yang menghalangi",
+      "Lepas karet strut",
+      "Pasang karet baru",
+      "Periksa posisi dan bunyi suspensi"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Lepas komponen yang menghalangi",
+      "Lepas karet strut",
+      "Pasang karet baru",
+      "Periksa posisi dan bunyi suspensi"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 145
+  },
+  {
+    "id": "derek-cantol",
+    "kategori": "DEREK",
+    "icon": "🔧",
+    "nama": "Derek Cantol",
+    "harga": "Rp900.000",
+    "durasi": "± sesuai jarak/traffic",
+    "deskripsi": "Jasa derek cantol dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Pengamanan kendaraan",
+      "Pemasangan alat derek cantol",
+      "Penarikan ke lokasi tujuan"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Pengamanan kendaraan",
+      "Pemasangan alat derek cantol",
+      "Penarikan ke lokasi tujuan"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 146
+  },
+  {
+    "id": "derek-gendong",
+    "kategori": "DEREK",
+    "icon": "🔧",
+    "nama": "Derek Gendong",
+    "harga": "Rp1.100.000",
+    "durasi": "± sesuai jarak/traffic",
+    "deskripsi": "Jasa derek gendong dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
+    "pekerjaan": [
+      "Pengamanan kendaraan",
+      "Loading kendaraan ke unit derek",
+      "Pengikatan kendaraan",
+      "Pengantaran ke lokasi tujuan"
+    ],
+    "manfaat": [
+      "Membantu mengembalikan fungsi sistem terkait",
+      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Pengamanan kendaraan",
+      "Loading kendaraan ke unit derek",
+      "Pengikatan kendaraan",
+      "Pengantaran ke lokasi tujuan"
+    ],
+    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
+    "yangTidakTermasuk": [
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
+    "nomor": 147
   }
 ];
