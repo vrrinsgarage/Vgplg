@@ -1,6 +1,6 @@
 /* VRRINS GARAGE — FINAL POPUP FLOW
    Paket Perawatan VG → Tune → Bensin/Diesel → Paket → Detail
-   Kondisi Mobil → Kategori → Layanan → Detail
+   Kondisi Mobil → Kategori → Subkategori → Detail
    Navigasi bertingkat (stack) untuk tombol kembali
 */
 (() => {
@@ -41,6 +41,17 @@
     diesel: { title: 'VG TUNE DIESEL', image: 'images/vg-tune-diesel.webp', desc: 'Paket tune untuk kendaraan bermesin diesel.' }
   };
 
+  const SERVICE_IMAGE_OVERRIDES = {
+    'over-houl-engine': 'images/service/over-haul-engine.webp',
+    'ganti-disc-brake-1-sisi': 'images/service/ganti-disc-brake-1-sisi.webp',
+    'ganti-flexible-hose-minyak-rem': 'images/service/ganti-flexible-hose-minyak-rem.webp',
+    'ganti-kabel-busi': 'images/service/ganti-kabel-busi.webp',
+    'ganti-rack-end-long-tie-rod': 'images/service/ganti-rack-end-long-tie-rod.webp'
+  };
+
+  const serviceImage = (id) =>
+    SERVICE_IMAGE_OVERRIDES[id] || `images/services/${id}.webp`;
+
   const image = (src, alt = '') =>
     `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="this.src='images/placeholder.webp'">`;
 
@@ -64,74 +75,66 @@
       </div>
     </article>`;
 
-  // ===== HISTORY POPUP (BROWSER + INTERNAL) =====
-  // Setiap halaman popup memiliki 1 history entry. Tombol Back HP,
-  // tombol Kembali, ESC, dan tombol X sekarang memakai history yang sama.
+  // ===== STACK NAVIGASI =====
+  let popupStack = [];
   let popupHistoryActive = false;
   let isNavigating = false;
   let isClosing = false;
-  let restoringFromHistory = false;
 
-  const renderPopup = (html) => {
+  // pushState: true hanya untuk buka popup pertama kali
+  const open = (html, pushState = false) => {
+    if (isNavigating) return;
+    isNavigating = true;
+
+    if (content.innerHTML && content.innerHTML !== html) {
+      popupStack.push(content.innerHTML);
+    }
+
     content.innerHTML = html;
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('popup-open');
     content.scrollTop = 0;
-  };
 
-  const closeVisual = () => {
-    modal.classList.remove('is-open');
-    modal.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('popup-open');
-    content.innerHTML = '';
-    popupHistoryActive = false;
-  };
-
-  const open = (html, pushState = false) => {
-    if (isNavigating || isClosing) return;
-    isNavigating = true;
-
-    const popupAlreadyOpen = modal.classList.contains('is-open');
-    // Buka pertama kali atau pindah halaman di dalam popup = history baru.
-    // State menyimpan HTML agar popstate bisa mengembalikan halaman tepat.
-    if (!restoringFromHistory && (pushState || popupAlreadyOpen)) {
-      history.pushState({ vgPopup: true, vgHtml: html }, '', location.href);
+    if (pushState && !popupHistoryActive) {
+      history.pushState({ vgPopup: true }, '', location.href);
       popupHistoryActive = true;
     }
-
-    renderPopup(html);
     isNavigating = false;
   };
 
   const goBack = () => {
     if (isNavigating || isClosing) return;
+    isNavigating = true;
 
-    if (popupHistoryActive && window.history.state?.vgPopup) {
-      history.back();
+    if (popupStack.length > 0) {
+      const previousHtml = popupStack.pop();
+      content.innerHTML = previousHtml;
+      content.scrollTop = 0;
+      isNavigating = false;
     } else {
-      closeVisual();
+      isNavigating = false;
+      close();
     }
   };
 
   const close = () => {
     if (isClosing) return;
     isClosing = true;
-
-    // Jangan replaceState: browser harus benar-benar kembali ke entry
-    // sebelum popup dibuka. popstate yang akan menutup visual popup.
-    if (popupHistoryActive && window.history.state?.vgPopup) {
-      history.back();
-    } else {
-      closeVisual();
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('popup-open');
+    popupStack = [];
+    popupHistoryActive = false;
+    // Hapus state history agar tombol back tidak keluar dari web
+    if (window.history.state && window.history.state.vgPopup) {
+      history.replaceState(null, '', location.href);
     }
-
-    setTimeout(() => {
-      isClosing = false;
-    }, 0);
+    isClosing = false;
   };
 
   // ===== RENDER FUNCTIONS =====
+
   function renderPackageRoot() {
     const p = id => find(id);
     const tune = card({
@@ -226,7 +229,7 @@
       </div>
       <div class="vg-popup-grid">
         ${items.map(s => card({
-          imageSrc: `images/services/${s.id}.webp`,
+          imageSrc: serviceImage(s.id),
           title: s.nama,
           desc: s.deskripsi || '',
           badge: s.id.includes('addon') ? 'ADD-ON' : s.id.includes('pro') ? 'PREMIUM' : s.id.includes('plus') ? 'REKOMENDASI' : 'HEMAT',
@@ -269,7 +272,7 @@
       </div>
       <div class="vg-popup-grid">
         ${items.map(s => card({
-          imageSrc: `images/services/${s.id}.webp`,
+          imageSrc: serviceImage(s.id),
           title: s.nama,
           desc: s.deskripsi || '',
           meta: `${esc(s.harga || '-')} • ${esc(s.durasi || '-')}`,
@@ -297,7 +300,7 @@ Terima kasih. 🙏`;
 
     return `${head(s.nama, s.kategori)}
       ${backButton()}
-      <div class="vg-detail-media">${image(`images/services/${s.id}.webp`, s.nama)}</div>
+      <div class="vg-detail-media">${image(serviceImage(s.id), s.nama)}</div>
       <div class="vg-detail-head">
         <span class="vg-popup-label">${esc(s.kategori)}</span>
         <h3>${esc(s.nama)}</h3>
@@ -323,90 +326,9 @@ Terima kasih. 🙏`;
         <h4>GALERI HASIL PEKERJAAN</h4>
         <div class="vg-gallery-grid">${gallery}</div>
       </div>
-      <a class="vg-wa-button vg-service-booking" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}" aria-label="Booking layanan ${esc(s.nama)}">
-        <img class="vg-service-booking__img" src="images/booking-layanan-ini.webp" alt="Booking layanan ini" loading="lazy" onerror="this.closest('.vg-service-booking')?.classList.add('is-fallback')">
-        <span class="vg-service-booking__fallback"><span class="wa-icon"></span> BOOKING WHATSAPP</span>
+      <a class="vg-wa-button" target="_blank" rel="noopener" href="${WA_BASE}?text=${encodeURIComponent(msg)}">
+        <span class="wa-icon"></span> BOOKING WHATSAPP
       </a>`;
-  }
-
-  // ===== STYLE BANNER BOOKING LAYANAN =====
-  // Khusus tombol booking pada Detail Layanan. Tidak memengaruhi
-  // VG BOOKING Header/Hero maupun BOOK NOW Floating.
-  if (!document.getElementById('vg-service-booking-style')) {
-    const style = document.createElement('style');
-    style.id = 'vg-service-booking-style';
-    style.textContent = `
-      .vg-service-booking {
-        display: block !important;
-        position: relative !important;
-        box-sizing: border-box !important;
-        width: 88% !important;
-        max-width: 520px !important;
-        height: auto !important;
-        aspect-ratio: 6.15 / 1 !important;
-        margin: 24px auto 6px !important;
-        padding: 0 !important;
-        overflow: hidden !important;
-        border: 0 !important;
-        border-radius: 12px !important;
-        background: transparent !important;
-        line-height: 0 !important;
-        text-decoration: none !important;
-        box-shadow: none !important;
-      }
-
-      .vg-service-booking__img {
-        display: block !important;
-        position: absolute !important;
-        left: 0 !important;
-        top: 50% !important;
-        width: 100% !important;
-        height: auto !important;
-        max-width: none !important;
-        margin: 0 !important;
-        transform: translateY(-50%) !important;
-        object-fit: contain !important;
-      }
-
-      .vg-service-booking__fallback {
-        display: none;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        width: 100%;
-        height: 100%;
-        line-height: 1.2;
-      }
-
-      .vg-service-booking.is-fallback .vg-service-booking__img {
-        display: none !important;
-      }
-
-      .vg-service-booking.is-fallback .vg-service-booking__fallback {
-        display: flex !important;
-      }
-
-      /* Desktop: cukup besar untuk menjadi CTA, tetapi tidak memenuhi popup. */
-      @media (min-width: 769px) {
-        .vg-service-booking {
-          width: 58% !important;
-          max-width: 560px !important;
-          aspect-ratio: 6.15 / 1 !important;
-          margin-top: 26px !important;
-        }
-      }
-
-      /* Mobile: dibuat dominan tetapi tetap menyisakan ruang kiri-kanan. */
-      @media (max-width: 768px) {
-        .vg-service-booking {
-          width: 65% !important;
-          max-width: 520px !important;
-          aspect-ratio: 6.15 / 1 !important;
-          margin-top: 24px !important;
-        }
-      }
-    `;
-    document.head.appendChild(style);
   }
 
   // ===== EVENT LISTENER =====
@@ -437,7 +359,7 @@ Terima kasih. 🙏`;
       return;
     }
 
-    // Buka sistem dari card (halaman utama)
+    // Buka sistem dari card (halaman utama) — ini untuk bagian "Pilih Layanan Sesuai Sistem Mobil Anda"
     const systemEl = e.target.closest('[data-open-system]');
     if (systemEl) {
       const isFirstOpen = !modal.classList.contains('is-open');
@@ -445,30 +367,27 @@ Terima kasih. 🙏`;
       return;
     }
 
-    // Navigasi dari tombol aksi (dalam popup).
-    // open() otomatis membuat history entry untuk setiap halaman popup.
+    // Navigasi dari tombol aksi (dalam popup)
     const actionEl = e.target.closest('[data-action]');
-    if (actionEl) {
-      const a = actionEl.dataset.action;
+    if (!actionEl) return;
+    const a = actionEl.dataset.action;
 
-      if (a === 'package-root') {
-        open(renderPackageRoot(), false);
-      } else if (a === 'tune-root') {
-        open(renderTuneRoot(), false);
-      } else if (a === 'system-root') {
-        open(renderSystemRoot(), false);
-      } else if (a.startsWith('tune:')) {
-        open(renderTuneList(a.split(':')[1]), false);
-      } else if (a.startsWith('category:')) {
-        open(renderCategory(a.substring(9)), false);
-      } else if (a.startsWith('service:')) {
-        const parts = a.split(':');
-        const id = parts[1];
-        open(renderService(id), false);
-      }
-      return;
+    // Semua navigasi internal TIDAK pakai pushState (false)
+    if (a === 'package-root') {
+      open(renderPackageRoot(), false);
+    } else if (a === 'tune-root') {
+      open(renderTuneRoot(), false);
+    } else if (a === 'system-root') {
+      open(renderSystemRoot(), false);
+    } else if (a.startsWith('tune:')) {
+      open(renderTuneList(a.split(':')[1]), false);
+    } else if (a.startsWith('category:')) {
+      open(renderCategory(a.substring(9)), false);
+    } else if (a.startsWith('service:')) {
+      const parts = a.split(':');
+      const id = parts[1];
+      open(renderService(id), false);
     }
-
   });
 
   // ===== TOMBOL KEMBALI FISIK HP & ESC =====
@@ -480,19 +399,14 @@ Terima kasih. 🙏`;
   });
 
   // ===== TOMBOL KEMBALI BROWSER (POPSTATE) =====
-  window.addEventListener('popstate', (event) => {
-    const state = event.state;
-
-    if (state?.vgPopup && typeof state.vgHtml === 'string') {
-      restoringFromHistory = true;
-      popupHistoryActive = true;
-      renderPopup(state.vgHtml);
-      restoringFromHistory = false;
-      return;
+  window.addEventListener('popstate', () => {
+    if (popupHistoryActive && modal.classList.contains('is-open')) {
+      goBack();
+      // Jika setelah goBack stack kosong dan popup masih terbuka, tutup
+      if (popupStack.length === 0 && modal.classList.contains('is-open')) {
+        close();
+      }
     }
-
-    // Kembali ke history halaman normal = popup selesai.
-    closeVisual();
   });
 
   // ===== WHATSAPP LINKS =====
@@ -545,7 +459,18 @@ Terima kasih. 🙏`;
   window.openZonePopup = function(zoneNumber) {
     const html = renderZonePopup(zoneNumber);
     const isFirstOpen = !modal.classList.contains('is-open');
-    open(html, isFirstOpen);
+    if (content.innerHTML) {
+      popupStack.push(content.innerHTML);
+    }
+    content.innerHTML = html;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('popup-open');
+    content.scrollTop = 0;
+    if (isFirstOpen && !popupHistoryActive) {
+      history.pushState({ vgPopup: true }, '', location.href);
+      popupHistoryActive = true;
+    }
   };
 
 })();
