@@ -676,6 +676,85 @@ globalThis.services = [
     "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
+    "id": "ganti-oli-transmisi-manual",
+    "kategori": "PELUMASAN",
+    "icon": "⚙️",
+    "nama": "Ganti Oli Transmisi Manual",
+    "harga": "Rp100.000 – Rp175.000",
+    "durasi": "± 30–45 menit",
+    "deskripsi": "Penggantian oli transmisi manual untuk menjaga kerja komponen transmisi tetap optimal.",
+    "pekerjaan": [
+      "Penggantian oli transmisi manual",
+      "Pemeriksaan baut drain dan fill",
+      "Pemeriksaan kondisi oli lama",
+      "Pemeriksaan kebocoran oli transmisi"
+    ],
+    "manfaat": [
+      "Membantu perpindahan gigi lebih nyaman",
+      "Menjaga pelumasan gear transmisi",
+      "Membantu memperpanjang usia transmisi"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Penggantian oli transmisi manual",
+      "Pemeriksaan baut drain dan fill",
+      "Pemeriksaan kondisi oli lama",
+      "Pemeriksaan kebocoran oli transmisi"
+    ],
+    "cocokUntuk": "Kendaraan transmisi manual yang sudah memasuki interval penggantian oli atau membutuhkan perawatan pelumasan transmisi.",
+    "yangTidakTermasuk": [
+      "Oli transmisi",
+      "Perbaikan transmisi",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
+    "id": "ganti-oli-transmisi-at",
+    "kategori": "PELUMASAN",
+    "icon": "⚙️",
+    "nama": "Ganti Oli Transmisi Otomatis (AT)",
+    "harga": "Rp275.000 – Rp373.750",
+    "durasi": "± 45–90 menit",
+    "deskripsi": "Penggantian oli transmisi otomatis dengan pemeriksaan kondisi dasar transmisi.",
+    "pekerjaan": [
+      "Penggantian oli transmisi otomatis",
+      "Pemeriksaan baut drain dan fill",
+      "Pemeriksaan kondisi oli AT",
+      "Pemeriksaan kebocoran transmisi"
+    ],
+    "manfaat": [
+      "Membantu menjaga perpindahan gigi",
+      "Menjaga sistem hidrolik transmisi",
+      "Membantu menjaga performa transmisi"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Penggantian oli transmisi otomatis",
+      "Pemeriksaan baut drain dan fill",
+      "Pemeriksaan kondisi oli AT",
+      "Pemeriksaan kebocoran transmisi"
+    ],
+    "cocokUntuk": "Kendaraan transmisi otomatis yang membutuhkan penggantian atau perawatan oli AT sesuai kondisi dan kebutuhan kendaraan.",
+    "yangTidakTermasuk": [
+      "Oli AT",
+      "Filter transmisi",
+      "Perbaikan transmisi",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
     "id": "ganti-oli-gardan",
     "kategori": "PELUMASAN",
     "icon": "⚙️",
@@ -996,6 +1075,201 @@ globalThis.services = [
     "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
+    "id": "ganti-ball-joint",
+    "kategori": "SUSPENSI",
+    "icon": "🚙",
+    "nama": "Ganti Ball Joint",
+    "harga": "Rp165.000 – Rp172.500",
+    "durasi": "± 45–90 menit",
+    "deskripsi": "Penggantian ball joint yang berfungsi menjaga pergerakan roda dan sistem suspensi.",
+    "pekerjaan": [
+      "Penggantian ball joint",
+      "Pemeriksaan steering knuckle",
+      "Pemeriksaan lower arm",
+      "Pemeriksaan baut pengikat"
+    ],
+    "manfaat": [
+      "Mengurangi bunyi kaki-kaki",
+      "Menjaga kestabilan roda",
+      "Meningkatkan keamanan berkendara"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Penggantian ball joint",
+      "Pemeriksaan steering knuckle",
+      "Pemeriksaan lower arm",
+      "Pemeriksaan baut pengikat"
+    ],
+    "cocokUntuk": "Kendaraan dengan bunyi atau kelonggaran pada kaki-kaki yang mengarah pada ball joint aus.",
+    "yangTidakTermasuk": [
+      "Spare part",
+      "Kerusakan komponen lain",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
+    "id": "ganti-link-stabilizer",
+    "kategori": "SUSPENSI",
+    "icon": "🚙",
+    "nama": "Ganti Link Stabilizer",
+    "harga": "Rp110.000 – Rp143.750",
+    "durasi": "± 30–60 menit",
+    "deskripsi": "Penggantian link stabilizer untuk membantu mengurangi bunyi dan menjaga kestabilan kendaraan.",
+    "pekerjaan": [
+      "Penggantian link stabilizer",
+      "Pemeriksaan karet stabilizer",
+      "Pemeriksaan stabilizer bar",
+      "Uji kendaraan"
+    ],
+    "manfaat": [
+      "Mengurangi bunyi kaki-kaki",
+      "Meningkatkan kestabilan",
+      "Membantu kenyamanan berkendara"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Penggantian link stabilizer",
+      "Pemeriksaan karet stabilizer",
+      "Pemeriksaan stabilizer bar",
+      "Uji kendaraan"
+    ],
+    "cocokUntuk": "Kendaraan dengan bunyi pada kaki-kaki atau stabilizer yang menunjukkan komponen stabilizer aus.",
+    "yangTidakTermasuk": [
+      "Spare part",
+      "Perbaikan suspensi lain",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
+    "id": "ganti-bearing-roda",
+    "kategori": "SUSPENSI",
+    "icon": "🚙",
+    "nama": "Ganti Bearing Roda",
+    "harga": "Rp165.000 – Rp201.250",
+    "durasi": "± 60–120 menit",
+    "deskripsi": "Penggantian bearing roda untuk mengatasi bunyi dan menjaga putaran roda tetap optimal.",
+    "pekerjaan": [
+      "Penggantian bearing roda",
+      "Pemeriksaan hub roda",
+      "Pemeriksaan as roda",
+      "Pemeriksaan baut roda"
+    ],
+    "manfaat": [
+      "Mengurangi suara dengung roda",
+      "Menjaga putaran roda",
+      "Meningkatkan keamanan kendaraan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Penggantian bearing roda",
+      "Pemeriksaan hub roda",
+      "Pemeriksaan as roda",
+      "Pemeriksaan baut roda"
+    ],
+    "cocokUntuk": "Kendaraan dengan bunyi dengung/gerung dari roda, kelonggaran roda, atau indikasi bearing roda aus.",
+    "yangTidakTermasuk": [
+      "Spare part",
+      "Kerusakan hub roda",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
+    "id": "ganti-tie-rod",
+    "kategori": "KEMUDI",
+    "icon": "🎯",
+    "nama": "Ganti Tie Rod",
+    "harga": "Rp110.000 – Rp143.750",
+    "durasi": "± 30–60 menit",
+    "deskripsi": "Penggantian tie rod untuk menjaga fungsi kemudi dan kestabilan arah kendaraan.",
+    "pekerjaan": [
+      "Penggantian tie rod",
+      "Pemeriksaan rack end",
+      "Pemeriksaan boot steering rack",
+      "Uji fungsi kemudi"
+    ],
+    "manfaat": [
+      "Mengurangi kelonggaran kemudi",
+      "Meningkatkan kestabilan arah kendaraan",
+      "Membantu kenyamanan berkendara"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Penggantian tie rod",
+      "Pemeriksaan rack end",
+      "Pemeriksaan boot steering rack",
+      "Uji fungsi kemudi"
+    ],
+    "cocokUntuk": "Kendaraan dengan kemudi berat, oblak, bunyi, kebocoran, atau kelonggaran pada sistem kemudi/steering.",
+    "yangTidakTermasuk": [
+      "Spare part",
+      "Spooring",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
+    "id": "ganti-rack-end",
+    "kategori": "KEMUDI",
+    "icon": "🎯",
+    "nama": "Ganti Rack End",
+    "harga": "Rp165.000 – Rp230.000",
+    "durasi": "± 30–60 menit",
+    "deskripsi": "Penggantian rack end untuk memperbaiki sistem penghubung kemudi kendaraan.",
+    "pekerjaan": [
+      "Penggantian rack end",
+      "Pemeriksaan tie rod",
+      "Pemeriksaan steering rack",
+      "Uji fungsi kemudi"
+    ],
+    "manfaat": [
+      "Mengurangi bunyi pada kemudi",
+      "Menjaga respon kemudi",
+      "Meningkatkan kestabilan kendaraan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Penggantian rack end",
+      "Pemeriksaan tie rod",
+      "Pemeriksaan steering rack",
+      "Uji fungsi kemudi"
+    ],
+    "cocokUntuk": "Kendaraan dengan kemudi berat, oblak, bunyi, kebocoran, atau kelonggaran pada sistem kemudi/steering.",
+    "yangTidakTermasuk": [
+      "Spare part",
+      "Spooring",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
     "id": "servis-steering-rack",
     "kategori": "KEMUDI",
     "icon": "🎯",
@@ -1039,6 +1313,47 @@ globalThis.services = [
     "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
+    "id": "ganti-power-steering-pump",
+    "kategori": "KEMUDI",
+    "icon": "🎯",
+    "nama": "Ganti Power Steering Pump",
+    "harga": "Rp242.000 – Rp460.000",
+    "durasi": "± 60–120 menit",
+    "deskripsi": "Penggantian power steering pump untuk membantu sistem kemudi tetap ringan.",
+    "pekerjaan": [
+      "Penggantian power steering pump",
+      "Pemeriksaan belt power steering",
+      "Pemeriksaan selang power steering",
+      "Pemeriksaan kebocoran",
+      "Uji sistem power steering"
+    ],
+    "manfaat": [
+      "Membantu kemudi lebih ringan",
+      "Mengurangi suara abnormal",
+      "Menjaga fungsi power steering"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Penggantian power steering pump",
+      "Pemeriksaan belt power steering",
+      "Pemeriksaan selang power steering",
+      "Pemeriksaan kebocoran",
+      "Uji sistem power steering"
+    ],
+    "cocokUntuk": "Kendaraan dengan kemudi berat, oblak, bunyi, kebocoran, atau kelonggaran pada sistem kemudi/steering.",
+    "yangTidakTermasuk": [
+      "Spare part",
+      "Oli power steering",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
     "id": "ganti-oli-power-steering",
     "kategori": "KEMUDI",
     "icon": "🎯",
@@ -1071,6 +1386,49 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Kerusakan power steering",
       "Spare part",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
+    "id": "servis-rem",
+    "kategori": "REM",
+    "icon": "🛑",
+    "nama": "Servis Rem (Setel & Bersihkan)",
+    "harga": "Rp140.000 – Rp175.000",
+    "durasi": "± 45–90 menit",
+    "deskripsi": "Perawatan sistem pengereman untuk membersihkan komponen dan menjaga fungsi rem tetap optimal.",
+    "pekerjaan": [
+      "Bongkar sistem rem",
+      "Pembersihan kampas rem",
+      "Pembersihan kaliper/tromol",
+      "Pelumasan komponen rem",
+      "Setel rem",
+      "Pemeriksaan minyak rem"
+    ],
+    "manfaat": [
+      "Mengurangi bunyi rem",
+      "Meningkatkan respons pengereman",
+      "Menjaga keamanan berkendara"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Bongkar sistem rem",
+      "Pembersihan kampas rem",
+      "Pembersihan kaliper/tromol",
+      "Pelumasan komponen rem",
+      "Setel rem",
+      "Pemeriksaan minyak rem"
+    ],
+    "cocokUntuk": "Kendaraan dengan rem kurang pakem, bunyi, getaran, kebocoran, atau komponen pengereman yang aus.",
+    "yangTidakTermasuk": [
+      "Penggantian spare part",
+      "Minyak rem",
       "Spare part/komponen pengganti",
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
@@ -1609,6 +1967,47 @@ globalThis.services = [
     "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
+    "id": "ganti-boot-drive-shaft",
+    "kategori": "TRANSMISI",
+    "icon": "⚙️",
+    "nama": "Ganti Boot Drive Shaft",
+    "harga": "Rp192.500 – Rp258.750",
+    "durasi": "± 60–120 menit",
+    "deskripsi": "Penggantian boot drive shaft untuk melindungi CV Joint dari kotoran dan kehilangan grease.",
+    "pekerjaan": [
+      "Penggantian boot drive shaft",
+      "Penggantian grease CV Joint",
+      "Pemeriksaan CV Joint",
+      "Pembersihan area CV Joint",
+      "Uji jalan kendaraan"
+    ],
+    "manfaat": [
+      "Mencegah kerusakan CV Joint",
+      "Mengurangi bunyi saat berbelok",
+      "Menjaga sistem penggerak roda"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Penggantian boot drive shaft",
+      "Penggantian grease CV Joint",
+      "Pemeriksaan CV Joint",
+      "Pembersihan area CV Joint",
+      "Uji jalan kendaraan"
+    ],
+    "cocokUntuk": "Kendaraan dengan perpindahan gigi, kopling, atau pemindah tenaga yang bermasalah dan membutuhkan pemeriksaan/perbaikan.",
+    "yangTidakTermasuk": [
+      "Boot drive shaft",
+      "Kerusakan CV Joint",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
     "id": "pemeriksaan-sistem-starter",
     "kategori": "KELISTRIKAN MESIN",
     "icon": "🔋",
@@ -1684,6 +2083,47 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Penggantian alternator",
       "Penggantian aki",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
+    "id": "ganti-aki",
+    "kategori": "KELISTRIKAN MESIN",
+    "icon": "🔋",
+    "nama": "Ganti Aki",
+    "harga": "Rp82.500 – Rp86.250",
+    "durasi": "± 15–30 menit",
+    "deskripsi": "Penggantian aki kendaraan dengan pemeriksaan sistem kelistrikan dasar.",
+    "pekerjaan": [
+      "Penggantian aki",
+      "Pemeriksaan terminal aki",
+      "Pembersihan terminal aki",
+      "Pemeriksaan tegangan pengisian",
+      "Reset sistem elektronik bila diperlukan"
+    ],
+    "manfaat": [
+      "Mengembalikan daya starter",
+      "Menjaga kestabilan kelistrikan",
+      "Membantu sistem elektronik kendaraan"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Penggantian aki",
+      "Pemeriksaan terminal aki",
+      "Pembersihan terminal aki",
+      "Pemeriksaan tegangan pengisian",
+      "Reset sistem elektronik bila diperlukan"
+    ],
+    "cocokUntuk": "Kendaraan dengan gangguan starter, pengisian aki, pengapian, atau kelistrikan mesin yang membutuhkan pemeriksaan atau perbaikan.",
+    "yangTidakTermasuk": [
+      "Aki baru",
+      "Kerusakan sistem charging",
       "Spare part/komponen pengganti",
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
@@ -2003,6 +2443,42 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Gasket",
       "Seal karet baut",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
+    "id": "ganti-transmisi-mounting-1-pc",
+    "kategori": "MESIN",
+    "icon": "🔧",
+    "nama": "Ganti Transmisi Mounting 1 pc",
+    "harga": "Rp110.000 – Rp143.750",
+    "durasi": "± 90–120 menit",
+    "deskripsi": "Ganti support transmisi 1 unit.",
+    "pekerjaan": [
+      "Dongkrak transmisi",
+      "Lepas support",
+      "Pasang baru"
+    ],
+    "manfaat": [
+      "Transmisi mantap",
+      "Tidak bergeser"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Dongkrak transmisi",
+      "Lepas support",
+      "Pasang baru"
+    ],
+    "cocokUntuk": "Kendaraan dengan perpindahan gigi, kopling, atau pemindah tenaga yang bermasalah dan membutuhkan pemeriksaan/perbaikan.",
+    "yangTidakTermasuk": [
+      "Mounting baru",
+      "Baut",
       "Spare part/komponen pengganti",
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
@@ -2517,6 +2993,84 @@ globalThis.services = [
     "yangTidakTermasuk": [
       "Rotor",
       "Cap distributor",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
+    "id": "starter-system",
+    "kategori": "KELISTRIKAN MESIN",
+    "icon": "🔋",
+    "nama": "Starter System",
+    "harga": "Rp198.000 – Rp316.250",
+    "durasi": "± 90–150 menit",
+    "deskripsi": "Diagnosa & perbaikan sistem starter total.",
+    "pekerjaan": [
+      "Cek kabel massa",
+      "Positif",
+      "Relay",
+      "Saklar",
+      "Motor starter"
+    ],
+    "manfaat": [
+      "Sistem starter terjamin"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Cek kabel massa",
+      "Positif",
+      "Relay",
+      "Saklar",
+      "Motor starter"
+    ],
+    "cocokUntuk": "Kendaraan dengan gangguan starter, pengisian aki, pengapian, atau kelistrikan mesin yang membutuhkan pemeriksaan atau perbaikan.",
+    "yangTidakTermasuk": [
+      "Relay",
+      "Saklar",
+      "Kabel (jika ganti)",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
+    "id": "charging-system",
+    "kategori": "KELISTRIKAN MESIN",
+    "icon": "🔋",
+    "nama": "Charging System",
+    "harga": "Rp198.000 – Rp297.275",
+    "durasi": "± 90–150 menit",
+    "deskripsi": "Diagnosa & perbaikan sistem pengisian.",
+    "pekerjaan": [
+      "Cek tegangan",
+      "Dioda",
+      "Kabel utama",
+      "Fuse"
+    ],
+    "manfaat": [
+      "Sistem charging optimal"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Cek tegangan",
+      "Dioda",
+      "Kabel utama",
+      "Fuse"
+    ],
+    "cocokUntuk": "Kendaraan dengan gangguan starter, pengisian aki, pengapian, atau kelistrikan mesin yang membutuhkan pemeriksaan atau perbaikan.",
+    "yangTidakTermasuk": [
+      "Dioda",
+      "Regulator",
+      "Kabel",
       "Spare part/komponen pengganti",
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
@@ -4585,236 +5139,6 @@ globalThis.services = [
       "Pemeriksaan berkala 10.000 km",
       "Periksa oli dan fluida",
       "Periksa rem, pendinginan, kelistrikan, dan komponen utama"
-    ],
-    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
-    "yangTidakTermasuk": [
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
-  },
-  {
-    "id": "checking-20-000-km",
-    "kategori": "MESIN",
-    "icon": "🔧",
-    "nama": "Checking 20.000 Km",
-    "harga": "Rp500.000 – Rp862.500",
-    "durasi": "± 90–150 menit",
-    "deskripsi": "Jasa checking 20.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
-    "pekerjaan": [
-      "Pemeriksaan berkala 20.000 km",
-      "Pemeriksaan fluida dan filter terkait",
-      "Pemeriksaan rem, suspensi, kemudi, pendinginan dan kelistrikan"
-    ],
-    "manfaat": [
-      "Membantu mengembalikan fungsi sistem terkait",
-      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Pemeriksaan berkala 20.000 km",
-      "Pemeriksaan fluida dan filter terkait",
-      "Pemeriksaan rem, suspensi, kemudi, pendinginan dan kelistrikan"
-    ],
-    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
-    "yangTidakTermasuk": [
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
-  },
-  {
-    "id": "checking-30-000-50-000-km",
-    "kategori": "MESIN",
-    "icon": "🔧",
-    "nama": "Checking 30.000 / 50.000 Km",
-    "harga": "Rp400.000 – Rp759.000",
-    "durasi": "± 90–180 menit",
-    "deskripsi": "Jasa checking 30.000 / 50.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
-    "pekerjaan": [
-      "Pemeriksaan berkala 30.000/50.000 km",
-      "Pemeriksaan fluida",
-      "Pemeriksaan komponen keselamatan dan sistem utama"
-    ],
-    "manfaat": [
-      "Membantu mengembalikan fungsi sistem terkait",
-      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Pemeriksaan berkala 30.000/50.000 km",
-      "Pemeriksaan fluida",
-      "Pemeriksaan komponen keselamatan dan sistem utama"
-    ],
-    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
-    "yangTidakTermasuk": [
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
-  },
-  {
-    "id": "checking-40-000-km",
-    "kategori": "MESIN",
-    "icon": "🔧",
-    "nama": "Checking 40.000 Km",
-    "harga": "Rp577.500 – Rp948.750",
-    "durasi": "± 120–180 menit",
-    "deskripsi": "Jasa checking 40.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
-    "pekerjaan": [
-      "Pemeriksaan berkala 40.000 km",
-      "Pemeriksaan filter dan fluida",
-      "Pemeriksaan rem, suspensi, kemudi, pendinginan, dan drivetrain"
-    ],
-    "manfaat": [
-      "Membantu mengembalikan fungsi sistem terkait",
-      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Pemeriksaan berkala 40.000 km",
-      "Pemeriksaan filter dan fluida",
-      "Pemeriksaan rem, suspensi, kemudi, pendinginan, dan drivetrain"
-    ],
-    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
-    "yangTidakTermasuk": [
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
-  },
-  {
-    "id": "checking-60-000-140-000-km",
-    "kategori": "MESIN",
-    "icon": "🔧",
-    "nama": "Checking 60.000 / 140.000 Km",
-    "harga": "Rp550.000 – Rp920.000",
-    "durasi": "± 120–240 menit",
-    "deskripsi": "Jasa checking 60.000 / 140.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
-    "pekerjaan": [
-      "Pemeriksaan berkala 60.000/140.000 km",
-      "Pemeriksaan sistem utama dan komponen interval servis"
-    ],
-    "manfaat": [
-      "Membantu mengembalikan fungsi sistem terkait",
-      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Pemeriksaan berkala 60.000/140.000 km",
-      "Pemeriksaan sistem utama dan komponen interval servis"
-    ],
-    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
-    "yangTidakTermasuk": [
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
-  },
-  {
-    "id": "checking-70-000-90-000-km",
-    "kategori": "MESIN",
-    "icon": "🔧",
-    "nama": "Checking 70.000 / 90.000 Km",
-    "harga": "Rp440.000 – Rp805.000",
-    "durasi": "± 120–240 menit",
-    "deskripsi": "Jasa checking 70.000 / 90.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
-    "pekerjaan": [
-      "Pemeriksaan berkala 70.000/90.000 km",
-      "Pemeriksaan fluida, rem, suspensi, kemudi, pendinginan dan drivetrain"
-    ],
-    "manfaat": [
-      "Membantu mengembalikan fungsi sistem terkait",
-      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Pemeriksaan berkala 70.000/90.000 km",
-      "Pemeriksaan fluida, rem, suspensi, kemudi, pendinginan dan drivetrain"
-    ],
-    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
-    "yangTidakTermasuk": [
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
-  },
-  {
-    "id": "checking-80-000-240-000-km",
-    "kategori": "MESIN",
-    "icon": "🔧",
-    "nama": "Checking 80.000 / 240.000 Km",
-    "harga": "Rp605.000 – Rp977.500",
-    "durasi": "± 150–270 menit",
-    "deskripsi": "Jasa checking 80.000 / 240.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
-    "pekerjaan": [
-      "Pemeriksaan berkala 80.000/240.000 km",
-      "Pemeriksaan komponen interval besar dan sistem utama"
-    ],
-    "manfaat": [
-      "Membantu mengembalikan fungsi sistem terkait",
-      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Pemeriksaan berkala 80.000/240.000 km",
-      "Pemeriksaan komponen interval besar dan sistem utama"
-    ],
-    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
-    "yangTidakTermasuk": [
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
-  },
-  {
-    "id": "checking-100-000-300-000-km",
-    "kategori": "MESIN",
-    "icon": "🔧",
-    "nama": "Checking 100.000 / 300.000 Km",
-    "harga": "Rp525.000 – Rp862.500",
-    "durasi": "± 180–300 menit",
-    "deskripsi": "Jasa checking 100.000 / 300.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
-    "pekerjaan": [
-      "Pemeriksaan berkala 100.000/300.000 km",
-      "Pemeriksaan menyeluruh komponen interval tinggi dan sistem utama"
-    ],
-    "manfaat": [
-      "Membantu mengembalikan fungsi sistem terkait",
-      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Pemeriksaan berkala 100.000/300.000 km",
-      "Pemeriksaan menyeluruh komponen interval tinggi dan sistem utama"
     ],
     "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
     "yangTidakTermasuk": [
