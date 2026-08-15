@@ -38,8 +38,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 1
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "vg-tune-plus-bensin",
@@ -78,8 +77,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 2
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "vg-tune-pro-bensin",
@@ -120,8 +118,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 3
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "vg-tune-basic-diesel",
@@ -163,8 +160,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 4
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "vg-tune-plus-diesel",
@@ -206,8 +202,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 5
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "vg-tune-pro-diesel",
@@ -249,8 +244,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 6
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "vg-addon-gurah-karbon",
@@ -289,8 +283,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 7
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "vg-addon-diesel-purging",
@@ -330,8 +323,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 8
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "vg-check",
@@ -380,8 +372,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 9
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "vg-brake-service",
@@ -431,8 +422,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 10
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "vg-oil-service",
@@ -476,8 +466,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 11
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "flushing-oli-mesin",
@@ -518,8 +507,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 12
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-busi",
@@ -560,8 +548,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 13
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-ignition-coil",
@@ -602,8 +589,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 14
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-engine-mounting",
@@ -644,8 +630,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 15
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-oli-mesin",
@@ -688,89 +673,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 16
-  },
-  {
-    "id": "ganti-oli-transmisi-manual",
-    "kategori": "PELUMASAN",
-    "icon": "⚙️",
-    "nama": "Ganti Oli Transmisi Manual",
-    "harga": "Rp100.000 – Rp175.000",
-    "durasi": "± 30–45 menit",
-    "deskripsi": "Penggantian oli transmisi manual untuk menjaga kerja komponen transmisi tetap optimal.",
-    "pekerjaan": [
-      "Penggantian oli transmisi manual",
-      "Pemeriksaan baut drain dan fill",
-      "Pemeriksaan kondisi oli lama",
-      "Pemeriksaan kebocoran oli transmisi"
-    ],
-    "manfaat": [
-      "Membantu perpindahan gigi lebih nyaman",
-      "Menjaga pelumasan gear transmisi",
-      "Membantu memperpanjang usia transmisi"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Penggantian oli transmisi manual",
-      "Pemeriksaan baut drain dan fill",
-      "Pemeriksaan kondisi oli lama",
-      "Pemeriksaan kebocoran oli transmisi"
-    ],
-    "cocokUntuk": "Kendaraan transmisi manual yang sudah memasuki interval penggantian oli atau membutuhkan perawatan pelumasan transmisi.",
-    "yangTidakTermasuk": [
-      "Oli transmisi",
-      "Perbaikan transmisi",
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 17
-  },
-  {
-    "id": "ganti-oli-transmisi-at",
-    "kategori": "PELUMASAN",
-    "icon": "⚙️",
-    "nama": "Ganti Oli Transmisi Otomatis (AT)",
-    "harga": "Rp275.000 – Rp373.750",
-    "durasi": "± 45–90 menit",
-    "deskripsi": "Penggantian oli transmisi otomatis dengan pemeriksaan kondisi dasar transmisi.",
-    "pekerjaan": [
-      "Penggantian oli transmisi otomatis",
-      "Pemeriksaan baut drain dan fill",
-      "Pemeriksaan kondisi oli AT",
-      "Pemeriksaan kebocoran transmisi"
-    ],
-    "manfaat": [
-      "Membantu menjaga perpindahan gigi",
-      "Menjaga sistem hidrolik transmisi",
-      "Membantu menjaga performa transmisi"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Penggantian oli transmisi otomatis",
-      "Pemeriksaan baut drain dan fill",
-      "Pemeriksaan kondisi oli AT",
-      "Pemeriksaan kebocoran transmisi"
-    ],
-    "cocokUntuk": "Kendaraan transmisi otomatis yang membutuhkan penggantian atau perawatan oli AT sesuai kondisi dan kebutuhan kendaraan.",
-    "yangTidakTermasuk": [
-      "Oli AT",
-      "Filter transmisi",
-      "Perbaikan transmisi",
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 18
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-oli-gardan",
@@ -809,8 +712,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 19
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "atasi-kebocoran-oli",
@@ -851,8 +753,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 20
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "pemeriksaan-sistem-bahan-bakar",
@@ -893,8 +794,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 21
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "fuel-system-cleaner",
@@ -933,8 +833,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 22
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-fuel-pump",
@@ -975,8 +874,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 23
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "servis-injector",
@@ -1017,14 +915,13 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 24
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-shock-absorber-depan",
     "kategori": "SUSPENSI",
     "icon": "🚙",
-    "nama": "Ganti Shock Absorber Depan 1 Sisi",
+    "nama": "Ganti Shock Absorber Depan",
     "harga": "Rp130.000 – Rp385.000",
     "durasi": "± 60–120 menit",
     "deskripsi": "Penggantian shock absorber depan untuk membantu menjaga kenyamanan dan kestabilan kendaraan.",
@@ -1057,14 +954,13 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 25
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-shock-belakang",
     "kategori": "SUSPENSI",
     "icon": "🚙",
-    "nama": "Ganti Shock Absorber Belakang 1 Sisi",
+    "nama": "Ganti Shock Absorber Belakang",
     "harga": "Rp137.500 – Rp402.500",
     "durasi": "± 45–90 menit",
     "deskripsi": "Penggantian shock absorber belakang untuk menjaga kestabilan dan kenyamanan kendaraan.",
@@ -1097,8 +993,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 26
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "servis-steering-rack",
@@ -1141,50 +1036,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 27
-  },
-  {
-    "id": "ganti-power-steering-pump",
-    "kategori": "KEMUDI",
-    "icon": "🎯",
-    "nama": "Ganti Power Steering Pump",
-    "harga": "Rp242.000 – Rp460.000",
-    "durasi": "± 60–120 menit",
-    "deskripsi": "Penggantian power steering pump untuk membantu sistem kemudi tetap ringan.",
-    "pekerjaan": [
-      "Penggantian power steering pump",
-      "Pemeriksaan belt power steering",
-      "Pemeriksaan selang power steering",
-      "Pemeriksaan kebocoran",
-      "Uji sistem power steering"
-    ],
-    "manfaat": [
-      "Membantu kemudi lebih ringan",
-      "Mengurangi suara abnormal",
-      "Menjaga fungsi power steering"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Penggantian power steering pump",
-      "Pemeriksaan belt power steering",
-      "Pemeriksaan selang power steering",
-      "Pemeriksaan kebocoran",
-      "Uji sistem power steering"
-    ],
-    "cocokUntuk": "Kendaraan dengan kemudi berat, oblak, bunyi, kebocoran, atau kelonggaran pada sistem kemudi/steering.",
-    "yangTidakTermasuk": [
-      "Spare part",
-      "Oli power steering",
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 28
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-oli-power-steering",
@@ -1223,52 +1075,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 29
-  },
-  {
-    "id": "servis-rem",
-    "kategori": "REM",
-    "icon": "🛑",
-    "nama": "Servis Rem (Setel & Bersihkan)",
-    "harga": "Rp140.000 – Rp175.000",
-    "durasi": "± 45–90 menit",
-    "deskripsi": "Perawatan sistem pengereman untuk membersihkan komponen dan menjaga fungsi rem tetap optimal.",
-    "pekerjaan": [
-      "Bongkar sistem rem",
-      "Pembersihan kampas rem",
-      "Pembersihan kaliper/tromol",
-      "Pelumasan komponen rem",
-      "Setel rem",
-      "Pemeriksaan minyak rem"
-    ],
-    "manfaat": [
-      "Mengurangi bunyi rem",
-      "Meningkatkan respons pengereman",
-      "Menjaga keamanan berkendara"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Bongkar sistem rem",
-      "Pembersihan kampas rem",
-      "Pembersihan kaliper/tromol",
-      "Pelumasan komponen rem",
-      "Setel rem",
-      "Pemeriksaan minyak rem"
-    ],
-    "cocokUntuk": "Kendaraan dengan rem kurang pakem, bunyi, getaran, kebocoran, atau komponen pengereman yang aus.",
-    "yangTidakTermasuk": [
-      "Penggantian spare part",
-      "Minyak rem",
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 30
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-kampas-rem-depan",
@@ -1309,8 +1116,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 31
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-kampas-rem-belakang",
@@ -1351,8 +1157,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 32
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "servis-kaliper-rem",
@@ -1395,8 +1200,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 33
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "flush-minyak-rem",
@@ -1437,8 +1241,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 34
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "kuras-radiator",
@@ -1479,8 +1282,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 35
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-radiator",
@@ -1521,8 +1323,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 36
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-water-pump",
@@ -1563,8 +1364,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 37
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-thermostat",
@@ -1605,8 +1405,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 38
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-selang-radiator",
@@ -1647,8 +1446,85 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 39
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
+    "id": "ganti-oli-transmisi-manual-transmisi",
+    "kategori": "TRANSMISI",
+    "icon": "⚙️",
+    "nama": "Ganti Oli Transmisi Manual",
+    "harga": "Rp100.000 – Rp175.000",
+    "durasi": "± 30–45 menit",
+    "deskripsi": "Penggantian oli transmisi manual untuk menjaga perpindahan gigi tetap halus.",
+    "pekerjaan": [
+      "Penggantian oli transmisi manual",
+      "Pemeriksaan baut drain & fill",
+      "Pemeriksaan kondisi oli lama",
+      "Pemeriksaan kebocoran oli transmisi"
+    ],
+    "manfaat": [
+      "Membantu perpindahan gigi lebih ringan",
+      "Mengurangi gesekan komponen transmisi",
+      "Menjaga umur transmisi"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Penggantian oli transmisi manual",
+      "Pemeriksaan baut drain & fill",
+      "Pemeriksaan kondisi oli lama",
+      "Pemeriksaan kebocoran oli transmisi"
+    ],
+    "cocokUntuk": "Kendaraan transmisi manual yang sudah memasuki interval penggantian oli atau membutuhkan perawatan pelumasan transmisi.",
+    "yangTidakTermasuk": [
+      "Oli transmisi",
+      "Perbaikan transmisi",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
+    "id": "ganti-oli-transmisi-otomatis",
+    "kategori": "TRANSMISI",
+    "icon": "⚙️",
+    "nama": "Ganti Oli Transmisi Otomatis (AT)",
+    "harga": "Rp275.000 – Rp373.750",
+    "durasi": "± 45–90 menit",
+    "deskripsi": "Penggantian oli transmisi otomatis untuk menjaga performa perpindahan gigi.",
+    "pekerjaan": [
+      "Penggantian oli transmisi otomatis",
+      "Pemeriksaan baut drain & fill",
+      "Pemeriksaan kondisi oli AT",
+      "Pemeriksaan kebocoran transmisi"
+    ],
+    "manfaat": [
+      "Membantu perpindahan gigi lebih halus",
+      "Menjaga sistem hidrolik transmisi",
+      "Membantu menjaga performa transmisi"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Penggantian oli transmisi otomatis",
+      "Pemeriksaan baut drain & fill",
+      "Pemeriksaan kondisi oli AT",
+      "Pemeriksaan kebocoran transmisi"
+    ],
+    "cocokUntuk": "Kendaraan transmisi otomatis yang membutuhkan penggantian atau perawatan oli AT sesuai kondisi dan kebutuhan kendaraan.",
+    "yangTidakTermasuk": [
+      "Oli AT",
+      "Kerusakan internal transmisi",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-kopling",
@@ -1691,8 +1567,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 40
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-master-kopling",
@@ -1731,8 +1606,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 41
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "pemeriksaan-sistem-starter",
@@ -1773,8 +1647,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 42
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "pemeriksaan-sistem-charging",
@@ -1815,8 +1688,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 43
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "servis-alternator",
@@ -1859,8 +1731,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 44
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "servis-dinamo-starter",
@@ -1903,8 +1774,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 45
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-seal-crank-shaft-front",
@@ -1942,8 +1812,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 46
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-seal-crank-shaft-rear-mt",
@@ -1981,8 +1850,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 47
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-seal-crank-shaft-rear-at",
@@ -2021,8 +1889,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 48
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-timing-belt",
@@ -2063,8 +1930,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 49
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-timing-chain",
@@ -2104,8 +1970,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 50
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-gasket-cover-valve",
@@ -2142,45 +2007,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 51
-  },
-  {
-    "id": "ganti-transmisi-mounting-1-pc",
-    "kategori": "TRANSMISI",
-    "icon": "🔧",
-    "nama": "Ganti Transmisi Mounting 1 pc",
-    "harga": "Rp110.000 – Rp143.750",
-    "durasi": "± 90–120 menit",
-    "deskripsi": "Ganti support transmisi 1 unit.",
-    "pekerjaan": [
-      "Dongkrak transmisi",
-      "Lepas support",
-      "Pasang baru"
-    ],
-    "manfaat": [
-      "Transmisi mantap",
-      "Tidak bergeser"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Dongkrak transmisi",
-      "Lepas support",
-      "Pasang baru"
-    ],
-    "cocokUntuk": "Kendaraan dengan perpindahan gigi, kopling, atau pemindah tenaga yang bermasalah dan membutuhkan pemeriksaan/perbaikan.",
-    "yangTidakTermasuk": [
-      "Mounting baru",
-      "Baut",
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 52
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-all-v-belt",
@@ -2214,8 +2041,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 53
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-oli-pan-carter",
@@ -2256,8 +2082,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 54
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-engine-half",
@@ -2297,8 +2122,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 55
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-motor-fan-radiator",
@@ -2335,8 +2159,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 56
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-motor-fan-condensor",
@@ -2370,8 +2193,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 57
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-slang-radiator-atas",
@@ -2408,8 +2230,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 58
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-slang-radiator-bawah",
@@ -2447,8 +2268,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 59
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-slang-by-pass",
@@ -2483,8 +2303,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 60
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-water-outlet-inlet",
@@ -2522,8 +2341,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 61
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-visco-fan",
@@ -2557,8 +2375,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 62
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "tambah-silicon-oil",
@@ -2592,8 +2409,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 63
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-distributor-delco",
@@ -2630,8 +2446,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 64
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-distributor-delco",
@@ -2669,8 +2484,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 65
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-soal-distributor-dalam",
@@ -2707,88 +2521,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 66
-  },
-  {
-    "id": "starter-system",
-    "kategori": "KELISTRIKAN MESIN",
-    "icon": "🔋",
-    "nama": "Starter System",
-    "harga": "Rp198.000 – Rp316.250",
-    "durasi": "± 90–150 menit",
-    "deskripsi": "Diagnosa & perbaikan sistem starter total.",
-    "pekerjaan": [
-      "Cek kabel massa",
-      "Positif",
-      "Relay",
-      "Saklar",
-      "Motor starter"
-    ],
-    "manfaat": [
-      "Sistem starter terjamin"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Cek kabel massa",
-      "Positif",
-      "Relay",
-      "Saklar",
-      "Motor starter"
-    ],
-    "cocokUntuk": "Kendaraan dengan gangguan starter, pengisian aki, pengapian, atau kelistrikan mesin yang membutuhkan pemeriksaan atau perbaikan.",
-    "yangTidakTermasuk": [
-      "Relay",
-      "Saklar",
-      "Kabel (jika ganti)",
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 67
-  },
-  {
-    "id": "charging-system",
-    "kategori": "KELISTRIKAN MESIN",
-    "icon": "🔋",
-    "nama": "Charging System",
-    "harga": "Rp198.000 – Rp297.275",
-    "durasi": "± 90–150 menit",
-    "deskripsi": "Diagnosa & perbaikan sistem pengisian.",
-    "pekerjaan": [
-      "Cek tegangan",
-      "Dioda",
-      "Kabel utama",
-      "Fuse"
-    ],
-    "manfaat": [
-      "Sistem charging optimal"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Cek tegangan",
-      "Dioda",
-      "Kabel utama",
-      "Fuse"
-    ],
-    "cocokUntuk": "Kendaraan dengan gangguan starter, pengisian aki, pengapian, atau kelistrikan mesin yang membutuhkan pemeriksaan atau perbaikan.",
-    "yangTidakTermasuk": [
-      "Dioda",
-      "Regulator",
-      "Kabel",
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 68
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "stel-bersihan-rem-4-roda",
@@ -2826,8 +2559,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 69
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "stel-bersihan-rem-2-roda",
@@ -2862,8 +2594,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 70
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-brake-shoes",
@@ -2905,8 +2636,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 71
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-disc-brake-1-sisi",
@@ -2941,8 +2671,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 72
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-rem",
@@ -2983,8 +2712,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 73
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-master-rem",
@@ -3023,8 +2751,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 74
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-master-rem",
@@ -3065,8 +2792,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 75
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-booster-rem",
@@ -3101,8 +2827,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 76
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-rem-depan-1-sisi",
@@ -3141,8 +2866,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 77
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-rem-belakang-1-sisi",
@@ -3180,8 +2904,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 78
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-kabel-parking-brake-1-sisi",
@@ -3217,8 +2940,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 79
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-motor-servo-brake",
@@ -3252,8 +2974,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 80
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-master-pembagi-minyak-rem",
@@ -3288,8 +3009,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 81
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-sensor-abs-1-sisi",
@@ -3323,8 +3043,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 82
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-master-clutch-atas",
@@ -3363,8 +3082,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 83
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-release-clutch-bawah",
@@ -3399,8 +3117,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 84
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-transmisi-manual",
@@ -3442,8 +3159,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 85
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-transmisi-automatic",
@@ -3484,8 +3200,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 86
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-seal-drive-shaft-1-sisi",
@@ -3520,8 +3235,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 87
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-booth-drive-shaft-luar",
@@ -3558,8 +3272,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 88
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-booth-drive-shaft-dalam",
@@ -3596,8 +3309,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 89
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-drive-shaft-assy-1-sisi",
@@ -3632,8 +3344,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 90
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-bearing-roda-depan-1-sisi",
@@ -3669,8 +3380,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 91
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-bearing-roda-depan-2-sisi",
@@ -3701,8 +3411,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 92
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-bearing-roda-belakang-1-sisi",
@@ -3737,8 +3446,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 93
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-bearing-roda-belakang-2-sisi",
@@ -3768,8 +3476,41 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 94
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
+  },
+  {
+    "id": "ganti-transmisi-mounting",
+    "kategori": "TRANSMISI",
+    "icon": "⚙️",
+    "nama": "Ganti Transmisi Mounting",
+    "harga": "Rp137.500 – Rp143.750",
+    "durasi": "± 90–120 menit",
+    "deskripsi": "Ganti support transmisi.",
+    "pekerjaan": [
+      "Dongkrak",
+      "Lepas",
+      "Pasang"
+    ],
+    "manfaat": [
+      "Shifting stabil"
+    ],
+    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
+    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
+    "yangTermasuk": [
+      "Jasa pemeriksaan awal terkait layanan",
+      "Jasa pengerjaan sesuai scope layanan",
+      "Dongkrak",
+      "Lepas",
+      "Pasang"
+    ],
+    "cocokUntuk": "Kendaraan dengan perpindahan gigi, kopling, atau pemindah tenaga yang bermasalah dan membutuhkan pemeriksaan/perbaikan.",
+    "yangTidakTermasuk": [
+      "Mounting",
+      "Spare part/komponen pengganti",
+      "Pekerjaan tambahan di luar ruang lingkup layanan",
+      "Biaya mobilisasi/transportasi bila diperlukan"
+    ],
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-steering-rack-assy",
@@ -3807,8 +3548,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 95
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-steering-rack",
@@ -3848,8 +3588,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 96
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-vane-pump-pompa-power-steer",
@@ -3888,8 +3627,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 97
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-pompa-power-steer",
@@ -3929,8 +3667,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 98
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-electronic-power-steer-epc",
@@ -3964,8 +3701,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 99
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-tie-rod-end-1-sisi",
@@ -4000,8 +3736,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 100
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-booth-rack-1-sisi",
@@ -4035,8 +3770,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 101
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-tie-rod-set-1-sisi",
@@ -4068,8 +3802,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 102
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-gromed-steering-rack",
@@ -4103,8 +3836,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 103
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-steering-gear-box",
@@ -4141,8 +3873,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 104
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-steering-gear-box",
@@ -4181,8 +3912,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 105
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-slang-high-pressure",
@@ -4220,8 +3950,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 106
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-yoke-joint-steer",
@@ -4255,14 +3984,13 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 107
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-link-stabilizer-belakang-1-sisi",
     "kategori": "SUSPENSI",
     "icon": "🚙",
-    "nama": "Ganti Link Stabilizer Belakang 1 Sisi",
+    "nama": "Ganti Link Stabilizer 1 Sisi",
     "harga": "Rp90.750 – Rp126.500",
     "durasi": "± 30–45 menit",
     "deskripsi": "Ganti link stabilizer belakang 1 sisi.",
@@ -4288,8 +4016,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 108
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-bushing-lateral-rod",
@@ -4323,8 +4050,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 109
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-karet-stabilizer-belakang",
@@ -4358,8 +4084,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 110
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-lower-arm-belakang",
@@ -4393,8 +4118,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 111
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-knuckle-as-roda-belakang",
@@ -4430,8 +4154,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 112
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-carburator",
@@ -4466,8 +4189,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 113
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-carburator",
@@ -4503,8 +4225,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 114
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "kuras-tangki-bahan-bakar",
@@ -4542,8 +4263,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 115
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-fuel-filter-saringan-bensin",
@@ -4577,8 +4297,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 116
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-injection-diesel",
@@ -4614,8 +4333,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 117
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "bp-injection-pump-diesel",
@@ -4652,8 +4370,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 118
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "bp-injection-bensin",
@@ -4691,8 +4408,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 119
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "service-besar",
@@ -4730,8 +4446,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 120
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "reset-engine-scanner",
@@ -4767,8 +4482,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 121
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "engine-tune-up",
@@ -4806,8 +4520,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 122
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "engine-analisa",
@@ -4845,8 +4558,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 123
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "checking-10-000-km",
@@ -4880,8 +4592,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 124
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "checking-20-000-km",
@@ -4915,8 +4626,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 125
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "checking-30-000-50-000-km",
@@ -4950,8 +4660,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 126
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "checking-40-000-km",
@@ -4985,8 +4694,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 127
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "checking-60-000-140-000-km",
@@ -5018,8 +4726,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 128
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "checking-70-000-90-000-km",
@@ -5051,8 +4758,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 129
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "checking-80-000-240-000-km",
@@ -5084,8 +4790,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 130
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "checking-100-000-300-000-km",
@@ -5117,8 +4822,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 131
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-engine",
@@ -5158,8 +4862,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 132
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-battery-accu",
@@ -5195,8 +4898,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 133
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-alternator",
@@ -5234,8 +4936,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 134
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "over-houl-motor-starter",
@@ -5273,8 +4974,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 135
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-kabel-busi",
@@ -5310,8 +5010,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 136
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-flexible-hose-minyak-rem",
@@ -5349,8 +5048,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 137
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-rack-end-long-tie-rod",
@@ -5388,8 +5086,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 138
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-ball-joint-atas-1-sisi",
@@ -5427,8 +5124,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 139
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-ball-joint-bawah-1-sisi",
@@ -5466,8 +5162,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 140
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-bushing-upper-arm-1-sisi",
@@ -5505,8 +5200,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 141
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-bushing-lower-arm-1-sisi",
@@ -5544,8 +5238,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 142
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-upper-arm-assy",
@@ -5581,8 +5274,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 143
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-lower-arm-assy",
@@ -5618,14 +5310,13 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 144
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "ganti-karet-strut-bas-1-sisi",
     "kategori": "SUSPENSI DEPAN",
     "icon": "🔧",
-    "nama": "Ganti Karet Strut Bawah 1 Sisi",
+    "nama": "Ganti Karet Strut Bas 1 Sisi",
     "harga": "Rp110.000",
     "durasi": "± 1–2 jam",
     "deskripsi": "Jasa ganti karet strut bas 1 sisi dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
@@ -5655,8 +5346,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 145
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "derek-cantol",
@@ -5690,8 +5380,7 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 146
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
     "id": "derek-gendong",
@@ -5727,7 +5416,6 @@ globalThis.services = [
       "Pekerjaan tambahan di luar ruang lingkup layanan",
       "Biaya mobilisasi/transportasi bila diperlukan"
     ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan.",
-    "nomor": 147
+    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   }
 ];
