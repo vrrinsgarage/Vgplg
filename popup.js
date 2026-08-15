@@ -50,7 +50,7 @@
   };
 
   const serviceImage = (id) =>
-    SERVICE_IMAGE_OVERRIDES[id] || `images/services/${id}.webp`;
+    SERVICE_IMAGE_OVERRIDES[id] || `images/service/${id}.webp`;
 
   const image = (src, alt = '') =>
     `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="this.src='images/placeholder.webp'">`;
