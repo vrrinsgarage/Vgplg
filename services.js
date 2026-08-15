@@ -1270,49 +1270,6 @@ globalThis.services = [
     "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
-    "id": "servis-steering-rack",
-    "kategori": "KEMUDI",
-    "icon": "🎯",
-    "nama": "Servis Steering Rack",
-    "harga": "Rp825.000 – Rp1.437.500",
-    "durasi": "± 1–2 hari",
-    "deskripsi": "Servis steering rack untuk pemeriksaan dan perbaikan komponen sistem kemudi.",
-    "pekerjaan": [
-      "Pembongkaran steering rack",
-      "Pembersihan komponen",
-      "Pemeriksaan gear rack",
-      "Penggantian seal kit bila diperlukan",
-      "Perakitan kembali",
-      "Uji fungsi kemudi"
-    ],
-    "manfaat": [
-      "Membantu mengatasi kebocoran steering rack",
-      "Mengembalikan fungsi kemudi",
-      "Meningkatkan kenyamanan berkendara"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Pembongkaran steering rack",
-      "Pembersihan komponen",
-      "Pemeriksaan gear rack",
-      "Penggantian seal kit bila diperlukan",
-      "Perakitan kembali",
-      "Uji fungsi kemudi"
-    ],
-    "cocokUntuk": "Kendaraan dengan kemudi berat, oblak, bunyi, kebocoran, atau kelonggaran pada sistem kemudi/steering.",
-    "yangTidakTermasuk": [
-      "Spare part tambahan",
-      "Kerusakan berat steering rack",
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
-  },
-  {
     "id": "ganti-power-steering-pump",
     "kategori": "KEMUDI",
     "icon": "🎯",
@@ -4965,40 +4922,6 @@ globalThis.services = [
     "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
   },
   {
-    "id": "checking-10-000-km",
-    "kategori": "MESIN",
-    "icon": "🔧",
-    "nama": "Checking 10.000 Km",
-    "harga": "Rp400.000 – Rp805.000",
-    "durasi": "± 60–120 menit",
-    "deskripsi": "Jasa checking 10.000 km dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
-    "pekerjaan": [
-      "Pemeriksaan berkala 10.000 km",
-      "Periksa oli dan fluida",
-      "Periksa rem, pendinginan, kelistrikan, dan komponen utama"
-    ],
-    "manfaat": [
-      "Membantu mengembalikan fungsi sistem terkait",
-      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Pemeriksaan berkala 10.000 km",
-      "Periksa oli dan fluida",
-      "Periksa rem, pendinginan, kelistrikan, dan komponen utama"
-    ],
-    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
-    "yangTidakTermasuk": [
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
-  },
-  {
     "id": "over-houl-engine",
     "kategori": "MESIN",
     "icon": "🔧",
@@ -5029,118 +4952,6 @@ globalThis.services = [
       "Pembersihan komponen",
       "Perakitan dan penyetelan",
       "Uji fungsi dan pemeriksaan kebocoran"
-    ],
-    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
-    "yangTidakTermasuk": [
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
-  },
-  {
-    "id": "ganti-battery-accu",
-    "kategori": "KELISTRIKAN MESIN",
-    "icon": "🔧",
-    "nama": "Ganti Battery / Accu",
-    "harga": "Rp82.500 – Rp86.250",
-    "durasi": "± 15–30 menit",
-    "deskripsi": "Jasa ganti battery / accu dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
-    "pekerjaan": [
-      "Pemeriksaan tegangan awal",
-      "Lepas aki lama",
-      "Pasang aki baru",
-      "Pemeriksaan sistem pengisian"
-    ],
-    "manfaat": [
-      "Membantu mengembalikan fungsi sistem terkait",
-      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Pemeriksaan tegangan awal",
-      "Lepas aki lama",
-      "Pasang aki baru",
-      "Pemeriksaan sistem pengisian"
-    ],
-    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
-    "yangTidakTermasuk": [
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
-  },
-  {
-    "id": "over-houl-alternator",
-    "kategori": "KELISTRIKAN MESIN",
-    "icon": "🔧",
-    "nama": "Over Houl Alternator",
-    "harga": "Rp385.000 – Rp517.500",
-    "durasi": "± 3–5 jam",
-    "deskripsi": "Jasa over houl alternator dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
-    "pekerjaan": [
-      "Lepas alternator",
-      "Bongkar dan inspeksi",
-      "Bersihkan komponen",
-      "Perbaikan/rekondisi sesuai temuan",
-      "Rakit dan uji output pengisian"
-    ],
-    "manfaat": [
-      "Membantu mengembalikan fungsi sistem terkait",
-      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Lepas alternator",
-      "Bongkar dan inspeksi",
-      "Bersihkan komponen",
-      "Perbaikan/rekondisi sesuai temuan",
-      "Rakit dan uji output pengisian"
-    ],
-    "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
-    "yangTidakTermasuk": [
-      "Spare part/komponen pengganti",
-      "Pekerjaan tambahan di luar ruang lingkup layanan",
-      "Biaya mobilisasi/transportasi bila diperlukan"
-    ],
-    "catatan": "Estimasi waktu adalah waktu kerja teknisi pada kondisi normal, bukan jaminan selesai pada menit tertentu. Waktu dapat bertambah bila akses sulit, baut macet, kerusakan ditemukan lebih luas, atau diperlukan pengujian tambahan."
-  },
-  {
-    "id": "over-houl-motor-starter",
-    "kategori": "KELISTRIKAN MESIN",
-    "icon": "🔧",
-    "nama": "Over Houl Motor Starter",
-    "harga": "Rp275.000 – Rp385.000",
-    "durasi": "± 3–5 jam",
-    "deskripsi": "Jasa over houl motor starter dengan pemeriksaan dan pengerjaan sesuai ruang lingkup layanan.",
-    "pekerjaan": [
-      "Lepas starter",
-      "Bongkar dan inspeksi",
-      "Bersihkan komponen",
-      "Perbaikan/rekondisi sesuai temuan",
-      "Rakit dan uji kerja starter"
-    ],
-    "manfaat": [
-      "Membantu mengembalikan fungsi sistem terkait",
-      "Membantu mendeteksi masalah tambahan yang terlihat saat pengerjaan"
-    ],
-    "hargaKeterangan": "Harga jasa/tenaga kerja; spare part dan material tidak termasuk kecuali disebutkan secara eksplisit.",
-    "penyesuaianHarga": "Harga dapat berubah setelah pemeriksaan bila akses komponen, konstruksi kendaraan, tingkat kerusakan, atau pekerjaan aktual berbeda dari kondisi normal.",
-    "yangTermasuk": [
-      "Jasa pemeriksaan awal terkait layanan",
-      "Jasa pengerjaan sesuai scope layanan",
-      "Lepas starter",
-      "Bongkar dan inspeksi",
-      "Bersihkan komponen",
-      "Perbaikan/rekondisi sesuai temuan",
-      "Rakit dan uji kerja starter"
     ],
     "cocokUntuk": "Kendaraan yang membutuhkan layanan ini setelah hasil pemeriksaan atau diagnosis teknisi.",
     "yangTidakTermasuk": [
