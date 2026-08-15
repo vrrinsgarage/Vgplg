@@ -41,17 +41,6 @@
     diesel: { title: 'VG TUNE DIESEL', image: 'images/vg-tune-diesel.webp', desc: 'Paket tune untuk kendaraan bermesin diesel.' }
   };
 
-  const SERVICE_IMAGE_OVERRIDES = {
-    'over-houl-engine': 'images/service/over-haul-engine.webp',
-    'ganti-disc-brake-1-sisi': 'images/service/ganti-disc-brake-1-sisi.webp',
-    'ganti-flexible-hose-minyak-rem': 'images/service/ganti-flexible-hose-minyak-rem.webp',
-    'ganti-kabel-busi': 'images/service/ganti-kabel-busi.webp',
-    'ganti-rack-end-long-tie-rod': 'images/service/ganti-rack-end-long-tie-rod.webp'
-  };
-
-  const serviceImage = (id) =>
-    SERVICE_IMAGE_OVERRIDES[id] || `images/service/${id}.webp`;
-
   const image = (src, alt = '') =>
     `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="this.src='images/placeholder.webp'">`;
 
@@ -229,7 +218,7 @@
       </div>
       <div class="vg-popup-grid">
         ${items.map(s => card({
-          imageSrc: serviceImage(s.id),
+          imageSrc: `images/services/${s.id}.webp`,
           title: s.nama,
           desc: s.deskripsi || '',
           badge: s.id.includes('addon') ? 'ADD-ON' : s.id.includes('pro') ? 'PREMIUM' : s.id.includes('plus') ? 'REKOMENDASI' : 'HEMAT',
@@ -272,7 +261,7 @@
       </div>
       <div class="vg-popup-grid">
         ${items.map(s => card({
-          imageSrc: serviceImage(s.id),
+          imageSrc: `images/services/${s.id}.webp`,
           title: s.nama,
           desc: s.deskripsi || '',
           meta: `${esc(s.harga || '-')} • ${esc(s.durasi || '-')}`,
@@ -300,7 +289,7 @@ Terima kasih. 🙏`;
 
     return `${head(s.nama, s.kategori)}
       ${backButton()}
-      <div class="vg-detail-media">${image(serviceImage(s.id), s.nama)}</div>
+      <div class="vg-detail-media">${image(`images/services/${s.id}.webp`, s.nama)}</div>
       <div class="vg-detail-head">
         <span class="vg-popup-label">${esc(s.kategori)}</span>
         <h3>${esc(s.nama)}</h3>
